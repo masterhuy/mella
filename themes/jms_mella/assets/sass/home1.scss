@@ -1,0 +1,150 @@
+@import "mixin";
+@import "varians";
+
+body{
+	border: 20px solid #fff;
+}
+
+.jms-slider-wrapper{
+	.text-1{
+		letter-spacing: 0.01vw;
+		&::after {
+			content: "";
+			width: 5.25vw;
+			height: 2px;
+			background: $active;
+			position: absolute;
+			top: 0.5vw;
+			margin-left: 1vw;
+		}
+	}
+	.text-2{
+		font-weight: 700;
+		letter-spacing: -0.24vw;
+		line-height: 5.2vw;
+	}
+	.text-3, .text-4{
+		font-weight: 500;
+	}
+}
+
+.banner-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: auto;
+	right: 0;
+}
+.banner1{
+	.banner-content{
+		margin-top: -10px;
+		padding: 0 40px;
+		.text-1 {
+			font-size: 42px;
+			font-weight: 300;
+			margin-bottom: -33px;
+		}
+		.text-2 {
+			font-size: 80px;
+			font-weight: 600;
+			margin-bottom: -26px;
+		}
+		.text-3{
+			font-size: 16px;
+			font-weight: 500;
+			color: $sub-cl;
+			margin-bottom: 47px;
+		}
+	}
+}
+.banner2{
+	.banner-content{
+		margin-top: -4px;
+		padding: 0 20px;
+		text-align: right;
+		.text-1{
+			font-size: 16px;
+			font-weight: 500;
+			color: $sub-cl;
+			margin-bottom: -12px;
+		}
+		.text-2{
+			font-weight: 700;
+			font-size: 60px;
+			letter-spacing: -3px;
+			margin-bottom: 22px;
+		}
+	}
+}
+.banner3{
+	.banner-content{
+		left: 0;
+		right: auto;
+		padding: 0 20px;
+		margin-top: -3px;
+		.text-1{
+			font-size: 24px;
+			margin-bottom: -16px;
+		}
+		.text-2{
+			font-size: 54px;
+			font-weight: 700;
+			margin-bottom: -12px;
+			span {
+				font-weight: 400;
+				font-size: 30px;
+				position: relative;
+				bottom: 18px;
+			}
+		}
+		.text-3{
+			font-weight: 500;
+			color: $sub-cl;
+			font-size: 16px;
+		}
+	}
+}
+.banner4{
+	.banner-content{
+		padding: 0 25px;
+		margin-top: -4px;
+		.text-1{
+			font-size: 24px;
+			margin-bottom: -22px;
+		}
+		.text-2{
+			font-size: 36px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			margin-bottom: -3px;
+		}
+		.text-3{
+			font-weight: 500;
+			color: $sub-cl;
+			font-size: 16px;
+		}
+	}
+}
+.banner5{
+	.banner-content{
+		margin-top: -5px;
+		padding: 0 97px;
+		text-align: center;
+		.text-1{
+			font-weight: 500;
+			color: $sub-cl;
+			font-size: 16px;
+			margin-bottom: -10px;
+		}
+		.text-2{
+			font-weight: 700;
+			font-size: 60px;
+			margin-bottom: -15px;
+		}
+		.text-3{
+			font-weight: 300;
+			font-size: 32px;
+			margin-bottom: 48px;
+		}
+	}
+}

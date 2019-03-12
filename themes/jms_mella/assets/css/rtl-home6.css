@@ -1,0 +1,105 @@
+.topbar .left ul li:not(:last-child) {
+  margin-left: 34px;
+  margin-right: 0;
+}
+.topbar .left ul li:not(:first-child)::before {
+  right: -21px;
+  left: auto;
+}
+.topbar .right .addon-box {
+  margin-right: 42px;
+  margin-left: 0;
+}
+.topbar .right .addon-box:not(:first-child)::before {
+  right: -23px;
+  left: auto;
+}
+.header .jms-advsearch .input-group-addon.icon-drop-down {
+  left: 0;
+  right: auto;
+}
+.header .jms-advsearch .input-group-addon.icon-drop-down::before {
+  right: 0;
+  left: auto;
+}
+.header #ajax_advsearch {
+  background: transparent url("../img/icon/search-h5.png") no-repeat 460px 13px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.header #selector_cat {
+  background: url("../img/icon/icon-down.png") no-repeat 15px 23px;
+}
+.mega_menu {
+  margin-right: 24px;
+  margin-left: 0;
+}
+.header .right .addon-box:not(:first-child) {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.jms-advsearch {
+  float: right;
+}
+.ver_menu img {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.left_column {
+  float: right;
+}
+.main_column{
+  float: left;
+}
+.main_column .banner-left {
+  padding-left: 3px;
+  padding-right: 15px;
+}
+.main_column .banner-right {
+  padding-right: 3px;
+  padding-left: 15px;
+}
+.owl-theme .owl-controls {
+  left: 0;
+  right: auto;
+}
+.hotdeal .jms-hotdeal .product-link, 
+.hotdeal .jms-hotdeal .content_price,
+.hotdeal .countdown.is-countdown {
+  text-align: right;
+}
+.hotdeal .countdown-section {
+  margin-left: 5px;
+  margin-right: 0;
+}
+#footer .footer_b .find-us {
+  text-align: right;
+}
+#footer #social_block ul li a {
+  margin-left: 20px;
+  margin-right: 0;
+}
+#footer #newsletter_block_left .newsletter-btn {
+  margin-right: 0;
+}
+#footer #newsletter_block_left .text-footer > span {
+  padding-left: 15px;
+  padding-right: 0;
+}
+.footer_b .text-right img{
+  float: left !important;
+}
+.jms-megamenu .menu-align-center.item-fullwidth > .dropdown-menu {
+  left: 100% !important;
+  right: auto !important;
+}
+.jms-megamenu .nav > li.computer > .dropdown-menu {
+  left: 100% !important;
+  right: auto !important;
+}
+.mega-nav .mega > a::after {
+  content: "\f104" !important;
+  position: absolute;
+  right: 22px !important;
+  left: auto !important;
+}

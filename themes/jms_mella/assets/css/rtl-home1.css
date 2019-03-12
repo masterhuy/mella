@@ -1,0 +1,40 @@
+.topbar .left ul li:not(:last-child) {
+	margin-left: 34px;
+	margin-right: 0;
+}
+.topbar .left ul li:not(:first-child)::before {
+	right: -21px;
+	left: auto;
+}
+.topbar .right .addon-box {
+	margin-right: 42px;
+	margin-left: 0;
+}
+.topbar .right .addon-box:not(:first-child)::before {
+	right: -23px;
+	left: auto;
+}
+.header .right .addon-box:not(:first-child) {
+	margin-right: 15px;
+	margin-left: 0;
+}
+.menu .jms-megamenu .nav > li:first-child {
+	padding-right: 0;
+	padding-left: 15px;
+}
+.menu .center {
+	text-align: right;
+}
+.jms-slider-wrapper .text-2{
+	text-align: left;
+}
+#newsletter_block_left .addon-title h3 {
+	text-align: left;
+}
+#newsletter_block_left .addon-title{
+	text-align: left;
+	direction: ltr !important;
+}
+#newsletter_block_left .form-group{
+	justify-content: flex-end;
+}
