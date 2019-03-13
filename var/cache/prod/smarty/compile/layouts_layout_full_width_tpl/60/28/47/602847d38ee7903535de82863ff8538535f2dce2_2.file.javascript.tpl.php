@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-12 00:42:57
+/* Smarty version 3.1.33, created on 2019-03-13 05:35:17
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c8738d19b6422_15238737',
+  'unifunc' => 'content_5c88ced581f493_85311950',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '602847d38ee7903535de82863ff8538535f2dce2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\templates\\_partials\\javascript.tpl',
-      1 => 1552365774,
+      1 => 1552469714,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c8738d19b6422_15238737 (Smarty_Internal_Template $_smarty_tpl) {
-echo '<script'; ?>
+function content_5c88ced581f493_85311950 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"><?php echo '</script'; ?>
->
+> -->
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 if ($_from !== null) {

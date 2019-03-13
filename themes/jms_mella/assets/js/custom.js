@@ -540,7 +540,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-				margin: 0,
+				margin: 30,
 			    nav: megtab_nav,
 		        dots: megtab_pag,
 				autoplay: megtab_auto_play_carousel,

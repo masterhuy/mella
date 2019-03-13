@@ -29,27 +29,22 @@
 {/if}
 <div class="countdown-box{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if} addon-title">
 	<div class="row">
-		<div class="col-6">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			{if $html_content}
 				{$html_content nofilter}
 			{/if}
-			{$expire_time|escape:'html':'UTF-8'}
 			<div class="countdown">
 				{$expire_time|escape:'html':'UTF-8'}
 			</div>
 			{if $button_text}
-				<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-effect1">{$button_text|escape:'htmlall':'UTF-8'}</a>
+				<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-underline">{$button_text|escape:'htmlall':'UTF-8'}</a>
 			{/if}
 		</div>
-		<div class="col-6">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			{if $image}	
 				<img src="{$root_url|escape:'html':'UTF-8'}{$image|escape:'html':'UTF-8'}" />	
 			{/if}
 		</div>
 	</div>
-	
-	
-	
-	
 </div>	
 

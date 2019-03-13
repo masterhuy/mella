@@ -90,9 +90,6 @@
 	width: 100%;
 	color:rgba(17,17,17,0.5);
 }
-.product-image > img{
-    border-radius: 10px;
-}
 #product_list .product-preview:hover .product_action {
     left: 15px;
 }

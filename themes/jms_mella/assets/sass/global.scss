@@ -27,6 +27,10 @@
 	}
 }
 
+.header .row{
+	display: flex;
+	align-items: center;
+}
 //header type 1
 .header-type-1{
 	position: absolute;
@@ -39,6 +43,7 @@
 	.mega-menu{
 		transform: translateX(120px);
 		z-index: 2;
+		text-align: right;
 	}
 }
 
@@ -90,8 +95,69 @@
 		transition: .4s all;
 	}
 }
+//countdown
+.countdown-box{ 
+	.row{
+		align-items: center;
+	}
+	.countdown-section {
+		display: inline-flex;
+		flex-direction: column;
+		min-width: 100px;
+		padding: 0 20px;
+		height: 106px;
+		background: #fff;
+		margin-right: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.countdown-amount {
+		font-size: 49px;
+		font-family: 'Oswald', sans-serif;;
+		line-height: 1;
+		margin-bottom: 7px;
+	}
+	.countdown-period {
+		color: #8f8f8f;
+		font-weight: 500;
+	}
+	.cd-title{
+		font-size: 48px;
+		font-weight: 600;
+		letter-spacing: -1.3px;
+		margin-bottom: 6px;
+		margin-top: -23px;
+	}
+	.cd-saleoff{
+		font-size: 10px;
+		color: $sub-cl;
+		font-weight: 600;
+		letter-spacing: 2px;
+		margin-bottom: 2px;
+	}
+	.cd-price{
+		font-weight: 600;
+		font-size: 38px;
+		color: $active;
+		line-height: 1;
+		margin-bottom: 27px;
+		span{
+			font-size: 26px;
+		}
+	}
+	.cd-des{
+		font-weight: 500;
+		color: $sub-cl;
+		margin-bottom: 60px;
+	}
+	.countdown{
+		margin-bottom: 56px;
+	}
+}
+//end countdown
 
 .btn-underline{
+	text-transform: uppercase;
 	position: relative;
 	cursor: pointer;
 	font-weight: 600;
@@ -2095,6 +2161,12 @@ a.wishlist_top{
 	overflow: hidden;
 	.addon-title{
 		position: relative;
+		h3{
+			text-align: left;
+		}
+	}
+	.addon-desc{
+		text-align: left;
 	}
 	.jms-tab{
 		position: absolute;
@@ -2398,6 +2470,29 @@ a.wishlist_top{
 }
 
 #newsletter_block_left{
+	.addon-title{
+		h3{
+			font-size: 24px;
+			font-weight: 600;
+			letter-spacing: -0.6px;
+			padding-bottom: 17px;
+		}
+		span {
+			color: #8f8f8f;
+			padding-bottom: 26px;
+			display: inline-block;
+		}
+	}
+	.block_content{
+		text-align: center;
+	}
+	.form-group {
+		display: inline-flex;
+		justify-content: center;
+		border: 1px solid #ddd;
+		padding: 5px;
+		border-radius: 100px;
+	}
 	.block_c_right{
 		form{
 			position: relative;

@@ -116,3 +116,6 @@ body {
     font-weight: 300;
     font-size: 32px;
     margin-bottom: 48px; }
+
+.countdown-box {
+  padding: 100px 0; }

@@ -20,6 +20,14 @@
   .home_6 .jms-row.header.fixed, .home_7 .jms-row.header.fixed {
     padding: 10px 0; } }
 
+.header .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .header-type-1 {
   position: absolute;
   width: 100%;
@@ -33,7 +41,8 @@
     -webkit-transform: translateX(120px);
     -ms-transform: translateX(120px);
     transform: translateX(120px);
-    z-index: 2; }
+    z-index: 2;
+    text-align: right; }
 
 .bg-color-default {
   background: #f1f1f1; }
@@ -84,7 +93,74 @@
   -o-transition: .4s all;
   transition: .4s all; }
 
+.countdown-box .row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.countdown-box .countdown-section {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 100px;
+  padding: 0 20px;
+  height: 106px;
+  background: #fff;
+  margin-right: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.countdown-box .countdown-amount {
+  font-size: 49px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1;
+  margin-bottom: 7px; }
+
+.countdown-box .countdown-period {
+  color: #8f8f8f;
+  font-weight: 500; }
+
+.countdown-box .cd-title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -1.3px;
+  margin-bottom: 6px;
+  margin-top: -23px; }
+
+.countdown-box .cd-saleoff {
+  font-size: 10px;
+  color: #8f8f8f;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 2px; }
+
+.countdown-box .cd-price {
+  font-weight: 600;
+  font-size: 38px;
+  color: #b20f0f;
+  line-height: 1;
+  margin-bottom: 27px; }
+  .countdown-box .cd-price span {
+    font-size: 26px; }
+
+.countdown-box .cd-des {
+  font-weight: 500;
+  color: #8f8f8f;
+  margin-bottom: 60px; }
+
+.countdown-box .countdown {
+  margin-bottom: 56px; }
+
 .btn-underline {
+  text-transform: uppercase;
   position: relative;
   cursor: pointer;
   font-weight: 600;
@@ -1764,6 +1840,10 @@ a.wishlist_top {
   overflow: hidden; }
   .mega_cates_tab .addon-title {
     position: relative; }
+    .mega_cates_tab .addon-title h3 {
+      text-align: left; }
+  .mega_cates_tab .addon-desc {
+    text-align: left; }
   .mega_cates_tab .jms-tab {
     position: absolute;
     top: 3px;
@@ -2034,6 +2114,31 @@ a.wishlist_top {
   .feature-box i {
     font-size: 48px;
     color: #ff4c65; }
+
+#newsletter_block_left .addon-title h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  padding-bottom: 17px; }
+
+#newsletter_block_left .addon-title span {
+  color: #8f8f8f;
+  padding-bottom: 26px;
+  display: inline-block; }
+
+#newsletter_block_left .block_content {
+  text-align: center; }
+
+#newsletter_block_left .form-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 100px; }
 
 #newsletter_block_left .block_c_right form {
   position: relative; }

@@ -26,33 +26,16 @@
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
 		<div class="textnews_h1 addon-title">
-			<h3>{l s='SIGN UP OUR NEWSLETTER' d='Shop.Theme.Global'}</h3>
-			<span>{l s='For get offers from our favorite brands and get' d='Shop.Theme.Global'}
-				<span>20%</span> 
-				{l s='off for your next purchase!' d='Shop.Theme.Global'}
-			</span>
-		</div>
-		<div class="textnews_h5 addon-title">
-			<h3>{l s='OUR NEWSLETTER' d='Shop.Theme.Global'}</h3>
-			<span>{l s='Sign up for get offers and get' d='Shop.Theme.Global'}
-				<span>20%</span> 
-				{l s='off for your next purchase!' d='Shop.Theme.Global'}
-			</span>
-		</div>
-		<div class="text-footer addon-title">
-			<h3>{l s='NEWSLETTER' d='Shop.Theme.Global'}</h3>
-			<span>{l s='For get offers from our favorite brands & get' d='Shop.Theme.Global'}
-				<span>20%</span> 
-				{l s='off for your next buy!' d='Shop.Theme.Global'}
-			</span>
+			<h3>{l s='Keep Updated & Get Unlimited Discount' d='Shop.Theme.Global'}</h3>
+			<span>{l s='Sign up for our newsletter to receive updates and exclusive offers' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg} {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Email@example.com' d='Shop.Forms.Labels'}" />
-						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup">
-							{l s='Subscribe' d='Shop.Theme.Global'}
+						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Enter your email address here' d='Shop.Forms.Labels'}" />
+						<button type="submit" name="submitNewsletter" class="newsletter-btn">
+							{l s='Sign Up' d='Shop.Theme.Global'}
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>

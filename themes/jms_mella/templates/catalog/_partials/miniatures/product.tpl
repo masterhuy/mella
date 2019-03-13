@@ -58,11 +58,7 @@
 			   {/block}	
 			</div>
 		{/block}
-		{if isset($jpb_wishlist) && $jpb_wishlist}							
-			<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
-				<i class="la la-heart-o"></i>
-			</a>
-		{/if}
+
 		{block name='product_variants'}
 			{if $product.main_variants}
 				{if isset($jpb_pcolor) && $jpb_pcolor == 1}
@@ -118,15 +114,22 @@
 		</div>
 	</div>
 	<div class="product_action">
-		<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+		<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart btn-underline product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 			<span class="la la-spin la-spinner"></span>
 			<span class="la la-check"></span>
-			<span class="text-addcart"><i class="la la-cart-plus"></i></span>		
+			<span class="text-addcart"><span class="plus">+</span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
 			<span class="text-outofstock"><i class="la la-ban"></i></span>								   
 		</button>
-	   	<a data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
-			Quick view
-		</a>
-    </div>
+		<div class="btn-group">
+	   	<a href="#" data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
+				<i class="icon-enlarge"></i>
+			</a>
+			{if isset($jpb_wishlist) && $jpb_wishlist}							
+				<a href="#" class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+					<i class="icon-heart"></i>
+				</a>
+			{/if}
+		</div>
+  </div>
 </div>
 
