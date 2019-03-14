@@ -23,15 +23,19 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="addon-title">
-	<h3>
-		{l s='INSTAGRAM' d='Modules.JmsPagebuilder'}
-	</h3>
+<div class="addon-instagram">
+	<div class="addon-title">
+		<h3>
+			{l s='Follow us' d='Modules.JmsPagebuilder'}
+		</h3>
+		<span>{l s='#Bella' d='Modules.JmsPagebuilder'}</span>
+	</div>
+	<div class="instagram-carousel">
+		{foreach from=$insta_images item=img}
+			<a class="grouped_elements" data-fancybox-group="gallery" target="_blank" href="{$img.link nofilter}">
+				<img src="{$img.url nofilter}" alt="{l s='Instagram Image' d='Modules.JmsPagebuilder'}"/>
+			</a>
+		{/foreach}
+	</div>
 </div>
-<div class="instagram-carousel">
-	{foreach from=$insta_images item=img}
-		<a class="grouped_elements" data-fancybox-group="gallery" target="_blank" href="{$img.link nofilter}">
-			<img src="{$img.url nofilter}" alt="{l s='Instagram Image' d='Modules.JmsPagebuilder'}"/>
-		</a>
-	{/foreach}
-</div>
+

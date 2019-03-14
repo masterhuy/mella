@@ -54,8 +54,8 @@
 .cart-box .btn-shopping:active,
 .cart-box .btn-shopping:focus {
 	color: #fff;
-	background: #ff4c65;
-	border-color: #ff4c65 !important;
+	background: #b20f0f;
+	border-color: #b20f0f !important;
 }
 .text-xs-center{
 	text-align:center;
@@ -173,12 +173,12 @@
 	color: #666;
 }
 .cart-line-product-actions .remove-from-cart:hover{
-	color: #ff4c65;
+	color: #b20f0f;
 }
 .alert.alert-danger.js-error {
 	position: relative;
 	margin-top: 2.25rem;
-	background: #ff4c65;
+	background: #b20f0f;
 	color: #fff;
 	width: 100%;
 	text-align: center;

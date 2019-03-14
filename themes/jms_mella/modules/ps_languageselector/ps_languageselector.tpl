@@ -24,68 +24,22 @@
 *}
 <!-- Block languages module -->
 {if count($languages) > 1}
-	<div class="btn-group compact-hidden languages-info type1">
-		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
-			<span class="title btn-name">{l s='Languages:' d='Shop.Theme.Global'}</span>			
+	<div class="btn-group compact-hidden languages-info">
+		<a href="#languages" class="btn-xs" data-toggle="collapse">
+			{$current_language.name_simple|truncate:3:''} <i class="fa fa-caret-down" aria-hidden="true"></i>
 		</a>
-		<ul>
-			{foreach from=$languages key=k item=language name="languages"}
-				<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
-					<a href="{url entity='language' id=$language.id_lang}" class="dropdown-item">
-						<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="16" height="11"/>
-						{$language.name_simple}
-					</a>
-				</li>
-			{/foreach}		
-		</ul>
-	</div>
-	<div class="btn-group compact-hidden languages-info type2">
-		<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
-			<span class="btn-name">
-				<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$current_language.id_lang}.jpg" width="16" height="11"/>
-				{$current_language.name_simple}
-			</span>
-		</a>
-		<ul role="menu" class="dropdown-menu">
-			{foreach from=$languages key=k item=language name="languages"}
-				<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
-					<a href="{url entity='language' id=$language.id_lang}" class="dropdown-item">
-						<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="16" height="11"/>
-						{$language.name_simple}
-					</a>
-				</li>
-			{/foreach}		
-		</ul>
-	</div>
-	<div class="btn-group compact-hidden languages-info type3">
-		<span class="title btn-name">{l s='Select Language:' d='Shop.Theme.Global'}</span>
-		<ul class="languages-list">
-			{foreach from=$languages key=k item=language name="languages"}
-				<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
-					<a href="{url entity='language' id=$language.id_lang}" class="dropdown-item">
-					  <img alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="20" height="14"/>
-					</a>
-				</li>
-			{/foreach}		
-		</ul>
-	</div>
-	<div class="btn-group compact-hidden languages-info type4">
-		<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
-			<span class="btn-name">
-				<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$current_language.id_lang}.jpg" width="16" height="11"/>
-				{$current_language.name_simple|truncate:3:''}
-			</span>
-		</a>
-		<ul role="menu" class="dropdown-menu">
-			{foreach from=$languages key=k item=language name="languages"}
-				<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
-					<a href="{url entity='language' id=$language.id_lang}" class="dropdown-item">
-						<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="16" height="11"/>
-						{$language.name_simple|truncate:3:''}
-					</a>
-				</li>
-			{/foreach}		
-		</ul>
+		<div id="languages" class="collapse">
+			<ul>
+				{foreach from=$languages key=k item=language name="languages"}
+					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
+						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
+							<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="16" height="11"/>
+							{$language.name_simple}
+						</a>
+					</li>
+				{/foreach}		
+			</ul>
+		</div>
 	</div>
 {/if}
 <!-- /Block languages module -->

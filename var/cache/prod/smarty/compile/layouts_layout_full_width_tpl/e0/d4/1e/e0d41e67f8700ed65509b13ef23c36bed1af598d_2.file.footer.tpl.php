@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-11 05:39:03
+/* Smarty version 3.1.33, created on 2019-03-14 03:13:13
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c862cb716e962_04080838',
+  'unifunc' => 'content_5c89ff0965f8f0_36147647',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e0d41e67f8700ed65509b13ef23c36bed1af598d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\templates\\_partials\\footer.tpl',
-      1 => 1552292667,
+      1 => 1552547402,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c862cb716e962_04080838 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c89ff0965f8f0_36147647 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="btn-default back-to-top" id="back-to-top" title="Back to top">
-	<span class="la la-arrow-up"></span>
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
 </div>
 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayFooter'),$_smarty_tpl ) );?>
 

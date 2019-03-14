@@ -60,7 +60,7 @@
     letter-spacing: 2.4px;
 }
 .jms-megamenu .nav > li > a:hover, .jms-megamenu .nav > li > a:focus {
-    color: #ff4c65;
+    color: #b20f0f;
 }
 .jms-megamenu .nav > li:hover, .jms-megamenu .nav > li.open {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -115,14 +115,11 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .mega-nav li > a {
     border-radius: 0;
     display: block;
-    font-weight: 400;
-    font-family: PT Sans;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 23px;
     padding: 3.5px 30px;
     position: relative;
     text-transform: capitalize;
-    letter-spacing: 0.3px;
 }
 .jms-megamenu .mega-nav li > a:hover{
     padding-left: 35px;
@@ -283,7 +280,7 @@ div.jms-megamenu .dropdown-menu::before{
     width: 100%;
 }
 .jms-megamenu .nav > li.open > a{
-    color: #ff4c65;
+    color: #b20f0f;
 }
 .jms-megamenu .mobile > .dropdown-menu,
 .jms-megamenu .computer > .dropdown-menu{
@@ -293,25 +290,6 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .computer > .dropdown-menu .mega-col-nav{
     padding-top: 22px;
     padding-bottom: 14px;
-}
-.jms-megamenu .nav > li > a::after {
-    content: "";
-    left: 50%;
-    bottom: -7px;
-    box-shadow: -5px -6px 12px rgba(0,0,0,0.2);
-    background: #fff;
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    transform: rotate(45deg) translateX(-50%);
-    opacity: 0;
-    z-index: 999999;
-}
-.jms-megamenu .nav > li.open > a::after {
-    opacity: 1;
-}
-.jms-megamenu .nav > li > a::after {
-    transition: .4s all;
 }
 .jms-megamenu .nav > .item-fullwidth .mega-nav li {
     border-bottom: medium none;
@@ -500,7 +478,6 @@ div.jms-megamenu .dropdown-menu::before{
     font-weight:600;
 }
 .img-bottom.wrapper-banner .box-content h4 + h4 {
-    font-family: "PT Sans"; 
     font-weight:400; 
 	padding-top: 10px;
 }

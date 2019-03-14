@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-13 03:31:36
+/* Smarty version 3.1.33, created on 2019-03-13 22:29:21
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmspagebuilder\views\templates\hook\addonmegatab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c88b1d88b1157_70362434',
+  'unifunc' => 'content_5c89bc81dd6757_31002585',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b79f795e746ece05717c8ec3c72e2c9778304759' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonmegatab.tpl',
-      1 => 1552292667,
+      1 => 1552530507,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c88b1d88b1157_70362434 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c89bc81dd6757_31002585 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var megtab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {

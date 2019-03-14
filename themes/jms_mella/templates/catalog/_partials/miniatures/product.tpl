@@ -30,12 +30,14 @@
 				<img class="img-responsive product-img1"
 				  src = "{$product.cover.bySize.home_default.url}"
 				  alt = "{$product.cover.legend}"
+					title="{$product.name|escape:'html':'UTF-8'}"
 				  data-full-size-image-url = "{$product.cover.large.url}"
 				/>
 				{if isset($jpb_phover) && $jpb_phover == 'image_swap' && $product.images.1}
 					<img class="img-responsive product-img2"
 					  src = "{$product.images.1.bySize.home_default.url}"
 					  alt = "{$product.images.1.legend}"
+						title="{$product.name|escape:'html':'UTF-8'}"
 					  data-full-size-image-url = "{$product.images.1.large.url}"
 					/>
 				{/if}

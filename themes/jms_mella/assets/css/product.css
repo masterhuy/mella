@@ -26,7 +26,7 @@
     width: 6px;
     height: 6px;
     position: absolute;
-    background: #ff4c65;
+    background: #b20f0f;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -121,7 +121,7 @@
 }
 .product-images > li.thumb-container > .thumb.selected, 
 .product-images > li.thumb-container > .thumb:hover {
-    border: 1px solid #ff4c65;
+    border: 1px solid #b20f0f;
 }
 .scroll-box-arrows {
     display: none;
@@ -168,19 +168,19 @@
 }
 .arrows.js-arrows i:hover, .scroll-box-arrows i:hover {
     color: #fff;
-    border-color: #ff4c65 ;
+    border-color: #b20f0f ;
 }
 .scroll-box-arrows i.right {
     background: url("../img/icon/next.png") no-repeat center;
 }
 .scroll-box-arrows i.right:hover {
-    background: #ff4c65 url("../img/icon/next-hover.png") no-repeat center;
+    background: #b20f0f url("../img/icon/next-hover.png") no-repeat center;
 }
 .scroll-box-arrows i.left {
     background: url("../img/icon/previous.png") no-repeat center;
 }
 .scroll-box-arrows i.left:hover {
-    background: #ff4c65 url("../img/icon/previous-hover.png") no-repeat center;
+    background: #b20f0f url("../img/icon/previous-hover.png") no-repeat center;
 }
 .images-container .thumb-box .js-qv-mask.mask {
   max-height: 100%;
@@ -362,7 +362,7 @@
     padding: 0px 26px;
     position: relative;
     text-align: center;
-    background: #ff4c65;
+    background: #b20f0f;
     text-transform: uppercase;
     height: 38px;
 }
@@ -433,7 +433,7 @@
     right: -10px;
 }
 .product-quantity .btn-touchspin:hover::before{
-    color: #ff4c65;
+    color: #b20f0f;
 }
 .product-quantity .bootstrap-touchspin-down {
     background: url("../img/icon/minus.png") no-repeat;
@@ -572,7 +572,7 @@
     transform: unset;
 }
 .product-add-to-cart .addToWishlist:hover{
-    background: #ff4c65;
+    background: #b20f0f;
     color: #fff;
 }
 .product-add-to-cart .addToWishlist::before {
@@ -614,7 +614,7 @@
     top: 5px;
     width: 5px;
     height: 5px;
-    background: #ff4c65;
+    background: #b20f0f;
 }
 .other-info > li span {
     padding-left: 0;
@@ -801,7 +801,7 @@
     padding-left: 6px;
 }
 .product-preview.flex-box button.cart-button:hover{
-    background: #ff4c65;
+    background: #b20f0f;
     border-radius: 30px;
     width: 126px;
 }

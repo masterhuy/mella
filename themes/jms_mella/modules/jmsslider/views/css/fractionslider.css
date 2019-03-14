@@ -45,11 +45,11 @@
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
-	width: 40px;
+	width: 70px;
 	z-index: 999;
-	height: 40px;
-	background: rgba(251,148,59,0.5);
-	border-radius: 50%;
+	height: 46px;
+	border-radius: 0;
+	opacity: 0;
 }
 .fraction-slider .numbnext{
 	display: none !important;
@@ -75,12 +75,8 @@
 }
 .jms-slider-wrapper:hover .fraction-slider .prev{
 	left: 30px;
-	opacity: 1;
+	opacity: 0.3;
 	visibility: visible;
-}
-.fraction-slider .prev:hover,
-.fraction-slider .next:hover{
-	background: rgba(251,148,59,1);
 }
 .fraction-slider .prev{
 	left:0; 
@@ -89,28 +85,10 @@
 	opacity: 0;
 	visibility: hidden;
 }
-.fraction-slider .prev::before{
-	content: "\f053";
-	font-family: FontAwesome;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	color: #fff;
-	transform: translate(-50%, -50%);
-}
 .jms-slider-wrapper:hover .fraction-slider .next{
 	right: 30px;
-	opacity: 1;
+	opacity: 0.3;
 	visibility: visible;
-}
-.fraction-slider .next::before{
-	content: "\f054";
-	font-family: FontAwesome;
-	position: absolute;
-	top: 50%;
-	color: #fff;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 .fraction-slider .next{
 	right: 0;
@@ -123,7 +101,7 @@
 /** PAGER **/
 
 .fs-pager-wrapper {
-    bottom: 8px;
+    bottom: 25px;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -146,7 +124,7 @@
 	overflow: hidden;
 }
 .fs-pager-wrapper a.active {
-	background: #ff4c65;
+	background: #b20f0f;
 	width: 26px;
 	border-radius: 5px;
 }
