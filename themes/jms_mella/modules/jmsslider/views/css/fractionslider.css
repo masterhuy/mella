@@ -108,23 +108,22 @@
     z-index: 999;
 }
 .fs-pager-wrapper a, .fs-custom-pager-wrapper a {
-	margin: 0 4px;
+	margin: 0 7px;
 	font-weight: 600;
 	font-size: 10px;
 	position: relative;
-	width: 11px;
-	height: 11px;
+	width: 18px;
+	height: 18px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	color: #fff;
-	background: #ccc;
+	background: #fff;
 	border-radius: 50%;
 	text-indent: -100px;
 	overflow: hidden;
+	box-shadow: 0 0 11px rgba(0,0,0,0.2);
 }
 .fs-pager-wrapper a.active {
 	background: #b20f0f;
-	width: 26px;
-	border-radius: 5px;
 }

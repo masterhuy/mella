@@ -993,15 +993,18 @@ $(document).ready(function() {
 		}, 3000);		
 		initialLoad = false;
 	}
+	$('.mega_menu').click(function(event) {
+		$('body').toggleClass('open-sidebar1');
+	});
 });
 
 jQuery(function ($) {
     "use strict";
     
     var bodyEl = $("body"),
-		content = $('.close_menu'),
-		openbtn = $('.mega_menu'),
-		closebtn = $('.close_menu' ),
+		content = $('.close_menuu'),
+		openbtn = $('.mega_menuu'),
+		closebtn = $('.close_menuu' ),
 		isOpen = false;
 
 	function init() {

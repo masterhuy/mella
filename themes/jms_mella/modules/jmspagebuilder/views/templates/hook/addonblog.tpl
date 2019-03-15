@@ -33,12 +33,11 @@
 	    var p_pag_blog = {if $pagination == 1}true{else}false{/if};
 		var auto_play_blog = {if $autoplay == 1}true{else}false{/if};
 </script>
+<div class="addon-blog">
+	
 {if $addon_title}
 <div class="addon-title">
 	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
-	<div class="pull-right">
-		<a href="index.php?fc=module&module=jmsblog&controller=categories" class="view-all link fw-bold">view all</a>
-	</div>
 </div>
 {/if}
 {if $addon_desc}
@@ -68,7 +67,7 @@
 				<ul class="post-meta">
 					{if $show_category == '1'}
 						<li>
-							{l s='In' d='Modules.JmsPagebuilder'}: 
+							{l s='In' d='Modules.JmsPagebuilder'}
 							<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
 								{$post.category_name|escape:'html':'UTF-8'}
 							</a>
@@ -77,7 +76,7 @@
 					{if $show_time == '1'}
 						<li class="time">
 							<span class="post-created">
-								<span class="posted">{l s='Posted' d='Modules.JmsPagebuilder'}:</span> 
+								<span class="posted">{l s='on' d='Modules.JmsPagebuilder'}</span> 
 								{$post.created|escape:'html':'UTF-8'|date_format:'%b %e, %Y'}
 							</span>
 						</li>
@@ -122,3 +121,4 @@
 </div>	
 {/if}	
 
+</div>

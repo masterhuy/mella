@@ -39,21 +39,21 @@ var megtab_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 		{if $addon_title}
 			<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
 		{/if}
-		<div class="jms-tab">
-			<ul class="nav">
-				{foreach from = $categories key = k item = category}
-					<li class="nav-item {if $k == 0} active{/if}">
-						<a class="" data-toggle="tab" href="#mega-category-{$category.id_category|escape:'html':'UTF-8'}">
-							{$category.name}
-						</a>
-					</li>
-				{/foreach}	
-			</ul>
-		</div>
 	</div>
 	{if $addon_desc}
 		<p class="addon-desc">{$addon_desc nofilter}</p>
 	{/if}
+	<div class="jms-tab">
+		<ul class="nav">
+			{foreach from = $categories key = k item = category}
+				<li class="nav-item {if $k == 0} active{/if}">
+					<a class="" data-toggle="tab" href="#mega-category-{$category.id_category|escape:'html':'UTF-8'}">
+						{$category.name}
+					</a>
+				</li>
+			{/foreach}	
+		</ul>
+	</div>
 
 	<div class="tab-content">
 		{foreach from = $categories key = k item = category}
