@@ -1,4 +1,5 @@
-body.open-sidebar1 {
+.main-site.open-sidebar1 {
+  overflow: unset;
   -webkit-transform: translateX(-370px);
   -ms-transform: translateX(-370px);
   transform: translateX(-370px); }

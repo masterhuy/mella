@@ -12,18 +12,11 @@
 					{$product.price}
 				</span>
 			</div>
-			<div class="quantity-formated">
-				<span class="quantity">
-					x {$product.quantity}
-				</span>
-			</div>
 			<span class="remove_link">
 				<a class="remove-from-cart" rel="nofollow" href="{$product.remove_from_cart_url}" data-link-action="remove-from-cart" title="{l s='Remove from cart' d='Shop.Theme.Actions'}" >
-					<i class="fa fa-trash-o"></i>
+					<i class="fa fa-times" aria-hidden="true"></i>
 				</a>
 			</span>
 		</div>
-		
 	</div>
-	
 </div>

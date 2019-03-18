@@ -10,7 +10,6 @@
   border-radius: 3px;
 }
 .jms-popup-content h2{
-  font-family: Roboto;
   font-size: 22px;
   font-weight: 700;
   color: #000;
@@ -40,7 +39,6 @@
   bottom: 0;
 }
 .jms-popup #social_block h3{
-  font-family: Roboto;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.1px;

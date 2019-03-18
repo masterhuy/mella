@@ -18,6 +18,8 @@
 		duration: jmmm_duration
 	});
 
+	$('.menu-item.collection .mega-dropdown-inner').addClass('collection-carousel');
+
 	$('#mobile-vermegamenu').addClass('collapse');
 	
 	//initiate the plugin and pass the id of the div containing gallery images
@@ -961,6 +963,36 @@ jQuery(function ($) {
 			loop: true
 		});
 	}
+
+	if($(".collection-carousel").length) {
+		var collectionCarousel = $(".collection-carousel");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		collectionCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:6
+					},
+				991:{
+					items:5
+				},
+				768:{
+					items:4
+				},
+				481:{
+					items:2
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: false,
+			dots: true,
+			autoplay: false,
+			slideSpeed: 200,
+			loop: true
+		});
+	}
 });
 
 function back_to_top() {   
@@ -994,7 +1026,7 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 	$('.mega_menu').click(function(event) {
-		$('body').toggleClass('open-sidebar1');
+		$('.main-site').toggleClass('open-sidebar1');
 	});
 });
 

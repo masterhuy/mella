@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Dropshipping, tips and advice to create your ecommerce website without stock</title>
+    <link>https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</link>
+    <description>In very simple terms, “Dropshipping” is a business strategy in which an online store owner does not keep goods in stock but helps retailers or customers to access goods directly from the manufactur</description>
+     <pubDate>Fri, 15 Mar 2019 11:50:32 +0100</pubDate>
+ <dc:creator>Invertus EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</guid>
+  </item>
+  <item>
     <title>How to promote your PrestaShop store using domain names</title>
     <link>https://www.prestashop.com/en/blog/promote-prestashop-store-using-domain-names</link>
     <description>To become a seasoned marketer and successful store owner, you need to promote your PrestaShop store in a way that attracts quality traffic.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 03 Dec 2018 14:42:37 +0100</pubDate>
  <dc:creator>Coingate</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/bitcoin-blockchain-cryptocurrency-gateway</guid>
-  </item>
-  <item>
-    <title>Meet Aleksandr, Ambassador of the month | November 2018</title>
-    <link>https://www.prestashop.com/en/blog/ambassador-estonia-aleksandr</link>
-    <description>This month meet Aleksandr, PrestaShop Ambassador in Talinn, Estonia!</description>
-     <pubDate>Fri, 30 Nov 2018 17:39:33 +0100</pubDate>
- <dc:creator>MLNielsen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/ambassador-estonia-aleksandr</guid>
   </item>
   </channel>
 </rss>

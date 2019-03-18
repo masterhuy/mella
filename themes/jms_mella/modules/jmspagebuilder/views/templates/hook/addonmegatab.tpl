@@ -57,7 +57,7 @@ var megtab_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 
 	<div class="tab-content">
 		{foreach from = $categories key = k item = category}
-			<div role="tabpanel" class="tab-pane {if $k == 0}active {/if}" id="mega-category-{$category.id_category|escape:'html':'UTF-8'}">
+			<div role="tabpanel" class="tab-pane fade {if $k == 0} in active {/if}" id="mega-category-{$category.id_category|escape:'html':'UTF-8'}">
 				<div class="product_box">
 					<div class="megatab-carousel">	
 						{foreach from = $category.products item = products_slide}				

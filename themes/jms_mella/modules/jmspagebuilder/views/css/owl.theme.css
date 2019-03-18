@@ -104,8 +104,6 @@
 }
 .owl-dot.active span {
     background: #b20f0f none repeat scroll 0 0;
-    width: 26px;
-    border-radius: 10px;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

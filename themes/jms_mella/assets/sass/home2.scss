@@ -1,7 +1,8 @@
 @import "mixin";
 @import "varians";
 
-body.open-sidebar1{
+.main-site.open-sidebar1{
+	overflow: unset;
 	transform: translateX(-370px);
 }
 .page-index header{

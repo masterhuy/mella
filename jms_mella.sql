@@ -2,10 +2,10 @@
 -- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 15, 2019 at 11:28 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.0.29
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th3 18, 2019 lúc 11:28 AM
+-- Phiên bản máy phục vụ: 10.1.31-MariaDB
+-- Phiên bản PHP: 7.0.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `jms_mella`
+-- Cơ sở dữ liệu: `jms_mella`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_access`
+-- Cấu trúc bảng cho bảng `jms_access`
 --
 
 CREATE TABLE `jms_access` (
@@ -34,7 +34,7 @@ CREATE TABLE `jms_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_access`
+-- Đang đổ dữ liệu cho bảng `jms_access`
 --
 
 INSERT INTO `jms_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -830,7 +830,7 @@ INSERT INTO `jms_access` (`id_profile`, `id_authorization_role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_accessory`
+-- Cấu trúc bảng cho bảng `jms_accessory`
 --
 
 CREATE TABLE `jms_accessory` (
@@ -841,7 +841,7 @@ CREATE TABLE `jms_accessory` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_address`
+-- Cấu trúc bảng cho bảng `jms_address`
 --
 
 CREATE TABLE `jms_address` (
@@ -872,7 +872,7 @@ CREATE TABLE `jms_address` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_address`
+-- Đang đổ dữ liệu cho bảng `jms_address`
 --
 
 INSERT INTO `jms_address` (`id_address`, `id_country`, `id_state`, `id_customer`, `id_manufacturer`, `id_supplier`, `id_warehouse`, `alias`, `company`, `lastname`, `firstname`, `address1`, `address2`, `postcode`, `city`, `other`, `phone`, `phone_mobile`, `vat_number`, `dni`, `date_add`, `date_upd`, `active`, `deleted`) VALUES
@@ -884,7 +884,7 @@ INSERT INTO `jms_address` (`id_address`, `id_country`, `id_state`, `id_customer`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_address_format`
+-- Cấu trúc bảng cho bảng `jms_address_format`
 --
 
 CREATE TABLE `jms_address_format` (
@@ -893,7 +893,7 @@ CREATE TABLE `jms_address_format` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_address_format`
+-- Đang đổ dữ liệu cho bảng `jms_address_format`
 --
 
 INSERT INTO `jms_address_format` (`id_country`, `format`) VALUES
@@ -1145,7 +1145,7 @@ INSERT INTO `jms_address_format` (`id_country`, `format`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_admin_filter`
+-- Cấu trúc bảng cho bảng `jms_admin_filter`
 --
 
 CREATE TABLE `jms_admin_filter` (
@@ -1158,7 +1158,7 @@ CREATE TABLE `jms_admin_filter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_admin_filter`
+-- Đang đổ dữ liệu cho bảng `jms_admin_filter`
 --
 
 INSERT INTO `jms_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`, `filter`) VALUES
@@ -1167,7 +1167,7 @@ INSERT INTO `jms_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_advice`
+-- Cấu trúc bảng cho bảng `jms_advice`
 --
 
 CREATE TABLE `jms_advice` (
@@ -1185,31 +1185,31 @@ CREATE TABLE `jms_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_advice`
+-- Đang đổ dữ liệu cho bảng `jms_advice`
 --
 
 INSERT INTO `jms_advice` (`id_advice`, `id_ps_advice`, `id_tab`, `ids_tab`, `validated`, `hide`, `location`, `selector`, `start_day`, `stop_day`, `weight`) VALUES
-(49, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(50, 27, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(51, 674, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(52, 765, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(53, 828, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(54, 829, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(55, 773, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(56, 824, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(57, 520, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(58, 851, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(59, 730, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(60, 731, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(61, 732, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(62, 734, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(63, 708, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(64, 735, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1);
+(65, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(66, 27, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(67, 674, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(68, 765, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(69, 828, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(70, 829, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(71, 773, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(72, 824, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(73, 520, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(74, 851, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(75, 730, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(76, 731, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(77, 732, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(78, 734, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(79, 708, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(80, 735, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_advice_lang`
+-- Cấu trúc bảng cho bảng `jms_advice_lang`
 --
 
 CREATE TABLE `jms_advice_lang` (
@@ -1219,114 +1219,114 @@ CREATE TABLE `jms_advice_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_advice_lang`
+-- Đang đổ dữ liệu cho bảng `jms_advice_lang`
 --
 
 INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
-(49, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(49, 2, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(49, 3, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(49, 4, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(49, 5, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(49, 7, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(50, 1, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(50, 2, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(50, 3, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(50, 4, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(50, 5, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(50, 7, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(51, 1, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(51, 2, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(51, 3, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(51, 4, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(51, 5, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(51, 7, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(52, 1, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(52, 2, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(52, 3, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(52, 4, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(52, 5, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(52, 7, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>');
+(65, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(65, 2, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(65, 3, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(65, 4, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(65, 5, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(65, 7, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(66, 1, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(66, 2, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(66, 3, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(66, 4, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(66, 5, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(66, 7, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(67, 1, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(67, 2, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(67, 3, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(67, 4, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(67, 5, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(67, 7, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(68, 1, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(68, 2, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(68, 3, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(68, 4, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(68, 5, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(68, 7, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>');
 INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
-(53, 1, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(53, 2, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(53, 3, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(53, 4, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(53, 5, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(53, 7, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(54, 1, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(54, 2, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(54, 3, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(54, 4, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(54, 5, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(54, 7, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(55, 1, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(55, 2, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(55, 3, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(55, 4, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(55, 5, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(55, 7, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(56, 1, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(56, 2, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(56, 3, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(56, 4, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(56, 5, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(56, 7, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(57, 1, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(57, 2, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(57, 3, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(57, 4, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(57, 5, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(57, 7, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(58, 1, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(58, 2, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(58, 3, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(58, 4, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(58, 5, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(58, 7, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
+(69, 1, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(69, 2, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(69, 3, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(69, 4, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(69, 5, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(69, 7, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(70, 1, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(70, 2, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(70, 3, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(70, 4, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(70, 5, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(70, 7, ' <div id=\"wrap_id_advice_829\"> <section id=\"0_cappasity\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/cappasity.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/829.png\"/> <p> <b>3D images are proven to increase conversion over static images by up to 30%</b> </p> <p> Customers interact with 3D products the same way as with real ones. They look at them from all sides, see the details and better understand what they are about to purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=829&url=https://addons.prestashop.com/fr/visuels-produits/26586-cappasity-3d-and-360-product-viewer.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcappasity\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_cappasity\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(71, 1, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(71, 2, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(71, 3, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(71, 4, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(71, 5, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(71, 7, ' <div id=\"wrap_id_advice_773\"> <section id=\"0_crowdin\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/crowdin.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/773.png\"/> <p> <b>Tired of your admin panel not being in your language?</b> </p> <p> Help us translate PrestaShop in your language so merchants from everywhere can enjoy PrestaShop in their language. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=773&url=https://crowdin.com/project/prestashop-official%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dcrowdin\"> Translate now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_crowdin\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(72, 1, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(72, 2, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(72, 3, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(72, 4, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(72, 5, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(72, 7, ' <div id=\"wrap_id_advice_824\"> <section id=\"0_ecommercecalendar\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ecommercecalendar.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/824.png\"/> <p> <b>Back to school, Black Friday, Christmas: Be prepared!</b> </p> <p> Receive your very own 19-page guide, which includes advice and a calendar, so you can think ahead without getting overwhelmed. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=824&url=https://addons.prestashop.com/en/e-commerce-calendar/27662-2017-end-of-year-e-commerce-guide-calendar.html?utm_source=back-office&utm_medium=tipoftheday&utm_campaign=calendar-EN&utm_content=EN%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Decommercecalendar\"> Download the guide </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ecommercecalendar\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(73, 1, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(73, 2, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(73, 3, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(73, 4, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(73, 5, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(73, 7, ' <div id=\"wrap_id_advice_520\"> <section id=\"0_sendinblue\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/sendinblue.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/520.png\"/> <p> <b>Did you know that gaining customer loyalty costs 5 x less than winning a new customer?</b> </p> <p> Sending emails and text messages is an effective, affordable way of keeping your customers up-to-date on your latest news and offers. SendinBlue is an all-in-one solution for managing emails and texts. Run it now for free! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=520&url=http://addons.prestashop.com/en/advertising-marketing-newsletter-modules/8300-sendinblue.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dsendinblue\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_sendinblue\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(74, 1, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(74, 2, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(74, 3, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(74, 4, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(74, 5, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(74, 7, ' <div id=\"wrap_id_advice_851\"> <section id=\"0_upela\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/upela.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/851.png\"/> <p> <b>Did you know? 45% of basket abandon is due to the lack of delivery options.</b> </p> <p> Reverse the trend and propose a complete delivery offer to your customers: dropoff, standard or express. Respond to all your customers\' needs and increase their satisfaction. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=851&url=https://addons.prestashop.com/en/shipping-carriers/26804-upela-parcel-shipping-at-the-best-rate.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dupela\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_upela\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
-(59, 1, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(59, 2, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(59, 3, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(59, 4, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(59, 5, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(59, 7, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(60, 1, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(60, 2, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(60, 3, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(60, 4, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(60, 5, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(60, 7, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(61, 1, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(61, 2, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(61, 3, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(61, 4, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(61, 5, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(61, 7, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(62, 1, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(62, 2, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(62, 3, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(62, 4, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(62, 5, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(62, 7, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(63, 1, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(63, 2, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(63, 3, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(63, 4, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(63, 5, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(63, 7, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(64, 1, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(64, 2, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(64, 3, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(64, 4, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(64, 5, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
+(75, 1, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(75, 2, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(75, 3, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(75, 4, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(75, 5, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(75, 7, ' <div id=\"wrap_id_advice_730\"> <section id=\"0_videotraining_businesstech\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_businesstech.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/730.png\"/> <p> <b>4 simple steps to optimize your online shop’s performance</b> </p> <p> See how you can start analyzing and optimizing your online shop in 4 simple steps in this short video from Business Tech, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=730&url=https://www.youtube.com/watch?v=0acJfI8fn-0?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=kpi%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_businesstech\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_businesstech\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(76, 1, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(76, 2, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(76, 3, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(76, 4, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(76, 5, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(76, 7, ' <div id=\"wrap_id_advice_731\"> <section id=\"0_videotraining_enverguredigital\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_enverguredigital.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/731.png\"/> <p> <b>12 essential tips to create an efficient product page</b> </p> <p> Learn how to create an efficient product page to boost your sales, in this short video from Envergure Digitale, a PrestaShop Expert. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=731&url=https://www.youtube.com/watch?v=5k3ZdPo00KY?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=product%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_enverguredigital\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_enverguredigital\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(77, 1, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(77, 2, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(77, 3, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(77, 4, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(77, 5, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(77, 7, ' <div id=\"wrap_id_advice_732\"> <section id=\"0_videotraining_envoimoinscher\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_envoimoinscher.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/732.png\"/> <p> <b>6 tips for creating a delivery policy that attracts customers</b> </p> <p> Find important tips for creating an efficient delivery policy in this short video from Envoismoinscher.com. It will to help you to attract customers and build loyalty. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=732&url=https://www.youtube.com/watch?v=QhTU_eSrm7o?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=shipping%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_envoimoinscher\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_envoimoinscher\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(78, 1, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(78, 2, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(78, 3, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(78, 4, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(78, 5, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(78, 7, ' <div id=\"wrap_id_advice_734\"> <section id=\"0_videotraining_prestashop\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_prestashop.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/734.png\"/> <p> <b>4 traps to avoid when building an Ecommerce project</b> </p> <p> Learn how to avoid 4 common errors when preparing your Ecommerce project in this short video, drawing on the expertise we\'ve gained from working with PrestaShop merchants. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=734&url=https://www.youtube.com/watch?v=7u56FJfAGSQ?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=entrepreneur%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_prestashop\"> Watch the video </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_prestashop\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(79, 1, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(79, 2, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(79, 3, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(79, 4, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(79, 5, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(79, 7, ' <div id=\"wrap_id_advice_708\"> <section id=\"0_videotraining_productpage\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_productpage.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/708.png\"/> <p> <b>How do your product pages look?</b> </p> <p> Check out our quick video with 12 tips to make sure they\'re smokin\'! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=708&url=http://bit.ly/1OQlZUM%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_productpage\"> Watch now </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_productpage\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(80, 1, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(80, 2, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(80, 3, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(80, 4, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(80, 5, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
-(64, 7, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
+(80, 7, ' <div id=\"wrap_id_advice_735\"> <section id=\"0_videotraining_suscribe\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/videotraining_suscribe.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/735.png\"/> <p> <b>Discover all our Ecommerce videos on our Youtube Channel!</b> </p> <p> Enjoy some Ecommerce advice from Experts, Merchants stories, PrestaShop tutorials, in subscribing to the PrestaShop Youtube Channel! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=735&url=https://www.youtube.com/user/prestashop?utm_source=back+office&utm_medium=tipoftheday&utm_campaign=Youtube-launch&utm_content=launch%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dvideotraining_suscribe\"> Subscribe now! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_videotraining_suscribe\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_alias`
+-- Cấu trúc bảng cho bảng `jms_alias`
 --
 
 CREATE TABLE `jms_alias` (
@@ -1337,7 +1337,7 @@ CREATE TABLE `jms_alias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_alias`
+-- Đang đổ dữ liệu cho bảng `jms_alias`
 --
 
 INSERT INTO `jms_alias` (`id_alias`, `alias`, `search`, `active`) VALUES
@@ -1347,7 +1347,7 @@ INSERT INTO `jms_alias` (`id_alias`, `alias`, `search`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attachment`
+-- Cấu trúc bảng cho bảng `jms_attachment`
 --
 
 CREATE TABLE `jms_attachment` (
@@ -1361,7 +1361,7 @@ CREATE TABLE `jms_attachment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attachment_lang`
+-- Cấu trúc bảng cho bảng `jms_attachment_lang`
 --
 
 CREATE TABLE `jms_attachment_lang` (
@@ -1374,7 +1374,7 @@ CREATE TABLE `jms_attachment_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute`
+-- Cấu trúc bảng cho bảng `jms_attribute`
 --
 
 CREATE TABLE `jms_attribute` (
@@ -1385,7 +1385,7 @@ CREATE TABLE `jms_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute`
+-- Đang đổ dữ liệu cho bảng `jms_attribute`
 --
 
 INSERT INTO `jms_attribute` (`id_attribute`, `id_attribute_group`, `color`, `position`) VALUES
@@ -1406,7 +1406,7 @@ INSERT INTO `jms_attribute` (`id_attribute`, `id_attribute_group`, `color`, `pos
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_group`
+-- Cấu trúc bảng cho bảng `jms_attribute_group`
 --
 
 CREATE TABLE `jms_attribute_group` (
@@ -1417,7 +1417,7 @@ CREATE TABLE `jms_attribute_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_group`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_group`
 --
 
 INSERT INTO `jms_attribute_group` (`id_attribute_group`, `is_color_group`, `group_type`, `position`) VALUES
@@ -1427,7 +1427,7 @@ INSERT INTO `jms_attribute_group` (`id_attribute_group`, `is_color_group`, `grou
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_group_lang`
+-- Cấu trúc bảng cho bảng `jms_attribute_group_lang`
 --
 
 CREATE TABLE `jms_attribute_group_lang` (
@@ -1438,7 +1438,7 @@ CREATE TABLE `jms_attribute_group_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_group_lang`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_group_lang`
 --
 
 INSERT INTO `jms_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`, `public_name`) VALUES
@@ -1464,7 +1464,7 @@ INSERT INTO `jms_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_group_shop`
+-- Cấu trúc bảng cho bảng `jms_attribute_group_shop`
 --
 
 CREATE TABLE `jms_attribute_group_shop` (
@@ -1473,7 +1473,7 @@ CREATE TABLE `jms_attribute_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_group_shop`
 --
 
 INSERT INTO `jms_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
@@ -1483,7 +1483,7 @@ INSERT INTO `jms_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_impact`
+-- Cấu trúc bảng cho bảng `jms_attribute_impact`
 --
 
 CREATE TABLE `jms_attribute_impact` (
@@ -1497,7 +1497,7 @@ CREATE TABLE `jms_attribute_impact` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_lang`
+-- Cấu trúc bảng cho bảng `jms_attribute_lang`
 --
 
 CREATE TABLE `jms_attribute_lang` (
@@ -1507,7 +1507,7 @@ CREATE TABLE `jms_attribute_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_lang`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_lang`
 --
 
 INSERT INTO `jms_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
@@ -1629,7 +1629,7 @@ INSERT INTO `jms_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_attribute_shop`
+-- Cấu trúc bảng cho bảng `jms_attribute_shop`
 --
 
 CREATE TABLE `jms_attribute_shop` (
@@ -1638,7 +1638,7 @@ CREATE TABLE `jms_attribute_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_attribute_shop`
+-- Đang đổ dữ liệu cho bảng `jms_attribute_shop`
 --
 
 INSERT INTO `jms_attribute_shop` (`id_attribute`, `id_shop`) VALUES
@@ -1659,7 +1659,7 @@ INSERT INTO `jms_attribute_shop` (`id_attribute`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_authorization_role`
+-- Cấu trúc bảng cho bảng `jms_authorization_role`
 --
 
 CREATE TABLE `jms_authorization_role` (
@@ -1668,7 +1668,7 @@ CREATE TABLE `jms_authorization_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_authorization_role`
+-- Đang đổ dữ liệu cho bảng `jms_authorization_role`
 --
 
 INSERT INTO `jms_authorization_role` (`id_authorization_role`, `slug`) VALUES
@@ -2516,7 +2516,7 @@ INSERT INTO `jms_authorization_role` (`id_authorization_role`, `slug`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_badge`
+-- Cấu trúc bảng cho bảng `jms_badge`
 --
 
 CREATE TABLE `jms_badge` (
@@ -2531,7 +2531,7 @@ CREATE TABLE `jms_badge` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_badge`
+-- Đang đổ dữ liệu cho bảng `jms_badge`
 --
 
 INSERT INTO `jms_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_position`, `scoring`, `awb`, `validated`) VALUES
@@ -2676,7 +2676,7 @@ INSERT INTO `jms_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_p
 (139, 15, 'feature', 5, 5, 20, 0, 0),
 (140, 16, 'feature', 5, 6, 20, 0, 0),
 (141, 17, 'achievement', 7, 1, 5, 0, 1),
-(142, 18, 'achievement', 7, 2, 10, 0, 0),
+(142, 18, 'achievement', 7, 2, 10, 0, 1),
 (143, 19, 'feature', 8, 1, 15, 0, 1),
 (144, 20, 'feature', 8, 2, 15, 0, 0),
 (145, 21, 'feature', 9, 1, 15, 0, 0),
@@ -2703,7 +2703,7 @@ INSERT INTO `jms_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_p
 (166, 42, 'achievement', 12, 4, 20, 0, 0),
 (167, 43, 'achievement', 12, 5, 25, 0, 0),
 (168, 44, 'achievement', 12, 6, 30, 0, 0),
-(169, 45, 'achievement', 13, 1, 5, 0, 0),
+(169, 45, 'achievement', 13, 1, 5, 0, 1),
 (170, 46, 'achievement', 13, 2, 10, 0, 0),
 (171, 47, 'achievement', 13, 3, 15, 0, 0),
 (172, 48, 'achievement', 13, 4, 20, 0, 0),
@@ -2773,7 +2773,7 @@ INSERT INTO `jms_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_badge_lang`
+-- Cấu trúc bảng cho bảng `jms_badge_lang`
 --
 
 CREATE TABLE `jms_badge_lang` (
@@ -2785,7 +2785,7 @@ CREATE TABLE `jms_badge_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_badge_lang`
+-- Đang đổ dữ liệu cho bảng `jms_badge_lang`
 --
 
 INSERT INTO `jms_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `group_name`) VALUES
@@ -4902,7 +4902,7 @@ INSERT INTO `jms_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `gro
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier`
+-- Cấu trúc bảng cho bảng `jms_carrier`
 --
 
 CREATE TABLE `jms_carrier` (
@@ -4930,7 +4930,7 @@ CREATE TABLE `jms_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier`
+-- Đang đổ dữ liệu cho bảng `jms_carrier`
 --
 
 INSERT INTO `jms_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `name`, `url`, `active`, `deleted`, `shipping_handling`, `range_behavior`, `is_module`, `is_free`, `shipping_external`, `need_range`, `external_module_name`, `shipping_method`, `position`, `max_width`, `max_height`, `max_depth`, `max_weight`, `grade`) VALUES
@@ -4940,7 +4940,7 @@ INSERT INTO `jms_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_group`
+-- Cấu trúc bảng cho bảng `jms_carrier_group`
 --
 
 CREATE TABLE `jms_carrier_group` (
@@ -4949,7 +4949,7 @@ CREATE TABLE `jms_carrier_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_group`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_group`
 --
 
 INSERT INTO `jms_carrier_group` (`id_carrier`, `id_group`) VALUES
@@ -4963,7 +4963,7 @@ INSERT INTO `jms_carrier_group` (`id_carrier`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_lang`
+-- Cấu trúc bảng cho bảng `jms_carrier_lang`
 --
 
 CREATE TABLE `jms_carrier_lang` (
@@ -4974,7 +4974,7 @@ CREATE TABLE `jms_carrier_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_lang`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_lang`
 --
 
 INSERT INTO `jms_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALUES
@@ -5000,7 +5000,7 @@ INSERT INTO `jms_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_shop`
+-- Cấu trúc bảng cho bảng `jms_carrier_shop`
 --
 
 CREATE TABLE `jms_carrier_shop` (
@@ -5009,7 +5009,7 @@ CREATE TABLE `jms_carrier_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_shop`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_shop`
 --
 
 INSERT INTO `jms_carrier_shop` (`id_carrier`, `id_shop`) VALUES
@@ -5019,7 +5019,7 @@ INSERT INTO `jms_carrier_shop` (`id_carrier`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_tax_rules_group_shop`
+-- Cấu trúc bảng cho bảng `jms_carrier_tax_rules_group_shop`
 --
 
 CREATE TABLE `jms_carrier_tax_rules_group_shop` (
@@ -5029,7 +5029,7 @@ CREATE TABLE `jms_carrier_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_tax_rules_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_tax_rules_group_shop`
 --
 
 INSERT INTO `jms_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group`, `id_shop`) VALUES
@@ -5039,7 +5039,7 @@ INSERT INTO `jms_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_grou
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_carrier_zone`
+-- Cấu trúc bảng cho bảng `jms_carrier_zone`
 --
 
 CREATE TABLE `jms_carrier_zone` (
@@ -5048,7 +5048,7 @@ CREATE TABLE `jms_carrier_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_carrier_zone`
+-- Đang đổ dữ liệu cho bảng `jms_carrier_zone`
 --
 
 INSERT INTO `jms_carrier_zone` (`id_carrier`, `id_zone`) VALUES
@@ -5059,7 +5059,7 @@ INSERT INTO `jms_carrier_zone` (`id_carrier`, `id_zone`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart`
+-- Cấu trúc bảng cho bảng `jms_cart`
 --
 
 CREATE TABLE `jms_cart` (
@@ -5086,7 +5086,7 @@ CREATE TABLE `jms_cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cart`
+-- Đang đổ dữ liệu cho bảng `jms_cart`
 --
 
 INSERT INTO `jms_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `delivery_option`, `id_lang`, `id_address_delivery`, `id_address_invoice`, `id_currency`, `id_customer`, `id_guest`, `secure_key`, `recyclable`, `gift`, `gift_message`, `mobile_theme`, `allow_seperated_package`, `date_add`, `date_upd`, `checkout_session_data`) VALUES
@@ -5095,12 +5095,13 @@ INSERT INTO `jms_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `de
 (3, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2019-03-11 09:14:41', '2019-03-11 09:14:41', NULL),
 (4, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2019-03-11 09:14:41', '2019-03-11 09:14:41', NULL),
 (5, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2019-03-11 09:14:41', '2019-03-11 09:14:41', NULL),
-(6, 1, 1, 0, '', 1, 0, 0, 1, 0, 3, '', 0, 0, '', 0, 0, '2019-03-14 06:24:50', '2019-03-14 06:24:50', NULL);
+(6, 1, 1, 0, '', 1, 0, 0, 1, 0, 3, '', 0, 0, '', 0, 0, '2019-03-14 06:24:50', '2019-03-14 06:24:50', NULL),
+(7, 1, 1, 0, '', 1, 0, 0, 1, 0, 6, '', 0, 0, '', 0, 0, '2019-03-18 04:38:30', '2019-03-18 04:38:45', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checkout-addresses-step\":{\"step_is_reachable\":false,\"step_is_complete\":false,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":null}');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_cart_rule`
+-- Cấu trúc bảng cho bảng `jms_cart_cart_rule`
 --
 
 CREATE TABLE `jms_cart_cart_rule` (
@@ -5111,7 +5112,7 @@ CREATE TABLE `jms_cart_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_product`
+-- Cấu trúc bảng cho bảng `jms_cart_product`
 --
 
 CREATE TABLE `jms_cart_product` (
@@ -5126,16 +5127,18 @@ CREATE TABLE `jms_cart_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cart_product`
+-- Đang đổ dữ liệu cho bảng `jms_cart_product`
 --
 
 INSERT INTO `jms_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `id_shop`, `id_product_attribute`, `id_customization`, `quantity`, `date_add`) VALUES
-(6, 55, 0, 1, 0, 0, 1, '2019-03-14 06:24:50');
+(6, 55, 0, 1, 0, 0, 1, '2019-03-14 06:24:50'),
+(7, 20, 0, 1, 40, 0, 1, '2019-03-18 04:38:45'),
+(7, 21, 0, 1, 48, 0, 1, '2019-03-18 04:38:30');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule`
+-- Cấu trúc bảng cho bảng `jms_cart_rule`
 --
 
 CREATE TABLE `jms_cart_rule` (
@@ -5177,7 +5180,7 @@ CREATE TABLE `jms_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_carrier`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_carrier`
 --
 
 CREATE TABLE `jms_cart_rule_carrier` (
@@ -5188,7 +5191,7 @@ CREATE TABLE `jms_cart_rule_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_combination`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_combination`
 --
 
 CREATE TABLE `jms_cart_rule_combination` (
@@ -5199,7 +5202,7 @@ CREATE TABLE `jms_cart_rule_combination` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_country`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_country`
 --
 
 CREATE TABLE `jms_cart_rule_country` (
@@ -5210,7 +5213,7 @@ CREATE TABLE `jms_cart_rule_country` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_group`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_group`
 --
 
 CREATE TABLE `jms_cart_rule_group` (
@@ -5221,7 +5224,7 @@ CREATE TABLE `jms_cart_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_lang`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_lang`
 --
 
 CREATE TABLE `jms_cart_rule_lang` (
@@ -5233,7 +5236,7 @@ CREATE TABLE `jms_cart_rule_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_product_rule`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_product_rule`
 --
 
 CREATE TABLE `jms_cart_rule_product_rule` (
@@ -5245,7 +5248,7 @@ CREATE TABLE `jms_cart_rule_product_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_product_rule_group`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_product_rule_group`
 --
 
 CREATE TABLE `jms_cart_rule_product_rule_group` (
@@ -5257,7 +5260,7 @@ CREATE TABLE `jms_cart_rule_product_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_product_rule_value`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_product_rule_value`
 --
 
 CREATE TABLE `jms_cart_rule_product_rule_value` (
@@ -5268,7 +5271,7 @@ CREATE TABLE `jms_cart_rule_product_rule_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cart_rule_shop`
+-- Cấu trúc bảng cho bảng `jms_cart_rule_shop`
 --
 
 CREATE TABLE `jms_cart_rule_shop` (
@@ -5279,7 +5282,7 @@ CREATE TABLE `jms_cart_rule_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category`
+-- Cấu trúc bảng cho bảng `jms_category`
 --
 
 CREATE TABLE `jms_category` (
@@ -5297,7 +5300,7 @@ CREATE TABLE `jms_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category`
+-- Đang đổ dữ liệu cho bảng `jms_category`
 --
 
 INSERT INTO `jms_category` (`id_category`, `id_parent`, `id_shop_default`, `level_depth`, `nleft`, `nright`, `active`, `date_add`, `date_upd`, `position`, `is_root_category`) VALUES
@@ -5312,7 +5315,7 @@ INSERT INTO `jms_category` (`id_category`, `id_parent`, `id_shop_default`, `leve
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_group`
+-- Cấu trúc bảng cho bảng `jms_category_group`
 --
 
 CREATE TABLE `jms_category_group` (
@@ -5321,7 +5324,7 @@ CREATE TABLE `jms_category_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_group`
+-- Đang đổ dữ liệu cho bảng `jms_category_group`
 --
 
 INSERT INTO `jms_category_group` (`id_category`, `id_group`) VALUES
@@ -5348,7 +5351,7 @@ INSERT INTO `jms_category_group` (`id_category`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_lang`
+-- Cấu trúc bảng cho bảng `jms_category_lang`
 --
 
 CREATE TABLE `jms_category_lang` (
@@ -5364,7 +5367,7 @@ CREATE TABLE `jms_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_lang`
+-- Đang đổ dữ liệu cho bảng `jms_category_lang`
 --
 
 INSERT INTO `jms_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -5420,7 +5423,7 @@ INSERT INTO `jms_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `d
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_product`
+-- Cấu trúc bảng cho bảng `jms_category_product`
 --
 
 CREATE TABLE `jms_category_product` (
@@ -5430,7 +5433,7 @@ CREATE TABLE `jms_category_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_product`
+-- Đang đổ dữ liệu cho bảng `jms_category_product`
 --
 
 INSERT INTO `jms_category_product` (`id_category`, `id_product`, `position`) VALUES
@@ -5543,7 +5546,7 @@ INSERT INTO `jms_category_product` (`id_category`, `id_product`, `position`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_category_shop`
+-- Cấu trúc bảng cho bảng `jms_category_shop`
 --
 
 CREATE TABLE `jms_category_shop` (
@@ -5553,7 +5556,7 @@ CREATE TABLE `jms_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_category_shop`
+-- Đang đổ dữ liệu cho bảng `jms_category_shop`
 --
 
 INSERT INTO `jms_category_shop` (`id_category`, `id_shop`, `position`) VALUES
@@ -5568,7 +5571,7 @@ INSERT INTO `jms_category_shop` (`id_category`, `id_shop`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms`
+-- Cấu trúc bảng cho bảng `jms_cms`
 --
 
 CREATE TABLE `jms_cms` (
@@ -5580,7 +5583,7 @@ CREATE TABLE `jms_cms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms`
+-- Đang đổ dữ liệu cho bảng `jms_cms`
 --
 
 INSERT INTO `jms_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexation`) VALUES
@@ -5593,7 +5596,7 @@ INSERT INTO `jms_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `index
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_category`
+-- Cấu trúc bảng cho bảng `jms_cms_category`
 --
 
 CREATE TABLE `jms_cms_category` (
@@ -5607,7 +5610,7 @@ CREATE TABLE `jms_cms_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_category`
+-- Đang đổ dữ liệu cho bảng `jms_cms_category`
 --
 
 INSERT INTO `jms_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `active`, `date_add`, `date_upd`, `position`) VALUES
@@ -5616,7 +5619,7 @@ INSERT INTO `jms_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_category_lang`
+-- Cấu trúc bảng cho bảng `jms_cms_category_lang`
 --
 
 CREATE TABLE `jms_cms_category_lang` (
@@ -5632,7 +5635,7 @@ CREATE TABLE `jms_cms_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_category_lang`
+-- Đang đổ dữ liệu cho bảng `jms_cms_category_lang`
 --
 
 INSERT INTO `jms_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -5649,7 +5652,7 @@ INSERT INTO `jms_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `n
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_category_shop`
+-- Cấu trúc bảng cho bảng `jms_cms_category_shop`
 --
 
 CREATE TABLE `jms_cms_category_shop` (
@@ -5658,7 +5661,7 @@ CREATE TABLE `jms_cms_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_category_shop`
+-- Đang đổ dữ liệu cho bảng `jms_cms_category_shop`
 --
 
 INSERT INTO `jms_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
@@ -5667,7 +5670,7 @@ INSERT INTO `jms_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_lang`
+-- Cấu trúc bảng cho bảng `jms_cms_lang`
 --
 
 CREATE TABLE `jms_cms_lang` (
@@ -5683,7 +5686,7 @@ CREATE TABLE `jms_cms_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_lang`
+-- Đang đổ dữ liệu cho bảng `jms_cms_lang`
 --
 
 INSERT INTO `jms_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `head_seo_title`, `meta_description`, `meta_keywords`, `content`, `link_rewrite`) VALUES
@@ -5737,7 +5740,7 @@ INSERT INTO `jms_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `head_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_role`
+-- Cấu trúc bảng cho bảng `jms_cms_role`
 --
 
 CREATE TABLE `jms_cms_role` (
@@ -5747,7 +5750,7 @@ CREATE TABLE `jms_cms_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_cms_role`
+-- Đang đổ dữ liệu cho bảng `jms_cms_role`
 --
 
 INSERT INTO `jms_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
@@ -5757,7 +5760,7 @@ INSERT INTO `jms_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_role_lang`
+-- Cấu trúc bảng cho bảng `jms_cms_role_lang`
 --
 
 CREATE TABLE `jms_cms_role_lang` (
@@ -5770,7 +5773,7 @@ CREATE TABLE `jms_cms_role_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cms_shop`
+-- Cấu trúc bảng cho bảng `jms_cms_shop`
 --
 
 CREATE TABLE `jms_cms_shop` (
@@ -5779,7 +5782,7 @@ CREATE TABLE `jms_cms_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_cms_shop`
+-- Đang đổ dữ liệu cho bảng `jms_cms_shop`
 --
 
 INSERT INTO `jms_cms_shop` (`id_cms`, `id_shop`) VALUES
@@ -5792,7 +5795,7 @@ INSERT INTO `jms_cms_shop` (`id_cms`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_condition`
+-- Cấu trúc bảng cho bảng `jms_condition`
 --
 
 CREATE TABLE `jms_condition` (
@@ -5811,260 +5814,260 @@ CREATE TABLE `jms_condition` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_condition`
+-- Đang đổ dữ liệu cho bảng `jms_condition`
 --
 
 INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '1', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 1, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-03-14 22:01:18', '2019-03-14 22:01:18'),
-(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '1', 'hook', 'actionObjectProductAddAfter', 1, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '10', 'hook', 'actionObjectProductAddAfter', 1, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '2', 'hook', 'actionObjectContactAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '2', 'hook', 'actionObjectContactAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(20, 20, 'install', '', '>=', '7', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '1', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 1, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '0', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '1', 'hook', 'actionObjectShopAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '1', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '1', 'hook', 'actionObjectShopGroupAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '4', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '4', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '4', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '4', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '4', 'time', '3', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '2', 'time', '4', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '1', 'hook', 'actionObjectCartAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '1', 'hook', 'actionObjectCartAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '1', 'hook', 'actionObjectCartAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '1', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '0', 'time', '4', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '0', 'time', '8', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '0', 'time', '4', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(81, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(82, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '27', 'hook', 'actionObjectImageAddAfter', 1, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '50', 'hook', 'actionObjectImageAddAfter', 1, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '100', 'hook', 'actionObjectImageAddAfter', 1, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '334', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '110', 'time', '4', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '110', 'time', '8', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '0', 'hook', 'actionObjectCMSAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(92, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(93, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '0', 'hook', 'newOrder', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(106, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(107, 158, 'install', '', '>=', '90', '', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(108, 159, 'install', '', '<=', '90', '', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(109, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(110, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(111, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(112, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(113, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(114, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(115, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:19', '2019-03-15 00:01:12'),
-(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-03-14 22:01:19', '2019-03-14 22:01:19'),
-(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20');
+(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '1', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 1, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '1', 'hook', 'actionObjectProductAddAfter', 1, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '10', 'hook', 'actionObjectProductAddAfter', 1, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '35', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '2', 'hook', 'actionObjectContactAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '2', 'hook', 'actionObjectContactAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(20, 20, 'install', '', '>=', '7', '1', 'time', '1', 1, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '1', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 1, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '0', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '1', 'hook', 'actionObjectShopAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '1', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '1', 'hook', 'actionObjectShopGroupAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '7', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '7', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '7', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '4', 'time', '2', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '4', 'time', '3', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '2', 'time', '4', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '2', 'hook', 'actionObjectCartAddAfter', 1, '2019-03-17 21:44:23', '2019-03-18 04:38:30'),
+(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '2', 'hook', 'actionObjectCartAddAfter', 0, '2019-03-17 21:44:23', '2019-03-18 05:32:10'),
+(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '2', 'hook', 'actionObjectCartAddAfter', 0, '2019-03-17 21:44:23', '2019-03-18 05:32:10'),
+(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '2', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 05:32:10'),
+(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '2', 'time', '4', 0, '2019-03-17 21:44:23', '2019-03-18 05:32:10'),
+(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '2', 'time', '8', 0, '2019-03-17 21:44:23', '2019-03-18 05:32:10'),
+(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2019-03-17 21:44:23', '2019-03-18 00:10:16'),
+(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '0', 'time', '4', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(81, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(82, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-03-17 21:44:23', '2019-03-17 21:44:23'),
+(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '27', 'hook', 'actionObjectImageAddAfter', 1, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '50', 'hook', 'actionObjectImageAddAfter', 1, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '100', 'hook', 'actionObjectImageAddAfter', 1, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '334', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '110', 'time', '4', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '110', 'time', '8', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '0', 'hook', 'actionObjectCMSAddAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(92, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(93, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '0', 'hook', 'newOrder', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(106, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(107, 158, 'install', '', '>=', '90', '', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(108, 159, 'install', '', '<=', '90', '', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(109, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(110, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(111, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(112, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(113, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(114, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(115, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:24', '2019-03-17 21:44:24'),
+(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-03-17 21:44:24', '2019-03-18 00:10:16'),
+(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25');
 INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-15 00:01:12'),
-(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20'),
-(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-03-14 22:01:20', '2019-03-14 22:01:20');
+(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-18 00:10:16'),
+(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25'),
+(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-03-17 21:44:25', '2019-03-17 21:44:25');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_condition_advice`
+-- Cấu trúc bảng cho bảng `jms_condition_advice`
 --
 
 CREATE TABLE `jms_condition_advice` (
@@ -6074,7 +6077,7 @@ CREATE TABLE `jms_condition_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_condition_advice`
+-- Đang đổ dữ liệu cho bảng `jms_condition_advice`
 --
 
 INSERT INTO `jms_condition_advice` (`id_condition`, `id_advice`, `display`) VALUES
@@ -6142,15 +6145,32 @@ INSERT INTO `jms_condition_advice` (`id_condition`, `id_advice`, `display`) VALU
 (19, 62, 1),
 (19, 63, 1),
 (19, 64, 1),
+(19, 65, 1),
+(19, 66, 1),
+(19, 67, 1),
+(19, 68, 1),
+(19, 69, 1),
+(19, 70, 1),
+(19, 71, 1),
+(19, 72, 1),
+(19, 73, 1),
+(19, 74, 1),
+(19, 75, 1),
+(19, 76, 1),
+(19, 77, 1),
+(19, 78, 1),
+(19, 79, 1),
+(19, 80, 1),
 (106, 2, 0),
 (106, 18, 0),
 (106, 34, 0),
-(106, 50, 0);
+(106, 50, 0),
+(106, 66, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_condition_badge`
+-- Cấu trúc bảng cho bảng `jms_condition_badge`
 --
 
 CREATE TABLE `jms_condition_badge` (
@@ -6159,7 +6179,7 @@ CREATE TABLE `jms_condition_badge` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_condition_badge`
+-- Đang đổ dữ liệu cho bảng `jms_condition_badge`
 --
 
 INSERT INTO `jms_condition_badge` (`id_condition`, `id_badge`) VALUES
@@ -6403,7 +6423,7 @@ INSERT INTO `jms_condition_badge` (`id_condition`, `id_badge`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration`
+-- Cấu trúc bảng cho bảng `jms_configuration`
 --
 
 CREATE TABLE `jms_configuration` (
@@ -6417,7 +6437,7 @@ CREATE TABLE `jms_configuration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration`
+-- Đang đổ dữ liệu cho bảng `jms_configuration`
 --
 
 INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -6753,15 +6773,15 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (330, NULL, NULL, 'CONF_PS_WIREPAYMENT_VAR_FOREIGN', '2', '2019-03-11 09:14:57', '2019-03-11 09:14:57'),
 (331, NULL, NULL, 'GF_INSTALL_CALC', '1', '2019-03-11 09:15:40', '2019-03-11 04:16:56'),
 (332, NULL, NULL, 'GF_CURRENT_LEVEL', '1', '2019-03-11 09:15:40', '2019-03-11 09:15:40'),
-(333, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '65', '2019-03-11 09:15:40', '2019-03-12 23:37:14'),
-(334, NULL, NULL, 'GF_NOTIFICATION', '8', '2019-03-11 09:15:40', '2019-03-12 23:37:14'),
+(333, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '80', '2019-03-11 09:15:40', '2019-03-18 05:32:10'),
+(334, NULL, NULL, 'GF_NOTIFICATION', '10', '2019-03-11 09:15:40', '2019-03-18 05:32:10'),
 (335, NULL, NULL, 'CRONJOBS_ADMIN_DIR', '7ae80a0263a63bd7f21a1d96e02a089b', '2019-03-11 09:15:40', '2019-03-11 04:16:44'),
 (336, NULL, NULL, 'CRONJOBS_MODE', 'webservice', '2019-03-11 09:15:40', '2019-03-11 09:15:40'),
 (337, NULL, NULL, 'CRONJOBS_MODULE_VERSION', '1.4.0', '2019-03-11 09:15:40', '2019-03-11 09:15:40'),
 (338, NULL, NULL, 'CRONJOBS_WEBSERVICE_ID', '0', '2019-03-11 09:15:40', '2019-03-11 09:15:40'),
 (339, NULL, NULL, 'CRONJOBS_EXECUTION_TOKEN', 'e16515e711f4bf17f6262f90c8aec2e0', '2019-03-11 09:15:40', '2019-03-11 09:15:40'),
 (340, NULL, NULL, 'BLOCKREASSURANCE_NBBLOCKS', '5', '2019-03-11 09:15:54', '2019-03-11 09:15:54'),
-(341, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '133|208', '2019-03-11 04:16:56', '2019-03-12 23:37:14'),
+(341, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '169', '2019-03-11 04:16:56', '2019-03-18 05:32:10'),
 (342, NULL, NULL, 'ONBOARDINGV2_SHUT_DOWN', '1', '2019-03-11 04:16:59', '2019-03-11 04:16:59'),
 (343, NULL, NULL, 'ONBOARDINGV2_CURRENT_STEP', '14', '2019-03-11 04:16:59', '2019-03-11 04:16:59'),
 (344, NULL, NULL, 'PS_CCCCSS_VERSION', '3', '2019-03-11 04:19:39', '2019-03-11 05:38:31'),
@@ -6919,12 +6939,15 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (495, NULL, NULL, 'PS_ROUTE_jmsblog-post', 'jmsblog/{category_slug}/{post_id}_{slug}.html', '2019-03-11 05:38:31', '2019-03-11 05:38:31'),
 (496, NULL, NULL, 'PS_ROUTE_jmsblog-category', 'jmsblog/{category_id}_{slug}.html', '2019-03-11 05:38:31', '2019-03-11 05:38:31'),
 (497, NULL, NULL, 'PS_ROUTE_jmsblog-archive', 'jmsblog/archive-month/{archive}.html', '2019-03-11 05:38:31', '2019-03-11 05:38:31'),
-(498, NULL, NULL, 'PS_ROUTE_jmsblog-tag', 'jmsblog/tag/{tag}.html', '2019-03-11 05:38:31', '2019-03-11 05:38:31');
+(498, NULL, NULL, 'PS_ROUTE_jmsblog-tag', 'jmsblog/tag/{tag}.html', '2019-03-11 05:38:31', '2019-03-11 05:38:31'),
+(499, NULL, NULL, 'JMSBLOG_POST_LAYOUT', 'post-layout-default.tpl', '2019-03-18 03:42:55', '2019-03-18 03:42:55'),
+(500, NULL, NULL, 'JMSBLOG_CATEGORY_LAYOUT', 'category-layout-default.tpl', '2019-03-18 03:42:55', '2019-03-18 03:42:55'),
+(501, NULL, NULL, 'JMSBLOG_CATEGORIES_LAYOUT', 'categories-layout-defaut.tpl', '2019-03-18 03:42:55', '2019-03-18 03:42:55');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration_kpi`
+-- Cấu trúc bảng cho bảng `jms_configuration_kpi`
 --
 
 CREATE TABLE `jms_configuration_kpi` (
@@ -6938,7 +6961,7 @@ CREATE TABLE `jms_configuration_kpi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration_kpi`
+-- Đang đổ dữ liệu cho bảng `jms_configuration_kpi`
 --
 
 INSERT INTO `jms_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -6990,7 +7013,7 @@ INSERT INTO `jms_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration_kpi_lang`
+-- Cấu trúc bảng cho bảng `jms_configuration_kpi_lang`
 --
 
 CREATE TABLE `jms_configuration_kpi_lang` (
@@ -7001,7 +7024,7 @@ CREATE TABLE `jms_configuration_kpi_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration_kpi_lang`
+-- Đang đổ dữ liệu cho bảng `jms_configuration_kpi_lang`
 --
 
 INSERT INTO `jms_configuration_kpi_lang` (`id_configuration_kpi`, `id_lang`, `value`, `date_upd`) VALUES
@@ -7011,7 +7034,7 @@ INSERT INTO `jms_configuration_kpi_lang` (`id_configuration_kpi`, `id_lang`, `va
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_configuration_lang`
+-- Cấu trúc bảng cho bảng `jms_configuration_lang`
 --
 
 CREATE TABLE `jms_configuration_lang` (
@@ -7022,7 +7045,7 @@ CREATE TABLE `jms_configuration_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_configuration_lang`
+-- Đang đổ dữ liệu cho bảng `jms_configuration_lang`
 --
 
 INSERT INTO `jms_configuration_lang` (`id_configuration`, `id_lang`, `value`, `date_upd`) VALUES
@@ -7147,7 +7170,7 @@ INSERT INTO `jms_configuration_lang` (`id_configuration`, `id_lang`, `value`, `d
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_connections`
+-- Cấu trúc bảng cho bảng `jms_connections`
 --
 
 CREATE TABLE `jms_connections` (
@@ -7162,7 +7185,7 @@ CREATE TABLE `jms_connections` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_connections`
+-- Đang đổ dữ liệu cho bảng `jms_connections`
 --
 
 INSERT INTO `jms_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_guest`, `id_page`, `ip_address`, `date_add`, `http_referer`) VALUES
@@ -7205,12 +7228,18 @@ INSERT INTO `jms_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id
 (37, 1, 1, 3, 2, 0, '2019-03-14 23:30:03', ''),
 (38, 1, 1, 3, 2, 0, '2019-03-15 00:17:26', ''),
 (39, 1, 1, 3, 1, 0, '2019-03-15 02:35:31', ''),
-(40, 1, 1, 3, 1, 0, '2019-03-15 03:08:23', '');
+(40, 1, 1, 3, 1, 0, '2019-03-15 03:08:23', ''),
+(41, 1, 1, 5, 2, 0, '2019-03-17 21:44:08', ''),
+(42, 1, 1, 6, 1, 0, '2019-03-17 21:46:18', ''),
+(43, 1, 1, 7, 2, 0, '2019-03-17 21:58:45', ''),
+(44, 1, 1, 8, 2, 0, '2019-03-18 00:13:43', ''),
+(45, 1, 1, 6, 2, 0, '2019-03-18 00:23:20', ''),
+(46, 1, 1, 6, 2, 2130706433, '2019-03-18 05:05:11', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_connections_page`
+-- Cấu trúc bảng cho bảng `jms_connections_page`
 --
 
 CREATE TABLE `jms_connections_page` (
@@ -7223,7 +7252,7 @@ CREATE TABLE `jms_connections_page` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_connections_source`
+-- Cấu trúc bảng cho bảng `jms_connections_source`
 --
 
 CREATE TABLE `jms_connections_source` (
@@ -7238,7 +7267,7 @@ CREATE TABLE `jms_connections_source` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_contact`
+-- Cấu trúc bảng cho bảng `jms_contact`
 --
 
 CREATE TABLE `jms_contact` (
@@ -7249,7 +7278,7 @@ CREATE TABLE `jms_contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_contact`
+-- Đang đổ dữ liệu cho bảng `jms_contact`
 --
 
 INSERT INTO `jms_contact` (`id_contact`, `email`, `customer_service`, `position`) VALUES
@@ -7259,7 +7288,7 @@ INSERT INTO `jms_contact` (`id_contact`, `email`, `customer_service`, `position`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_contact_lang`
+-- Cấu trúc bảng cho bảng `jms_contact_lang`
 --
 
 CREATE TABLE `jms_contact_lang` (
@@ -7270,7 +7299,7 @@ CREATE TABLE `jms_contact_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_contact_lang`
+-- Đang đổ dữ liệu cho bảng `jms_contact_lang`
 --
 
 INSERT INTO `jms_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) VALUES
@@ -7296,7 +7325,7 @@ INSERT INTO `jms_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_contact_shop`
+-- Cấu trúc bảng cho bảng `jms_contact_shop`
 --
 
 CREATE TABLE `jms_contact_shop` (
@@ -7305,7 +7334,7 @@ CREATE TABLE `jms_contact_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_contact_shop`
+-- Đang đổ dữ liệu cho bảng `jms_contact_shop`
 --
 
 INSERT INTO `jms_contact_shop` (`id_contact`, `id_shop`) VALUES
@@ -7315,7 +7344,7 @@ INSERT INTO `jms_contact_shop` (`id_contact`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_country`
+-- Cấu trúc bảng cho bảng `jms_country`
 --
 
 CREATE TABLE `jms_country` (
@@ -7333,7 +7362,7 @@ CREATE TABLE `jms_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_country`
+-- Đang đổ dữ liệu cho bảng `jms_country`
 --
 
 INSERT INTO `jms_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `call_prefix`, `active`, `contains_states`, `need_identification_number`, `need_zip_code`, `zip_code_format`, `display_tax_label`) VALUES
@@ -7585,7 +7614,7 @@ INSERT INTO `jms_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_country_lang`
+-- Cấu trúc bảng cho bảng `jms_country_lang`
 --
 
 CREATE TABLE `jms_country_lang` (
@@ -7595,7 +7624,7 @@ CREATE TABLE `jms_country_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_country_lang`
+-- Đang đổ dữ liệu cho bảng `jms_country_lang`
 --
 
 INSERT INTO `jms_country_lang` (`id_country`, `id_lang`, `name`) VALUES
@@ -9799,7 +9828,7 @@ INSERT INTO `jms_country_lang` (`id_country`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_country_shop`
+-- Cấu trúc bảng cho bảng `jms_country_shop`
 --
 
 CREATE TABLE `jms_country_shop` (
@@ -9808,7 +9837,7 @@ CREATE TABLE `jms_country_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_country_shop`
+-- Đang đổ dữ liệu cho bảng `jms_country_shop`
 --
 
 INSERT INTO `jms_country_shop` (`id_country`, `id_shop`) VALUES
@@ -10060,7 +10089,7 @@ INSERT INTO `jms_country_shop` (`id_country`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_cronjobs`
+-- Cấu trúc bảng cho bảng `jms_cronjobs`
 --
 
 CREATE TABLE `jms_cronjobs` (
@@ -10082,7 +10111,7 @@ CREATE TABLE `jms_cronjobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_currency`
+-- Cấu trúc bảng cho bảng `jms_currency`
 --
 
 CREATE TABLE `jms_currency` (
@@ -10095,7 +10124,7 @@ CREATE TABLE `jms_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_currency`
+-- Đang đổ dữ liệu cho bảng `jms_currency`
 --
 
 INSERT INTO `jms_currency` (`id_currency`, `name`, `iso_code`, `conversion_rate`, `deleted`, `active`) VALUES
@@ -10105,7 +10134,7 @@ INSERT INTO `jms_currency` (`id_currency`, `name`, `iso_code`, `conversion_rate`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_currency_shop`
+-- Cấu trúc bảng cho bảng `jms_currency_shop`
 --
 
 CREATE TABLE `jms_currency_shop` (
@@ -10115,7 +10144,7 @@ CREATE TABLE `jms_currency_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_currency_shop`
+-- Đang đổ dữ liệu cho bảng `jms_currency_shop`
 --
 
 INSERT INTO `jms_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VALUES
@@ -10125,7 +10154,7 @@ INSERT INTO `jms_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer`
+-- Cấu trúc bảng cho bảng `jms_customer`
 --
 
 CREATE TABLE `jms_customer` (
@@ -10165,7 +10194,7 @@ CREATE TABLE `jms_customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_customer`
+-- Đang đổ dữ liệu cho bảng `jms_customer`
 --
 
 INSERT INTO `jms_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender`, `id_default_group`, `id_lang`, `id_risk`, `company`, `siret`, `ape`, `firstname`, `lastname`, `email`, `passwd`, `last_passwd_gen`, `birthday`, `newsletter`, `ip_registration_newsletter`, `newsletter_date_add`, `optin`, `website`, `outstanding_allow_amount`, `show_public_prices`, `max_payment_days`, `secure_key`, `note`, `active`, `is_guest`, `deleted`, `date_add`, `date_upd`, `reset_password_token`, `reset_password_validity`) VALUES
@@ -10174,7 +10203,7 @@ INSERT INTO `jms_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gende
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_group`
+-- Cấu trúc bảng cho bảng `jms_customer_group`
 --
 
 CREATE TABLE `jms_customer_group` (
@@ -10183,7 +10212,7 @@ CREATE TABLE `jms_customer_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_customer_group`
+-- Đang đổ dữ liệu cho bảng `jms_customer_group`
 --
 
 INSERT INTO `jms_customer_group` (`id_customer`, `id_group`) VALUES
@@ -10192,7 +10221,7 @@ INSERT INTO `jms_customer_group` (`id_customer`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_message`
+-- Cấu trúc bảng cho bảng `jms_customer_message`
 --
 
 CREATE TABLE `jms_customer_message` (
@@ -10212,7 +10241,7 @@ CREATE TABLE `jms_customer_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_message_sync_imap`
+-- Cấu trúc bảng cho bảng `jms_customer_message_sync_imap`
 --
 
 CREATE TABLE `jms_customer_message_sync_imap` (
@@ -10222,7 +10251,7 @@ CREATE TABLE `jms_customer_message_sync_imap` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customer_thread`
+-- Cấu trúc bảng cho bảng `jms_customer_thread`
 --
 
 CREATE TABLE `jms_customer_thread` (
@@ -10243,7 +10272,7 @@ CREATE TABLE `jms_customer_thread` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customization`
+-- Cấu trúc bảng cho bảng `jms_customization`
 --
 
 CREATE TABLE `jms_customization` (
@@ -10261,7 +10290,7 @@ CREATE TABLE `jms_customization` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customization_field`
+-- Cấu trúc bảng cho bảng `jms_customization_field`
 --
 
 CREATE TABLE `jms_customization_field` (
@@ -10276,7 +10305,7 @@ CREATE TABLE `jms_customization_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customization_field_lang`
+-- Cấu trúc bảng cho bảng `jms_customization_field_lang`
 --
 
 CREATE TABLE `jms_customization_field_lang` (
@@ -10289,7 +10318,7 @@ CREATE TABLE `jms_customization_field_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_customized_data`
+-- Cấu trúc bảng cho bảng `jms_customized_data`
 --
 
 CREATE TABLE `jms_customized_data` (
@@ -10305,7 +10334,7 @@ CREATE TABLE `jms_customized_data` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_date_range`
+-- Cấu trúc bảng cho bảng `jms_date_range`
 --
 
 CREATE TABLE `jms_date_range` (
@@ -10317,7 +10346,7 @@ CREATE TABLE `jms_date_range` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_delivery`
+-- Cấu trúc bảng cho bảng `jms_delivery`
 --
 
 CREATE TABLE `jms_delivery` (
@@ -10332,7 +10361,7 @@ CREATE TABLE `jms_delivery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_delivery`
+-- Đang đổ dữ liệu cho bảng `jms_delivery`
 --
 
 INSERT INTO `jms_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrier`, `id_range_price`, `id_range_weight`, `id_zone`, `price`) VALUES
@@ -10344,7 +10373,7 @@ INSERT INTO `jms_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carri
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_emailsubscription`
+-- Cấu trúc bảng cho bảng `jms_emailsubscription`
 --
 
 CREATE TABLE `jms_emailsubscription` (
@@ -10361,7 +10390,7 @@ CREATE TABLE `jms_emailsubscription` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_employee`
+-- Cấu trúc bảng cho bảng `jms_employee`
 --
 
 CREATE TABLE `jms_employee` (
@@ -10396,7 +10425,7 @@ CREATE TABLE `jms_employee` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_employee`
+-- Đang đổ dữ liệu cho bảng `jms_employee`
 --
 
 INSERT INTO `jms_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`) VALUES
@@ -10405,7 +10434,7 @@ INSERT INTO `jms_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_employee_shop`
+-- Cấu trúc bảng cho bảng `jms_employee_shop`
 --
 
 CREATE TABLE `jms_employee_shop` (
@@ -10414,7 +10443,7 @@ CREATE TABLE `jms_employee_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_employee_shop`
+-- Đang đổ dữ liệu cho bảng `jms_employee_shop`
 --
 
 INSERT INTO `jms_employee_shop` (`id_employee`, `id_shop`) VALUES
@@ -10423,7 +10452,7 @@ INSERT INTO `jms_employee_shop` (`id_employee`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature`
+-- Cấu trúc bảng cho bảng `jms_feature`
 --
 
 CREATE TABLE `jms_feature` (
@@ -10432,7 +10461,7 @@ CREATE TABLE `jms_feature` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature`
+-- Đang đổ dữ liệu cho bảng `jms_feature`
 --
 
 INSERT INTO `jms_feature` (`id_feature`, `position`) VALUES
@@ -10445,7 +10474,7 @@ INSERT INTO `jms_feature` (`id_feature`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_lang`
+-- Cấu trúc bảng cho bảng `jms_feature_lang`
 --
 
 CREATE TABLE `jms_feature_lang` (
@@ -10455,7 +10484,7 @@ CREATE TABLE `jms_feature_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_lang`
+-- Đang đổ dữ liệu cho bảng `jms_feature_lang`
 --
 
 INSERT INTO `jms_feature_lang` (`id_feature`, `id_lang`, `name`) VALUES
@@ -10508,7 +10537,7 @@ INSERT INTO `jms_feature_lang` (`id_feature`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_product`
+-- Cấu trúc bảng cho bảng `jms_feature_product`
 --
 
 CREATE TABLE `jms_feature_product` (
@@ -10520,7 +10549,7 @@ CREATE TABLE `jms_feature_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_shop`
+-- Cấu trúc bảng cho bảng `jms_feature_shop`
 --
 
 CREATE TABLE `jms_feature_shop` (
@@ -10529,7 +10558,7 @@ CREATE TABLE `jms_feature_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_shop`
+-- Đang đổ dữ liệu cho bảng `jms_feature_shop`
 --
 
 INSERT INTO `jms_feature_shop` (`id_feature`, `id_shop`) VALUES
@@ -10542,7 +10571,7 @@ INSERT INTO `jms_feature_shop` (`id_feature`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_value`
+-- Cấu trúc bảng cho bảng `jms_feature_value`
 --
 
 CREATE TABLE `jms_feature_value` (
@@ -10552,7 +10581,7 @@ CREATE TABLE `jms_feature_value` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_value`
+-- Đang đổ dữ liệu cho bảng `jms_feature_value`
 --
 
 INSERT INTO `jms_feature_value` (`id_feature_value`, `id_feature`, `custom`) VALUES
@@ -10577,7 +10606,7 @@ INSERT INTO `jms_feature_value` (`id_feature_value`, `id_feature`, `custom`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_feature_value_lang`
+-- Cấu trúc bảng cho bảng `jms_feature_value_lang`
 --
 
 CREATE TABLE `jms_feature_value_lang` (
@@ -10587,7 +10616,7 @@ CREATE TABLE `jms_feature_value_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_feature_value_lang`
+-- Đang đổ dữ liệu cho bảng `jms_feature_value_lang`
 --
 
 INSERT INTO `jms_feature_value_lang` (`id_feature_value`, `id_lang`, `value`) VALUES
@@ -10748,7 +10777,7 @@ INSERT INTO `jms_feature_value_lang` (`id_feature_value`, `id_lang`, `value`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_gender`
+-- Cấu trúc bảng cho bảng `jms_gender`
 --
 
 CREATE TABLE `jms_gender` (
@@ -10757,7 +10786,7 @@ CREATE TABLE `jms_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_gender`
+-- Đang đổ dữ liệu cho bảng `jms_gender`
 --
 
 INSERT INTO `jms_gender` (`id_gender`, `type`) VALUES
@@ -10767,7 +10796,7 @@ INSERT INTO `jms_gender` (`id_gender`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_gender_lang`
+-- Cấu trúc bảng cho bảng `jms_gender_lang`
 --
 
 CREATE TABLE `jms_gender_lang` (
@@ -10777,7 +10806,7 @@ CREATE TABLE `jms_gender_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_gender_lang`
+-- Đang đổ dữ liệu cho bảng `jms_gender_lang`
 --
 
 INSERT INTO `jms_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
@@ -10803,7 +10832,7 @@ INSERT INTO `jms_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group`
+-- Cấu trúc bảng cho bảng `jms_group`
 --
 
 CREATE TABLE `jms_group` (
@@ -10816,7 +10845,7 @@ CREATE TABLE `jms_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_group`
+-- Đang đổ dữ liệu cho bảng `jms_group`
 --
 
 INSERT INTO `jms_group` (`id_group`, `reduction`, `price_display_method`, `show_prices`, `date_add`, `date_upd`) VALUES
@@ -10827,7 +10856,7 @@ INSERT INTO `jms_group` (`id_group`, `reduction`, `price_display_method`, `show_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group_lang`
+-- Cấu trúc bảng cho bảng `jms_group_lang`
 --
 
 CREATE TABLE `jms_group_lang` (
@@ -10837,7 +10866,7 @@ CREATE TABLE `jms_group_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_group_lang`
+-- Đang đổ dữ liệu cho bảng `jms_group_lang`
 --
 
 INSERT INTO `jms_group_lang` (`id_group`, `id_lang`, `name`) VALUES
@@ -10872,7 +10901,7 @@ INSERT INTO `jms_group_lang` (`id_group`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group_reduction`
+-- Cấu trúc bảng cho bảng `jms_group_reduction`
 --
 
 CREATE TABLE `jms_group_reduction` (
@@ -10885,7 +10914,7 @@ CREATE TABLE `jms_group_reduction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_group_shop`
+-- Cấu trúc bảng cho bảng `jms_group_shop`
 --
 
 CREATE TABLE `jms_group_shop` (
@@ -10894,7 +10923,7 @@ CREATE TABLE `jms_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_group_shop`
 --
 
 INSERT INTO `jms_group_shop` (`id_group`, `id_shop`) VALUES
@@ -10905,7 +10934,7 @@ INSERT INTO `jms_group_shop` (`id_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_gsitemap_sitemap`
+-- Cấu trúc bảng cho bảng `jms_gsitemap_sitemap`
 --
 
 CREATE TABLE `jms_gsitemap_sitemap` (
@@ -10916,7 +10945,7 @@ CREATE TABLE `jms_gsitemap_sitemap` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_guest`
+-- Cấu trúc bảng cho bảng `jms_guest`
 --
 
 CREATE TABLE `jms_guest` (
@@ -10939,19 +10968,23 @@ CREATE TABLE `jms_guest` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_guest`
+-- Đang đổ dữ liệu cho bảng `jms_guest`
 --
 
 INSERT INTO `jms_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id_customer`, `javascript`, `screen_resolution_x`, `screen_resolution_y`, `screen_color`, `sun_java`, `adobe_flash`, `adobe_director`, `apple_quicktime`, `real_player`, `windows_media`, `accept_language`, `mobile_theme`) VALUES
 (1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
 (2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
 (3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0),
-(4, 3, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+(4, 3, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0),
+(5, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0),
+(6, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0),
+(7, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0),
+(8, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_homeslider`
+-- Cấu trúc bảng cho bảng `jms_homeslider`
 --
 
 CREATE TABLE `jms_homeslider` (
@@ -10960,7 +10993,7 @@ CREATE TABLE `jms_homeslider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_homeslider`
+-- Đang đổ dữ liệu cho bảng `jms_homeslider`
 --
 
 INSERT INTO `jms_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
@@ -10971,7 +11004,7 @@ INSERT INTO `jms_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_homeslider_slides`
+-- Cấu trúc bảng cho bảng `jms_homeslider_slides`
 --
 
 CREATE TABLE `jms_homeslider_slides` (
@@ -10981,7 +11014,7 @@ CREATE TABLE `jms_homeslider_slides` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_homeslider_slides`
+-- Đang đổ dữ liệu cho bảng `jms_homeslider_slides`
 --
 
 INSERT INTO `jms_homeslider_slides` (`id_homeslider_slides`, `position`, `active`) VALUES
@@ -10992,7 +11025,7 @@ INSERT INTO `jms_homeslider_slides` (`id_homeslider_slides`, `position`, `active
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_homeslider_slides_lang`
+-- Cấu trúc bảng cho bảng `jms_homeslider_slides_lang`
 --
 
 CREATE TABLE `jms_homeslider_slides_lang` (
@@ -11006,7 +11039,7 @@ CREATE TABLE `jms_homeslider_slides_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_homeslider_slides_lang`
+-- Đang đổ dữ liệu cho bảng `jms_homeslider_slides_lang`
 --
 
 INSERT INTO `jms_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `title`, `description`, `legend`, `url`, `image`) VALUES
@@ -11041,7 +11074,7 @@ INSERT INTO `jms_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `ti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook`
+-- Cấu trúc bảng cho bảng `jms_hook`
 --
 
 CREATE TABLE `jms_hook` (
@@ -11053,7 +11086,7 @@ CREATE TABLE `jms_hook` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_hook`
+-- Đang đổ dữ liệu cho bảng `jms_hook`
 --
 
 INSERT INTO `jms_hook` (`id_hook`, `name`, `title`, `description`, `position`) VALUES
@@ -11310,7 +11343,7 @@ INSERT INTO `jms_hook` (`id_hook`, `name`, `title`, `description`, `position`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook_alias`
+-- Cấu trúc bảng cho bảng `jms_hook_alias`
 --
 
 CREATE TABLE `jms_hook_alias` (
@@ -11320,7 +11353,7 @@ CREATE TABLE `jms_hook_alias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_hook_alias`
+-- Đang đổ dữ liệu cho bảng `jms_hook_alias`
 --
 
 INSERT INTO `jms_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
@@ -11411,7 +11444,7 @@ INSERT INTO `jms_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook_module`
+-- Cấu trúc bảng cho bảng `jms_hook_module`
 --
 
 CREATE TABLE `jms_hook_module` (
@@ -11422,7 +11455,7 @@ CREATE TABLE `jms_hook_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_hook_module`
+-- Đang đổ dữ liệu cho bảng `jms_hook_module`
 --
 
 INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VALUES
@@ -11626,7 +11659,7 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hook_module_exceptions`
+-- Cấu trúc bảng cho bảng `jms_hook_module_exceptions`
 --
 
 CREATE TABLE `jms_hook_module_exceptions` (
@@ -11640,7 +11673,7 @@ CREATE TABLE `jms_hook_module_exceptions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hotdeals`
+-- Cấu trúc bảng cho bảng `jms_hotdeals`
 --
 
 CREATE TABLE `jms_hotdeals` (
@@ -11649,7 +11682,7 @@ CREATE TABLE `jms_hotdeals` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_hotdeals`
+-- Đang đổ dữ liệu cho bảng `jms_hotdeals`
 --
 
 INSERT INTO `jms_hotdeals` (`id_hotdeals`, `id_shop`) VALUES
@@ -11664,7 +11697,7 @@ INSERT INTO `jms_hotdeals` (`id_hotdeals`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_hotdeals_items`
+-- Cấu trúc bảng cho bảng `jms_hotdeals_items`
 --
 
 CREATE TABLE `jms_hotdeals_items` (
@@ -11676,7 +11709,7 @@ CREATE TABLE `jms_hotdeals_items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_hotdeals_items`
+-- Đang đổ dữ liệu cho bảng `jms_hotdeals_items`
 --
 
 INSERT INTO `jms_hotdeals_items` (`id_hotdeals`, `id_product`, `deals_time`, `ordering`, `active`) VALUES
@@ -11691,7 +11724,7 @@ INSERT INTO `jms_hotdeals_items` (`id_hotdeals`, `id_product`, `deals_time`, `or
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image`
+-- Cấu trúc bảng cho bảng `jms_image`
 --
 
 CREATE TABLE `jms_image` (
@@ -11702,7 +11735,7 @@ CREATE TABLE `jms_image` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image`
+-- Đang đổ dữ liệu cho bảng `jms_image`
 --
 
 INSERT INTO `jms_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
@@ -12044,7 +12077,7 @@ INSERT INTO `jms_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image_lang`
+-- Cấu trúc bảng cho bảng `jms_image_lang`
 --
 
 CREATE TABLE `jms_image_lang` (
@@ -12054,7 +12087,7 @@ CREATE TABLE `jms_image_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image_lang`
+-- Đang đổ dữ liệu cho bảng `jms_image_lang`
 --
 
 INSERT INTO `jms_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
@@ -14066,7 +14099,7 @@ INSERT INTO `jms_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image_shop`
+-- Cấu trúc bảng cho bảng `jms_image_shop`
 --
 
 CREATE TABLE `jms_image_shop` (
@@ -14077,7 +14110,7 @@ CREATE TABLE `jms_image_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image_shop`
+-- Đang đổ dữ liệu cho bảng `jms_image_shop`
 --
 
 INSERT INTO `jms_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALUES
@@ -14419,7 +14452,7 @@ INSERT INTO `jms_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_image_type`
+-- Cấu trúc bảng cho bảng `jms_image_type`
 --
 
 CREATE TABLE `jms_image_type` (
@@ -14435,7 +14468,7 @@ CREATE TABLE `jms_image_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_image_type`
+-- Đang đổ dữ liệu cho bảng `jms_image_type`
 --
 
 INSERT INTO `jms_image_type` (`id_image_type`, `name`, `width`, `height`, `products`, `categories`, `manufacturers`, `suppliers`, `stores`) VALUES
@@ -14450,7 +14483,7 @@ INSERT INTO `jms_image_type` (`id_image_type`, `name`, `width`, `height`, `produ
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_import_match`
+-- Cấu trúc bảng cho bảng `jms_import_match`
 --
 
 CREATE TABLE `jms_import_match` (
@@ -14463,7 +14496,7 @@ CREATE TABLE `jms_import_match` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_info`
+-- Cấu trúc bảng cho bảng `jms_info`
 --
 
 CREATE TABLE `jms_info` (
@@ -14471,7 +14504,7 @@ CREATE TABLE `jms_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_info`
+-- Đang đổ dữ liệu cho bảng `jms_info`
 --
 
 INSERT INTO `jms_info` (`id_info`) VALUES
@@ -14480,7 +14513,7 @@ INSERT INTO `jms_info` (`id_info`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_info_lang`
+-- Cấu trúc bảng cho bảng `jms_info_lang`
 --
 
 CREATE TABLE `jms_info_lang` (
@@ -14491,7 +14524,7 @@ CREATE TABLE `jms_info_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_info_lang`
+-- Đang đổ dữ liệu cho bảng `jms_info_lang`
 --
 
 INSERT INTO `jms_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
@@ -14508,7 +14541,7 @@ INSERT INTO `jms_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_info_shop`
+-- Cấu trúc bảng cho bảng `jms_info_shop`
 --
 
 CREATE TABLE `jms_info_shop` (
@@ -14517,7 +14550,7 @@ CREATE TABLE `jms_info_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_info_shop`
+-- Đang đổ dữ liệu cho bảng `jms_info_shop`
 --
 
 INSERT INTO `jms_info_shop` (`id_info`, `id_shop`) VALUES
@@ -14526,7 +14559,7 @@ INSERT INTO `jms_info_shop` (`id_info`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_categories`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_categories`
 --
 
 CREATE TABLE `jms_jmsblog_categories` (
@@ -14537,7 +14570,7 @@ CREATE TABLE `jms_jmsblog_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_categories`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_categories`
 --
 
 INSERT INTO `jms_jmsblog_categories` (`category_id`, `ordering`, `active`, `parent`) VALUES
@@ -14549,7 +14582,7 @@ INSERT INTO `jms_jmsblog_categories` (`category_id`, `ordering`, `active`, `pare
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_categories_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_categories_lang`
 --
 
 CREATE TABLE `jms_jmsblog_categories_lang` (
@@ -14562,7 +14595,7 @@ CREATE TABLE `jms_jmsblog_categories_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_categories_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_categories_lang`
 --
 
 INSERT INTO `jms_jmsblog_categories_lang` (`category_id`, `id_lang`, `title`, `alias`, `description`, `image`) VALUES
@@ -14594,7 +14627,7 @@ INSERT INTO `jms_jmsblog_categories_lang` (`category_id`, `id_lang`, `title`, `a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_posts`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_posts`
 --
 
 CREATE TABLE `jms_jmsblog_posts` (
@@ -14609,19 +14642,19 @@ CREATE TABLE `jms_jmsblog_posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_posts`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_posts`
 --
 
 INSERT INTO `jms_jmsblog_posts` (`post_id`, `ordering`, `active`, `category_id`, `created`, `link_video`, `modified`, `views`) VALUES
-(1, 0, 1, 1, '2019-03-11 04:23:30', '', '2019-03-11 04:23:30', 5),
+(1, 0, 1, 1, '2019-03-11 04:23:30', '', '2019-03-11 04:23:30', 6),
 (2, 0, 1, 4, '2019-03-11 04:23:30', '', '2019-03-11 04:23:30', 5),
-(3, 0, 1, 2, '2019-03-11 04:23:30', '', '2019-03-11 04:23:30', 5),
+(3, 0, 1, 2, '2019-03-11 04:23:30', '', '2019-03-11 04:23:30', 6),
 (4, 0, 1, 3, '2019-03-11 04:23:30', '', '2019-03-11 04:23:30', 5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_posts_comments`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_posts_comments`
 --
 
 CREATE TABLE `jms_jmsblog_posts_comments` (
@@ -14639,7 +14672,7 @@ CREATE TABLE `jms_jmsblog_posts_comments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsblog_posts_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsblog_posts_lang`
 --
 
 CREATE TABLE `jms_jmsblog_posts_lang` (
@@ -14657,29 +14690,29 @@ CREATE TABLE `jms_jmsblog_posts_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsblog_posts_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsblog_posts_lang`
 --
 
 INSERT INTO `jms_jmsblog_posts_lang` (`post_id`, `id_lang`, `title`, `alias`, `introtext`, `fulltext`, `meta_desc`, `meta_key`, `key_ref`, `image`, `tags`) VALUES
-(1, 1, 'Fur-Free Starting With Riccardo Tisci’s First Collection', 'fur-free-starting-with-riccardo-tiscis-first-collection', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', 'ad20263d6968ba61c5b72af626921eb4.jpg', 'women'),
+(1, 1, 'Fur-Free Starting With Riccardo Tisci’s First Collection', 'fur-free-starting-with-riccardo-tiscis-first-collection', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '8dabde1aee19668643a7be5de8a9bebb.jpg', 'women'),
 (1, 2, 'Fur-Free Starting With Riccardo Tisci’s First Collection', 'fur-free-starting-with-riccardo-tiscis-first-collection', '', '', '', '', '', '', ''),
 (1, 3, 'Fur-Free Starting With Riccardo Tisci’s First Collection', 'fur-free-starting-with-riccardo-tiscis-first-collection', '', '', '', '', '', '', ''),
 (1, 4, 'Fur-Free Starting With Riccardo Tisci’s First Collection', 'fur-free-starting-with-riccardo-tiscis-first-collection', '', '', '', '', '', '', ''),
 (1, 5, 'Fur-Free Starting With Riccardo Tisci’s First Collection', 'fur-free-starting-with-riccardo-tiscis-first-collection', '', '', '', '', '', '', ''),
 (1, 7, 'Fur-Free Starting With Riccardo Tisci’s First Collection', 'fur-free-starting-with-riccardo-tiscis-first-collection', '', '', '', '', '', '', ''),
-(2, 1, 'Carla Sozzani Radically Refreshes Luxury Shopping', 'carla-sozzani-radically-refreshes-luxury-shopping', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '3b91c2f8b58650ba0b92a583670a1486.jpg', 'bag'),
+(2, 1, 'Carla Sozzani Radically Refreshes Luxury Shopping', 'carla-sozzani-radically-refreshes-luxury-shopping', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '67d2831dd92c0fb212fb26e95ec74d11.jpg', 'bag'),
 (2, 2, 'Carla Sozzani Radically Refreshes Luxury Shopping', 'carla-sozzani-radically-refreshes-luxury-shopping', '', '', '', '', '', '', ''),
 (2, 3, 'Carla Sozzani Radically Refreshes Luxury Shopping', 'carla-sozzani-radically-refreshes-luxury-shopping', '', '', '', '', '', '', ''),
 (2, 4, 'Carla Sozzani Radically Refreshes Luxury Shopping', 'carla-sozzani-radically-refreshes-luxury-shopping', '', '', '', '', '', '', ''),
 (2, 5, 'Carla Sozzani Radically Refreshes Luxury Shopping', 'carla-sozzani-radically-refreshes-luxury-shopping', '', '', '', '', '', '', ''),
 (2, 7, 'Carla Sozzani Radically Refreshes Luxury Shopping', 'carla-sozzani-radically-refreshes-luxury-shopping', '', '', '', '', '', '', ''),
-(3, 1, 'During London Fashion Week, A Vogueing Ball', 'during-london-fashion-week-a-vogueing-ball', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '2d51bedc69aabef0a416166b8ed42ddc.jpg', 'shoes'),
+(3, 1, 'During London Fashion Week, A Vogueing Ball', 'during-london-fashion-week-a-vogueing-ball', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', 'd80411e3a0b0014b1559a44931338d61.jpg', 'shoes'),
 (3, 2, 'During London Fashion Week, A Vogueing Ball', 'during-london-fashion-week-a-vogueing-ball', '', '', '', '', '', '', ''),
 (3, 3, 'During London Fashion Week, A Vogueing Ball', 'during-london-fashion-week-a-vogueing-ball', '', '', '', '', '', '', ''),
 (3, 4, 'During London Fashion Week, A Vogueing Ball', 'during-london-fashion-week-a-vogueing-ball', '', '', '', '', '', '', ''),
 (3, 5, 'During London Fashion Week, A Vogueing Ball', 'during-london-fashion-week-a-vogueing-ball', '', '', '', '', '', '', ''),
 (3, 7, 'During London Fashion Week, A Vogueing Ball', 'during-london-fashion-week-a-vogueing-ball', '', '', '', '', '', '', ''),
-(4, 1, 'Made One shoe can change your life for ever', 'made-one-shoe-can-change-your-life-for-ever', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '7d49da258ed429bb9e39dacd174ff376.jpg', 'men'),
+(4, 1, 'Made One shoe can change your life for ever', 'made-one-shoe-can-change-your-life-for-ever', '<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. ivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', 'daf338c153c1a5693501497c520db63b.jpg', 'men'),
 (4, 2, 'Made One shoe can change your life for ever', 'made-one-shoe-can-change-your-life-for-ever', '', '', '', '', '', '', ''),
 (4, 3, 'Made One shoe can change your life for ever', 'made-one-shoe-can-change-your-life-for-ever', '', '', '', '', '', '', ''),
 (4, 4, 'Made One shoe can change your life for ever', 'made-one-shoe-can-change-your-life-for-ever', '', '', '', '', '', '', ''),
@@ -14689,7 +14722,7 @@ INSERT INTO `jms_jmsblog_posts_lang` (`post_id`, `id_lang`, `title`, `alias`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsbrands`
+-- Cấu trúc bảng cho bảng `jms_jmsbrands`
 --
 
 CREATE TABLE `jms_jmsbrands` (
@@ -14698,7 +14731,7 @@ CREATE TABLE `jms_jmsbrands` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsbrands`
+-- Đang đổ dữ liệu cho bảng `jms_jmsbrands`
 --
 
 INSERT INTO `jms_jmsbrands` (`brand_id`, `id_shop`) VALUES
@@ -14715,7 +14748,7 @@ INSERT INTO `jms_jmsbrands` (`brand_id`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsbrands_logos`
+-- Cấu trúc bảng cho bảng `jms_jmsbrands_logos`
 --
 
 CREATE TABLE `jms_jmsbrands_logos` (
@@ -14725,7 +14758,7 @@ CREATE TABLE `jms_jmsbrands_logos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsbrands_logos`
+-- Đang đổ dữ liệu cho bảng `jms_jmsbrands_logos`
 --
 
 INSERT INTO `jms_jmsbrands_logos` (`brand_id`, `ordering`, `active`) VALUES
@@ -14742,7 +14775,7 @@ INSERT INTO `jms_jmsbrands_logos` (`brand_id`, `ordering`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsbrands_logos_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsbrands_logos_lang`
 --
 
 CREATE TABLE `jms_jmsbrands_logos_lang` (
@@ -14755,7 +14788,7 @@ CREATE TABLE `jms_jmsbrands_logos_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsbrands_logos_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsbrands_logos_lang`
 --
 
 INSERT INTO `jms_jmsbrands_logos_lang` (`brand_id`, `id_lang`, `title`, `description`, `url`, `image`) VALUES
@@ -14772,7 +14805,7 @@ INSERT INTO `jms_jmsbrands_logos_lang` (`brand_id`, `id_lang`, `title`, `descrip
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsfacebookusers`
+-- Cấu trúc bảng cho bảng `jms_jmsfacebookusers`
 --
 
 CREATE TABLE `jms_jmsfacebookusers` (
@@ -14792,7 +14825,7 @@ CREATE TABLE `jms_jmsfacebookusers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmshtml_left`
+-- Cấu trúc bảng cho bảng `jms_jmshtml_left`
 --
 
 CREATE TABLE `jms_jmshtml_left` (
@@ -14801,7 +14834,7 @@ CREATE TABLE `jms_jmshtml_left` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmshtml_left`
+-- Đang đổ dữ liệu cho bảng `jms_jmshtml_left`
 --
 
 INSERT INTO `jms_jmshtml_left` (`html_id`, `id_shop`) VALUES
@@ -14810,7 +14843,7 @@ INSERT INTO `jms_jmshtml_left` (`html_id`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmshtml_left_lang`
+-- Cấu trúc bảng cho bảng `jms_jmshtml_left_lang`
 --
 
 CREATE TABLE `jms_jmshtml_left_lang` (
@@ -14820,7 +14853,7 @@ CREATE TABLE `jms_jmshtml_left_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmshtml_left_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmshtml_left_lang`
 --
 
 INSERT INTO `jms_jmshtml_left_lang` (`html_id`, `id_lang`, `html`) VALUES
@@ -14829,7 +14862,7 @@ INSERT INTO `jms_jmshtml_left_lang` (`html_id`, `id_lang`, `html`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmaploc`
+-- Cấu trúc bảng cho bảng `jms_jmsmaploc`
 --
 
 CREATE TABLE `jms_jmsmaploc` (
@@ -14838,7 +14871,7 @@ CREATE TABLE `jms_jmsmaploc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmaploc`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmaploc`
 --
 
 INSERT INTO `jms_jmsmaploc` (`id_loc`, `id_shop`) VALUES
@@ -14851,7 +14884,7 @@ INSERT INTO `jms_jmsmaploc` (`id_loc`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmaploc_locs`
+-- Cấu trúc bảng cho bảng `jms_jmsmaploc_locs`
 --
 
 CREATE TABLE `jms_jmsmaploc_locs` (
@@ -14865,7 +14898,7 @@ CREATE TABLE `jms_jmsmaploc_locs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmaploc_locs`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmaploc_locs`
 --
 
 INSERT INTO `jms_jmsmaploc_locs` (`id_loc`, `class`, `address`, `latitude`, `longitude`, `icon`, `active`) VALUES
@@ -14878,7 +14911,7 @@ INSERT INTO `jms_jmsmaploc_locs` (`id_loc`, `class`, `address`, `latitude`, `lon
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmaploc_locs_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsmaploc_locs_lang`
 --
 
 CREATE TABLE `jms_jmsmaploc_locs_lang` (
@@ -14890,7 +14923,7 @@ CREATE TABLE `jms_jmsmaploc_locs_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmaploc_locs_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmaploc_locs_lang`
 --
 
 INSERT INTO `jms_jmsmaploc_locs_lang` (`id_loc`, `id_lang`, `title`, `description`, `url`) VALUES
@@ -14903,7 +14936,7 @@ INSERT INTO `jms_jmsmaploc_locs_lang` (`id_loc`, `id_lang`, `title`, `descriptio
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmegamenu`
+-- Cấu trúc bảng cho bảng `jms_jmsmegamenu`
 --
 
 CREATE TABLE `jms_jmsmegamenu` (
@@ -14920,24 +14953,24 @@ CREATE TABLE `jms_jmsmegamenu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmegamenu`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmegamenu`
 --
 
 INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `value`, `html_content`, `active`, `target`, `params`, `ordering`) VALUES
-(84, 1, 0, 'link', '', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"90\"},{\"item\":\"91\"},{\"item\":\"92\"},{\"item\":\"93\"},{\"item\":\"94\"},{\"item\":\"95\"},{\"item\":\"96\"},{\"item\":\"97\"}]}]]}}', 0),
+(84, 1, 0, 'link', '', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"90\"},{\"item\":\"91\"},{\"item\":\"92\"},{\"item\":\"93\"},{\"item\":\"94\"},{\"item\":\"95\"},{\"item\":\"96\"},{\"item\":\"97\"}]}],[{\"width\":\"12\",\"items\":[{\"item\":\"199\"},{\"item\":\"200\"},{\"item\":\"201\"},{\"item\":\"202\"},{\"item\":\"203\"},{\"item\":\"204\"},{\"item\":\"205\"},{\"item\":\"206\"}]}]]}}', 0),
 (85, 1, 0, 'category', '40', '', 1, '_self', '{\"class\":\"must-see mega-fullwidth\",\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"width\":\"1170\",\"row\":[[{\"width\":\"3\",\"items\":[{\"item\":\"143\"},{\"item\":\"144\"},{\"item\":\"145\"},{\"item\":\"146\"},{\"item\":\"147\"},{\"item\":\"148\"},{\"item\":\"149\"},{\"item\":\"150\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"151\"},{\"item\":\"152\"},{\"item\":\"153\"},{\"item\":\"154\"},{\"item\":\"155\"},{\"item\":\"156\"},{\"item\":\"157\"},{\"item\":\"158\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"159\"},{\"item\":\"160\"},{\"item\":\"161\"},{\"item\":\"162\"},{\"item\":\"163\"},{\"item\":\"164\"},{\"item\":\"165\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"166\"},{\"item\":\"167\"},{\"item\":\"168\"},{\"item\":\"169\"},{\"item\":\"170\"},{\"item\":\"171\"},{\"item\":\"172\"},{\"item\":\"173\"},{\"item\":\"174\"},{\"item\":\"175\"},{\"item\":\"176\"},{\"item\":\"177\"},{\"item\":\"178\"}]}]]}}', 2),
-(86, 1, 0, 'product', '', '', 1, '_self', '{\"class\":\"mega-fullwidth\",\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"width\":\"1480\",\"row\":[[{\"width\":\"3\",\"items\":[{\"item\":\"111\"},{\"item\":\"112\"},{\"item\":\"113\"},{\"item\":\"114\"},{\"item\":\"115\"},{\"item\":\"116\"},{\"item\":\"117\"},{\"item\":\"118\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"126\"},{\"item\":\"119\"},{\"item\":\"120\"},{\"item\":\"121\"},{\"item\":\"122\"},{\"item\":\"123\"},{\"item\":\"124\"},{\"item\":\"125\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"127\"},{\"item\":\"128\"},{\"item\":\"129\"},{\"item\":\"130\"},{\"item\":\"131\"},{\"item\":\"132\"},{\"item\":\"133\"},{\"item\":\"134\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"135\"},{\"item\":\"136\"},{\"item\":\"137\"},{\"item\":\"138\"},{\"item\":\"139\"},{\"item\":\"140\"},{\"item\":\"141\"},{\"item\":\"142\"}]}]]}}', 1),
+(86, 1, 0, 'product', '', '', 1, '_self', '{\"class\":\"mega-fullwidth collection\",\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"width\":\"\",\"class\":\"\",\"row\":[[{\"width\":\"12\",\"class\":\"\",\"items\":[{\"item\":\"212\"}]}],[{\"width\":\"12\",\"items\":[{\"item\":\"207\"}]}],[{\"width\":\"12\",\"items\":[{\"item\":\"208\"}]}],[{\"width\":\"12\",\"items\":[{\"item\":\"209\"}]}],[{\"width\":\"12\",\"items\":[{\"item\":\"210\"}]}],[{\"width\":\"12\",\"items\":[{\"item\":\"211\"}]}]]}}', 1),
 (87, 1, 0, 'product', '', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"98\"},{\"item\":\"99\"},{\"item\":\"100\"},{\"item\":\"101\"},{\"item\":\"102\"},{\"item\":\"103\"},{\"item\":\"104\"},{\"item\":\"105\"}]}]]}}', 4),
 (88, 1, 0, 'jmsblog-singlepost', '13', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"179\"},{\"item\":\"180\"},{\"item\":\"181\"},{\"item\":\"182\"},{\"item\":\"183\"}]}]]}}', 3),
 (89, 1, 0, 'link', 'index.php?controller=contact', '', 1, '_self', '{}', 5),
 (90, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 1),
-(91, 1, 84, 'link', 'index.php?settingpanel=1&jpb_homepage=6', '', 1, '_self', '{\"title\":\"1\"}', 2),
-(92, 1, 84, 'link', 'index.php?settingpanel=1&jpb_homepage=7', '', 1, '_self', '{\"title\":\"1\"}', 3),
-(93, 1, 84, 'link', 'index.php?settingpanel=1&jpb_homepage=8', '', 1, '_self', '{\"title\":\"1\"}', 4),
-(94, 1, 84, 'link', 'index.php?settingpanel=1&jpb_homepage=9', '', 1, '_self', '{\"title\":\"1\"}', 5),
-(95, 1, 84, 'link', 'index.php?settingpanel=1&jpb_homepage=10', '', 1, '_self', '{\"title\":\"1\"}', 6),
-(96, 1, 84, 'link', 'index.php?settingpanel=1&jpb_homepage=11', '', 1, '_self', '{\"title\":\"1\"}', 7),
-(97, 1, 84, 'link', 'index.php?settingpanel=1&jpb_homepage=12', '', 1, '_self', '{\"title\":\"1\"}', 8),
+(91, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 2),
+(92, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 3),
+(93, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 4),
+(94, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 5),
+(95, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 6),
+(96, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 7),
+(97, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 8),
 (98, 1, 87, 'cms', '16', '', 1, '_self', '{\"title\":\"1\"}', 1),
 (99, 1, 87, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 2),
 (100, 1, 87, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 3),
@@ -14946,38 +14979,6 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 (103, 1, 87, 'cms', '1', '', 1, '_self', '{\"title\":\"1\"}', 6),
 (104, 1, 87, 'cms', '1', '', 1, '_self', '{\"title\":\"1\"}', 7),
 (105, 1, 87, 'link', 'index.php?controller=404', '', 1, '_self', '{\"title\":\"1\"}', 8),
-(111, 1, 86, 'html', 'html_content', '<p><img src=\"themes/jms-adiva/assets/img/menu1.jpg\" alt=\"\" height=\"170\" width=\"320\" /></p>', 1, '_self', '{\"title\":\"0\"}', 0),
-(112, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 1),
-(113, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 2),
-(114, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 3),
-(115, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 4),
-(116, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 5),
-(117, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 6),
-(118, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 7),
-(119, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 9),
-(120, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 10),
-(121, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 11),
-(122, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 12),
-(123, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 13),
-(124, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 14),
-(125, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 15),
-(126, 1, 86, 'html', 'html_content', '<p><img src=\"themes/jms-adiva/assets/img/menu2.jpg\" alt=\"\" height=\"170\" width=\"320\" /></p>', 1, '_self', '{\"title\":\"0\"}', 8),
-(127, 1, 86, 'html', 'html_content', '<p><img src=\"themes/jms-adiva/assets/img/menu3.jpg\" alt=\"\" height=\"170\" width=\"320\" /></p>', 1, '_self', '{\"title\":\"0\"}', 16),
-(128, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 17),
-(129, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 18),
-(130, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 19),
-(131, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 20),
-(132, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 21),
-(133, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 22),
-(134, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 23),
-(135, 1, 86, 'html', 'html_content', '<p><img src=\"themes/jms-adiva/assets/img/menu4.jpg\" alt=\"\" height=\"170\" width=\"320\" /></p>', 1, '_self', '{\"title\":\"0\"}', 24),
-(136, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 25),
-(137, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 26),
-(138, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 27),
-(139, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 28),
-(140, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 29),
-(141, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 30),
-(142, 1, 86, 'link', '#', '', 1, '_self', '{\"title\":\"1\"}', 31),
 (143, 1, 85, 'link', '#', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 1),
 (144, 1, 85, 'link', 'index.php?id_product=14&id_product_attribute=206&rewrite=isherwood-button-down-collar-cotton&controller=product&id_lang=1&sidebar=left', '', 1, '_self', '{\"title\":\"1\"}', 2),
 (145, 1, 85, 'link', 'index.php?id_product=14&id_product_attribute=206&rewrite=isherwood-button-down-collar-cotton&controller=product&id_lang=1&sidebar=right', '', 1, '_self', '{\"title\":\"1\"}', 3),
@@ -15033,12 +15034,27 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 (195, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no', '', 1, '_self', '', 3),
 (196, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left', '', 1, '_self', '', 4),
 (197, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns', '', 1, '_self', '', 5),
-(198, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns', '', 1, '_self', '', 6);
+(198, 1, 181, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns', '', 1, '_self', '', 6),
+(199, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 9),
+(200, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 10),
+(201, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 11),
+(202, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 12),
+(203, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 13),
+(204, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 14),
+(205, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 15),
+(206, 1, 84, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 16),
+(207, 1, 86, 'html', 'html_content', '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_mella/assets/img/sub-cates/6.jpg\" /></a></p>\r\n<p><a href=\"#\" class=\"sub-cate-name\">Shoes</a></p>', 1, '_self', '{\"title\":\"1\"}', 1),
+(208, 1, 86, 'html', 'html_content', '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_mella/assets/img/sub-cates/13.jpg\" /></a></p>\r\n<p><a href=\"#\" class=\"sub-cate-name\">Bags</a></p>', 1, '_self', '{\"title\":\"1\"}', 2),
+(209, 1, 86, 'html', 'html_content', '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_mella/assets/img/sub-cates/1.jpg\" /></a></p>\r\n<p><a href=\"#\" class=\"sub-cate-name\">Decoration</a></p>', 1, '_self', '{\"title\":\"1\"}', 3),
+(210, 1, 86, 'html', 'html_content', '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_mella/assets/img/sub-cates/2.jpg\" /></a></p>\r\n<p><a href=\"#\" class=\"sub-cate-name\">Furniture</a></p>', 1, '_self', '{\"title\":\"1\"}', 4),
+(211, 1, 86, 'html', 'html_content', '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_mella/assets/img/sub-cates/3.jpg\" /></a></p>\r\n<p><a href=\"#\" class=\"sub-cate-name\">Watches</a></p>', 1, '_self', '{\"title\":\"1\"}', 5),
+(212, 1, 86, 'html', 'html_content', '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_mella/assets/img/sub-cates/7.jpg\" /></a></p>\r\n<p><a href=\"#\" class=\"sub-cate-name\">Sun & Optical Glasses</a></p>', 1, '_self', '{\"title\":\"1\"}', 0),
+(213, 1, 86, 'html', 'html_content', '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_mella/assets/img/sub-cates/4.jpg\" /></a></p>\r\n<p><a href=\"#\" class=\"sub-cate-name\">Houseware</a></p>', 1, '_self', '', 6);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmsmegamenu_lang`
+-- Cấu trúc bảng cho bảng `jms_jmsmegamenu_lang`
 --
 
 CREATE TABLE `jms_jmsmegamenu_lang` (
@@ -15049,7 +15065,7 @@ CREATE TABLE `jms_jmsmegamenu_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmsmegamenu_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmsmegamenu_lang`
 --
 
 INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) VALUES
@@ -15059,14 +15075,14 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (87, 1, 'Pages', ''),
 (88, 1, 'Blog', ''),
 (89, 1, 'Contact', 'index.php?controller=contact'),
-(90, 1, 'Home 1', 'index.php?settingpanel=1&jpb_homepage=1'),
-(91, 1, 'Home 2', 'index.php?settingpanel=1&jpb_homepage=6'),
-(92, 1, 'Home 3', 'index.php?settingpanel=1&jpb_homepage=7'),
-(93, 1, 'Home 4', 'index.php?settingpanel=1&jpb_homepage=8'),
-(94, 1, 'Home 5', 'index.php?settingpanel=1&jpb_homepage=9'),
-(95, 1, 'Home 6', 'index.php?settingpanel=1&jpb_homepage=10'),
-(96, 1, 'Home 7', 'index.php?settingpanel=1&jpb_homepage=11'),
-(97, 1, 'Home 8', 'index.php?settingpanel=1&jpb_homepage=12'),
+(90, 1, 'Home Default 1', 'index.php?settingpanel=1&jpb_homepage=1'),
+(91, 1, 'Home Classic 2', 'index.php?settingpanel=1&jpb_homepage=2'),
+(92, 1, 'Home Creative 3', 'index.php?settingpanel=1&jpb_homepage=3'),
+(93, 1, 'Home Simple 4', 'index.php?settingpanel=1&jpb_homepage=4'),
+(94, 1, 'Home Modern 5', 'index.php?settingpanel=1&jpb_homepage=5'),
+(95, 1, 'Home Minimal 6', 'index.php?settingpanel=1&jpb_homepage=6'),
+(96, 1, 'Home Collections 7', 'index.php?settingpanel=1&jpb_homepage=7'),
+(97, 1, 'Home Category 8', 'index.php?settingpanel=1&jpb_homepage=8'),
 (98, 1, 'Typography', ''),
 (99, 1, 'Inforgraphic', '#'),
 (100, 1, 'Our Store', '#'),
@@ -15075,38 +15091,6 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (103, 1, 'Offline Page', ''),
 (104, 1, 'Our Office', ''),
 (105, 1, '404 Page', 'index.php?controller=404'),
-(111, 1, 'Women Image', ''),
-(112, 1, 'Women', '#'),
-(113, 1, 'Dresess', '#'),
-(114, 1, 'Skinny', '#'),
-(115, 1, 'High-Heels', '#'),
-(116, 1, 'Jumpsuits', '#'),
-(117, 1, 'Knitwear', '#'),
-(118, 1, 'Gymwear', '#'),
-(119, 1, 'Accessories', '#'),
-(120, 1, 'Shoes & Bags', '#'),
-(121, 1, 'Sunglasses', '#'),
-(122, 1, 'Watches & Jewelry', '#'),
-(123, 1, 'Scarves & Gloves', '#'),
-(124, 1, 'Hats & Ties', '#'),
-(125, 1, 'Belts', '#'),
-(126, 1, 'Accessories Image', ''),
-(127, 1, 'Men Image', ''),
-(128, 1, 'Men', '#'),
-(129, 1, 'Blazers', '#'),
-(130, 1, 'Trousers', '#'),
-(131, 1, 'T-Shirts', '#'),
-(132, 1, 'Polo-Shirts', '#'),
-(133, 1, 'Short', '#'),
-(134, 1, 'Jeans', '#'),
-(135, 1, 'Discount Image', ''),
-(136, 1, 'DISCOUNT', '#'),
-(137, 1, 'Polo-Shirts', '#'),
-(138, 1, 'Jeans', '#'),
-(139, 1, 'Dresess', '#'),
-(140, 1, 'Shorts', '#'),
-(141, 1, 'Trousers', '#'),
-(142, 1, 'Sweatshirts', '#'),
 (85, 2, 'Shop', ''),
 (85, 3, 'Shop', ''),
 (85, 5, 'Shop', ''),
@@ -15163,34 +15147,6 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (97, 3, 'Home 8', 'index.php?settingpanel=1&jpb_homepage=12'),
 (97, 5, 'Home 8', 'index.php?settingpanel=1&jpb_homepage=12'),
 (97, 8, 'Home 8', 'index.php?settingpanel=1&jpb_homepage=12'),
-(111, 2, 'Women Image', ''),
-(111, 3, 'Women Image', ''),
-(111, 5, 'Women Image', ''),
-(111, 8, 'Women Image', ''),
-(126, 2, 'Accessories Image', ''),
-(126, 3, 'Accessories Image', ''),
-(126, 5, 'Accessories Image', ''),
-(126, 8, 'Accessories Image', ''),
-(127, 2, 'Men Image', ''),
-(127, 3, 'Men Image', ''),
-(127, 5, 'Men Image', ''),
-(127, 8, 'Men Image', ''),
-(135, 2, 'Discount Image', ''),
-(135, 3, 'Discount Image', ''),
-(135, 5, 'Discount Image', ''),
-(135, 8, 'Discount Image', ''),
-(111, 4, 'Women Image', ''),
-(111, 6, 'Women Image', ''),
-(111, 7, 'Women Image', ''),
-(126, 4, 'Accessories Image', ''),
-(126, 6, 'Accessories Image', ''),
-(126, 7, 'Accessories Image', ''),
-(127, 4, 'Men Image', ''),
-(127, 6, 'Men Image', ''),
-(127, 7, 'Men Image', ''),
-(135, 4, 'Discount Image', ''),
-(135, 6, 'Discount Image', ''),
-(135, 7, 'Discount Image', ''),
 (85, 4, 'Shop', ''),
 (85, 6, 'Shop', ''),
 (85, 7, 'Shop', ''),
@@ -15699,220 +15655,114 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) V
 (100, 8, 'Our Store', '#'),
 (101, 4, 'Search Page', 'index.php?controller=search&search_query=adiva'),
 (101, 6, 'Search Page', 'index.php?controller=search&search_query=adiva'),
-(101, 7, 'Search Page', 'index.php?controller=search&search_query=adiva');
-INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) VALUES
+(101, 7, 'Search Page', 'index.php?controller=search&search_query=adiva'),
 (102, 4, 'Compare page', 'index.php?controller=products-comparison'),
 (102, 6, 'Compare page', 'index.php?controller=products-comparison'),
 (102, 7, 'Compare page', 'index.php?controller=products-comparison'),
 (105, 4, '404 Page', 'index.php?controller=404'),
 (105, 6, '404 Page', 'index.php?controller=404'),
 (105, 7, '404 Page', 'index.php?controller=404'),
-(112, 2, 'Women', '#'),
-(112, 3, 'Women', '#'),
-(112, 4, 'Women', '#'),
-(112, 5, 'Women', '#'),
-(112, 6, 'Women', '#'),
-(112, 7, 'Women', '#'),
-(112, 8, 'Women', '#'),
-(113, 2, 'Dresess', '#'),
-(113, 3, 'Dresess', '#'),
-(113, 4, 'Dresess', '#'),
-(113, 5, 'Dresess', '#'),
-(113, 6, 'Dresess', '#'),
-(113, 7, 'Dresess', '#'),
-(113, 8, 'Dresess', '#'),
-(114, 2, 'Skinny', '#'),
-(114, 3, 'Skinny', '#'),
-(114, 4, 'Skinny', '#'),
-(114, 5, 'Skinny', '#'),
-(114, 6, 'Skinny', '#'),
-(114, 7, 'Skinny', '#'),
-(114, 8, 'Skinny', '#'),
-(115, 2, 'High-Heels', '#'),
-(115, 3, 'High-Heels', '#'),
-(115, 4, 'High-Heels', '#'),
-(115, 5, 'High-Heels', '#'),
-(115, 6, 'High-Heels', '#'),
-(115, 7, 'High-Heels', '#'),
-(115, 8, 'High-Heels', '#'),
-(116, 2, 'Jumpsuits', '#'),
-(116, 3, 'Jumpsuits', '#'),
-(116, 4, 'Jumpsuits', '#'),
-(116, 5, 'Jumpsuits', '#'),
-(116, 6, 'Jumpsuits', '#'),
-(116, 7, 'Jumpsuits', '#'),
-(116, 8, 'Jumpsuits', '#'),
-(117, 2, 'Knitwear', '#'),
-(117, 3, 'Knitwear', '#'),
-(117, 4, 'Knitwear', '#'),
-(117, 5, 'Knitwear', '#'),
-(117, 6, 'Knitwear', '#'),
-(117, 7, 'Knitwear', '#'),
-(117, 8, 'Knitwear', '#'),
-(118, 2, 'Gymwear', '#'),
-(118, 3, 'Gymwear', '#'),
-(118, 4, 'Gymwear', '#'),
-(118, 5, 'Gymwear', '#'),
-(118, 6, 'Gymwear', '#'),
-(118, 7, 'Gymwear', '#'),
-(118, 8, 'Gymwear', '#'),
-(119, 2, 'Accessories', '#'),
-(119, 3, 'Accessories', '#'),
-(119, 4, 'Accessories', '#'),
-(119, 5, 'Accessories', '#'),
-(119, 6, 'Accessories', '#'),
-(119, 7, 'Accessories', '#'),
-(119, 8, 'Accessories', '#'),
-(120, 2, 'Shoes & Bags', '#'),
-(120, 3, 'Shoes & Bags', '#'),
-(120, 4, 'Shoes & Bags', '#'),
-(120, 5, 'Shoes & Bags', '#'),
-(120, 6, 'Shoes & Bags', '#'),
-(120, 7, 'Shoes & Bags', '#'),
-(120, 8, 'Shoes & Bags', '#'),
-(121, 2, 'Sunglasses', '#'),
-(121, 3, 'Sunglasses', '#'),
-(121, 4, 'Sunglasses', '#'),
-(121, 5, 'Sunglasses', '#'),
-(121, 6, 'Sunglasses', '#'),
-(121, 7, 'Sunglasses', '#'),
-(121, 8, 'Sunglasses', '#'),
-(122, 2, 'Watches & Jewelry', '#'),
-(122, 3, 'Watches & Jewelry', '#'),
-(122, 4, 'Watches & Jewelry', '#'),
-(122, 5, 'Watches & Jewelry', '#'),
-(122, 6, 'Watches & Jewelry', '#'),
-(122, 7, 'Watches & Jewelry', '#'),
-(122, 8, 'Watches & Jewelry', '#'),
-(123, 2, 'Scarves & Gloves', '#'),
-(123, 3, 'Scarves & Gloves', '#'),
-(123, 4, 'Scarves & Gloves', '#'),
-(123, 5, 'Scarves & Gloves', '#'),
-(123, 6, 'Scarves & Gloves', '#'),
-(123, 7, 'Scarves & Gloves', '#'),
-(123, 8, 'Scarves & Gloves', '#'),
-(124, 2, 'Hats & Ties', '#'),
-(124, 3, 'Hats & Ties', '#'),
-(124, 4, 'Hats & Ties', '#'),
-(124, 5, 'Hats & Ties', '#'),
-(124, 6, 'Hats & Ties', '#'),
-(124, 7, 'Hats & Ties', '#'),
-(124, 8, 'Hats & Ties', '#'),
-(125, 2, 'Belts', '#'),
-(125, 3, 'Belts', '#'),
-(125, 4, 'Belts', '#'),
-(125, 5, 'Belts', '#'),
-(125, 6, 'Belts', '#'),
-(125, 7, 'Belts', '#'),
-(125, 8, 'Belts', '#'),
-(128, 2, 'Men', '#'),
-(128, 3, 'Men', '#'),
-(128, 4, 'Men', '#'),
-(128, 5, 'Men', '#'),
-(128, 6, 'Men', '#'),
-(128, 7, 'Men', '#'),
-(128, 8, 'Men', '#'),
-(129, 2, 'Blazers', '#'),
-(129, 3, 'Blazers', '#'),
-(129, 4, 'Blazers', '#'),
-(129, 5, 'Blazers', '#'),
-(129, 6, 'Blazers', '#'),
-(129, 7, 'Blazers', '#'),
-(129, 8, 'Blazers', '#'),
-(130, 2, 'Trousers', '#'),
-(130, 3, 'Trousers', '#'),
-(130, 4, 'Trousers', '#'),
-(130, 5, 'Trousers', '#'),
-(130, 6, 'Trousers', '#'),
-(130, 7, 'Trousers', '#'),
-(130, 8, 'Trousers', '#'),
-(131, 2, 'T-Shirts', '#'),
-(131, 3, 'T-Shirts', '#'),
-(131, 4, 'T-Shirts', '#'),
-(131, 5, 'T-Shirts', '#'),
-(131, 6, 'T-Shirts', '#'),
-(131, 7, 'T-Shirts', '#'),
-(131, 8, 'T-Shirts', '#'),
-(132, 2, 'Polo-Shirts', '#'),
-(132, 3, 'Polo-Shirts', '#'),
-(132, 4, 'Polo-Shirts', '#'),
-(132, 5, 'Polo-Shirts', '#'),
-(132, 6, 'Polo-Shirts', '#'),
-(132, 7, 'Polo-Shirts', '#'),
-(132, 8, 'Polo-Shirts', '#'),
-(133, 2, 'Short', '#'),
-(133, 3, 'Short', '#'),
-(133, 4, 'Short', '#'),
-(133, 5, 'Short', '#'),
-(133, 6, 'Short', '#'),
-(133, 7, 'Short', '#'),
-(133, 8, 'Short', '#'),
-(134, 2, 'Jeans', '#'),
-(134, 3, 'Jeans', '#'),
-(134, 4, 'Jeans', '#'),
-(134, 5, 'Jeans', '#'),
-(134, 6, 'Jeans', '#'),
-(134, 7, 'Jeans', '#'),
-(134, 8, 'Jeans', '#'),
-(136, 2, 'DISCOUNT', '#'),
-(136, 3, 'DISCOUNT', '#'),
-(136, 4, 'DISCOUNT', '#'),
-(136, 5, 'DISCOUNT', '#'),
-(136, 6, 'DISCOUNT', '#'),
-(136, 7, 'DISCOUNT', '#'),
-(136, 8, 'DISCOUNT', '#'),
-(137, 2, 'Polo-Shirts', '#'),
-(137, 3, 'Polo-Shirts', '#'),
-(137, 4, 'Polo-Shirts', '#'),
-(137, 5, 'Polo-Shirts', '#'),
-(137, 6, 'Polo-Shirts', '#'),
-(137, 7, 'Polo-Shirts', '#'),
-(137, 8, 'Polo-Shirts', '#'),
-(138, 2, 'Jeans', '#'),
-(138, 3, 'Jeans', '#'),
-(138, 4, 'Jeans', '#'),
-(138, 5, 'Jeans', '#'),
-(138, 6, 'Jeans', '#'),
-(138, 7, 'Jeans', '#'),
-(138, 8, 'Jeans', '#'),
-(139, 2, 'Dresess', '#'),
-(139, 3, 'Dresess', '#'),
-(139, 4, 'Dresess', '#'),
-(139, 5, 'Dresess', '#'),
-(139, 6, 'Dresess', '#'),
-(139, 7, 'Dresess', '#'),
-(139, 8, 'Dresess', '#'),
-(140, 2, 'Shorts', '#'),
-(140, 3, 'Shorts', '#'),
-(140, 4, 'Shorts', '#'),
-(140, 5, 'Shorts', '#'),
-(140, 6, 'Shorts', '#'),
-(140, 7, 'Shorts', '#'),
-(140, 8, 'Shorts', '#'),
-(141, 2, 'Trousers', '#'),
-(141, 3, 'Trousers', '#'),
-(141, 4, 'Trousers', '#'),
-(141, 5, 'Trousers', '#'),
-(141, 6, 'Trousers', '#'),
-(141, 7, 'Trousers', '#'),
-(141, 8, 'Trousers', '#'),
-(142, 2, 'Sweatshirts', '#'),
-(142, 3, 'Sweatshirts', '#'),
-(142, 4, 'Sweatshirts', '#'),
-(142, 5, 'Sweatshirts', '#'),
-(142, 6, 'Sweatshirts', '#'),
-(142, 7, 'Sweatshirts', '#'),
-(142, 8, 'Sweatshirts', '#'),
 (86, 2, 'Collection', ''),
 (86, 3, 'Collection', ''),
 (86, 4, 'Collection', ''),
 (86, 5, 'Collection', ''),
-(86, 7, 'Collection', '');
+(86, 7, 'Collection', ''),
+(199, 1, 'Home Lookbook 9', 'index.php?settingpanel=1&jpb_homepage=9'),
+(199, 2, 'Home Lookbook 9', ''),
+(199, 3, 'Home Lookbook 9', ''),
+(199, 4, 'Home Lookbook 9', ''),
+(199, 5, 'Home Lookbook 9', ''),
+(199, 7, 'Home Lookbook 9', ''),
+(200, 1, 'Home Gallery 10', 'index.php?settingpanel=1&jpb_homepage=10'),
+(200, 2, '10_home_gallery', ''),
+(200, 3, '10_home_gallery', ''),
+(200, 4, '10_home_gallery', ''),
+(200, 5, '10_home_gallery', ''),
+(200, 7, '10_home_gallery', ''),
+(201, 1, 'Home Carousel 11', 'index.php?settingpanel=1&jpb_homepage=11'),
+(201, 2, 'Home Carousel 11', ''),
+(201, 3, 'Home Carousel 11', ''),
+(201, 4, 'Home Carousel 11', ''),
+(201, 5, 'Home Carousel 11', ''),
+(201, 7, 'Home Carousel 11', ''),
+(202, 1, 'Home Boxed 12', 'index.php?settingpanel=1&jpb_homepage=12'),
+(202, 2, 'Home Boxed', ''),
+(202, 3, 'Home Boxed', ''),
+(202, 4, 'Home Boxed', ''),
+(202, 5, 'Home Boxed', ''),
+(202, 7, 'Home Boxed', ''),
+(203, 1, 'Home Parallax 13', 'index.php?settingpanel=1&jpb_homepage=13'),
+(203, 2, 'Home Parallax 13', ''),
+(203, 3, 'Home Parallax 13', ''),
+(203, 4, 'Home Parallax 13', ''),
+(203, 5, 'Home Parallax 13', ''),
+(203, 7, 'Home Parallax 13', '');
+INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) VALUES
+(204, 1, 'Home Instagram 14', 'index.php?settingpanel=1&jpb_homepage=14'),
+(204, 2, 'Home Instagram 14', ''),
+(204, 3, 'Home Instagram 14', ''),
+(204, 4, 'Home Instagram 14', ''),
+(204, 5, 'Home Instagram 14', ''),
+(204, 7, 'Home Instagram 14', ''),
+(205, 1, 'Home Slider 15', 'index.php?settingpanel=1&jpb_homepage=15'),
+(205, 2, 'Home Slider 15', ''),
+(205, 3, 'Home Slider 15', ''),
+(205, 4, 'Home Slider 15', ''),
+(205, 5, 'Home Slider 15', ''),
+(205, 7, 'Home Slider 15', ''),
+(206, 1, 'Home Products 16', 'index.php?settingpanel=1&jpb_homepage=16'),
+(206, 2, 'Home Products 16', ''),
+(206, 3, 'Home Products 16', ''),
+(206, 4, 'Home Products 16', ''),
+(206, 5, 'Home Products 16', ''),
+(206, 7, 'Home Products 16', ''),
+(207, 1, 'Shoes', ''),
+(207, 2, 'Shoes', ''),
+(207, 3, 'Shoes', ''),
+(207, 4, 'Shoes', ''),
+(207, 5, 'Shoes', ''),
+(207, 7, 'Shoes', ''),
+(208, 1, 'Bags', ''),
+(208, 2, 'Bags', ''),
+(208, 3, 'Bags', ''),
+(208, 4, 'Bags', ''),
+(208, 5, 'Bags', ''),
+(208, 7, 'Bags', ''),
+(209, 1, 'Decoration', ''),
+(209, 2, 'Decoration', ''),
+(209, 3, 'Decoration', ''),
+(209, 4, 'Decoration', ''),
+(209, 5, 'Decoration', ''),
+(209, 7, 'Decoration', ''),
+(210, 1, 'Furniture', ''),
+(210, 2, 'Furniture', ''),
+(210, 3, 'Furniture', ''),
+(210, 4, 'Furniture', ''),
+(210, 5, 'Furniture', ''),
+(210, 7, 'Furniture', ''),
+(211, 1, 'Watches', ''),
+(211, 2, 'Watches', ''),
+(211, 3, 'Watches', ''),
+(211, 4, 'Watches', ''),
+(211, 5, 'Watches', ''),
+(211, 7, 'Watches', ''),
+(212, 1, 'Sun & Optical Glasses', ''),
+(212, 2, 'Sun & Optical Glasses', ''),
+(212, 3, 'Sun & Optical Glasses', ''),
+(212, 4, 'Sun & Optical Glasses', ''),
+(212, 5, 'Sun & Optical Glasses', ''),
+(212, 7, 'Sun & Optical Glasses', ''),
+(213, 1, 'Houseware', ''),
+(213, 2, 'Houseware', ''),
+(213, 3, 'Houseware', ''),
+(213, 4, 'Houseware', ''),
+(213, 5, 'Houseware', ''),
+(213, 7, 'Houseware', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmspagebuilder`
+-- Cấu trúc bảng cho bảng `jms_jmspagebuilder`
 --
 
 CREATE TABLE `jms_jmspagebuilder` (
@@ -15921,7 +15771,7 @@ CREATE TABLE `jms_jmspagebuilder` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmspagebuilder`
+-- Đang đổ dữ liệu cho bảng `jms_jmspagebuilder`
 --
 
 INSERT INTO `jms_jmspagebuilder` (`id_homepage`, `id_shop`) VALUES
@@ -15938,7 +15788,7 @@ INSERT INTO `jms_jmspagebuilder` (`id_homepage`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmspagebuilder_homepages`
+-- Cấu trúc bảng cho bảng `jms_jmspagebuilder_homepages`
 --
 
 CREATE TABLE `jms_jmspagebuilder_homepages` (
@@ -15953,13 +15803,13 @@ CREATE TABLE `jms_jmspagebuilder_homepages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmspagebuilder_homepages`
+-- Đang đổ dữ liệu cho bảng `jms_jmspagebuilder_homepages`
 --
 
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
 (1, 'Home Default 1', 'home1.css', 'home1.js', 'home_1', '[{\"type\":\"row\",\"name\":\"Header\",\"layout\":\"2,8,2\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"header header-type-1\",\"name\":\"Header\",\"layout\":\"2,8,2\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-2\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"col-logo\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"image\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/logo1.png\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Mella\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-8\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"mega-menu\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsmegamenu\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-2\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"left-icon-group\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayMyAccountBlock\",\"modulename\":\"jmswishlist\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_shoppingcart\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsajaxsearch\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_customersignin\",\"addon\":\"module\"},\"fields\":[]}]}]},{\"type\":\"row\",\"name\":\"Slider\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"\",\"name\":\"Slider\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"slider-type-1\"},\"addons\":[{\"type\":\"sliderlayer\",\"settings\":{\"active\":1,\"addon\":\"sliderlayer\"},\"fields\":[{\"type\":\"text\",\"label\":\"Slide IDs\",\"name\":\"slide_ids\",\"multilang\":0,\"value\":\"21,22,23\"},{\"type\":\"text\",\"label\":\"Slide Width\",\"name\":\"max_width\",\"multilang\":0,\"value\":\"1863\"},{\"type\":\"text\",\"label\":\"Slide Height\",\"name\":\"max_height\",\"multilang\":0,\"value\":\"1040\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Pause Hover\",\"name\":\"pausehover\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"100px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"100px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner\",\"layout\":\"8,4\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Banner\",\"layout\":\"8,4\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-8\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner1\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-banner1.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Today of</p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>TI Shirt</p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>New arrivals with big discounts</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-underline_JMSQUOTE_>DISCOVER MORE</a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner2\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-banner2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>New Clothes for</p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>CUTIES</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-underline_JMSQUOTE_>SHOP NOW</a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"30px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"30px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"30\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner\",\"layout\":\"4,8\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Banner\",\"layout\":\"4,8\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-4\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner3\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-banner3.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Sale up to</p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>30<span>%</span></p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>For Men Sunglasess</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"30\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner4\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-banner4.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Time for</p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Jewellery</p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>Get Off 25%, Hurry Up</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-8\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner5\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-banner5.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Winter Women 2018</p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Boutique</p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>Speical Collection</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-underline_JMSQUOTE_>DISCOVER MORE</a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"95px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"95px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"95\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Featured Lookbook\",\"layout\":\"12,5,2,5\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"featured_lookbook\",\"name\":\"Featured Lookbook\",\"layout\":\"12,5,2,5\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Featured Lookbook \",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"Browse the best our lookbook\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"52\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-5\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"spring\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-spring.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_lookbook-name_JMSQUOTE_>Spring Women’s Lookbook</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"96\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"autumn\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-autumn.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_lookbook-name_JMSQUOTE_>Autumn Women’s Lookbook</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"89\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"new\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-new.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_lookbook-name_JMSQUOTE_>New Women’s  2018 Lookbook</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-2\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[]},{\"type\":\"column\",\"className\":\"layout-column col-lg-5\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"winter\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-winter.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_lookbook-name_JMSQUOTE_>Winter Women’s Lookbook</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"89\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"summer\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-summer.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_lookbook-name_JMSQUOTE_>Summer Women’s Lookbook</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"89px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"89px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"89\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Countdown\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"50% 0\",\"background_repeat\":\"no-repeat\",\"background_size\":\"cover\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"bg-color-default\",\"name\":\"Countdown\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"countdown\",\"settings\":{\"active\":1,\"addon\":\"countdown\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Expire Time\",\"name\":\"expire_time\",\"multilang\":0,\"value\":\"2018-04-04 09:34:34\"},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Image\",\"name\":\"image\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h1-cd-img.png\"},{\"type\":\"editor\",\"label\":\"Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_cd-title_JMSQUOTE_>Tor Trad Mid</p>_JMSLB_<p class=_JMSQUOTE_cd-saleoff_JMSQUOTE_>YOU SAVED 60%</p>_JMSLB_<p class=_JMSQUOTE_cd-price_JMSQUOTE_>214<span>.00€</span></p>_JMSLB_<p class=_JMSQUOTE_cd-des_JMSQUOTE_>You think water moves fast, You should see ice. It moves like it has ande mind. Like it knows it killed the world once and got a taste for mu.rdering.</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Button Text\",\"name\":\"button_text\",\"multilang\":1,\"value\":{\"1\":\"shop now\",\"2\":\"read more\",\"3\":\"read more\",\"4\":\"read more\",\"5\":\"read more\",\"7\":\"read more\"}},{\"type\":\"text\",\"label\":\"Button Link\",\"name\":\"button_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"96px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"96px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"96\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"New Arrivals\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mega-tab-right\",\"name\":\"New Arrivals\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"megatab\",\"settings\":{\"active\":1,\"addon\":\"megatab\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"New Arrival\",\"2\":\"Our Products\",\"3\":\"Our Products\",\"4\":\"Our Products\",\"5\":\"Our Products\",\"7\":\"Our Products\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"Browse the Newest Products\",\"2\":\"Easy to find product following category\",\"3\":\"Easy to find product following category\",\"4\":\"Easy to find product following category\",\"5\":\"Easy to find product following category\",\"7\":\"Easy to find product following category\"}},{\"type\":\"categories\",\"label\":\"Categories\",\"name\":\"ctcategories\",\"multilang\":0,\"value\":\"14,11,12,13\"},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"new\"},{\"type\":\"select\",\"label\":\"Order By\",\"name\":\"order_by\",\"multilang\":0,\"value\":\"position\"},{\"type\":\"select\",\"label\":\"Order Way\",\"name\":\"order_way\",\"multilang\":0,\"value\":\"DESC\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"40\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"4\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"32px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"32px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"32\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Newsletter + Instagram\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"bg-color-default\",\"name\":\"Newsletter + Instagram\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"98\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_emailsubscription\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"instagram\",\"settings\":{\"active\":1,\"addon\":\"instagram\"},\"fields\":[{\"type\":\"text\",\"label\":\"Instagram Username\",\"name\":\"username\",\"multilang\":0,\"value\":\"luvdragon3\"},{\"type\":\"text\",\"label\":\"Access Token\",\"name\":\"access_token\",\"multilang\":0,\"value\":\"3234980746.7c96d22.e489ece15408429b99daa9a71355b2d7\"},{\"type\":\"text\",\"label\":\"Number Images Instagram To Display\",\"name\":\"instagram_to_display\",\"multilang\":0,\"value\":\"8\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Footer Top\",\"layout\":\"4,4,4\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer-top-1\",\"name\":\"Footer Top\",\"layout\":\"4,4,4\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-4\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><a href=_JMSQUOTE_#_JMSQUOTE_><img src=_JMSQUOTE_themes/jms_mella/assets/img/footer-payments.png_JMSQUOTE_ /></a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"center\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"image\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/logo1.png\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Mella\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"group-btn\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_currencyselector\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_languageselector\",\"addon\":\"module\"},\"fields\":[]}]}]},{\"type\":\"row\",\"name\":\"Footer Bottom\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer-bottom-1 bg-color-default\",\"name\":\"Footer Bottom\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>© 2018 <span>Bella Stores</span>, All Rights Reserved.</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"social\",\"settings\":{\"active\":1,\"addon\":\"social\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"FaceBook URL\",\"name\":\"facebook_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Twitter Url\",\"name\":\"twitter_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"LinkedIn Url\",\"name\":\"linkedin_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"YouTube Url\",\"name\":\"youtube_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Google Plus Url\",\"name\":\"google_plus_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Pinterest Url\",\"name\":\"pinterest_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Instagram Url\",\"name\":\"instagram_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]}]', 1, 0);
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
-(2, 'Home Classic 2', 'home2.css', 'home2.js', 'home_2', '[{\"type\":\"row\",\"name\":\"Header\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"header header-type-2\",\"name\":\"Header\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"image\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/logo2.png\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Mella\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"left-icon-group\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_shoppingcart\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsajaxsearch\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_customersignin\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_mega_menu_JMSQUOTE_><img class=_JMSQUOTE_open_menu_JMSQUOTE_ src=_JMSQUOTE_themes/jms_mella/assets/img/icon/open-menu.png_JMSQUOTE_ /><img class=_JMSQUOTE_close_menu_JMSQUOTE_ src=_JMSQUOTE_themes/jms_mella/assets/img/icon/close.png_JMSQUOTE_ /></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]}]},{\"type\":\"row\",\"name\":\"Menu\",\"layout\":\"12,12\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"top_menu_second hidden-sm hidden-xs\",\"name\":\"Menu\",\"layout\":\"12,12\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsmegamenu\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"social\",\"settings\":{\"active\":1,\"addon\":\"social\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"FaceBook URL\",\"name\":\"facebook_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Twitter Url\",\"name\":\"twitter_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"LinkedIn Url\",\"name\":\"linkedin_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"YouTube Url\",\"name\":\"youtube_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Google Plus Url\",\"name\":\"google_plus_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Pinterest Url\",\"name\":\"pinterest_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Instagram Url\",\"name\":\"instagram_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Slider\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"\",\"name\":\"Slider\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"sliderlayer\",\"settings\":{\"active\":1,\"addon\":\"sliderlayer\"},\"fields\":[{\"type\":\"text\",\"label\":\"Slide IDs\",\"name\":\"slide_ids\",\"multilang\":0,\"value\":\"24,25\"},{\"type\":\"text\",\"label\":\"Slide Width\",\"name\":\"max_width\",\"multilang\":0,\"value\":\"1903\"},{\"type\":\"text\",\"label\":\"Slide Height\",\"name\":\"max_height\",\"multilang\":0,\"value\":\"900\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Pause Hover\",\"name\":\"pausehover\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"100px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"100px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Banner\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-1\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h2-banner1.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text_JMSQUOTE_>hot<br />trending<br />winter</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-underline_JMSQUOTE_>discover more</a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-2\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h2-banner2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text_JMSQUOTE_>NEW<br />ARRIVALS<br />2019</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-underline_JMSQUOTE_>discover more</a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"100px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"100px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Featured Products\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mega-tab-center\",\"name\":\"Featured Products\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"megatab\",\"settings\":{\"active\":1,\"addon\":\"megatab\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Featured Products\",\"2\":\"Our Products\",\"3\":\"Our Products\",\"4\":\"Our Products\",\"5\":\"Our Products\",\"7\":\"Our Products\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"Browse the Newest Products\",\"2\":\"Easy to find product following category\",\"3\":\"Easy to find product following category\",\"4\":\"Easy to find product following category\",\"5\":\"Easy to find product following category\",\"7\":\"Easy to find product following category\"}},{\"type\":\"categories\",\"label\":\"Categories\",\"name\":\"ctcategories\",\"multilang\":0,\"value\":\"14,11,12,13\"},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"featured\"},{\"type\":\"select\",\"label\":\"Order By\",\"name\":\"order_by\",\"multilang\":0,\"value\":\"position\"},{\"type\":\"select\",\"label\":\"Order Way\",\"name\":\"order_way\",\"multilang\":0,\"value\":\"DESC\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"40\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"4\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"100px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"100px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Blog\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"blog\",\"name\":\"Blog\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"blog\",\"settings\":{\"active\":1,\"addon\":\"blog\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Tips & Tricks\",\"2\":\"Latest Blog\",\"3\":\"Latest Blog\",\"4\":\"Latest Blog\",\"5\":\"Latest Blog\",\"7\":\"Latest Blog\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Latest news from our\",\"3\":\"Latest news from our\",\"4\":\"Latest news from our\",\"5\":\"Latest news from our\",\"7\":\"Latest news from our\"}},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Items Show\",\"name\":\"items_show\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Items Show On Medium Device\",\"name\":\"items_show_md\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Tablet\",\"name\":\"items_show_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Mobile\",\"name\":\"items_show_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Show Category\",\"name\":\"show_category\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Introtext\",\"name\":\"show_introtext\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Introtext Character Limit\",\"name\":\"introtext_limit\",\"multilang\":0,\"value\":\"120\"},{\"type\":\"switch\",\"label\":\"Show Readmore\",\"name\":\"show_readmore\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Time\",\"name\":\"show_time\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Comment Number\",\"name\":\"show_ncomments\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show View Number\",\"name\":\"show_nviews\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Media\",\"name\":\"show_media\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"5000\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]}]', 1, 1);
+(2, 'Home Classic 2', 'home2.css', 'home2.js', 'home_2', '[{\"type\":\"row\",\"name\":\"Header\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"header header-type-2\",\"name\":\"Header\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"image\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/logo2.png\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Mella\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"left-icon-group\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_shoppingcart\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsajaxsearch\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_customersignin\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_mega_menu_JMSQUOTE_><img class=_JMSQUOTE_open_menu_JMSQUOTE_ src=_JMSQUOTE_themes/jms_mella/assets/img/icon/open-menu.png_JMSQUOTE_ /><img class=_JMSQUOTE_close_menu_JMSQUOTE_ src=_JMSQUOTE_themes/jms_mella/assets/img/icon/close.png_JMSQUOTE_ /></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]}]},{\"type\":\"row\",\"name\":\"Menu\",\"layout\":\"12,12\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"top_menu_second hidden-sm hidden-xs\",\"name\":\"Menu\",\"layout\":\"12,12\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsmegamenu\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"social\",\"settings\":{\"active\":1,\"addon\":\"social\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"FaceBook URL\",\"name\":\"facebook_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Twitter Url\",\"name\":\"twitter_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"LinkedIn Url\",\"name\":\"linkedin_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"YouTube Url\",\"name\":\"youtube_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Google Plus Url\",\"name\":\"google_plus_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Pinterest Url\",\"name\":\"pinterest_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Instagram Url\",\"name\":\"instagram_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Slider\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"\",\"name\":\"Slider\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"sliderlayer\",\"settings\":{\"active\":1,\"addon\":\"sliderlayer\"},\"fields\":[{\"type\":\"text\",\"label\":\"Slide IDs\",\"name\":\"slide_ids\",\"multilang\":0,\"value\":\"24,25\"},{\"type\":\"text\",\"label\":\"Slide Width\",\"name\":\"max_width\",\"multilang\":0,\"value\":\"1903\"},{\"type\":\"text\",\"label\":\"Slide Height\",\"name\":\"max_height\",\"multilang\":0,\"value\":\"900\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Pause Hover\",\"name\":\"pausehover\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"100px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"100px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Banner\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-1\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h2-banner1.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text_JMSQUOTE_>hot<br />trending<br />winter</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-underline_JMSQUOTE_>discover more</a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-2\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/h2-banner2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text_JMSQUOTE_>NEW<br />ARRIVALS<br />2019</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-underline_JMSQUOTE_>discover more</a></p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"100px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"100px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Featured Products\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mega-tab-center\",\"name\":\"Featured Products\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"megatab\",\"settings\":{\"active\":1,\"addon\":\"megatab\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Featured Products\",\"2\":\"Our Products\",\"3\":\"Our Products\",\"4\":\"Our Products\",\"5\":\"Our Products\",\"7\":\"Our Products\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"Browse the Newest Products\",\"2\":\"Easy to find product following category\",\"3\":\"Easy to find product following category\",\"4\":\"Easy to find product following category\",\"5\":\"Easy to find product following category\",\"7\":\"Easy to find product following category\"}},{\"type\":\"categories\",\"label\":\"Categories\",\"name\":\"ctcategories\",\"multilang\":0,\"value\":\"14,11,12,13\"},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"featured\"},{\"type\":\"select\",\"label\":\"Order By\",\"name\":\"order_by\",\"multilang\":0,\"value\":\"position\"},{\"type\":\"select\",\"label\":\"Order Way\",\"name\":\"order_way\",\"multilang\":0,\"value\":\"DESC\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"40\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"4\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"100px\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"100px\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Blog\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"blog\",\"name\":\"Blog\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"blog\",\"settings\":{\"active\":1,\"addon\":\"blog\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Tips & Tricks\",\"2\":\"Latest Blog\",\"3\":\"Latest Blog\",\"4\":\"Latest Blog\",\"5\":\"Latest Blog\",\"7\":\"Latest Blog\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Latest news from our\",\"3\":\"Latest news from our\",\"4\":\"Latest news from our\",\"5\":\"Latest news from our\",\"7\":\"Latest news from our\"}},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Items Show\",\"name\":\"items_show\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Items Show On Medium Device\",\"name\":\"items_show_md\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Tablet\",\"name\":\"items_show_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Mobile\",\"name\":\"items_show_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Show Category\",\"name\":\"show_category\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Introtext\",\"name\":\"show_introtext\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Introtext Character Limit\",\"name\":\"introtext_limit\",\"multilang\":0,\"value\":\"120\"},{\"type\":\"switch\",\"label\":\"Show Readmore\",\"name\":\"show_readmore\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Time\",\"name\":\"show_time\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Comment Number\",\"name\":\"show_ncomments\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show View Number\",\"name\":\"show_nviews\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Media\",\"name\":\"show_media\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Footer Top\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer_t\",\"name\":\"Footer Top\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"image\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"themes/jms_mella/assets/img/logo2.png\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Mella\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_>Facebook</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_>Twitter</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_>Instagram</a></li>_JMSLB_</ul>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]}]},{\"type\":\"row\",\"name\":\"Footer Mid\",\"layout\":\"3,6,3\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer_m\",\"name\":\"Footer Mid\",\"layout\":\"3,6,3\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-3\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p style=_JMSQUOTE_text-align: center;_JMSQUOTE_>Free Call: 001-23456789</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p style=_JMSQUOTE_text-align: center;_JMSQUOTE_>568 Barquoki Sreet from nasr desert road, Morquon Building, 6878 - Miami -US</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p style=_JMSQUOTE_text-align: center;_JMSQUOTE_>Department@bella-stores.info</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]}]},{\"type\":\"row\",\"name\":\"Footer Bottom\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer_b\",\"name\":\"Footer Bottom\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"4\":\"Html Demo\",\"5\":\"Html Demo\",\"7\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"4\":\"This is block html\",\"5\":\"This is block html\",\"7\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p style=_JMSQUOTE_text-align: center;_JMSQUOTE_><a href=_JMSQUOTE_#_JMSQUOTE_><img src=_JMSQUOTE_themes/jms_mella/assets/img/footer-payments2.png_JMSQUOTE_ /></a></p>_JMSLB_<p style=_JMSQUOTE_text-align: center;_JMSQUOTE_>© 2018 <span>Bella Stores</span>, All Rights Reserved.</p>\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"7\":\"\"}}]}]}]}]', 1, 1);
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
 (3, 'Jms Fluent - Home 3', 'home3.css', 'home3.js', 'home_3', '[{\"type\":\"row\",\"name\":\"Header- top\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"header_top\",\"name\":\"Header- top\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-6 col-xs-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-6\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-6\",\"custom_class\":\"headertop_left\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"default\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Fluent.\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-6 col-xs-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-6\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-6\",\"custom_class\":\"headertop_right\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_top_menu_JMSQUOTE_>_JMSLB_<p><span>click</span></p>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_top_menu_JMSQUOTE_>_JMSLB_<p><span>click</span></p>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_top_menu_JMSQUOTE_>_JMSLB_<p><span>click</span></p>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_top_menu_JMSQUOTE_>_JMSLB_<p><span>click</span></p>_JMSLB_</div>\"}}]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_shoppingcart\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsajaxsearch\",\"addon\":\"module\"},\"fields\":[]}]}]},{\"type\":\"row\",\"name\":\"HeaderTop-Right\",\"layout\":\"12,12,12,12\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"top_menu_second  \",\"name\":\"HeaderTop-Right\",\"layout\":\"12,12,12,12\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"menu_hidden\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsmegamenu\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"userinfo_home1\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_customersignin\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"language_block\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_languageselector\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"currience_block\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_currencyselector\",\"addon\":\"module\"},\"fields\":[]}]}]},{\"type\":\"row\",\"name\":\"Slider\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"\",\"name\":\"Slider\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"sliderlayer\",\"settings\":{\"active\":1,\"addon\":\"sliderlayer\"},\"fields\":[{\"type\":\"text\",\"label\":\"Slide IDs\",\"name\":\"slide_ids\",\"multilang\":0,\"value\":\"13,14,15\"},{\"type\":\"text\",\"label\":\"Slide Width\",\"name\":\"max_width\",\"multilang\":0,\"value\":\"1920\"},{\"type\":\"text\",\"label\":\"Slide Height\",\"name\":\"max_height\",\"multilang\":0,\"value\":\"907\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Pause Hover\",\"name\":\"pausehover\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"54\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Product Carousel\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Product Carousel\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"productcarousel\",\"settings\":{\"active\":1,\"addon\":\"productcarousel\"},\"fields\":[{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Product Carousel\",\"3\":\"Product Carousel\",\"5\":\"Product Carousel\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"easy to load product multi rows and columns\",\"3\":\"easy to load product multi rows and columns\",\"5\":\"easy to load product multi rows and columns\"}},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"featured\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"20\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"4\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"categories\",\"label\":\"Category\",\"name\":\"pccategories\",\"multilang\":0,\"value\":\"\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"23\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Newsletter\",\"layout\":\"12,12,12\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"fixed\",\"background_position\":\"50% 50%\",\"background_repeat\":\"no-repeat\",\"background_size\":\"\",\"background_img\":\"themes/jms_fluent/assets/img/demo/sofabg.jpg\",\"fluid\":1,\"custom_class\":\"center\",\"name\":\"Newsletter\",\"layout\":\"12,12,12\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"150\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_emailsubscription\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"social\",\"settings\":{\"active\":1,\"addon\":\"social\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"FaceBook URL\",\"name\":\"facebook_url\",\"multilang\":0,\"value\":\"https://www.facebook.com/joommasters2015\"},{\"type\":\"text\",\"label\":\"Twitter Url\",\"name\":\"twitter_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"LinkedIn Url\",\"name\":\"linkedin_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"YouTube Url\",\"name\":\"youtube_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Google Plus Url\",\"name\":\"google_plus_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Pinterest Url\",\"name\":\"pinterest_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Instagram Url\",\"name\":\"instagram_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"130\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Categories\",\"layout\":\"12,4,4,4\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"categories_home3\",\"name\":\"Categories\",\"layout\":\"12,4,4,4\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"FEATURED CATEGORIES\",\"2\":\"FEATURED CATEGORIES\",\"3\":\"FEATURED CATEGORIES\",\"5\":\"FEATURED CATEGORIES\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style3  wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_fluent/assets/img/demo/categories1.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http://www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>THE BEST OF SNEAKER DESIGN</h4>_JMSLB_<span>Latest Items From $69.00</span></div>_JMSLB_</div>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>THE BEST OF SNEAKER DESIGN</h4>_JMSLB_<span>Latest Items From $69.00</span></div>_JMSLB_</div>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>THE BEST OF SNEAKER DESIGN</h4>_JMSLB_<span>Latest Items From $69.00</span></div>_JMSLB_</div>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>THE BEST OF SNEAKER DESIGN</h4>_JMSLB_<span>Latest Items From $69.00</span></div>_JMSLB_</div>_JMSLB_</div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonbannerh3\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style3 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_fluent/assets/img/demo/categories4.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http://www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SIMPLE LIGHT WATCH DESIGN</h4>_JMSLB_<span>Younger Style</span></div>_JMSLB_</div>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SIMPLE LIGHT WATCH DESIGN</h4>_JMSLB_<span>Younger Style</span></div>_JMSLB_</div>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SIMPLE LIGHT WATCH DESIGN</h4>_JMSLB_<span>Younger Style</span></div>_JMSLB_</div>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SIMPLE LIGHT WATCH DESIGN</h4>_JMSLB_<span>Younger Style</span></div>_JMSLB_</div>_JMSLB_</div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonbannerh3\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style3 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_fluent/assets/img/demo/categories2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http://www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>FURNITURE MODERN CHAIR</h4>_JMSLB_<span>The Best Of Quality</span></div>_JMSLB_</div>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>FURNITURE MODERN CHAIR</h4>_JMSLB_<span>The Best Of Quality</span></div>_JMSLB_</div>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>FURNITURE MODERN CHAIR</h4>_JMSLB_<span>The Best Of Quality</span></div>_JMSLB_</div>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>FURNITURE MODERN CHAIR</h4>_JMSLB_<span>The Best Of Quality</span></div>_JMSLB_</div>_JMSLB_</div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonbannerh3\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style3 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_fluent/assets/img/demo/categories5.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http://www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>ULTIMATE DECORATION CERAMIC</h4>_JMSLB_<span>Starting $79.00</span></div>_JMSLB_</div>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>ULTIMATE DECORATION CERAMIC</h4>_JMSLB_<span>Starting $79.00</span></div>_JMSLB_</div>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>ULTIMATE DECORATION CERAMIC</h4>_JMSLB_<span>Starting $79.00</span></div>_JMSLB_</div>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>ULTIMATE DECORATION CERAMIC</h4>_JMSLB_<span>Starting $79.00</span></div>_JMSLB_</div>_JMSLB_</div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonbannerh3\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style3 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_fluent/assets/img/demo/categories6.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http://www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SOUND PROFESSIONAL HEADPHONE</h4>_JMSLB_<span>Trending Design</span></div>_JMSLB_</div>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SOUND PROFESSIONAL HEADPHONE</h4>_JMSLB_<span>Trending Design</span></div>_JMSLB_</div>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SOUND PROFESSIONAL HEADPHONE</h4>_JMSLB_<span>Trending Design</span></div>_JMSLB_</div>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>SOUND PROFESSIONAL HEADPHONE</h4>_JMSLB_<span>Trending Design</span></div>_JMSLB_</div>_JMSLB_</div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonbannerh3\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style3 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_fluent/assets/img/demo/categories3.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http://www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>VINTAGE CEILING LIGHTS</h4>_JMSLB_<span>Top Branding</span></div>_JMSLB_</div>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>VINTAGE CEILING LIGHTS</h4>_JMSLB_<span>Top Branding</span></div>_JMSLB_</div>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>VINTAGE CEILING LIGHTS</h4>_JMSLB_<span>Top Branding</span></div>_JMSLB_</div>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>VINTAGE CEILING LIGHTS</h4>_JMSLB_<span>Top Branding</span></div>_JMSLB_</div>_JMSLB_</div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonbannerh3\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style3 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_fluent/assets/img/demo/categories7.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http://www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>CEILING FANS CONCEPT DESIGN</h4>_JMSLB_<span>Top Branding In World</span></div>_JMSLB_</div>_JMSLB_</div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>CEILING FANS CONCEPT DESIGN</h4>_JMSLB_<span>Top Branding In World</span></div>_JMSLB_</div>_JMSLB_</div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>CEILING FANS CONCEPT DESIGN</h4>_JMSLB_<span>Top Branding In World</span></div>_JMSLB_</div>_JMSLB_</div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><i class=_JMSQUOTE_pe pe-7s-link_JMSQUOTE_></i>_JMSLB_<h4>CEILING FANS CONCEPT DESIGN</h4>_JMSLB_<span>Top Branding In World</span></div>_JMSLB_</div>_JMSLB_</div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonbannerh3\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Footer\",\"layout\":\"4,4,4\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer_h3\",\"name\":\"Footer\",\"layout\":\"4,4,4\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"contact_footer\"},\"addons\":[{\"type\":\"contactinfo\",\"settings\":{\"active\":1,\"addon\":\"contactinfo\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"GET IN TOUCH\",\"2\":\"GET IN TOUCH\",\"3\":\"GET IN TOUCH\",\"5\":\"GET IN TOUCH\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Address\",\"name\":\"address\",\"multilang\":0,\"value\":\"No. 1024 South Rohn Suite 121, NewYork, NY 77101 United Stated\"},{\"type\":\"text\",\"label\":\"Phone\",\"name\":\"phone\",\"multilang\":0,\"value\":\"+01 1 2268 7749\"},{\"type\":\"text\",\"label\":\"Email\",\"name\":\"email\",\"multilang\":0,\"value\":\"Fluentcare@demo.com\"},{\"type\":\"text\",\"label\":\"Open Time\",\"name\":\"opentime\",\"multilang\":0,\"value\":\"9.00am - 9.30pm, Close Sunday\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"blog_footer_center\"},\"addons\":[{\"type\":\"blog\",\"settings\":{\"active\":1,\"addon\":\"blog\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"FROM BLOG\",\"2\":\"FROM BLOG\",\"3\":\"FROM BLOG\",\"5\":\"FROM BLOG\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show\",\"name\":\"items_show\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Medium Device\",\"name\":\"items_show_md\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Tablet\",\"name\":\"items_show_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Mobile\",\"name\":\"items_show_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Show Category\",\"name\":\"show_category\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Introtext\",\"name\":\"show_introtext\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Introtext Character Limit\",\"name\":\"introtext_limit\",\"multilang\":0,\"value\":\"120\"},{\"type\":\"switch\",\"label\":\"Show Readmore\",\"name\":\"show_readmore\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Time\",\"name\":\"show_time\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Comment Number\",\"name\":\"show_ncomments\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show View Number\",\"name\":\"show_nviews\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Media\",\"name\":\"show_media\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonblogfooter\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"instagram-h3\"},\"addons\":[{\"type\":\"instagram\",\"settings\":{\"active\":1,\"addon\":\"instagram\"},\"fields\":[{\"type\":\"text\",\"label\":\"Instagram Username\",\"name\":\"username\",\"multilang\":0,\"value\":\"luvdragon3\"},{\"type\":\"text\",\"label\":\"Access Token\",\"name\":\"access_token\",\"multilang\":0,\"value\":\"3234980746.7c96d22.e489ece15408429b99daa9a71355b2d7\"},{\"type\":\"text\",\"label\":\"Number Images Instagram To Display\",\"name\":\"instagram_to_display\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Footer-Bottom\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer_bottom\",\"name\":\"Footer-Bottom\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-5 col-sm-5 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-5\",\"md_col\":\"col-md-5\",\"custom_class\":\"foooter_bottom_left\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_About Us_JMSQUOTE_>About Us</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Site Map_JMSQUOTE_>Site Map</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Order & Returns_JMSQUOTE_>Search Term</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Affiliate_JMSQUOTE_>Affiliate</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Contact Us_JMSQUOTE_>Contact Us</a></li>_JMSLB_</ul>\",\"2\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_About Us_JMSQUOTE_>About Us</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Site Map_JMSQUOTE_>Site Map</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Order & Returns_JMSQUOTE_>Search Term</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Affiliate_JMSQUOTE_>Affiliate</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Contact Us_JMSQUOTE_>Contact Us</a></li>_JMSLB_</ul>\",\"3\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_About Us_JMSQUOTE_>About Us</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Site Map_JMSQUOTE_>Site Map</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Order & Returns_JMSQUOTE_>Search Term</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Affiliate_JMSQUOTE_>Affiliate</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Contact Us_JMSQUOTE_>Contact Us</a></li>_JMSLB_</ul>\",\"5\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_About Us_JMSQUOTE_>About Us</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Site Map_JMSQUOTE_>Site Map</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Order & Returns_JMSQUOTE_>Search Term</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Affiliate_JMSQUOTE_>Affiliate</a></li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_Contact Us_JMSQUOTE_>Contact Us</a></li>_JMSLB_</ul>\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-7 col-sm-7 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-7\",\"md_col\":\"col-md-7\",\"custom_class\":\"foooter_bottom_right\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_></i> 2017 All rights reserved. Design by <a href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_ title=_JMSQUOTE_Joommasters.com._JMSQUOTE_>Joommasters.com. </a> Power by <a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_prestashop_JMSQUOTE_>Prestashop.</a></p>\",\"2\":\"<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_></i> 2017 All rights reserved. Design by <a href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_ title=_JMSQUOTE_Joommasters.com._JMSQUOTE_>Joommasters.com. </a> Power by <a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_prestashop_JMSQUOTE_>Prestashop.</a></p>\",\"3\":\"<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_></i> 2017 All rights reserved. Design by <a href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_ title=_JMSQUOTE_Joommasters.com._JMSQUOTE_>Joommasters.com. </a> Power by <a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_prestashop_JMSQUOTE_>Prestashop.</a></p>\",\"5\":\"<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_></i> 2017 All rights reserved. Design by <a href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_ title=_JMSQUOTE_Joommasters.com._JMSQUOTE_>Joommasters.com. </a> Power by <a href=_JMSQUOTE_#_JMSQUOTE_ title=_JMSQUOTE_prestashop_JMSQUOTE_>Prestashop.</a></p>\"}}]}]}]}]', 1, 2);
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
@@ -15978,7 +15828,7 @@ INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmstestimonials`
+-- Cấu trúc bảng cho bảng `jms_jmstestimonials`
 --
 
 CREATE TABLE `jms_jmstestimonials` (
@@ -15990,7 +15840,7 @@ CREATE TABLE `jms_jmstestimonials` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmstestimonials`
+-- Đang đổ dữ liệu cho bảng `jms_jmstestimonials`
 --
 
 INSERT INTO `jms_jmstestimonials` (`id_testimonial`, `author`, `posttime`, `image`, `active`) VALUES
@@ -16002,7 +15852,7 @@ INSERT INTO `jms_jmstestimonials` (`id_testimonial`, `author`, `posttime`, `imag
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jmstestimonials_lang`
+-- Cấu trúc bảng cho bảng `jms_jmstestimonials_lang`
 --
 
 CREATE TABLE `jms_jmstestimonials_lang` (
@@ -16013,7 +15863,7 @@ CREATE TABLE `jms_jmstestimonials_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jmstestimonials_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jmstestimonials_lang`
 --
 
 INSERT INTO `jms_jmstestimonials_lang` (`id_testimonial`, `id_lang`, `office`, `comment`) VALUES
@@ -16025,7 +15875,7 @@ INSERT INTO `jms_jmstestimonials_lang` (`id_testimonial`, `id_lang`, `office`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_producttab`
+-- Cấu trúc bảng cho bảng `jms_jms_producttab`
 --
 
 CREATE TABLE `jms_jms_producttab` (
@@ -16034,7 +15884,7 @@ CREATE TABLE `jms_jms_producttab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_producttab`
+-- Đang đổ dữ liệu cho bảng `jms_jms_producttab`
 --
 
 INSERT INTO `jms_jms_producttab` (`tab_id`, `id_shop`) VALUES
@@ -16078,7 +15928,7 @@ INSERT INTO `jms_jms_producttab` (`tab_id`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_producttab_ctab`
+-- Cấu trúc bảng cho bảng `jms_jms_producttab_ctab`
 --
 
 CREATE TABLE `jms_jms_producttab_ctab` (
@@ -16087,7 +15937,7 @@ CREATE TABLE `jms_jms_producttab_ctab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_producttab_ctab`
+-- Đang đổ dữ liệu cho bảng `jms_jms_producttab_ctab`
 --
 
 INSERT INTO `jms_jms_producttab_ctab` (`tab_id`, `product_id`) VALUES
@@ -16131,7 +15981,7 @@ INSERT INTO `jms_jms_producttab_ctab` (`tab_id`, `product_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_producttab_ctab_lang`
+-- Cấu trúc bảng cho bảng `jms_jms_producttab_ctab_lang`
 --
 
 CREATE TABLE `jms_jms_producttab_ctab_lang` (
@@ -16142,7 +15992,7 @@ CREATE TABLE `jms_jms_producttab_ctab_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_producttab_ctab_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jms_producttab_ctab_lang`
 --
 
 INSERT INTO `jms_jms_producttab_ctab_lang` (`tab_id`, `id_lang`, `tab_title`, `html_content`) VALUES
@@ -16366,7 +16216,7 @@ INSERT INTO `jms_jms_producttab_ctab_lang` (`tab_id`, `id_lang`, `tab_title`, `h
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_product_video`
+-- Cấu trúc bảng cho bảng `jms_jms_product_video`
 --
 
 CREATE TABLE `jms_jms_product_video` (
@@ -16378,7 +16228,7 @@ CREATE TABLE `jms_jms_product_video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_product_video`
+-- Đang đổ dữ liệu cho bảng `jms_jms_product_video`
 --
 
 INSERT INTO `jms_jms_product_video` (`id`, `id_product`, `id_lang`, `title`, `link`) VALUES
@@ -16602,7 +16452,7 @@ INSERT INTO `jms_jms_product_video` (`id`, `id_product`, `id_lang`, `title`, `li
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slides`
+-- Cấu trúc bảng cho bảng `jms_jms_slides`
 --
 
 CREATE TABLE `jms_jms_slides` (
@@ -16618,7 +16468,7 @@ CREATE TABLE `jms_jms_slides` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slides`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slides`
 --
 
 INSERT INTO `jms_jms_slides` (`id_slide`, `title`, `class_suffix`, `bg_type`, `bg_image`, `bg_color`, `slide_link`, `order`, `status`) VALUES
@@ -16631,7 +16481,7 @@ INSERT INTO `jms_jms_slides` (`id_slide`, `title`, `class_suffix`, `bg_type`, `b
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slides_lang`
+-- Cấu trúc bảng cho bảng `jms_jms_slides_lang`
 --
 
 CREATE TABLE `jms_jms_slides_lang` (
@@ -16640,7 +16490,7 @@ CREATE TABLE `jms_jms_slides_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slides_lang`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slides_lang`
 --
 
 INSERT INTO `jms_jms_slides_lang` (`id_slide`, `id_lang`) VALUES
@@ -16653,7 +16503,7 @@ INSERT INTO `jms_jms_slides_lang` (`id_slide`, `id_lang`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slides_layers`
+-- Cấu trúc bảng cho bảng `jms_jms_slides_layers`
 --
 
 CREATE TABLE `jms_jms_slides_layers` (
@@ -16692,7 +16542,7 @@ CREATE TABLE `jms_jms_slides_layers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slides_layers`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slides_layers`
 --
 
 INSERT INTO `jms_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data_class_suffix`, `data_fixed`, `data_delay`, `data_time`, `data_x`, `data_y`, `data_in`, `data_out`, `data_ease_in`, `data_ease_out`, `data_step`, `data_special`, `data_type`, `data_image`, `data_html`, `data_video`, `data_video_controls`, `data_video_muted`, `data_video_autoplay`, `data_video_loop`, `data_video_bg`, `data_font_size`, `data_line_height`, `data_style`, `data_color`, `data_width`, `data_height`, `data_order`, `data_status`) VALUES
@@ -16727,7 +16577,7 @@ INSERT INTO `jms_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_jms_slides_shop`
+-- Cấu trúc bảng cho bảng `jms_jms_slides_shop`
 --
 
 CREATE TABLE `jms_jms_slides_shop` (
@@ -16736,7 +16586,7 @@ CREATE TABLE `jms_jms_slides_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_jms_slides_shop`
+-- Đang đổ dữ liệu cho bảng `jms_jms_slides_shop`
 --
 
 INSERT INTO `jms_jms_slides_shop` (`id_slide`, `id_shop`) VALUES
@@ -16749,7 +16599,7 @@ INSERT INTO `jms_jms_slides_shop` (`id_slide`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_lang`
+-- Cấu trúc bảng cho bảng `jms_lang`
 --
 
 CREATE TABLE `jms_lang` (
@@ -16765,7 +16615,7 @@ CREATE TABLE `jms_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_lang`
+-- Đang đổ dữ liệu cho bảng `jms_lang`
 --
 
 INSERT INTO `jms_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`, `locale`, `date_format_lite`, `date_format_full`, `is_rtl`) VALUES
@@ -16779,7 +16629,7 @@ INSERT INTO `jms_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_lang_shop`
+-- Cấu trúc bảng cho bảng `jms_lang_shop`
 --
 
 CREATE TABLE `jms_lang_shop` (
@@ -16788,7 +16638,7 @@ CREATE TABLE `jms_lang_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_lang_shop`
+-- Đang đổ dữ liệu cho bảng `jms_lang_shop`
 --
 
 INSERT INTO `jms_lang_shop` (`id_lang`, `id_shop`) VALUES
@@ -16802,7 +16652,7 @@ INSERT INTO `jms_lang_shop` (`id_lang`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_category`
+-- Cấu trúc bảng cho bảng `jms_layered_category`
 --
 
 CREATE TABLE `jms_layered_category` (
@@ -16817,7 +16667,7 @@ CREATE TABLE `jms_layered_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `jms_layered_category`
+-- Đang đổ dữ liệu cho bảng `jms_layered_category`
 --
 
 INSERT INTO `jms_layered_category` (`id_layered_category`, `id_shop`, `id_category`, `id_value`, `type`, `position`, `filter_type`, `filter_show_limit`) VALUES
@@ -16875,7 +16725,7 @@ INSERT INTO `jms_layered_category` (`id_layered_category`, `id_shop`, `id_catego
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_filter`
+-- Cấu trúc bảng cho bảng `jms_layered_filter`
 --
 
 CREATE TABLE `jms_layered_filter` (
@@ -16887,7 +16737,7 @@ CREATE TABLE `jms_layered_filter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_filter`
+-- Đang đổ dữ liệu cho bảng `jms_layered_filter`
 --
 
 INSERT INTO `jms_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_categories`, `date_add`) VALUES
@@ -16896,7 +16746,7 @@ INSERT INTO `jms_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_cat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_filter_shop`
+-- Cấu trúc bảng cho bảng `jms_layered_filter_shop`
 --
 
 CREATE TABLE `jms_layered_filter_shop` (
@@ -16905,7 +16755,7 @@ CREATE TABLE `jms_layered_filter_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_filter_shop`
+-- Đang đổ dữ liệu cho bảng `jms_layered_filter_shop`
 --
 
 INSERT INTO `jms_layered_filter_shop` (`id_layered_filter`, `id_shop`) VALUES
@@ -16914,7 +16764,7 @@ INSERT INTO `jms_layered_filter_shop` (`id_layered_filter`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_attribute_group`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_attribute_group`
 --
 
 CREATE TABLE `jms_layered_indexable_attribute_group` (
@@ -16923,7 +16773,7 @@ CREATE TABLE `jms_layered_indexable_attribute_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_indexable_attribute_group`
+-- Đang đổ dữ liệu cho bảng `jms_layered_indexable_attribute_group`
 --
 
 INSERT INTO `jms_layered_indexable_attribute_group` (`id_attribute_group`, `indexable`) VALUES
@@ -16933,7 +16783,7 @@ INSERT INTO `jms_layered_indexable_attribute_group` (`id_attribute_group`, `inde
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_attribute_group_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_attribute_group_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_attribute_group_lang_value` (
@@ -16946,7 +16796,7 @@ CREATE TABLE `jms_layered_indexable_attribute_group_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_attribute_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_attribute_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_attribute_lang_value` (
@@ -16957,7 +16807,7 @@ CREATE TABLE `jms_layered_indexable_attribute_lang_value` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_indexable_attribute_lang_value`
+-- Đang đổ dữ liệu cho bảng `jms_layered_indexable_attribute_lang_value`
 --
 
 INSERT INTO `jms_layered_indexable_attribute_lang_value` (`id_attribute`, `id_lang`, `url_name`, `meta_title`) VALUES
@@ -16971,7 +16821,7 @@ INSERT INTO `jms_layered_indexable_attribute_lang_value` (`id_attribute`, `id_la
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_feature`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_feature`
 --
 
 CREATE TABLE `jms_layered_indexable_feature` (
@@ -16980,7 +16830,7 @@ CREATE TABLE `jms_layered_indexable_feature` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_indexable_feature`
+-- Đang đổ dữ liệu cho bảng `jms_layered_indexable_feature`
 --
 
 INSERT INTO `jms_layered_indexable_feature` (`id_feature`, `indexable`) VALUES
@@ -16993,7 +16843,7 @@ INSERT INTO `jms_layered_indexable_feature` (`id_feature`, `indexable`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_feature_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_feature_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_feature_lang_value` (
@@ -17006,7 +16856,7 @@ CREATE TABLE `jms_layered_indexable_feature_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_indexable_feature_value_lang_value`
+-- Cấu trúc bảng cho bảng `jms_layered_indexable_feature_value_lang_value`
 --
 
 CREATE TABLE `jms_layered_indexable_feature_value_lang_value` (
@@ -17019,7 +16869,7 @@ CREATE TABLE `jms_layered_indexable_feature_value_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_price_index`
+-- Cấu trúc bảng cho bảng `jms_layered_price_index`
 --
 
 CREATE TABLE `jms_layered_price_index` (
@@ -17031,7 +16881,7 @@ CREATE TABLE `jms_layered_price_index` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_price_index`
+-- Đang đổ dữ liệu cho bảng `jms_layered_price_index`
 --
 
 INSERT INTO `jms_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `price_min`, `price_max`) VALUES
@@ -17130,7 +16980,7 @@ INSERT INTO `jms_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_layered_product_attribute`
+-- Cấu trúc bảng cho bảng `jms_layered_product_attribute`
 --
 
 CREATE TABLE `jms_layered_product_attribute` (
@@ -17141,7 +16991,7 @@ CREATE TABLE `jms_layered_product_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_layered_product_attribute`
+-- Đang đổ dữ liệu cho bảng `jms_layered_product_attribute`
 --
 
 INSERT INTO `jms_layered_product_attribute` (`id_attribute`, `id_product`, `id_attribute_group`, `id_shop`) VALUES
@@ -17266,7 +17116,7 @@ INSERT INTO `jms_layered_product_attribute` (`id_attribute`, `id_product`, `id_a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_linksmenutop`
+-- Cấu trúc bảng cho bảng `jms_linksmenutop`
 --
 
 CREATE TABLE `jms_linksmenutop` (
@@ -17278,7 +17128,7 @@ CREATE TABLE `jms_linksmenutop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_linksmenutop_lang`
+-- Cấu trúc bảng cho bảng `jms_linksmenutop_lang`
 --
 
 CREATE TABLE `jms_linksmenutop_lang` (
@@ -17292,7 +17142,7 @@ CREATE TABLE `jms_linksmenutop_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_link_block`
+-- Cấu trúc bảng cho bảng `jms_link_block`
 --
 
 CREATE TABLE `jms_link_block` (
@@ -17303,7 +17153,7 @@ CREATE TABLE `jms_link_block` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_link_block`
+-- Đang đổ dữ liệu cho bảng `jms_link_block`
 --
 
 INSERT INTO `jms_link_block` (`id_link_block`, `id_hook`, `position`, `content`) VALUES
@@ -17313,7 +17163,7 @@ INSERT INTO `jms_link_block` (`id_link_block`, `id_hook`, `position`, `content`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_link_block_lang`
+-- Cấu trúc bảng cho bảng `jms_link_block_lang`
 --
 
 CREATE TABLE `jms_link_block_lang` (
@@ -17324,7 +17174,7 @@ CREATE TABLE `jms_link_block_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_link_block_lang`
+-- Đang đổ dữ liệu cho bảng `jms_link_block_lang`
 --
 
 INSERT INTO `jms_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_content`) VALUES
@@ -17350,7 +17200,7 @@ INSERT INTO `jms_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_c
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_link_block_shop`
+-- Cấu trúc bảng cho bảng `jms_link_block_shop`
 --
 
 CREATE TABLE `jms_link_block_shop` (
@@ -17361,7 +17211,7 @@ CREATE TABLE `jms_link_block_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_log`
+-- Cấu trúc bảng cho bảng `jms_log`
 --
 
 CREATE TABLE `jms_log` (
@@ -17377,7 +17227,7 @@ CREATE TABLE `jms_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_log`
+-- Đang đổ dữ liệu cho bảng `jms_log`
 --
 
 INSERT INTO `jms_log` (`id_log`, `severity`, `error_code`, `message`, `object_type`, `object_id`, `id_employee`, `date_add`, `date_upd`) VALUES
@@ -17614,12 +17464,14 @@ INSERT INTO `jms_log` (`id_log`, `severity`, `error_code`, `message`, `object_ty
 (231, 1, 0, 'Product modification', 'Product', 23, 1, '2019-03-14 05:20:15', '2019-03-14 05:20:15'),
 (232, 1, 0, 'Product modification', 'Product', 22, 1, '2019-03-14 05:20:26', '2019-03-14 05:20:26'),
 (233, 1, 0, 'Product modification', 'Product', 21, 1, '2019-03-14 05:20:33', '2019-03-14 05:20:33'),
-(234, 1, 0, 'Product modification', 'Product', 20, 1, '2019-03-14 05:20:39', '2019-03-14 05:20:39');
+(234, 1, 0, 'Product modification', 'Product', 20, 1, '2019-03-14 05:20:39', '2019-03-14 05:20:39'),
+(235, 1, 0, 'Back office connection from ::1', '', 0, 1, '2019-03-17 21:44:09', '2019-03-17 21:44:09'),
+(236, 1, 0, 'Back office connection from 127.0.0.1', '', 0, 1, '2019-03-18 05:32:08', '2019-03-18 05:32:08');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_mail`
+-- Cấu trúc bảng cho bảng `jms_mail`
 --
 
 CREATE TABLE `jms_mail` (
@@ -17634,7 +17486,7 @@ CREATE TABLE `jms_mail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_manufacturer`
+-- Cấu trúc bảng cho bảng `jms_manufacturer`
 --
 
 CREATE TABLE `jms_manufacturer` (
@@ -17646,7 +17498,7 @@ CREATE TABLE `jms_manufacturer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_manufacturer`
+-- Đang đổ dữ liệu cho bảng `jms_manufacturer`
 --
 
 INSERT INTO `jms_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd`, `active`) VALUES
@@ -17656,7 +17508,7 @@ INSERT INTO `jms_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_manufacturer_lang`
+-- Cấu trúc bảng cho bảng `jms_manufacturer_lang`
 --
 
 CREATE TABLE `jms_manufacturer_lang` (
@@ -17670,7 +17522,7 @@ CREATE TABLE `jms_manufacturer_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_manufacturer_lang`
+-- Đang đổ dữ liệu cho bảng `jms_manufacturer_lang`
 --
 
 INSERT INTO `jms_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`, `short_description`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -17696,7 +17548,7 @@ INSERT INTO `jms_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_manufacturer_shop`
+-- Cấu trúc bảng cho bảng `jms_manufacturer_shop`
 --
 
 CREATE TABLE `jms_manufacturer_shop` (
@@ -17705,7 +17557,7 @@ CREATE TABLE `jms_manufacturer_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_manufacturer_shop`
+-- Đang đổ dữ liệu cho bảng `jms_manufacturer_shop`
 --
 
 INSERT INTO `jms_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
@@ -17715,7 +17567,7 @@ INSERT INTO `jms_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_memcached_servers`
+-- Cấu trúc bảng cho bảng `jms_memcached_servers`
 --
 
 CREATE TABLE `jms_memcached_servers` (
@@ -17728,7 +17580,7 @@ CREATE TABLE `jms_memcached_servers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_message`
+-- Cấu trúc bảng cho bảng `jms_message`
 --
 
 CREATE TABLE `jms_message` (
@@ -17745,7 +17597,7 @@ CREATE TABLE `jms_message` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_message_readed`
+-- Cấu trúc bảng cho bảng `jms_message_readed`
 --
 
 CREATE TABLE `jms_message_readed` (
@@ -17757,7 +17609,7 @@ CREATE TABLE `jms_message_readed` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_meta`
+-- Cấu trúc bảng cho bảng `jms_meta`
 --
 
 CREATE TABLE `jms_meta` (
@@ -17767,7 +17619,7 @@ CREATE TABLE `jms_meta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_meta`
+-- Đang đổ dữ liệu cho bảng `jms_meta`
 --
 
 INSERT INTO `jms_meta` (`id_meta`, `page`, `configurable`) VALUES
@@ -17817,7 +17669,7 @@ INSERT INTO `jms_meta` (`id_meta`, `page`, `configurable`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_meta_lang`
+-- Cấu trúc bảng cho bảng `jms_meta_lang`
 --
 
 CREATE TABLE `jms_meta_lang` (
@@ -17831,7 +17683,7 @@ CREATE TABLE `jms_meta_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_meta_lang`
+-- Đang đổ dữ liệu cho bảng `jms_meta_lang`
 --
 
 INSERT INTO `jms_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `description`, `keywords`, `url_rewrite`) VALUES
@@ -18145,7 +17997,7 @@ INSERT INTO `jms_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `descript
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module`
+-- Cấu trúc bảng cho bảng `jms_module`
 --
 
 CREATE TABLE `jms_module` (
@@ -18156,7 +18008,7 @@ CREATE TABLE `jms_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module`
+-- Đang đổ dữ liệu cho bảng `jms_module`
 --
 
 INSERT INTO `jms_module` (`id_module`, `name`, `active`, `version`) VALUES
@@ -18238,7 +18090,7 @@ INSERT INTO `jms_module` (`id_module`, `name`, `active`, `version`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_access`
+-- Cấu trúc bảng cho bảng `jms_module_access`
 --
 
 CREATE TABLE `jms_module_access` (
@@ -18247,7 +18099,7 @@ CREATE TABLE `jms_module_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_access`
+-- Đang đổ dữ liệu cho bảng `jms_module_access`
 --
 
 INSERT INTO `jms_module_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -18551,7 +18403,7 @@ INSERT INTO `jms_module_access` (`id_profile`, `id_authorization_role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_carrier`
+-- Cấu trúc bảng cho bảng `jms_module_carrier`
 --
 
 CREATE TABLE `jms_module_carrier` (
@@ -18561,7 +18413,7 @@ CREATE TABLE `jms_module_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_carrier`
+-- Đang đổ dữ liệu cho bảng `jms_module_carrier`
 --
 
 INSERT INTO `jms_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
@@ -18573,7 +18425,7 @@ INSERT INTO `jms_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_country`
+-- Cấu trúc bảng cho bảng `jms_module_country`
 --
 
 CREATE TABLE `jms_module_country` (
@@ -18583,7 +18435,7 @@ CREATE TABLE `jms_module_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_country`
+-- Đang đổ dữ liệu cho bảng `jms_module_country`
 --
 
 INSERT INTO `jms_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
@@ -18593,7 +18445,7 @@ INSERT INTO `jms_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_currency`
+-- Cấu trúc bảng cho bảng `jms_module_currency`
 --
 
 CREATE TABLE `jms_module_currency` (
@@ -18603,7 +18455,7 @@ CREATE TABLE `jms_module_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_currency`
+-- Đang đổ dữ liệu cho bảng `jms_module_currency`
 --
 
 INSERT INTO `jms_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
@@ -18615,7 +18467,7 @@ INSERT INTO `jms_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_group`
+-- Cấu trúc bảng cho bảng `jms_module_group`
 --
 
 CREATE TABLE `jms_module_group` (
@@ -18625,7 +18477,7 @@ CREATE TABLE `jms_module_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_group`
+-- Đang đổ dữ liệu cho bảng `jms_module_group`
 --
 
 INSERT INTO `jms_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
@@ -18855,7 +18707,7 @@ INSERT INTO `jms_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_history`
+-- Cấu trúc bảng cho bảng `jms_module_history`
 --
 
 CREATE TABLE `jms_module_history` (
@@ -18867,7 +18719,7 @@ CREATE TABLE `jms_module_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_history`
+-- Đang đổ dữ liệu cho bảng `jms_module_history`
 --
 
 INSERT INTO `jms_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
@@ -18876,7 +18728,7 @@ INSERT INTO `jms_module_history` (`id`, `id_employee`, `id_module`, `date_add`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_preference`
+-- Cấu trúc bảng cho bảng `jms_module_preference`
 --
 
 CREATE TABLE `jms_module_preference` (
@@ -18890,7 +18742,7 @@ CREATE TABLE `jms_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_module_shop`
+-- Cấu trúc bảng cho bảng `jms_module_shop`
 --
 
 CREATE TABLE `jms_module_shop` (
@@ -18900,7 +18752,7 @@ CREATE TABLE `jms_module_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_module_shop`
+-- Đang đổ dữ liệu cho bảng `jms_module_shop`
 --
 
 INSERT INTO `jms_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
@@ -18982,7 +18834,7 @@ INSERT INTO `jms_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_operating_system`
+-- Cấu trúc bảng cho bảng `jms_operating_system`
 --
 
 CREATE TABLE `jms_operating_system` (
@@ -18991,7 +18843,7 @@ CREATE TABLE `jms_operating_system` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_operating_system`
+-- Đang đổ dữ liệu cho bảng `jms_operating_system`
 --
 
 INSERT INTO `jms_operating_system` (`id_operating_system`, `name`) VALUES
@@ -19008,7 +18860,7 @@ INSERT INTO `jms_operating_system` (`id_operating_system`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_orders`
+-- Cấu trúc bảng cho bảng `jms_orders`
 --
 
 CREATE TABLE `jms_orders` (
@@ -19061,7 +18913,7 @@ CREATE TABLE `jms_orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_orders`
+-- Đang đổ dữ liệu cho bảng `jms_orders`
 --
 
 INSERT INTO `jms_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `id_carrier`, `id_lang`, `id_customer`, `id_cart`, `id_currency`, `id_address_delivery`, `id_address_invoice`, `current_state`, `secure_key`, `payment`, `conversion_rate`, `module`, `recyclable`, `gift`, `gift_message`, `mobile_theme`, `shipping_number`, `total_discounts`, `total_discounts_tax_incl`, `total_discounts_tax_excl`, `total_paid`, `total_paid_tax_incl`, `total_paid_tax_excl`, `total_paid_real`, `total_products`, `total_products_wt`, `total_shipping`, `total_shipping_tax_incl`, `total_shipping_tax_excl`, `carrier_tax_rate`, `total_wrapping`, `total_wrapping_tax_incl`, `total_wrapping_tax_excl`, `round_mode`, `round_type`, `invoice_number`, `delivery_number`, `invoice_date`, `delivery_date`, `valid`, `date_add`, `date_upd`) VALUES
@@ -19074,7 +18926,7 @@ INSERT INTO `jms_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_carrier`
+-- Cấu trúc bảng cho bảng `jms_order_carrier`
 --
 
 CREATE TABLE `jms_order_carrier` (
@@ -19090,7 +18942,7 @@ CREATE TABLE `jms_order_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_carrier`
+-- Đang đổ dữ liệu cho bảng `jms_order_carrier`
 --
 
 INSERT INTO `jms_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `id_order_invoice`, `weight`, `shipping_cost_tax_excl`, `shipping_cost_tax_incl`, `tracking_number`, `date_add`) VALUES
@@ -19103,7 +18955,7 @@ INSERT INTO `jms_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_cart_rule`
+-- Cấu trúc bảng cho bảng `jms_order_cart_rule`
 --
 
 CREATE TABLE `jms_order_cart_rule` (
@@ -19120,7 +18972,7 @@ CREATE TABLE `jms_order_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_detail`
+-- Cấu trúc bảng cho bảng `jms_order_detail`
 --
 
 CREATE TABLE `jms_order_detail` (
@@ -19173,7 +19025,7 @@ CREATE TABLE `jms_order_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_detail`
+-- Đang đổ dữ liệu cho bảng `jms_order_detail`
 --
 
 INSERT INTO `jms_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice`, `id_warehouse`, `id_shop`, `product_id`, `product_attribute_id`, `id_customization`, `product_name`, `product_quantity`, `product_quantity_in_stock`, `product_quantity_refunded`, `product_quantity_return`, `product_quantity_reinjected`, `product_price`, `reduction_percent`, `reduction_amount`, `reduction_amount_tax_incl`, `reduction_amount_tax_excl`, `group_reduction`, `product_quantity_discount`, `product_ean13`, `product_isbn`, `product_upc`, `product_reference`, `product_supplier_reference`, `product_weight`, `id_tax_rules_group`, `tax_computation_method`, `tax_name`, `tax_rate`, `ecotax`, `ecotax_tax_rate`, `discount_quantity_applied`, `download_hash`, `download_nb`, `download_deadline`, `total_price_tax_incl`, `total_price_tax_excl`, `unit_price_tax_incl`, `unit_price_tax_excl`, `total_shipping_price_tax_incl`, `total_shipping_price_tax_excl`, `purchase_supplier_price`, `original_product_price`, `original_wholesale_price`) VALUES
@@ -19188,7 +19040,7 @@ INSERT INTO `jms_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_detail_tax`
+-- Cấu trúc bảng cho bảng `jms_order_detail_tax`
 --
 
 CREATE TABLE `jms_order_detail_tax` (
@@ -19201,7 +19053,7 @@ CREATE TABLE `jms_order_detail_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_history`
+-- Cấu trúc bảng cho bảng `jms_order_history`
 --
 
 CREATE TABLE `jms_order_history` (
@@ -19213,7 +19065,7 @@ CREATE TABLE `jms_order_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_history`
+-- Đang đổ dữ liệu cho bảng `jms_order_history`
 --
 
 INSERT INTO `jms_order_history` (`id_order_history`, `id_employee`, `id_order`, `id_order_state`, `date_add`) VALUES
@@ -19228,7 +19080,7 @@ INSERT INTO `jms_order_history` (`id_order_history`, `id_employee`, `id_order`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_invoice`
+-- Cấu trúc bảng cho bảng `jms_order_invoice`
 --
 
 CREATE TABLE `jms_order_invoice` (
@@ -19256,7 +19108,7 @@ CREATE TABLE `jms_order_invoice` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_invoice_payment`
+-- Cấu trúc bảng cho bảng `jms_order_invoice_payment`
 --
 
 CREATE TABLE `jms_order_invoice_payment` (
@@ -19268,7 +19120,7 @@ CREATE TABLE `jms_order_invoice_payment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_invoice_tax`
+-- Cấu trúc bảng cho bảng `jms_order_invoice_tax`
 --
 
 CREATE TABLE `jms_order_invoice_tax` (
@@ -19281,7 +19133,7 @@ CREATE TABLE `jms_order_invoice_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_message`
+-- Cấu trúc bảng cho bảng `jms_order_message`
 --
 
 CREATE TABLE `jms_order_message` (
@@ -19290,7 +19142,7 @@ CREATE TABLE `jms_order_message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_message`
+-- Đang đổ dữ liệu cho bảng `jms_order_message`
 --
 
 INSERT INTO `jms_order_message` (`id_order_message`, `date_add`) VALUES
@@ -19299,7 +19151,7 @@ INSERT INTO `jms_order_message` (`id_order_message`, `date_add`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_message_lang`
+-- Cấu trúc bảng cho bảng `jms_order_message_lang`
 --
 
 CREATE TABLE `jms_order_message_lang` (
@@ -19310,7 +19162,7 @@ CREATE TABLE `jms_order_message_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_message_lang`
+-- Đang đổ dữ liệu cho bảng `jms_order_message_lang`
 --
 
 INSERT INTO `jms_order_message_lang` (`id_order_message`, `id_lang`, `name`, `message`) VALUES
@@ -19327,7 +19179,7 @@ INSERT INTO `jms_order_message_lang` (`id_order_message`, `id_lang`, `name`, `me
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_payment`
+-- Cấu trúc bảng cho bảng `jms_order_payment`
 --
 
 CREATE TABLE `jms_order_payment` (
@@ -19348,7 +19200,7 @@ CREATE TABLE `jms_order_payment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return`
+-- Cấu trúc bảng cho bảng `jms_order_return`
 --
 
 CREATE TABLE `jms_order_return` (
@@ -19364,7 +19216,7 @@ CREATE TABLE `jms_order_return` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return_detail`
+-- Cấu trúc bảng cho bảng `jms_order_return_detail`
 --
 
 CREATE TABLE `jms_order_return_detail` (
@@ -19377,7 +19229,7 @@ CREATE TABLE `jms_order_return_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return_state`
+-- Cấu trúc bảng cho bảng `jms_order_return_state`
 --
 
 CREATE TABLE `jms_order_return_state` (
@@ -19386,7 +19238,7 @@ CREATE TABLE `jms_order_return_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_return_state`
+-- Đang đổ dữ liệu cho bảng `jms_order_return_state`
 --
 
 INSERT INTO `jms_order_return_state` (`id_order_return_state`, `color`) VALUES
@@ -19399,7 +19251,7 @@ INSERT INTO `jms_order_return_state` (`id_order_return_state`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_return_state_lang`
+-- Cấu trúc bảng cho bảng `jms_order_return_state_lang`
 --
 
 CREATE TABLE `jms_order_return_state_lang` (
@@ -19409,7 +19261,7 @@ CREATE TABLE `jms_order_return_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_return_state_lang`
+-- Đang đổ dữ liệu cho bảng `jms_order_return_state_lang`
 --
 
 INSERT INTO `jms_order_return_state_lang` (`id_order_return_state`, `id_lang`, `name`) VALUES
@@ -19462,7 +19314,7 @@ INSERT INTO `jms_order_return_state_lang` (`id_order_return_state`, `id_lang`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_slip`
+-- Cấu trúc bảng cho bảng `jms_order_slip`
 --
 
 CREATE TABLE `jms_order_slip` (
@@ -19486,7 +19338,7 @@ CREATE TABLE `jms_order_slip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_slip_detail`
+-- Cấu trúc bảng cho bảng `jms_order_slip_detail`
 --
 
 CREATE TABLE `jms_order_slip_detail` (
@@ -19504,7 +19356,7 @@ CREATE TABLE `jms_order_slip_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_slip_detail_tax`
+-- Cấu trúc bảng cho bảng `jms_order_slip_detail_tax`
 --
 
 CREATE TABLE `jms_order_slip_detail_tax` (
@@ -19517,7 +19369,7 @@ CREATE TABLE `jms_order_slip_detail_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_state`
+-- Cấu trúc bảng cho bảng `jms_order_state`
 --
 
 CREATE TABLE `jms_order_state` (
@@ -19538,7 +19390,7 @@ CREATE TABLE `jms_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_state`
+-- Đang đổ dữ liệu cho bảng `jms_order_state`
 --
 
 INSERT INTO `jms_order_state` (`id_order_state`, `invoice`, `send_email`, `module_name`, `color`, `unremovable`, `hidden`, `logable`, `delivery`, `shipped`, `paid`, `pdf_invoice`, `pdf_delivery`, `deleted`) VALUES
@@ -19559,7 +19411,7 @@ INSERT INTO `jms_order_state` (`id_order_state`, `invoice`, `send_email`, `modul
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_order_state_lang`
+-- Cấu trúc bảng cho bảng `jms_order_state_lang`
 --
 
 CREATE TABLE `jms_order_state_lang` (
@@ -19570,7 +19422,7 @@ CREATE TABLE `jms_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_order_state_lang`
+-- Đang đổ dữ liệu cho bảng `jms_order_state_lang`
 --
 
 INSERT INTO `jms_order_state_lang` (`id_order_state`, `id_lang`, `name`, `template`) VALUES
@@ -19695,7 +19547,7 @@ INSERT INTO `jms_order_state_lang` (`id_order_state`, `id_lang`, `name`, `templa
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_pack`
+-- Cấu trúc bảng cho bảng `jms_pack`
 --
 
 CREATE TABLE `jms_pack` (
@@ -19708,7 +19560,7 @@ CREATE TABLE `jms_pack` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_page`
+-- Cấu trúc bảng cho bảng `jms_page`
 --
 
 CREATE TABLE `jms_page` (
@@ -19718,7 +19570,7 @@ CREATE TABLE `jms_page` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_page`
+-- Đang đổ dữ liệu cho bảng `jms_page`
 --
 
 INSERT INTO `jms_page` (`id_page`, `id_page_type`, `id_object`) VALUES
@@ -19728,7 +19580,7 @@ INSERT INTO `jms_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_pagenotfound`
+-- Cấu trúc bảng cho bảng `jms_pagenotfound`
 --
 
 CREATE TABLE `jms_pagenotfound` (
@@ -19743,7 +19595,7 @@ CREATE TABLE `jms_pagenotfound` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_page_type`
+-- Cấu trúc bảng cho bảng `jms_page_type`
 --
 
 CREATE TABLE `jms_page_type` (
@@ -19752,7 +19604,7 @@ CREATE TABLE `jms_page_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_page_type`
+-- Đang đổ dữ liệu cho bảng `jms_page_type`
 --
 
 INSERT INTO `jms_page_type` (`id_page_type`, `name`) VALUES
@@ -19762,7 +19614,7 @@ INSERT INTO `jms_page_type` (`id_page_type`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_page_viewed`
+-- Cấu trúc bảng cho bảng `jms_page_viewed`
 --
 
 CREATE TABLE `jms_page_viewed` (
@@ -19776,7 +19628,7 @@ CREATE TABLE `jms_page_viewed` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product`
+-- Cấu trúc bảng cho bảng `jms_product`
 --
 
 CREATE TABLE `jms_product` (
@@ -19836,7 +19688,7 @@ CREATE TABLE `jms_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product`
+-- Đang đổ dữ liệu cho bảng `jms_product`
 --
 
 INSERT INTO `jms_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`) VALUES
@@ -19879,7 +19731,7 @@ INSERT INTO `jms_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_c
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attachment`
+-- Cấu trúc bảng cho bảng `jms_product_attachment`
 --
 
 CREATE TABLE `jms_product_attachment` (
@@ -19890,7 +19742,7 @@ CREATE TABLE `jms_product_attachment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute`
+-- Cấu trúc bảng cho bảng `jms_product_attribute`
 --
 
 CREATE TABLE `jms_product_attribute` (
@@ -19916,7 +19768,7 @@ CREATE TABLE `jms_product_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_attribute`
+-- Đang đổ dữ liệu cho bảng `jms_product_attribute`
 --
 
 INSERT INTO `jms_product_attribute` (`id_product_attribute`, `id_product`, `reference`, `supplier_reference`, `location`, `ean13`, `isbn`, `upc`, `wholesale_price`, `price`, `ecotax`, `quantity`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
@@ -19999,7 +19851,7 @@ INSERT INTO `jms_product_attribute` (`id_product_attribute`, `id_product`, `refe
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute_combination`
+-- Cấu trúc bảng cho bảng `jms_product_attribute_combination`
 --
 
 CREATE TABLE `jms_product_attribute_combination` (
@@ -20008,7 +19860,7 @@ CREATE TABLE `jms_product_attribute_combination` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_attribute_combination`
+-- Đang đổ dữ liệu cho bảng `jms_product_attribute_combination`
 --
 
 INSERT INTO `jms_product_attribute_combination` (`id_attribute`, `id_product_attribute`) VALUES
@@ -20166,7 +20018,7 @@ INSERT INTO `jms_product_attribute_combination` (`id_attribute`, `id_product_att
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute_image`
+-- Cấu trúc bảng cho bảng `jms_product_attribute_image`
 --
 
 CREATE TABLE `jms_product_attribute_image` (
@@ -20177,7 +20029,7 @@ CREATE TABLE `jms_product_attribute_image` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_attribute_shop`
+-- Cấu trúc bảng cho bảng `jms_product_attribute_shop`
 --
 
 CREATE TABLE `jms_product_attribute_shop` (
@@ -20197,7 +20049,7 @@ CREATE TABLE `jms_product_attribute_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_attribute_shop`
+-- Đang đổ dữ liệu cho bảng `jms_product_attribute_shop`
 --
 
 INSERT INTO `jms_product_attribute_shop` (`id_product`, `id_product_attribute`, `id_shop`, `wholesale_price`, `price`, `ecotax`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
@@ -20280,7 +20132,7 @@ INSERT INTO `jms_product_attribute_shop` (`id_product`, `id_product_attribute`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_carrier`
+-- Cấu trúc bảng cho bảng `jms_product_carrier`
 --
 
 CREATE TABLE `jms_product_carrier` (
@@ -20292,7 +20144,7 @@ CREATE TABLE `jms_product_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_country_tax`
+-- Cấu trúc bảng cho bảng `jms_product_country_tax`
 --
 
 CREATE TABLE `jms_product_country_tax` (
@@ -20304,7 +20156,7 @@ CREATE TABLE `jms_product_country_tax` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_download`
+-- Cấu trúc bảng cho bảng `jms_product_download`
 --
 
 CREATE TABLE `jms_product_download` (
@@ -20323,7 +20175,7 @@ CREATE TABLE `jms_product_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_group_reduction_cache`
+-- Cấu trúc bảng cho bảng `jms_product_group_reduction_cache`
 --
 
 CREATE TABLE `jms_product_group_reduction_cache` (
@@ -20335,7 +20187,7 @@ CREATE TABLE `jms_product_group_reduction_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_lang`
+-- Cấu trúc bảng cho bảng `jms_product_lang`
 --
 
 CREATE TABLE `jms_product_lang` (
@@ -20356,7 +20208,7 @@ CREATE TABLE `jms_product_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_lang`
+-- Đang đổ dữ liệu cho bảng `jms_product_lang`
 --
 
 INSERT INTO `jms_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`, `description_short`, `link_rewrite`, `meta_description`, `meta_keywords`, `meta_title`, `name`, `available_now`, `available_later`, `delivery_in_stock`, `delivery_out_stock`) VALUES
@@ -20575,7 +20427,7 @@ INSERT INTO `jms_product_lang` (`id_product`, `id_shop`, `id_lang`, `description
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_sale`
+-- Cấu trúc bảng cho bảng `jms_product_sale`
 --
 
 CREATE TABLE `jms_product_sale` (
@@ -20588,7 +20440,7 @@ CREATE TABLE `jms_product_sale` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_shop`
+-- Cấu trúc bảng cho bảng `jms_product_shop`
 --
 
 CREATE TABLE `jms_product_shop` (
@@ -20628,7 +20480,7 @@ CREATE TABLE `jms_product_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_product_shop`
+-- Đang đổ dữ liệu cho bảng `jms_product_shop`
 --
 
 INSERT INTO `jms_product_shop` (`id_product`, `id_shop`, `id_category_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ecotax`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_default_attribute`, `advanced_stock_management`, `date_add`, `date_upd`, `pack_stock_type`) VALUES
@@ -20671,7 +20523,7 @@ INSERT INTO `jms_product_shop` (`id_product`, `id_shop`, `id_category_default`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_supplier`
+-- Cấu trúc bảng cho bảng `jms_product_supplier`
 --
 
 CREATE TABLE `jms_product_supplier` (
@@ -20687,7 +20539,7 @@ CREATE TABLE `jms_product_supplier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_product_tag`
+-- Cấu trúc bảng cho bảng `jms_product_tag`
 --
 
 CREATE TABLE `jms_product_tag` (
@@ -20699,7 +20551,7 @@ CREATE TABLE `jms_product_tag` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_profile`
+-- Cấu trúc bảng cho bảng `jms_profile`
 --
 
 CREATE TABLE `jms_profile` (
@@ -20707,7 +20559,7 @@ CREATE TABLE `jms_profile` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_profile`
+-- Đang đổ dữ liệu cho bảng `jms_profile`
 --
 
 INSERT INTO `jms_profile` (`id_profile`) VALUES
@@ -20719,7 +20571,7 @@ INSERT INTO `jms_profile` (`id_profile`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_profile_lang`
+-- Cấu trúc bảng cho bảng `jms_profile_lang`
 --
 
 CREATE TABLE `jms_profile_lang` (
@@ -20729,7 +20581,7 @@ CREATE TABLE `jms_profile_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_profile_lang`
+-- Đang đổ dữ liệu cho bảng `jms_profile_lang`
 --
 
 INSERT INTO `jms_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
@@ -20773,7 +20625,7 @@ INSERT INTO `jms_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_quick_access`
+-- Cấu trúc bảng cho bảng `jms_quick_access`
 --
 
 CREATE TABLE `jms_quick_access` (
@@ -20783,7 +20635,7 @@ CREATE TABLE `jms_quick_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_quick_access`
+-- Đang đổ dữ liệu cho bảng `jms_quick_access`
 --
 
 INSERT INTO `jms_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
@@ -20797,7 +20649,7 @@ INSERT INTO `jms_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_quick_access_lang`
+-- Cấu trúc bảng cho bảng `jms_quick_access_lang`
 --
 
 CREATE TABLE `jms_quick_access_lang` (
@@ -20807,7 +20659,7 @@ CREATE TABLE `jms_quick_access_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_quick_access_lang`
+-- Đang đổ dữ liệu cho bảng `jms_quick_access_lang`
 --
 
 INSERT INTO `jms_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUES
@@ -20869,7 +20721,7 @@ INSERT INTO `jms_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_range_price`
+-- Cấu trúc bảng cho bảng `jms_range_price`
 --
 
 CREATE TABLE `jms_range_price` (
@@ -20880,7 +20732,7 @@ CREATE TABLE `jms_range_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_range_price`
+-- Đang đổ dữ liệu cho bảng `jms_range_price`
 --
 
 INSERT INTO `jms_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
@@ -20889,7 +20741,7 @@ INSERT INTO `jms_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_range_weight`
+-- Cấu trúc bảng cho bảng `jms_range_weight`
 --
 
 CREATE TABLE `jms_range_weight` (
@@ -20900,7 +20752,7 @@ CREATE TABLE `jms_range_weight` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_range_weight`
+-- Đang đổ dữ liệu cho bảng `jms_range_weight`
 --
 
 INSERT INTO `jms_range_weight` (`id_range_weight`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
@@ -20909,7 +20761,7 @@ INSERT INTO `jms_range_weight` (`id_range_weight`, `id_carrier`, `delimiter1`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_reassurance`
+-- Cấu trúc bảng cho bảng `jms_reassurance`
 --
 
 CREATE TABLE `jms_reassurance` (
@@ -20919,7 +20771,7 @@ CREATE TABLE `jms_reassurance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_reassurance`
+-- Đang đổ dữ liệu cho bảng `jms_reassurance`
 --
 
 INSERT INTO `jms_reassurance` (`id_reassurance`, `id_shop`, `file_name`) VALUES
@@ -20930,7 +20782,7 @@ INSERT INTO `jms_reassurance` (`id_reassurance`, `id_shop`, `file_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_reassurance_lang`
+-- Cấu trúc bảng cho bảng `jms_reassurance_lang`
 --
 
 CREATE TABLE `jms_reassurance_lang` (
@@ -20940,7 +20792,7 @@ CREATE TABLE `jms_reassurance_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_reassurance_lang`
+-- Đang đổ dữ liệu cho bảng `jms_reassurance_lang`
 --
 
 INSERT INTO `jms_reassurance_lang` (`id_reassurance`, `id_lang`, `text`) VALUES
@@ -20975,7 +20827,7 @@ INSERT INTO `jms_reassurance_lang` (`id_reassurance`, `id_lang`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_referrer`
+-- Cấu trúc bảng cho bảng `jms_referrer`
 --
 
 CREATE TABLE `jms_referrer` (
@@ -20999,7 +20851,7 @@ CREATE TABLE `jms_referrer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_referrer_cache`
+-- Cấu trúc bảng cho bảng `jms_referrer_cache`
 --
 
 CREATE TABLE `jms_referrer_cache` (
@@ -21010,7 +20862,7 @@ CREATE TABLE `jms_referrer_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_referrer_shop`
+-- Cấu trúc bảng cho bảng `jms_referrer_shop`
 --
 
 CREATE TABLE `jms_referrer_shop` (
@@ -21029,7 +20881,7 @@ CREATE TABLE `jms_referrer_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_request_sql`
+-- Cấu trúc bảng cho bảng `jms_request_sql`
 --
 
 CREATE TABLE `jms_request_sql` (
@@ -21041,7 +20893,7 @@ CREATE TABLE `jms_request_sql` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_required_field`
+-- Cấu trúc bảng cho bảng `jms_required_field`
 --
 
 CREATE TABLE `jms_required_field` (
@@ -21053,7 +20905,7 @@ CREATE TABLE `jms_required_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_risk`
+-- Cấu trúc bảng cho bảng `jms_risk`
 --
 
 CREATE TABLE `jms_risk` (
@@ -21063,7 +20915,7 @@ CREATE TABLE `jms_risk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_risk`
+-- Đang đổ dữ liệu cho bảng `jms_risk`
 --
 
 INSERT INTO `jms_risk` (`id_risk`, `percent`, `color`) VALUES
@@ -21075,7 +20927,7 @@ INSERT INTO `jms_risk` (`id_risk`, `percent`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_risk_lang`
+-- Cấu trúc bảng cho bảng `jms_risk_lang`
 --
 
 CREATE TABLE `jms_risk_lang` (
@@ -21085,7 +20937,7 @@ CREATE TABLE `jms_risk_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_risk_lang`
+-- Đang đổ dữ liệu cho bảng `jms_risk_lang`
 --
 
 INSERT INTO `jms_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
@@ -21129,7 +20981,7 @@ INSERT INTO `jms_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_search_engine`
+-- Cấu trúc bảng cho bảng `jms_search_engine`
 --
 
 CREATE TABLE `jms_search_engine` (
@@ -21139,7 +20991,7 @@ CREATE TABLE `jms_search_engine` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_search_engine`
+-- Đang đổ dữ liệu cho bảng `jms_search_engine`
 --
 
 INSERT INTO `jms_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
@@ -21185,7 +21037,7 @@ INSERT INTO `jms_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_search_index`
+-- Cấu trúc bảng cho bảng `jms_search_index`
 --
 
 CREATE TABLE `jms_search_index` (
@@ -21195,7 +21047,7 @@ CREATE TABLE `jms_search_index` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_search_index`
+-- Đang đổ dữ liệu cho bảng `jms_search_index`
 --
 
 INSERT INTO `jms_search_index` (`id_product`, `id_word`, `weight`) VALUES
@@ -25537,7 +25389,7 @@ INSERT INTO `jms_search_index` (`id_product`, `id_word`, `weight`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_search_word`
+-- Cấu trúc bảng cho bảng `jms_search_word`
 --
 
 CREATE TABLE `jms_search_word` (
@@ -25548,7 +25400,7 @@ CREATE TABLE `jms_search_word` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_search_word`
+-- Đang đổ dữ liệu cho bảng `jms_search_word`
 --
 
 INSERT INTO `jms_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
@@ -25866,7 +25718,7 @@ INSERT INTO `jms_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_sekeyword`
+-- Cấu trúc bảng cho bảng `jms_sekeyword`
 --
 
 CREATE TABLE `jms_sekeyword` (
@@ -25880,7 +25732,7 @@ CREATE TABLE `jms_sekeyword` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_shop`
+-- Cấu trúc bảng cho bảng `jms_shop`
 --
 
 CREATE TABLE `jms_shop` (
@@ -25894,7 +25746,7 @@ CREATE TABLE `jms_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_shop`
+-- Đang đổ dữ liệu cho bảng `jms_shop`
 --
 
 INSERT INTO `jms_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `theme_name`, `active`, `deleted`) VALUES
@@ -25903,7 +25755,7 @@ INSERT INTO `jms_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `them
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_shop_group`
+-- Cấu trúc bảng cho bảng `jms_shop_group`
 --
 
 CREATE TABLE `jms_shop_group` (
@@ -25917,7 +25769,7 @@ CREATE TABLE `jms_shop_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_shop_group`
+-- Đang đổ dữ liệu cho bảng `jms_shop_group`
 --
 
 INSERT INTO `jms_shop_group` (`id_shop_group`, `name`, `share_customer`, `share_order`, `share_stock`, `active`, `deleted`) VALUES
@@ -25926,7 +25778,7 @@ INSERT INTO `jms_shop_group` (`id_shop_group`, `name`, `share_customer`, `share_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_shop_url`
+-- Cấu trúc bảng cho bảng `jms_shop_url`
 --
 
 CREATE TABLE `jms_shop_url` (
@@ -25941,7 +25793,7 @@ CREATE TABLE `jms_shop_url` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_shop_url`
+-- Đang đổ dữ liệu cho bảng `jms_shop_url`
 --
 
 INSERT INTO `jms_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `physical_uri`, `virtual_uri`, `main`, `active`) VALUES
@@ -25950,7 +25802,7 @@ INSERT INTO `jms_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_smarty_cache`
+-- Cấu trúc bảng cho bảng `jms_smarty_cache`
 --
 
 CREATE TABLE `jms_smarty_cache` (
@@ -25964,7 +25816,7 @@ CREATE TABLE `jms_smarty_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_smarty_last_flush`
+-- Cấu trúc bảng cho bảng `jms_smarty_last_flush`
 --
 
 CREATE TABLE `jms_smarty_last_flush` (
@@ -25975,7 +25827,7 @@ CREATE TABLE `jms_smarty_last_flush` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_smarty_lazy_cache`
+-- Cấu trúc bảng cho bảng `jms_smarty_lazy_cache`
 --
 
 CREATE TABLE `jms_smarty_lazy_cache` (
@@ -25989,7 +25841,7 @@ CREATE TABLE `jms_smarty_lazy_cache` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price`
+-- Cấu trúc bảng cho bảng `jms_specific_price`
 --
 
 CREATE TABLE `jms_specific_price` (
@@ -26014,7 +25866,7 @@ CREATE TABLE `jms_specific_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_specific_price`
+-- Đang đổ dữ liệu cho bảng `jms_specific_price`
 --
 
 INSERT INTO `jms_specific_price` (`id_specific_price`, `id_specific_price_rule`, `id_cart`, `id_product`, `id_shop`, `id_shop_group`, `id_currency`, `id_country`, `id_group`, `id_customer`, `id_product_attribute`, `price`, `from_quantity`, `reduction`, `reduction_tax`, `reduction_type`, `from`, `to`) VALUES
@@ -26023,7 +25875,7 @@ INSERT INTO `jms_specific_price` (`id_specific_price`, `id_specific_price_rule`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_priority`
+-- Cấu trúc bảng cho bảng `jms_specific_price_priority`
 --
 
 CREATE TABLE `jms_specific_price_priority` (
@@ -26033,7 +25885,7 @@ CREATE TABLE `jms_specific_price_priority` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_specific_price_priority`
+-- Đang đổ dữ liệu cho bảng `jms_specific_price_priority`
 --
 
 INSERT INTO `jms_specific_price_priority` (`id_specific_price_priority`, `id_product`, `priority`) VALUES
@@ -26077,7 +25929,7 @@ INSERT INTO `jms_specific_price_priority` (`id_specific_price_priority`, `id_pro
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_rule`
+-- Cấu trúc bảng cho bảng `jms_specific_price_rule`
 --
 
 CREATE TABLE `jms_specific_price_rule` (
@@ -26099,7 +25951,7 @@ CREATE TABLE `jms_specific_price_rule` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_rule_condition`
+-- Cấu trúc bảng cho bảng `jms_specific_price_rule_condition`
 --
 
 CREATE TABLE `jms_specific_price_rule_condition` (
@@ -26112,7 +25964,7 @@ CREATE TABLE `jms_specific_price_rule_condition` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_specific_price_rule_condition_group`
+-- Cấu trúc bảng cho bảng `jms_specific_price_rule_condition_group`
 --
 
 CREATE TABLE `jms_specific_price_rule_condition_group` (
@@ -26123,7 +25975,7 @@ CREATE TABLE `jms_specific_price_rule_condition_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_state`
+-- Cấu trúc bảng cho bảng `jms_state`
 --
 
 CREATE TABLE `jms_state` (
@@ -26137,7 +25989,7 @@ CREATE TABLE `jms_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_state`
+-- Đang đổ dữ liệu cho bảng `jms_state`
 --
 
 INSERT INTO `jms_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`, `tax_behavior`, `active`) VALUES
@@ -26521,7 +26373,7 @@ INSERT INTO `jms_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_statssearch`
+-- Cấu trúc bảng cho bảng `jms_statssearch`
 --
 
 CREATE TABLE `jms_statssearch` (
@@ -26536,7 +26388,7 @@ CREATE TABLE `jms_statssearch` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock`
+-- Cấu trúc bảng cho bảng `jms_stock`
 --
 
 CREATE TABLE `jms_stock` (
@@ -26556,7 +26408,7 @@ CREATE TABLE `jms_stock` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_available`
+-- Cấu trúc bảng cho bảng `jms_stock_available`
 --
 
 CREATE TABLE `jms_stock_available` (
@@ -26574,7 +26426,7 @@ CREATE TABLE `jms_stock_available` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_available`
+-- Đang đổ dữ liệu cho bảng `jms_stock_available`
 --
 
 INSERT INTO `jms_stock_available` (`id_stock_available`, `id_product`, `id_product_attribute`, `id_shop`, `id_shop_group`, `quantity`, `physical_quantity`, `reserved_quantity`, `depends_on_stock`, `out_of_stock`, `location`) VALUES
@@ -26704,7 +26556,7 @@ INSERT INTO `jms_stock_available` (`id_stock_available`, `id_product`, `id_produ
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_mvt`
+-- Cấu trúc bảng cho bảng `jms_stock_mvt`
 --
 
 CREATE TABLE `jms_stock_mvt` (
@@ -26726,7 +26578,7 @@ CREATE TABLE `jms_stock_mvt` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_mvt`
+-- Đang đổ dữ liệu cho bảng `jms_stock_mvt`
 --
 
 INSERT INTO `jms_stock_mvt` (`id_stock_mvt`, `id_stock`, `id_order`, `id_supply_order`, `id_stock_mvt_reason`, `id_employee`, `employee_lastname`, `employee_firstname`, `physical_quantity`, `date_add`, `sign`, `price_te`, `last_wa`, `current_wa`, `referer`) VALUES
@@ -26825,7 +26677,7 @@ INSERT INTO `jms_stock_mvt` (`id_stock_mvt`, `id_stock`, `id_order`, `id_supply_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_mvt_reason`
+-- Cấu trúc bảng cho bảng `jms_stock_mvt_reason`
 --
 
 CREATE TABLE `jms_stock_mvt_reason` (
@@ -26837,7 +26689,7 @@ CREATE TABLE `jms_stock_mvt_reason` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_mvt_reason`
+-- Đang đổ dữ liệu cho bảng `jms_stock_mvt_reason`
 --
 
 INSERT INTO `jms_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `date_upd`, `deleted`) VALUES
@@ -26857,7 +26709,7 @@ INSERT INTO `jms_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_stock_mvt_reason_lang`
+-- Cấu trúc bảng cho bảng `jms_stock_mvt_reason_lang`
 --
 
 CREATE TABLE `jms_stock_mvt_reason_lang` (
@@ -26867,7 +26719,7 @@ CREATE TABLE `jms_stock_mvt_reason_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_stock_mvt_reason_lang`
+-- Đang đổ dữ liệu cho bảng `jms_stock_mvt_reason_lang`
 --
 
 INSERT INTO `jms_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name`) VALUES
@@ -26983,7 +26835,7 @@ INSERT INTO `jms_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_store`
+-- Cấu trúc bảng cho bảng `jms_store`
 --
 
 CREATE TABLE `jms_store` (
@@ -27003,7 +26855,7 @@ CREATE TABLE `jms_store` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_store`
+-- Đang đổ dữ liệu cho bảng `jms_store`
 --
 
 INSERT INTO `jms_store` (`id_store`, `id_country`, `id_state`, `city`, `postcode`, `latitude`, `longitude`, `phone`, `fax`, `email`, `active`, `date_add`, `date_upd`) VALUES
@@ -27016,7 +26868,7 @@ INSERT INTO `jms_store` (`id_store`, `id_country`, `id_state`, `city`, `postcode
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_store_lang`
+-- Cấu trúc bảng cho bảng `jms_store_lang`
 --
 
 CREATE TABLE `jms_store_lang` (
@@ -27030,7 +26882,7 @@ CREATE TABLE `jms_store_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_store_lang`
+-- Đang đổ dữ liệu cho bảng `jms_store_lang`
 --
 
 INSERT INTO `jms_store_lang` (`id_store`, `id_lang`, `name`, `address1`, `address2`, `hours`, `note`) VALUES
@@ -27083,7 +26935,7 @@ INSERT INTO `jms_store_lang` (`id_store`, `id_lang`, `name`, `address1`, `addres
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_store_shop`
+-- Cấu trúc bảng cho bảng `jms_store_shop`
 --
 
 CREATE TABLE `jms_store_shop` (
@@ -27092,7 +26944,7 @@ CREATE TABLE `jms_store_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_store_shop`
+-- Đang đổ dữ liệu cho bảng `jms_store_shop`
 --
 
 INSERT INTO `jms_store_shop` (`id_store`, `id_shop`) VALUES
@@ -27105,7 +26957,7 @@ INSERT INTO `jms_store_shop` (`id_store`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supplier`
+-- Cấu trúc bảng cho bảng `jms_supplier`
 --
 
 CREATE TABLE `jms_supplier` (
@@ -27119,7 +26971,7 @@ CREATE TABLE `jms_supplier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supplier_lang`
+-- Cấu trúc bảng cho bảng `jms_supplier_lang`
 --
 
 CREATE TABLE `jms_supplier_lang` (
@@ -27134,7 +26986,7 @@ CREATE TABLE `jms_supplier_lang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supplier_shop`
+-- Cấu trúc bảng cho bảng `jms_supplier_shop`
 --
 
 CREATE TABLE `jms_supplier_shop` (
@@ -27145,7 +26997,7 @@ CREATE TABLE `jms_supplier_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order`
+-- Cấu trúc bảng cho bảng `jms_supply_order`
 --
 
 CREATE TABLE `jms_supply_order` (
@@ -27173,7 +27025,7 @@ CREATE TABLE `jms_supply_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_detail`
+-- Cấu trúc bảng cho bảng `jms_supply_order_detail`
 --
 
 CREATE TABLE `jms_supply_order_detail` (
@@ -27206,7 +27058,7 @@ CREATE TABLE `jms_supply_order_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_history`
+-- Cấu trúc bảng cho bảng `jms_supply_order_history`
 --
 
 CREATE TABLE `jms_supply_order_history` (
@@ -27222,7 +27074,7 @@ CREATE TABLE `jms_supply_order_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_receipt_history`
+-- Cấu trúc bảng cho bảng `jms_supply_order_receipt_history`
 --
 
 CREATE TABLE `jms_supply_order_receipt_history` (
@@ -27239,7 +27091,7 @@ CREATE TABLE `jms_supply_order_receipt_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_state`
+-- Cấu trúc bảng cho bảng `jms_supply_order_state`
 --
 
 CREATE TABLE `jms_supply_order_state` (
@@ -27253,7 +27105,7 @@ CREATE TABLE `jms_supply_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_supply_order_state`
+-- Đang đổ dữ liệu cho bảng `jms_supply_order_state`
 --
 
 INSERT INTO `jms_supply_order_state` (`id_supply_order_state`, `delivery_note`, `editable`, `receipt_state`, `pending_receipt`, `enclosed`, `color`) VALUES
@@ -27267,7 +27119,7 @@ INSERT INTO `jms_supply_order_state` (`id_supply_order_state`, `delivery_note`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_supply_order_state_lang`
+-- Cấu trúc bảng cho bảng `jms_supply_order_state_lang`
 --
 
 CREATE TABLE `jms_supply_order_state_lang` (
@@ -27277,7 +27129,7 @@ CREATE TABLE `jms_supply_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_supply_order_state_lang`
+-- Đang đổ dữ liệu cho bảng `jms_supply_order_state_lang`
 --
 
 INSERT INTO `jms_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `name`) VALUES
@@ -27339,7 +27191,7 @@ INSERT INTO `jms_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab`
+-- Cấu trúc bảng cho bảng `jms_tab`
 --
 
 CREATE TABLE `jms_tab` (
@@ -27354,7 +27206,7 @@ CREATE TABLE `jms_tab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tab`
+-- Đang đổ dữ liệu cho bảng `jms_tab`
 --
 
 INSERT INTO `jms_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`, `active`, `hide_host_mode`, `icon`) VALUES
@@ -27506,7 +27358,7 @@ INSERT INTO `jms_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab_advice`
+-- Cấu trúc bảng cho bảng `jms_tab_advice`
 --
 
 CREATE TABLE `jms_tab_advice` (
@@ -27515,7 +27367,7 @@ CREATE TABLE `jms_tab_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jms_tab_advice`
+-- Đang đổ dữ liệu cho bảng `jms_tab_advice`
 --
 
 INSERT INTO `jms_tab_advice` (`id_tab`, `id_advice`) VALUES
@@ -27582,12 +27434,28 @@ INSERT INTO `jms_tab_advice` (`id_tab`, `id_advice`) VALUES
 (1, 61),
 (1, 62),
 (1, 63),
-(1, 64);
+(1, 64),
+(1, 65),
+(1, 66),
+(1, 67),
+(1, 68),
+(1, 69),
+(1, 70),
+(1, 71),
+(1, 72),
+(1, 73),
+(1, 74),
+(1, 75),
+(1, 76),
+(1, 77),
+(1, 78),
+(1, 79),
+(1, 80);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab_lang`
+-- Cấu trúc bảng cho bảng `jms_tab_lang`
 --
 
 CREATE TABLE `jms_tab_lang` (
@@ -27597,7 +27465,7 @@ CREATE TABLE `jms_tab_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tab_lang`
+-- Đang đổ dữ liệu cho bảng `jms_tab_lang`
 --
 
 INSERT INTO `jms_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
@@ -28874,7 +28742,7 @@ INSERT INTO `jms_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tab_module_preference`
+-- Cấu trúc bảng cho bảng `jms_tab_module_preference`
 --
 
 CREATE TABLE `jms_tab_module_preference` (
@@ -28887,7 +28755,7 @@ CREATE TABLE `jms_tab_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tag`
+-- Cấu trúc bảng cho bảng `jms_tag`
 --
 
 CREATE TABLE `jms_tag` (
@@ -28899,7 +28767,7 @@ CREATE TABLE `jms_tag` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tag_count`
+-- Cấu trúc bảng cho bảng `jms_tag_count`
 --
 
 CREATE TABLE `jms_tag_count` (
@@ -28913,7 +28781,7 @@ CREATE TABLE `jms_tag_count` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax`
+-- Cấu trúc bảng cho bảng `jms_tax`
 --
 
 CREATE TABLE `jms_tax` (
@@ -28924,7 +28792,7 @@ CREATE TABLE `jms_tax` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax`
+-- Đang đổ dữ liệu cho bảng `jms_tax`
 --
 
 INSERT INTO `jms_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
@@ -29022,7 +28890,7 @@ INSERT INTO `jms_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_lang`
+-- Cấu trúc bảng cho bảng `jms_tax_lang`
 --
 
 CREATE TABLE `jms_tax_lang` (
@@ -29032,7 +28900,7 @@ CREATE TABLE `jms_tax_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_lang`
+-- Đang đổ dữ liệu cho bảng `jms_tax_lang`
 --
 
 INSERT INTO `jms_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
@@ -29850,7 +29718,7 @@ INSERT INTO `jms_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_rule`
+-- Cấu trúc bảng cho bảng `jms_tax_rule`
 --
 
 CREATE TABLE `jms_tax_rule` (
@@ -29866,7 +29734,7 @@ CREATE TABLE `jms_tax_rule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_rule`
+-- Đang đổ dữ liệu cho bảng `jms_tax_rule`
 --
 
 INSERT INTO `jms_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `id_state`, `zipcode_from`, `zipcode_to`, `id_tax`, `behavior`, `description`) VALUES
@@ -30552,7 +30420,7 @@ INSERT INTO `jms_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_rules_group`
+-- Cấu trúc bảng cho bảng `jms_tax_rules_group`
 --
 
 CREATE TABLE `jms_tax_rules_group` (
@@ -30565,7 +30433,7 @@ CREATE TABLE `jms_tax_rules_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_rules_group`
+-- Đang đổ dữ liệu cho bảng `jms_tax_rules_group`
 --
 
 INSERT INTO `jms_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `deleted`, `date_add`, `date_upd`) VALUES
@@ -30649,7 +30517,7 @@ INSERT INTO `jms_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `dele
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_tax_rules_group_shop`
+-- Cấu trúc bảng cho bảng `jms_tax_rules_group_shop`
 --
 
 CREATE TABLE `jms_tax_rules_group_shop` (
@@ -30658,7 +30526,7 @@ CREATE TABLE `jms_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_tax_rules_group_shop`
+-- Đang đổ dữ liệu cho bảng `jms_tax_rules_group_shop`
 --
 
 INSERT INTO `jms_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
@@ -30742,7 +30610,7 @@ INSERT INTO `jms_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_timezone`
+-- Cấu trúc bảng cho bảng `jms_timezone`
 --
 
 CREATE TABLE `jms_timezone` (
@@ -30751,7 +30619,7 @@ CREATE TABLE `jms_timezone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_timezone`
+-- Đang đổ dữ liệu cho bảng `jms_timezone`
 --
 
 INSERT INTO `jms_timezone` (`id_timezone`, `name`) VALUES
@@ -31319,7 +31187,7 @@ INSERT INTO `jms_timezone` (`id_timezone`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_translation`
+-- Cấu trúc bảng cho bảng `jms_translation`
 --
 
 CREATE TABLE `jms_translation` (
@@ -31332,7 +31200,7 @@ CREATE TABLE `jms_translation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_translation`
+-- Đang đổ dữ liệu cho bảng `jms_translation`
 --
 
 INSERT INTO `jms_translation` (`id_translation`, `id_lang`, `key`, `translation`, `domain`, `theme`) VALUES
@@ -31342,7 +31210,7 @@ INSERT INTO `jms_translation` (`id_translation`, `id_lang`, `key`, `translation`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse`
+-- Cấu trúc bảng cho bảng `jms_warehouse`
 --
 
 CREATE TABLE `jms_warehouse` (
@@ -31359,7 +31227,7 @@ CREATE TABLE `jms_warehouse` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse_carrier`
+-- Cấu trúc bảng cho bảng `jms_warehouse_carrier`
 --
 
 CREATE TABLE `jms_warehouse_carrier` (
@@ -31370,7 +31238,7 @@ CREATE TABLE `jms_warehouse_carrier` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse_product_location`
+-- Cấu trúc bảng cho bảng `jms_warehouse_product_location`
 --
 
 CREATE TABLE `jms_warehouse_product_location` (
@@ -31384,7 +31252,7 @@ CREATE TABLE `jms_warehouse_product_location` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_warehouse_shop`
+-- Cấu trúc bảng cho bảng `jms_warehouse_shop`
 --
 
 CREATE TABLE `jms_warehouse_shop` (
@@ -31395,7 +31263,7 @@ CREATE TABLE `jms_warehouse_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_webservice_account`
+-- Cấu trúc bảng cho bảng `jms_webservice_account`
 --
 
 CREATE TABLE `jms_webservice_account` (
@@ -31411,7 +31279,7 @@ CREATE TABLE `jms_webservice_account` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_webservice_account_shop`
+-- Cấu trúc bảng cho bảng `jms_webservice_account_shop`
 --
 
 CREATE TABLE `jms_webservice_account_shop` (
@@ -31422,7 +31290,7 @@ CREATE TABLE `jms_webservice_account_shop` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_webservice_permission`
+-- Cấu trúc bảng cho bảng `jms_webservice_permission`
 --
 
 CREATE TABLE `jms_webservice_permission` (
@@ -31435,7 +31303,7 @@ CREATE TABLE `jms_webservice_permission` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_web_browser`
+-- Cấu trúc bảng cho bảng `jms_web_browser`
 --
 
 CREATE TABLE `jms_web_browser` (
@@ -31444,7 +31312,7 @@ CREATE TABLE `jms_web_browser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_web_browser`
+-- Đang đổ dữ liệu cho bảng `jms_web_browser`
 --
 
 INSERT INTO `jms_web_browser` (`id_web_browser`, `name`) VALUES
@@ -31463,7 +31331,7 @@ INSERT INTO `jms_web_browser` (`id_web_browser`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist`
+-- Cấu trúc bảng cho bảng `jms_wishlist`
 --
 
 CREATE TABLE `jms_wishlist` (
@@ -31482,7 +31350,7 @@ CREATE TABLE `jms_wishlist` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist_email`
+-- Cấu trúc bảng cho bảng `jms_wishlist_email`
 --
 
 CREATE TABLE `jms_wishlist_email` (
@@ -31494,7 +31362,7 @@ CREATE TABLE `jms_wishlist_email` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist_product`
+-- Cấu trúc bảng cho bảng `jms_wishlist_product`
 --
 
 CREATE TABLE `jms_wishlist_product` (
@@ -31509,7 +31377,7 @@ CREATE TABLE `jms_wishlist_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_wishlist_product_cart`
+-- Cấu trúc bảng cho bảng `jms_wishlist_product_cart`
 --
 
 CREATE TABLE `jms_wishlist_product_cart` (
@@ -31522,7 +31390,7 @@ CREATE TABLE `jms_wishlist_product_cart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_zone`
+-- Cấu trúc bảng cho bảng `jms_zone`
 --
 
 CREATE TABLE `jms_zone` (
@@ -31532,7 +31400,7 @@ CREATE TABLE `jms_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_zone`
+-- Đang đổ dữ liệu cho bảng `jms_zone`
 --
 
 INSERT INTO `jms_zone` (`id_zone`, `name`, `active`) VALUES
@@ -31548,7 +31416,7 @@ INSERT INTO `jms_zone` (`id_zone`, `name`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jms_zone_shop`
+-- Cấu trúc bảng cho bảng `jms_zone_shop`
 --
 
 CREATE TABLE `jms_zone_shop` (
@@ -31557,7 +31425,7 @@ CREATE TABLE `jms_zone_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `jms_zone_shop`
+-- Đang đổ dữ liệu cho bảng `jms_zone_shop`
 --
 
 INSERT INTO `jms_zone_shop` (`id_zone`, `id_shop`) VALUES
@@ -31571,23 +31439,23 @@ INSERT INTO `jms_zone_shop` (`id_zone`, `id_shop`) VALUES
 (8, 1);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `jms_access`
+-- Chỉ mục cho bảng `jms_access`
 --
 ALTER TABLE `jms_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indexes for table `jms_accessory`
+-- Chỉ mục cho bảng `jms_accessory`
 --
 ALTER TABLE `jms_accessory`
   ADD KEY `accessory_product` (`id_product_1`,`id_product_2`);
 
 --
--- Indexes for table `jms_address`
+-- Chỉ mục cho bảng `jms_address`
 --
 ALTER TABLE `jms_address`
   ADD PRIMARY KEY (`id_address`),
@@ -31599,64 +31467,64 @@ ALTER TABLE `jms_address`
   ADD KEY `id_warehouse` (`id_warehouse`);
 
 --
--- Indexes for table `jms_address_format`
+-- Chỉ mục cho bảng `jms_address_format`
 --
 ALTER TABLE `jms_address_format`
   ADD PRIMARY KEY (`id_country`);
 
 --
--- Indexes for table `jms_admin_filter`
+-- Chỉ mục cho bảng `jms_admin_filter`
 --
 ALTER TABLE `jms_admin_filter`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `admin_filter_search_idx` (`employee`,`shop`,`controller`,`action`);
 
 --
--- Indexes for table `jms_advice`
+-- Chỉ mục cho bảng `jms_advice`
 --
 ALTER TABLE `jms_advice`
   ADD PRIMARY KEY (`id_advice`);
 
 --
--- Indexes for table `jms_advice_lang`
+-- Chỉ mục cho bảng `jms_advice_lang`
 --
 ALTER TABLE `jms_advice_lang`
   ADD PRIMARY KEY (`id_advice`,`id_lang`);
 
 --
--- Indexes for table `jms_alias`
+-- Chỉ mục cho bảng `jms_alias`
 --
 ALTER TABLE `jms_alias`
   ADD PRIMARY KEY (`id_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indexes for table `jms_attachment`
+-- Chỉ mục cho bảng `jms_attachment`
 --
 ALTER TABLE `jms_attachment`
   ADD PRIMARY KEY (`id_attachment`);
 
 --
--- Indexes for table `jms_attachment_lang`
+-- Chỉ mục cho bảng `jms_attachment_lang`
 --
 ALTER TABLE `jms_attachment_lang`
   ADD PRIMARY KEY (`id_attachment`,`id_lang`);
 
 --
--- Indexes for table `jms_attribute`
+-- Chỉ mục cho bảng `jms_attribute`
 --
 ALTER TABLE `jms_attribute`
   ADD PRIMARY KEY (`id_attribute`),
   ADD KEY `attribute_group` (`id_attribute_group`);
 
 --
--- Indexes for table `jms_attribute_group`
+-- Chỉ mục cho bảng `jms_attribute_group`
 --
 ALTER TABLE `jms_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indexes for table `jms_attribute_group_lang`
+-- Chỉ mục cho bảng `jms_attribute_group_lang`
 --
 ALTER TABLE `jms_attribute_group_lang`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`),
@@ -31664,7 +31532,7 @@ ALTER TABLE `jms_attribute_group_lang`
   ADD KEY `IDX_DEEAE65BBA299860` (`id_lang`);
 
 --
--- Indexes for table `jms_attribute_group_shop`
+-- Chỉ mục cho bảng `jms_attribute_group_shop`
 --
 ALTER TABLE `jms_attribute_group_shop`
   ADD PRIMARY KEY (`id_attribute_group`,`id_shop`),
@@ -31672,14 +31540,14 @@ ALTER TABLE `jms_attribute_group_shop`
   ADD KEY `IDX_43892E9B274A50A0` (`id_shop`);
 
 --
--- Indexes for table `jms_attribute_impact`
+-- Chỉ mục cho bảng `jms_attribute_impact`
 --
 ALTER TABLE `jms_attribute_impact`
   ADD PRIMARY KEY (`id_attribute_impact`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_attribute`);
 
 --
--- Indexes for table `jms_attribute_lang`
+-- Chỉ mục cho bảng `jms_attribute_lang`
 --
 ALTER TABLE `jms_attribute_lang`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`),
@@ -31687,7 +31555,7 @@ ALTER TABLE `jms_attribute_lang`
   ADD KEY `IDX_64EB4FE7BA299860` (`id_lang`);
 
 --
--- Indexes for table `jms_attribute_shop`
+-- Chỉ mục cho bảng `jms_attribute_shop`
 --
 ALTER TABLE `jms_attribute_shop`
   ADD PRIMARY KEY (`id_attribute`,`id_shop`),
@@ -31695,26 +31563,26 @@ ALTER TABLE `jms_attribute_shop`
   ADD KEY `IDX_F9888727274A50A0` (`id_shop`);
 
 --
--- Indexes for table `jms_authorization_role`
+-- Chỉ mục cho bảng `jms_authorization_role`
 --
 ALTER TABLE `jms_authorization_role`
   ADD PRIMARY KEY (`id_authorization_role`),
   ADD UNIQUE KEY `slug` (`slug`);
 
 --
--- Indexes for table `jms_badge`
+-- Chỉ mục cho bảng `jms_badge`
 --
 ALTER TABLE `jms_badge`
   ADD PRIMARY KEY (`id_badge`);
 
 --
--- Indexes for table `jms_badge_lang`
+-- Chỉ mục cho bảng `jms_badge_lang`
 --
 ALTER TABLE `jms_badge_lang`
   ADD PRIMARY KEY (`id_badge`,`id_lang`);
 
 --
--- Indexes for table `jms_carrier`
+-- Chỉ mục cho bảng `jms_carrier`
 --
 ALTER TABLE `jms_carrier`
   ADD PRIMARY KEY (`id_carrier`),
@@ -31723,38 +31591,38 @@ ALTER TABLE `jms_carrier`
   ADD KEY `reference` (`id_reference`,`deleted`,`active`);
 
 --
--- Indexes for table `jms_carrier_group`
+-- Chỉ mục cho bảng `jms_carrier_group`
 --
 ALTER TABLE `jms_carrier_group`
   ADD PRIMARY KEY (`id_carrier`,`id_group`);
 
 --
--- Indexes for table `jms_carrier_lang`
+-- Chỉ mục cho bảng `jms_carrier_lang`
 --
 ALTER TABLE `jms_carrier_lang`
   ADD PRIMARY KEY (`id_lang`,`id_shop`,`id_carrier`);
 
 --
--- Indexes for table `jms_carrier_shop`
+-- Chỉ mục cho bảng `jms_carrier_shop`
 --
 ALTER TABLE `jms_carrier_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_carrier_tax_rules_group_shop`
+-- Chỉ mục cho bảng `jms_carrier_tax_rules_group_shop`
 --
 ALTER TABLE `jms_carrier_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_tax_rules_group`,`id_shop`);
 
 --
--- Indexes for table `jms_carrier_zone`
+-- Chỉ mục cho bảng `jms_carrier_zone`
 --
 ALTER TABLE `jms_carrier_zone`
   ADD PRIMARY KEY (`id_carrier`,`id_zone`);
 
 --
--- Indexes for table `jms_cart`
+-- Chỉ mục cho bảng `jms_cart`
 --
 ALTER TABLE `jms_cart`
   ADD PRIMARY KEY (`id_cart`),
@@ -31770,14 +31638,14 @@ ALTER TABLE `jms_cart`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indexes for table `jms_cart_cart_rule`
+-- Chỉ mục cho bảng `jms_cart_cart_rule`
 --
 ALTER TABLE `jms_cart_cart_rule`
   ADD PRIMARY KEY (`id_cart`,`id_cart_rule`),
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indexes for table `jms_cart_product`
+-- Chỉ mục cho bảng `jms_cart_product`
 --
 ALTER TABLE `jms_cart_product`
   ADD PRIMARY KEY (`id_cart`,`id_product`,`id_product_attribute`,`id_customization`,`id_address_delivery`),
@@ -31785,7 +31653,7 @@ ALTER TABLE `jms_cart_product`
   ADD KEY `id_cart_order` (`id_cart`,`date_add`,`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `jms_cart_rule`
+-- Chỉ mục cho bảng `jms_cart_rule`
 --
 ALTER TABLE `jms_cart_rule`
   ADD PRIMARY KEY (`id_cart_rule`),
@@ -31797,13 +31665,13 @@ ALTER TABLE `jms_cart_rule`
   ADD KEY `date_to` (`date_to`);
 
 --
--- Indexes for table `jms_cart_rule_carrier`
+-- Chỉ mục cho bảng `jms_cart_rule_carrier`
 --
 ALTER TABLE `jms_cart_rule_carrier`
   ADD PRIMARY KEY (`id_cart_rule`,`id_carrier`);
 
 --
--- Indexes for table `jms_cart_rule_combination`
+-- Chỉ mục cho bảng `jms_cart_rule_combination`
 --
 ALTER TABLE `jms_cart_rule_combination`
   ADD PRIMARY KEY (`id_cart_rule_1`,`id_cart_rule_2`),
@@ -31811,49 +31679,49 @@ ALTER TABLE `jms_cart_rule_combination`
   ADD KEY `id_cart_rule_2` (`id_cart_rule_2`);
 
 --
--- Indexes for table `jms_cart_rule_country`
+-- Chỉ mục cho bảng `jms_cart_rule_country`
 --
 ALTER TABLE `jms_cart_rule_country`
   ADD PRIMARY KEY (`id_cart_rule`,`id_country`);
 
 --
--- Indexes for table `jms_cart_rule_group`
+-- Chỉ mục cho bảng `jms_cart_rule_group`
 --
 ALTER TABLE `jms_cart_rule_group`
   ADD PRIMARY KEY (`id_cart_rule`,`id_group`);
 
 --
--- Indexes for table `jms_cart_rule_lang`
+-- Chỉ mục cho bảng `jms_cart_rule_lang`
 --
 ALTER TABLE `jms_cart_rule_lang`
   ADD PRIMARY KEY (`id_cart_rule`,`id_lang`);
 
 --
--- Indexes for table `jms_cart_rule_product_rule`
+-- Chỉ mục cho bảng `jms_cart_rule_product_rule`
 --
 ALTER TABLE `jms_cart_rule_product_rule`
   ADD PRIMARY KEY (`id_product_rule`);
 
 --
--- Indexes for table `jms_cart_rule_product_rule_group`
+-- Chỉ mục cho bảng `jms_cart_rule_product_rule_group`
 --
 ALTER TABLE `jms_cart_rule_product_rule_group`
   ADD PRIMARY KEY (`id_product_rule_group`);
 
 --
--- Indexes for table `jms_cart_rule_product_rule_value`
+-- Chỉ mục cho bảng `jms_cart_rule_product_rule_value`
 --
 ALTER TABLE `jms_cart_rule_product_rule_value`
   ADD PRIMARY KEY (`id_product_rule`,`id_item`);
 
 --
--- Indexes for table `jms_cart_rule_shop`
+-- Chỉ mục cho bảng `jms_cart_rule_shop`
 --
 ALTER TABLE `jms_cart_rule_shop`
   ADD PRIMARY KEY (`id_cart_rule`,`id_shop`);
 
 --
--- Indexes for table `jms_category`
+-- Chỉ mục cho bảng `jms_category`
 --
 ALTER TABLE `jms_category`
   ADD PRIMARY KEY (`id_category`),
@@ -31865,7 +31733,7 @@ ALTER TABLE `jms_category`
   ADD KEY `activenright` (`active`,`nright`);
 
 --
--- Indexes for table `jms_category_group`
+-- Chỉ mục cho bảng `jms_category_group`
 --
 ALTER TABLE `jms_category_group`
   ADD PRIMARY KEY (`id_category`,`id_group`),
@@ -31873,14 +31741,14 @@ ALTER TABLE `jms_category_group`
   ADD KEY `id_group` (`id_group`);
 
 --
--- Indexes for table `jms_category_lang`
+-- Chỉ mục cho bảng `jms_category_lang`
 --
 ALTER TABLE `jms_category_lang`
   ADD PRIMARY KEY (`id_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indexes for table `jms_category_product`
+-- Chỉ mục cho bảng `jms_category_product`
 --
 ALTER TABLE `jms_category_product`
   ADD PRIMARY KEY (`id_category`,`id_product`),
@@ -31888,84 +31756,84 @@ ALTER TABLE `jms_category_product`
   ADD KEY `id_category` (`id_category`,`position`);
 
 --
--- Indexes for table `jms_category_shop`
+-- Chỉ mục cho bảng `jms_category_shop`
 --
 ALTER TABLE `jms_category_shop`
   ADD PRIMARY KEY (`id_category`,`id_shop`);
 
 --
--- Indexes for table `jms_cms`
+-- Chỉ mục cho bảng `jms_cms`
 --
 ALTER TABLE `jms_cms`
   ADD PRIMARY KEY (`id_cms`);
 
 --
--- Indexes for table `jms_cms_category`
+-- Chỉ mục cho bảng `jms_cms_category`
 --
 ALTER TABLE `jms_cms_category`
   ADD PRIMARY KEY (`id_cms_category`),
   ADD KEY `category_parent` (`id_parent`);
 
 --
--- Indexes for table `jms_cms_category_lang`
+-- Chỉ mục cho bảng `jms_cms_category_lang`
 --
 ALTER TABLE `jms_cms_category_lang`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indexes for table `jms_cms_category_shop`
+-- Chỉ mục cho bảng `jms_cms_category_shop`
 --
 ALTER TABLE `jms_cms_category_shop`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_cms_lang`
+-- Chỉ mục cho bảng `jms_cms_lang`
 --
 ALTER TABLE `jms_cms_lang`
   ADD PRIMARY KEY (`id_cms`,`id_shop`,`id_lang`);
 
 --
--- Indexes for table `jms_cms_role`
+-- Chỉ mục cho bảng `jms_cms_role`
 --
 ALTER TABLE `jms_cms_role`
   ADD PRIMARY KEY (`id_cms_role`,`id_cms`),
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indexes for table `jms_cms_role_lang`
+-- Chỉ mục cho bảng `jms_cms_role_lang`
 --
 ALTER TABLE `jms_cms_role_lang`
   ADD PRIMARY KEY (`id_cms_role`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_cms_shop`
+-- Chỉ mục cho bảng `jms_cms_shop`
 --
 ALTER TABLE `jms_cms_shop`
   ADD PRIMARY KEY (`id_cms`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_condition`
+-- Chỉ mục cho bảng `jms_condition`
 --
 ALTER TABLE `jms_condition`
   ADD PRIMARY KEY (`id_condition`,`id_ps_condition`);
 
 --
--- Indexes for table `jms_condition_advice`
+-- Chỉ mục cho bảng `jms_condition_advice`
 --
 ALTER TABLE `jms_condition_advice`
   ADD PRIMARY KEY (`id_condition`,`id_advice`);
 
 --
--- Indexes for table `jms_condition_badge`
+-- Chỉ mục cho bảng `jms_condition_badge`
 --
 ALTER TABLE `jms_condition_badge`
   ADD PRIMARY KEY (`id_condition`,`id_badge`);
 
 --
--- Indexes for table `jms_configuration`
+-- Chỉ mục cho bảng `jms_configuration`
 --
 ALTER TABLE `jms_configuration`
   ADD PRIMARY KEY (`id_configuration`),
@@ -31974,7 +31842,7 @@ ALTER TABLE `jms_configuration`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indexes for table `jms_configuration_kpi`
+-- Chỉ mục cho bảng `jms_configuration_kpi`
 --
 ALTER TABLE `jms_configuration_kpi`
   ADD PRIMARY KEY (`id_configuration_kpi`),
@@ -31983,19 +31851,19 @@ ALTER TABLE `jms_configuration_kpi`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indexes for table `jms_configuration_kpi_lang`
+-- Chỉ mục cho bảng `jms_configuration_kpi_lang`
 --
 ALTER TABLE `jms_configuration_kpi_lang`
   ADD PRIMARY KEY (`id_configuration_kpi`,`id_lang`);
 
 --
--- Indexes for table `jms_configuration_lang`
+-- Chỉ mục cho bảng `jms_configuration_lang`
 --
 ALTER TABLE `jms_configuration_lang`
   ADD PRIMARY KEY (`id_configuration`,`id_lang`);
 
 --
--- Indexes for table `jms_connections`
+-- Chỉ mục cho bảng `jms_connections`
 --
 ALTER TABLE `jms_connections`
   ADD PRIMARY KEY (`id_connections`),
@@ -32004,13 +31872,13 @@ ALTER TABLE `jms_connections`
   ADD KEY `id_page` (`id_page`);
 
 --
--- Indexes for table `jms_connections_page`
+-- Chỉ mục cho bảng `jms_connections_page`
 --
 ALTER TABLE `jms_connections_page`
   ADD PRIMARY KEY (`id_connections`,`id_page`,`time_start`);
 
 --
--- Indexes for table `jms_connections_source`
+-- Chỉ mục cho bảng `jms_connections_source`
 --
 ALTER TABLE `jms_connections_source`
   ADD PRIMARY KEY (`id_connections_source`),
@@ -32020,26 +31888,26 @@ ALTER TABLE `jms_connections_source`
   ADD KEY `request_uri` (`request_uri`);
 
 --
--- Indexes for table `jms_contact`
+-- Chỉ mục cho bảng `jms_contact`
 --
 ALTER TABLE `jms_contact`
   ADD PRIMARY KEY (`id_contact`);
 
 --
--- Indexes for table `jms_contact_lang`
+-- Chỉ mục cho bảng `jms_contact_lang`
 --
 ALTER TABLE `jms_contact_lang`
   ADD PRIMARY KEY (`id_contact`,`id_lang`);
 
 --
--- Indexes for table `jms_contact_shop`
+-- Chỉ mục cho bảng `jms_contact_shop`
 --
 ALTER TABLE `jms_contact_shop`
   ADD PRIMARY KEY (`id_contact`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_country`
+-- Chỉ mục cho bảng `jms_country`
 --
 ALTER TABLE `jms_country`
   ADD PRIMARY KEY (`id_country`),
@@ -32047,40 +31915,40 @@ ALTER TABLE `jms_country`
   ADD KEY `country_` (`id_zone`);
 
 --
--- Indexes for table `jms_country_lang`
+-- Chỉ mục cho bảng `jms_country_lang`
 --
 ALTER TABLE `jms_country_lang`
   ADD PRIMARY KEY (`id_country`,`id_lang`);
 
 --
--- Indexes for table `jms_country_shop`
+-- Chỉ mục cho bảng `jms_country_shop`
 --
 ALTER TABLE `jms_country_shop`
   ADD PRIMARY KEY (`id_country`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_cronjobs`
+-- Chỉ mục cho bảng `jms_cronjobs`
 --
 ALTER TABLE `jms_cronjobs`
   ADD PRIMARY KEY (`id_cronjob`),
   ADD KEY `id_module` (`id_module`);
 
 --
--- Indexes for table `jms_currency`
+-- Chỉ mục cho bảng `jms_currency`
 --
 ALTER TABLE `jms_currency`
   ADD PRIMARY KEY (`id_currency`);
 
 --
--- Indexes for table `jms_currency_shop`
+-- Chỉ mục cho bảng `jms_currency_shop`
 --
 ALTER TABLE `jms_currency_shop`
   ADD PRIMARY KEY (`id_currency`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_customer`
+-- Chỉ mục cho bảng `jms_customer`
 --
 ALTER TABLE `jms_customer`
   ADD PRIMARY KEY (`id_customer`),
@@ -32092,7 +31960,7 @@ ALTER TABLE `jms_customer`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indexes for table `jms_customer_group`
+-- Chỉ mục cho bảng `jms_customer_group`
 --
 ALTER TABLE `jms_customer_group`
   ADD PRIMARY KEY (`id_customer`,`id_group`),
@@ -32100,7 +31968,7 @@ ALTER TABLE `jms_customer_group`
   ADD KEY `id_customer` (`id_customer`);
 
 --
--- Indexes for table `jms_customer_message`
+-- Chỉ mục cho bảng `jms_customer_message`
 --
 ALTER TABLE `jms_customer_message`
   ADD PRIMARY KEY (`id_customer_message`),
@@ -32108,13 +31976,13 @@ ALTER TABLE `jms_customer_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indexes for table `jms_customer_message_sync_imap`
+-- Chỉ mục cho bảng `jms_customer_message_sync_imap`
 --
 ALTER TABLE `jms_customer_message_sync_imap`
   ADD KEY `md5_header_index` (`md5_header`(4));
 
 --
--- Indexes for table `jms_customer_thread`
+-- Chỉ mục cho bảng `jms_customer_thread`
 --
 ALTER TABLE `jms_customer_thread`
   ADD PRIMARY KEY (`id_customer_thread`),
@@ -32126,7 +31994,7 @@ ALTER TABLE `jms_customer_thread`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_customization`
+-- Chỉ mục cho bảng `jms_customization`
 --
 ALTER TABLE `jms_customization`
   ADD PRIMARY KEY (`id_customization`,`id_cart`,`id_product`,`id_address_delivery`),
@@ -32134,32 +32002,32 @@ ALTER TABLE `jms_customization`
   ADD KEY `id_cart_product` (`id_cart`,`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `jms_customization_field`
+-- Chỉ mục cho bảng `jms_customization_field`
 --
 ALTER TABLE `jms_customization_field`
   ADD PRIMARY KEY (`id_customization_field`),
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_customization_field_lang`
+-- Chỉ mục cho bảng `jms_customization_field_lang`
 --
 ALTER TABLE `jms_customization_field_lang`
   ADD PRIMARY KEY (`id_customization_field`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_customized_data`
+-- Chỉ mục cho bảng `jms_customized_data`
 --
 ALTER TABLE `jms_customized_data`
   ADD PRIMARY KEY (`id_customization`,`type`,`index`);
 
 --
--- Indexes for table `jms_date_range`
+-- Chỉ mục cho bảng `jms_date_range`
 --
 ALTER TABLE `jms_date_range`
   ADD PRIMARY KEY (`id_date_range`);
 
 --
--- Indexes for table `jms_delivery`
+-- Chỉ mục cho bảng `jms_delivery`
 --
 ALTER TABLE `jms_delivery`
   ADD PRIMARY KEY (`id_delivery`),
@@ -32169,13 +32037,13 @@ ALTER TABLE `jms_delivery`
   ADD KEY `id_range_weight` (`id_range_weight`);
 
 --
--- Indexes for table `jms_emailsubscription`
+-- Chỉ mục cho bảng `jms_emailsubscription`
 --
 ALTER TABLE `jms_emailsubscription`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_employee`
+-- Chỉ mục cho bảng `jms_employee`
 --
 ALTER TABLE `jms_employee`
   ADD PRIMARY KEY (`id_employee`),
@@ -32184,27 +32052,27 @@ ALTER TABLE `jms_employee`
   ADD KEY `id_profile` (`id_profile`);
 
 --
--- Indexes for table `jms_employee_shop`
+-- Chỉ mục cho bảng `jms_employee_shop`
 --
 ALTER TABLE `jms_employee_shop`
   ADD PRIMARY KEY (`id_employee`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_feature`
+-- Chỉ mục cho bảng `jms_feature`
 --
 ALTER TABLE `jms_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indexes for table `jms_feature_lang`
+-- Chỉ mục cho bảng `jms_feature_lang`
 --
 ALTER TABLE `jms_feature_lang`
   ADD PRIMARY KEY (`id_feature`,`id_lang`),
   ADD KEY `id_lang` (`id_lang`,`name`);
 
 --
--- Indexes for table `jms_feature_product`
+-- Chỉ mục cho bảng `jms_feature_product`
 --
 ALTER TABLE `jms_feature_product`
   ADD PRIMARY KEY (`id_feature`,`id_product`,`id_feature_value`),
@@ -32212,66 +32080,66 @@ ALTER TABLE `jms_feature_product`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_feature_shop`
+-- Chỉ mục cho bảng `jms_feature_shop`
 --
 ALTER TABLE `jms_feature_shop`
   ADD PRIMARY KEY (`id_feature`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_feature_value`
+-- Chỉ mục cho bảng `jms_feature_value`
 --
 ALTER TABLE `jms_feature_value`
   ADD PRIMARY KEY (`id_feature_value`),
   ADD KEY `feature` (`id_feature`);
 
 --
--- Indexes for table `jms_feature_value_lang`
+-- Chỉ mục cho bảng `jms_feature_value_lang`
 --
 ALTER TABLE `jms_feature_value_lang`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indexes for table `jms_gender`
+-- Chỉ mục cho bảng `jms_gender`
 --
 ALTER TABLE `jms_gender`
   ADD PRIMARY KEY (`id_gender`);
 
 --
--- Indexes for table `jms_gender_lang`
+-- Chỉ mục cho bảng `jms_gender_lang`
 --
 ALTER TABLE `jms_gender_lang`
   ADD PRIMARY KEY (`id_gender`,`id_lang`),
   ADD KEY `id_gender` (`id_gender`);
 
 --
--- Indexes for table `jms_group`
+-- Chỉ mục cho bảng `jms_group`
 --
 ALTER TABLE `jms_group`
   ADD PRIMARY KEY (`id_group`);
 
 --
--- Indexes for table `jms_group_lang`
+-- Chỉ mục cho bảng `jms_group_lang`
 --
 ALTER TABLE `jms_group_lang`
   ADD PRIMARY KEY (`id_group`,`id_lang`);
 
 --
--- Indexes for table `jms_group_reduction`
+-- Chỉ mục cho bảng `jms_group_reduction`
 --
 ALTER TABLE `jms_group_reduction`
   ADD PRIMARY KEY (`id_group_reduction`),
   ADD UNIQUE KEY `id_group` (`id_group`,`id_category`);
 
 --
--- Indexes for table `jms_group_shop`
+-- Chỉ mục cho bảng `jms_group_shop`
 --
 ALTER TABLE `jms_group_shop`
   ADD PRIMARY KEY (`id_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_guest`
+-- Chỉ mục cho bảng `jms_guest`
 --
 ALTER TABLE `jms_guest`
   ADD PRIMARY KEY (`id_guest`),
@@ -32280,39 +32148,39 @@ ALTER TABLE `jms_guest`
   ADD KEY `id_web_browser` (`id_web_browser`);
 
 --
--- Indexes for table `jms_homeslider`
+-- Chỉ mục cho bảng `jms_homeslider`
 --
 ALTER TABLE `jms_homeslider`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_shop`);
 
 --
--- Indexes for table `jms_homeslider_slides`
+-- Chỉ mục cho bảng `jms_homeslider_slides`
 --
 ALTER TABLE `jms_homeslider_slides`
   ADD PRIMARY KEY (`id_homeslider_slides`);
 
 --
--- Indexes for table `jms_homeslider_slides_lang`
+-- Chỉ mục cho bảng `jms_homeslider_slides_lang`
 --
 ALTER TABLE `jms_homeslider_slides_lang`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_lang`);
 
 --
--- Indexes for table `jms_hook`
+-- Chỉ mục cho bảng `jms_hook`
 --
 ALTER TABLE `jms_hook`
   ADD PRIMARY KEY (`id_hook`),
   ADD UNIQUE KEY `hook_name` (`name`);
 
 --
--- Indexes for table `jms_hook_alias`
+-- Chỉ mục cho bảng `jms_hook_alias`
 --
 ALTER TABLE `jms_hook_alias`
   ADD PRIMARY KEY (`id_hook_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indexes for table `jms_hook_module`
+-- Chỉ mục cho bảng `jms_hook_module`
 --
 ALTER TABLE `jms_hook_module`
   ADD PRIMARY KEY (`id_module`,`id_hook`,`id_shop`),
@@ -32321,7 +32189,7 @@ ALTER TABLE `jms_hook_module`
   ADD KEY `position` (`id_shop`,`position`);
 
 --
--- Indexes for table `jms_hook_module_exceptions`
+-- Chỉ mục cho bảng `jms_hook_module_exceptions`
 --
 ALTER TABLE `jms_hook_module_exceptions`
   ADD PRIMARY KEY (`id_hook_module_exceptions`),
@@ -32329,19 +32197,19 @@ ALTER TABLE `jms_hook_module_exceptions`
   ADD KEY `id_hook` (`id_hook`);
 
 --
--- Indexes for table `jms_hotdeals`
+-- Chỉ mục cho bảng `jms_hotdeals`
 --
 ALTER TABLE `jms_hotdeals`
   ADD PRIMARY KEY (`id_hotdeals`);
 
 --
--- Indexes for table `jms_hotdeals_items`
+-- Chỉ mục cho bảng `jms_hotdeals_items`
 --
 ALTER TABLE `jms_hotdeals_items`
   ADD PRIMARY KEY (`id_hotdeals`);
 
 --
--- Indexes for table `jms_image`
+-- Chỉ mục cho bảng `jms_image`
 --
 ALTER TABLE `jms_image`
   ADD PRIMARY KEY (`id_image`),
@@ -32350,14 +32218,14 @@ ALTER TABLE `jms_image`
   ADD KEY `image_product` (`id_product`);
 
 --
--- Indexes for table `jms_image_lang`
+-- Chỉ mục cho bảng `jms_image_lang`
 --
 ALTER TABLE `jms_image_lang`
   ADD PRIMARY KEY (`id_image`,`id_lang`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indexes for table `jms_image_shop`
+-- Chỉ mục cho bảng `jms_image_shop`
 --
 ALTER TABLE `jms_image_shop`
   ADD PRIMARY KEY (`id_image`,`id_shop`),
@@ -32365,206 +32233,206 @@ ALTER TABLE `jms_image_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_image_type`
+-- Chỉ mục cho bảng `jms_image_type`
 --
 ALTER TABLE `jms_image_type`
   ADD PRIMARY KEY (`id_image_type`),
   ADD KEY `image_type_name` (`name`);
 
 --
--- Indexes for table `jms_import_match`
+-- Chỉ mục cho bảng `jms_import_match`
 --
 ALTER TABLE `jms_import_match`
   ADD PRIMARY KEY (`id_import_match`);
 
 --
--- Indexes for table `jms_info`
+-- Chỉ mục cho bảng `jms_info`
 --
 ALTER TABLE `jms_info`
   ADD PRIMARY KEY (`id_info`);
 
 --
--- Indexes for table `jms_info_lang`
+-- Chỉ mục cho bảng `jms_info_lang`
 --
 ALTER TABLE `jms_info_lang`
   ADD PRIMARY KEY (`id_info`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_info_shop`
+-- Chỉ mục cho bảng `jms_info_shop`
 --
 ALTER TABLE `jms_info_shop`
   ADD PRIMARY KEY (`id_info`,`id_shop`);
 
 --
--- Indexes for table `jms_jmsblog_categories`
+-- Chỉ mục cho bảng `jms_jmsblog_categories`
 --
 ALTER TABLE `jms_jmsblog_categories`
   ADD PRIMARY KEY (`category_id`);
 
 --
--- Indexes for table `jms_jmsblog_categories_lang`
+-- Chỉ mục cho bảng `jms_jmsblog_categories_lang`
 --
 ALTER TABLE `jms_jmsblog_categories_lang`
   ADD PRIMARY KEY (`category_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsblog_posts`
+-- Chỉ mục cho bảng `jms_jmsblog_posts`
 --
 ALTER TABLE `jms_jmsblog_posts`
   ADD PRIMARY KEY (`post_id`);
 
 --
--- Indexes for table `jms_jmsblog_posts_comments`
+-- Chỉ mục cho bảng `jms_jmsblog_posts_comments`
 --
 ALTER TABLE `jms_jmsblog_posts_comments`
   ADD PRIMARY KEY (`comment_id`);
 
 --
--- Indexes for table `jms_jmsblog_posts_lang`
+-- Chỉ mục cho bảng `jms_jmsblog_posts_lang`
 --
 ALTER TABLE `jms_jmsblog_posts_lang`
   ADD PRIMARY KEY (`post_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsbrands`
+-- Chỉ mục cho bảng `jms_jmsbrands`
 --
 ALTER TABLE `jms_jmsbrands`
   ADD PRIMARY KEY (`brand_id`,`id_shop`);
 
 --
--- Indexes for table `jms_jmsbrands_logos`
+-- Chỉ mục cho bảng `jms_jmsbrands_logos`
 --
 ALTER TABLE `jms_jmsbrands_logos`
   ADD PRIMARY KEY (`brand_id`);
 
 --
--- Indexes for table `jms_jmsbrands_logos_lang`
+-- Chỉ mục cho bảng `jms_jmsbrands_logos_lang`
 --
 ALTER TABLE `jms_jmsbrands_logos_lang`
   ADD PRIMARY KEY (`brand_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsfacebookusers`
+-- Chỉ mục cho bảng `jms_jmsfacebookusers`
 --
 ALTER TABLE `jms_jmsfacebookusers`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_jmshtml_left`
+-- Chỉ mục cho bảng `jms_jmshtml_left`
 --
 ALTER TABLE `jms_jmshtml_left`
   ADD PRIMARY KEY (`html_id`,`id_shop`);
 
 --
--- Indexes for table `jms_jmshtml_left_lang`
+-- Chỉ mục cho bảng `jms_jmshtml_left_lang`
 --
 ALTER TABLE `jms_jmshtml_left_lang`
   ADD PRIMARY KEY (`html_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsmaploc`
+-- Chỉ mục cho bảng `jms_jmsmaploc`
 --
 ALTER TABLE `jms_jmsmaploc`
   ADD PRIMARY KEY (`id_loc`,`id_shop`);
 
 --
--- Indexes for table `jms_jmsmaploc_locs`
+-- Chỉ mục cho bảng `jms_jmsmaploc_locs`
 --
 ALTER TABLE `jms_jmsmaploc_locs`
   ADD PRIMARY KEY (`id_loc`);
 
 --
--- Indexes for table `jms_jmsmaploc_locs_lang`
+-- Chỉ mục cho bảng `jms_jmsmaploc_locs_lang`
 --
 ALTER TABLE `jms_jmsmaploc_locs_lang`
   ADD PRIMARY KEY (`id_loc`,`id_lang`);
 
 --
--- Indexes for table `jms_jmsmegamenu`
+-- Chỉ mục cho bảng `jms_jmsmegamenu`
 --
 ALTER TABLE `jms_jmsmegamenu`
   ADD PRIMARY KEY (`mitem_id`);
 
 --
--- Indexes for table `jms_jmspagebuilder`
+-- Chỉ mục cho bảng `jms_jmspagebuilder`
 --
 ALTER TABLE `jms_jmspagebuilder`
   ADD PRIMARY KEY (`id_homepage`,`id_shop`);
 
 --
--- Indexes for table `jms_jmspagebuilder_homepages`
+-- Chỉ mục cho bảng `jms_jmspagebuilder_homepages`
 --
 ALTER TABLE `jms_jmspagebuilder_homepages`
   ADD PRIMARY KEY (`id_homepage`);
 
 --
--- Indexes for table `jms_jmstestimonials`
+-- Chỉ mục cho bảng `jms_jmstestimonials`
 --
 ALTER TABLE `jms_jmstestimonials`
   ADD PRIMARY KEY (`id_testimonial`);
 
 --
--- Indexes for table `jms_jmstestimonials_lang`
+-- Chỉ mục cho bảng `jms_jmstestimonials_lang`
 --
 ALTER TABLE `jms_jmstestimonials_lang`
   ADD PRIMARY KEY (`id_testimonial`,`id_lang`);
 
 --
--- Indexes for table `jms_jms_producttab`
+-- Chỉ mục cho bảng `jms_jms_producttab`
 --
 ALTER TABLE `jms_jms_producttab`
   ADD PRIMARY KEY (`tab_id`,`id_shop`);
 
 --
--- Indexes for table `jms_jms_producttab_ctab`
+-- Chỉ mục cho bảng `jms_jms_producttab_ctab`
 --
 ALTER TABLE `jms_jms_producttab_ctab`
   ADD PRIMARY KEY (`tab_id`);
 
 --
--- Indexes for table `jms_jms_producttab_ctab_lang`
+-- Chỉ mục cho bảng `jms_jms_producttab_ctab_lang`
 --
 ALTER TABLE `jms_jms_producttab_ctab_lang`
   ADD PRIMARY KEY (`tab_id`,`id_lang`);
 
 --
--- Indexes for table `jms_jms_product_video`
+-- Chỉ mục cho bảng `jms_jms_product_video`
 --
 ALTER TABLE `jms_jms_product_video`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_jms_slides`
+-- Chỉ mục cho bảng `jms_jms_slides`
 --
 ALTER TABLE `jms_jms_slides`
   ADD PRIMARY KEY (`id_slide`);
 
 --
--- Indexes for table `jms_jms_slides_lang`
+-- Chỉ mục cho bảng `jms_jms_slides_lang`
 --
 ALTER TABLE `jms_jms_slides_lang`
   ADD PRIMARY KEY (`id_slide`,`id_lang`);
 
 --
--- Indexes for table `jms_jms_slides_layers`
+-- Chỉ mục cho bảng `jms_jms_slides_layers`
 --
 ALTER TABLE `jms_jms_slides_layers`
   ADD PRIMARY KEY (`id_layer`,`id_slide`);
 
 --
--- Indexes for table `jms_jms_slides_shop`
+-- Chỉ mục cho bảng `jms_jms_slides_shop`
 --
 ALTER TABLE `jms_jms_slides_shop`
   ADD PRIMARY KEY (`id_slide`,`id_shop`);
 
 --
--- Indexes for table `jms_lang`
+-- Chỉ mục cho bảng `jms_lang`
 --
 ALTER TABLE `jms_lang`
   ADD PRIMARY KEY (`id_lang`);
 
 --
--- Indexes for table `jms_lang_shop`
+-- Chỉ mục cho bảng `jms_lang_shop`
 --
 ALTER TABLE `jms_lang_shop`
   ADD PRIMARY KEY (`id_lang`,`id_shop`),
@@ -32572,63 +32440,63 @@ ALTER TABLE `jms_lang_shop`
   ADD KEY `IDX_FDF96F40274A50A0` (`id_shop`);
 
 --
--- Indexes for table `jms_layered_category`
+-- Chỉ mục cho bảng `jms_layered_category`
 --
 ALTER TABLE `jms_layered_category`
   ADD PRIMARY KEY (`id_layered_category`),
   ADD KEY `id_category` (`id_category`,`type`);
 
 --
--- Indexes for table `jms_layered_filter`
+-- Chỉ mục cho bảng `jms_layered_filter`
 --
 ALTER TABLE `jms_layered_filter`
   ADD PRIMARY KEY (`id_layered_filter`);
 
 --
--- Indexes for table `jms_layered_filter_shop`
+-- Chỉ mục cho bảng `jms_layered_filter_shop`
 --
 ALTER TABLE `jms_layered_filter_shop`
   ADD PRIMARY KEY (`id_layered_filter`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_layered_indexable_attribute_group`
+-- Chỉ mục cho bảng `jms_layered_indexable_attribute_group`
 --
 ALTER TABLE `jms_layered_indexable_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indexes for table `jms_layered_indexable_attribute_group_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_attribute_group_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_attribute_group_lang_value`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_indexable_attribute_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_attribute_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_attribute_lang_value`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_indexable_feature`
+-- Chỉ mục cho bảng `jms_layered_indexable_feature`
 --
 ALTER TABLE `jms_layered_indexable_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indexes for table `jms_layered_indexable_feature_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_feature_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_feature_lang_value`
   ADD PRIMARY KEY (`id_feature`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_indexable_feature_value_lang_value`
+-- Chỉ mục cho bảng `jms_layered_indexable_feature_value_lang_value`
 --
 ALTER TABLE `jms_layered_indexable_feature_value_lang_value`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indexes for table `jms_layered_price_index`
+-- Chỉ mục cho bảng `jms_layered_price_index`
 --
 ALTER TABLE `jms_layered_price_index`
   ADD PRIMARY KEY (`id_product`,`id_currency`,`id_shop`),
@@ -32637,83 +32505,83 @@ ALTER TABLE `jms_layered_price_index`
   ADD KEY `price_max` (`price_max`);
 
 --
--- Indexes for table `jms_layered_product_attribute`
+-- Chỉ mục cho bảng `jms_layered_product_attribute`
 --
 ALTER TABLE `jms_layered_product_attribute`
   ADD PRIMARY KEY (`id_attribute`,`id_product`,`id_shop`),
   ADD UNIQUE KEY `id_attribute_group` (`id_attribute_group`,`id_attribute`,`id_product`,`id_shop`);
 
 --
--- Indexes for table `jms_linksmenutop`
+-- Chỉ mục cho bảng `jms_linksmenutop`
 --
 ALTER TABLE `jms_linksmenutop`
   ADD PRIMARY KEY (`id_linksmenutop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_linksmenutop_lang`
+-- Chỉ mục cho bảng `jms_linksmenutop_lang`
 --
 ALTER TABLE `jms_linksmenutop_lang`
   ADD KEY `id_linksmenutop` (`id_linksmenutop`,`id_lang`,`id_shop`);
 
 --
--- Indexes for table `jms_link_block`
+-- Chỉ mục cho bảng `jms_link_block`
 --
 ALTER TABLE `jms_link_block`
   ADD PRIMARY KEY (`id_link_block`);
 
 --
--- Indexes for table `jms_link_block_lang`
+-- Chỉ mục cho bảng `jms_link_block_lang`
 --
 ALTER TABLE `jms_link_block_lang`
   ADD PRIMARY KEY (`id_link_block`,`id_lang`);
 
 --
--- Indexes for table `jms_link_block_shop`
+-- Chỉ mục cho bảng `jms_link_block_shop`
 --
 ALTER TABLE `jms_link_block_shop`
   ADD PRIMARY KEY (`id_link_block`,`id_shop`);
 
 --
--- Indexes for table `jms_log`
+-- Chỉ mục cho bảng `jms_log`
 --
 ALTER TABLE `jms_log`
   ADD PRIMARY KEY (`id_log`);
 
 --
--- Indexes for table `jms_mail`
+-- Chỉ mục cho bảng `jms_mail`
 --
 ALTER TABLE `jms_mail`
   ADD PRIMARY KEY (`id_mail`),
   ADD KEY `recipient` (`recipient`(10));
 
 --
--- Indexes for table `jms_manufacturer`
+-- Chỉ mục cho bảng `jms_manufacturer`
 --
 ALTER TABLE `jms_manufacturer`
   ADD PRIMARY KEY (`id_manufacturer`);
 
 --
--- Indexes for table `jms_manufacturer_lang`
+-- Chỉ mục cho bảng `jms_manufacturer_lang`
 --
 ALTER TABLE `jms_manufacturer_lang`
   ADD PRIMARY KEY (`id_manufacturer`,`id_lang`);
 
 --
--- Indexes for table `jms_manufacturer_shop`
+-- Chỉ mục cho bảng `jms_manufacturer_shop`
 --
 ALTER TABLE `jms_manufacturer_shop`
   ADD PRIMARY KEY (`id_manufacturer`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_memcached_servers`
+-- Chỉ mục cho bảng `jms_memcached_servers`
 --
 ALTER TABLE `jms_memcached_servers`
   ADD PRIMARY KEY (`id_memcached_server`);
 
 --
--- Indexes for table `jms_message`
+-- Chỉ mục cho bảng `jms_message`
 --
 ALTER TABLE `jms_message`
   ADD PRIMARY KEY (`id_message`),
@@ -32723,20 +32591,20 @@ ALTER TABLE `jms_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indexes for table `jms_message_readed`
+-- Chỉ mục cho bảng `jms_message_readed`
 --
 ALTER TABLE `jms_message_readed`
   ADD PRIMARY KEY (`id_message`,`id_employee`);
 
 --
--- Indexes for table `jms_meta`
+-- Chỉ mục cho bảng `jms_meta`
 --
 ALTER TABLE `jms_meta`
   ADD PRIMARY KEY (`id_meta`),
   ADD UNIQUE KEY `page` (`page`);
 
 --
--- Indexes for table `jms_meta_lang`
+-- Chỉ mục cho bảng `jms_meta_lang`
 --
 ALTER TABLE `jms_meta_lang`
   ADD PRIMARY KEY (`id_meta`,`id_shop`,`id_lang`),
@@ -32744,7 +32612,7 @@ ALTER TABLE `jms_meta_lang`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indexes for table `jms_module`
+-- Chỉ mục cho bảng `jms_module`
 --
 ALTER TABLE `jms_module`
   ADD PRIMARY KEY (`id_module`),
@@ -32752,64 +32620,64 @@ ALTER TABLE `jms_module`
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `jms_module_access`
+-- Chỉ mục cho bảng `jms_module_access`
 --
 ALTER TABLE `jms_module_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indexes for table `jms_module_carrier`
+-- Chỉ mục cho bảng `jms_module_carrier`
 --
 ALTER TABLE `jms_module_carrier`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_reference`);
 
 --
--- Indexes for table `jms_module_country`
+-- Chỉ mục cho bảng `jms_module_country`
 --
 ALTER TABLE `jms_module_country`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_country`);
 
 --
--- Indexes for table `jms_module_currency`
+-- Chỉ mục cho bảng `jms_module_currency`
 --
 ALTER TABLE `jms_module_currency`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_currency`),
   ADD KEY `id_module` (`id_module`);
 
 --
--- Indexes for table `jms_module_group`
+-- Chỉ mục cho bảng `jms_module_group`
 --
 ALTER TABLE `jms_module_group`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_group`);
 
 --
--- Indexes for table `jms_module_history`
+-- Chỉ mục cho bảng `jms_module_history`
 --
 ALTER TABLE `jms_module_history`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jms_module_preference`
+-- Chỉ mục cho bảng `jms_module_preference`
 --
 ALTER TABLE `jms_module_preference`
   ADD PRIMARY KEY (`id_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`module`);
 
 --
--- Indexes for table `jms_module_shop`
+-- Chỉ mục cho bảng `jms_module_shop`
 --
 ALTER TABLE `jms_module_shop`
   ADD PRIMARY KEY (`id_module`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_operating_system`
+-- Chỉ mục cho bảng `jms_operating_system`
 --
 ALTER TABLE `jms_operating_system`
   ADD PRIMARY KEY (`id_operating_system`);
 
 --
--- Indexes for table `jms_orders`
+-- Chỉ mục cho bảng `jms_orders`
 --
 ALTER TABLE `jms_orders`
   ADD PRIMARY KEY (`id_order`),
@@ -32828,7 +32696,7 @@ ALTER TABLE `jms_orders`
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indexes for table `jms_order_carrier`
+-- Chỉ mục cho bảng `jms_order_carrier`
 --
 ALTER TABLE `jms_order_carrier`
   ADD PRIMARY KEY (`id_order_carrier`),
@@ -32837,7 +32705,7 @@ ALTER TABLE `jms_order_carrier`
   ADD KEY `id_order_invoice` (`id_order_invoice`);
 
 --
--- Indexes for table `jms_order_cart_rule`
+-- Chỉ mục cho bảng `jms_order_cart_rule`
 --
 ALTER TABLE `jms_order_cart_rule`
   ADD PRIMARY KEY (`id_order_cart_rule`),
@@ -32845,7 +32713,7 @@ ALTER TABLE `jms_order_cart_rule`
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indexes for table `jms_order_detail`
+-- Chỉ mục cho bảng `jms_order_detail`
 --
 ALTER TABLE `jms_order_detail`
   ADD PRIMARY KEY (`id_order_detail`),
@@ -32856,14 +32724,14 @@ ALTER TABLE `jms_order_detail`
   ADD KEY `id_order_id_order_detail` (`id_order`,`id_order_detail`);
 
 --
--- Indexes for table `jms_order_detail_tax`
+-- Chỉ mục cho bảng `jms_order_detail_tax`
 --
 ALTER TABLE `jms_order_detail_tax`
   ADD KEY `id_order_detail` (`id_order_detail`),
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `jms_order_history`
+-- Chỉ mục cho bảng `jms_order_history`
 --
 ALTER TABLE `jms_order_history`
   ADD PRIMARY KEY (`id_order_history`),
@@ -32872,14 +32740,14 @@ ALTER TABLE `jms_order_history`
   ADD KEY `id_order_state` (`id_order_state`);
 
 --
--- Indexes for table `jms_order_invoice`
+-- Chỉ mục cho bảng `jms_order_invoice`
 --
 ALTER TABLE `jms_order_invoice`
   ADD PRIMARY KEY (`id_order_invoice`),
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_invoice_payment`
+-- Chỉ mục cho bảng `jms_order_invoice_payment`
 --
 ALTER TABLE `jms_order_invoice_payment`
   ADD PRIMARY KEY (`id_order_invoice`,`id_order_payment`),
@@ -32887,32 +32755,32 @@ ALTER TABLE `jms_order_invoice_payment`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_invoice_tax`
+-- Chỉ mục cho bảng `jms_order_invoice_tax`
 --
 ALTER TABLE `jms_order_invoice_tax`
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `jms_order_message`
+-- Chỉ mục cho bảng `jms_order_message`
 --
 ALTER TABLE `jms_order_message`
   ADD PRIMARY KEY (`id_order_message`);
 
 --
--- Indexes for table `jms_order_message_lang`
+-- Chỉ mục cho bảng `jms_order_message_lang`
 --
 ALTER TABLE `jms_order_message_lang`
   ADD PRIMARY KEY (`id_order_message`,`id_lang`);
 
 --
--- Indexes for table `jms_order_payment`
+-- Chỉ mục cho bảng `jms_order_payment`
 --
 ALTER TABLE `jms_order_payment`
   ADD PRIMARY KEY (`id_order_payment`),
   ADD KEY `order_reference` (`order_reference`);
 
 --
--- Indexes for table `jms_order_return`
+-- Chỉ mục cho bảng `jms_order_return`
 --
 ALTER TABLE `jms_order_return`
   ADD PRIMARY KEY (`id_order_return`),
@@ -32920,25 +32788,25 @@ ALTER TABLE `jms_order_return`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_return_detail`
+-- Chỉ mục cho bảng `jms_order_return_detail`
 --
 ALTER TABLE `jms_order_return_detail`
   ADD PRIMARY KEY (`id_order_return`,`id_order_detail`,`id_customization`);
 
 --
--- Indexes for table `jms_order_return_state`
+-- Chỉ mục cho bảng `jms_order_return_state`
 --
 ALTER TABLE `jms_order_return_state`
   ADD PRIMARY KEY (`id_order_return_state`);
 
 --
--- Indexes for table `jms_order_return_state_lang`
+-- Chỉ mục cho bảng `jms_order_return_state_lang`
 --
 ALTER TABLE `jms_order_return_state_lang`
   ADD PRIMARY KEY (`id_order_return_state`,`id_lang`);
 
 --
--- Indexes for table `jms_order_slip`
+-- Chỉ mục cho bảng `jms_order_slip`
 --
 ALTER TABLE `jms_order_slip`
   ADD PRIMARY KEY (`id_order_slip`),
@@ -32946,40 +32814,40 @@ ALTER TABLE `jms_order_slip`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indexes for table `jms_order_slip_detail`
+-- Chỉ mục cho bảng `jms_order_slip_detail`
 --
 ALTER TABLE `jms_order_slip_detail`
   ADD PRIMARY KEY (`id_order_slip`,`id_order_detail`);
 
 --
--- Indexes for table `jms_order_slip_detail_tax`
+-- Chỉ mục cho bảng `jms_order_slip_detail_tax`
 --
 ALTER TABLE `jms_order_slip_detail_tax`
   ADD KEY `id_order_slip_detail` (`id_order_slip_detail`),
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indexes for table `jms_order_state`
+-- Chỉ mục cho bảng `jms_order_state`
 --
 ALTER TABLE `jms_order_state`
   ADD PRIMARY KEY (`id_order_state`),
   ADD KEY `module_name` (`module_name`);
 
 --
--- Indexes for table `jms_order_state_lang`
+-- Chỉ mục cho bảng `jms_order_state_lang`
 --
 ALTER TABLE `jms_order_state_lang`
   ADD PRIMARY KEY (`id_order_state`,`id_lang`);
 
 --
--- Indexes for table `jms_pack`
+-- Chỉ mục cho bảng `jms_pack`
 --
 ALTER TABLE `jms_pack`
   ADD PRIMARY KEY (`id_product_pack`,`id_product_item`,`id_product_attribute_item`),
   ADD KEY `product_item` (`id_product_item`,`id_product_attribute_item`);
 
 --
--- Indexes for table `jms_page`
+-- Chỉ mục cho bảng `jms_page`
 --
 ALTER TABLE `jms_page`
   ADD PRIMARY KEY (`id_page`),
@@ -32987,27 +32855,27 @@ ALTER TABLE `jms_page`
   ADD KEY `id_object` (`id_object`);
 
 --
--- Indexes for table `jms_pagenotfound`
+-- Chỉ mục cho bảng `jms_pagenotfound`
 --
 ALTER TABLE `jms_pagenotfound`
   ADD PRIMARY KEY (`id_pagenotfound`),
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indexes for table `jms_page_type`
+-- Chỉ mục cho bảng `jms_page_type`
 --
 ALTER TABLE `jms_page_type`
   ADD PRIMARY KEY (`id_page_type`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `jms_page_viewed`
+-- Chỉ mục cho bảng `jms_page_viewed`
 --
 ALTER TABLE `jms_page_viewed`
   ADD PRIMARY KEY (`id_page`,`id_date_range`,`id_shop`);
 
 --
--- Indexes for table `jms_product`
+-- Chỉ mục cho bảng `jms_product`
 --
 ALTER TABLE `jms_product`
   ADD PRIMARY KEY (`id_product`),
@@ -33019,13 +32887,13 @@ ALTER TABLE `jms_product`
   ADD KEY `state` (`state`,`date_upd`);
 
 --
--- Indexes for table `jms_product_attachment`
+-- Chỉ mục cho bảng `jms_product_attachment`
 --
 ALTER TABLE `jms_product_attachment`
   ADD PRIMARY KEY (`id_product`,`id_attachment`);
 
 --
--- Indexes for table `jms_product_attribute`
+-- Chỉ mục cho bảng `jms_product_attribute`
 --
 ALTER TABLE `jms_product_attribute`
   ADD PRIMARY KEY (`id_product_attribute`),
@@ -33036,40 +32904,40 @@ ALTER TABLE `jms_product_attribute`
   ADD KEY `id_product_id_product_attribute` (`id_product_attribute`,`id_product`);
 
 --
--- Indexes for table `jms_product_attribute_combination`
+-- Chỉ mục cho bảng `jms_product_attribute_combination`
 --
 ALTER TABLE `jms_product_attribute_combination`
   ADD PRIMARY KEY (`id_attribute`,`id_product_attribute`),
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `jms_product_attribute_image`
+-- Chỉ mục cho bảng `jms_product_attribute_image`
 --
 ALTER TABLE `jms_product_attribute_image`
   ADD PRIMARY KEY (`id_product_attribute`,`id_image`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indexes for table `jms_product_attribute_shop`
+-- Chỉ mục cho bảng `jms_product_attribute_shop`
 --
 ALTER TABLE `jms_product_attribute_shop`
   ADD PRIMARY KEY (`id_product_attribute`,`id_shop`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_shop`,`default_on`);
 
 --
--- Indexes for table `jms_product_carrier`
+-- Chỉ mục cho bảng `jms_product_carrier`
 --
 ALTER TABLE `jms_product_carrier`
   ADD PRIMARY KEY (`id_product`,`id_carrier_reference`,`id_shop`);
 
 --
--- Indexes for table `jms_product_country_tax`
+-- Chỉ mục cho bảng `jms_product_country_tax`
 --
 ALTER TABLE `jms_product_country_tax`
   ADD PRIMARY KEY (`id_product`,`id_country`);
 
 --
--- Indexes for table `jms_product_download`
+-- Chỉ mục cho bảng `jms_product_download`
 --
 ALTER TABLE `jms_product_download`
   ADD PRIMARY KEY (`id_product_download`),
@@ -33077,13 +32945,13 @@ ALTER TABLE `jms_product_download`
   ADD KEY `product_active` (`id_product`,`active`);
 
 --
--- Indexes for table `jms_product_group_reduction_cache`
+-- Chỉ mục cho bảng `jms_product_group_reduction_cache`
 --
 ALTER TABLE `jms_product_group_reduction_cache`
   ADD PRIMARY KEY (`id_product`,`id_group`);
 
 --
--- Indexes for table `jms_product_lang`
+-- Chỉ mục cho bảng `jms_product_lang`
 --
 ALTER TABLE `jms_product_lang`
   ADD PRIMARY KEY (`id_product`,`id_shop`,`id_lang`),
@@ -33091,14 +32959,14 @@ ALTER TABLE `jms_product_lang`
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `jms_product_sale`
+-- Chỉ mục cho bảng `jms_product_sale`
 --
 ALTER TABLE `jms_product_sale`
   ADD PRIMARY KEY (`id_product`),
   ADD KEY `quantity` (`quantity`);
 
 --
--- Indexes for table `jms_product_shop`
+-- Chỉ mục cho bảng `jms_product_shop`
 --
 ALTER TABLE `jms_product_shop`
   ADD PRIMARY KEY (`id_product`,`id_shop`),
@@ -33107,7 +32975,7 @@ ALTER TABLE `jms_product_shop`
   ADD KEY `indexed` (`indexed`,`active`,`id_product`);
 
 --
--- Indexes for table `jms_product_supplier`
+-- Chỉ mục cho bảng `jms_product_supplier`
 --
 ALTER TABLE `jms_product_supplier`
   ADD PRIMARY KEY (`id_product_supplier`),
@@ -33115,7 +32983,7 @@ ALTER TABLE `jms_product_supplier`
   ADD KEY `id_supplier` (`id_supplier`,`id_product`);
 
 --
--- Indexes for table `jms_product_tag`
+-- Chỉ mục cho bảng `jms_product_tag`
 --
 ALTER TABLE `jms_product_tag`
   ADD PRIMARY KEY (`id_product`,`id_tag`),
@@ -33123,140 +32991,140 @@ ALTER TABLE `jms_product_tag`
   ADD KEY `id_lang` (`id_lang`,`id_tag`);
 
 --
--- Indexes for table `jms_profile`
+-- Chỉ mục cho bảng `jms_profile`
 --
 ALTER TABLE `jms_profile`
   ADD PRIMARY KEY (`id_profile`);
 
 --
--- Indexes for table `jms_profile_lang`
+-- Chỉ mục cho bảng `jms_profile_lang`
 --
 ALTER TABLE `jms_profile_lang`
   ADD PRIMARY KEY (`id_profile`,`id_lang`);
 
 --
--- Indexes for table `jms_quick_access`
+-- Chỉ mục cho bảng `jms_quick_access`
 --
 ALTER TABLE `jms_quick_access`
   ADD PRIMARY KEY (`id_quick_access`);
 
 --
--- Indexes for table `jms_quick_access_lang`
+-- Chỉ mục cho bảng `jms_quick_access_lang`
 --
 ALTER TABLE `jms_quick_access_lang`
   ADD PRIMARY KEY (`id_quick_access`,`id_lang`);
 
 --
--- Indexes for table `jms_range_price`
+-- Chỉ mục cho bảng `jms_range_price`
 --
 ALTER TABLE `jms_range_price`
   ADD PRIMARY KEY (`id_range_price`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indexes for table `jms_range_weight`
+-- Chỉ mục cho bảng `jms_range_weight`
 --
 ALTER TABLE `jms_range_weight`
   ADD PRIMARY KEY (`id_range_weight`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indexes for table `jms_reassurance`
+-- Chỉ mục cho bảng `jms_reassurance`
 --
 ALTER TABLE `jms_reassurance`
   ADD PRIMARY KEY (`id_reassurance`);
 
 --
--- Indexes for table `jms_reassurance_lang`
+-- Chỉ mục cho bảng `jms_reassurance_lang`
 --
 ALTER TABLE `jms_reassurance_lang`
   ADD PRIMARY KEY (`id_reassurance`,`id_lang`);
 
 --
--- Indexes for table `jms_referrer`
+-- Chỉ mục cho bảng `jms_referrer`
 --
 ALTER TABLE `jms_referrer`
   ADD PRIMARY KEY (`id_referrer`);
 
 --
--- Indexes for table `jms_referrer_cache`
+-- Chỉ mục cho bảng `jms_referrer_cache`
 --
 ALTER TABLE `jms_referrer_cache`
   ADD PRIMARY KEY (`id_connections_source`,`id_referrer`);
 
 --
--- Indexes for table `jms_referrer_shop`
+-- Chỉ mục cho bảng `jms_referrer_shop`
 --
 ALTER TABLE `jms_referrer_shop`
   ADD PRIMARY KEY (`id_referrer`,`id_shop`);
 
 --
--- Indexes for table `jms_request_sql`
+-- Chỉ mục cho bảng `jms_request_sql`
 --
 ALTER TABLE `jms_request_sql`
   ADD PRIMARY KEY (`id_request_sql`);
 
 --
--- Indexes for table `jms_required_field`
+-- Chỉ mục cho bảng `jms_required_field`
 --
 ALTER TABLE `jms_required_field`
   ADD PRIMARY KEY (`id_required_field`),
   ADD KEY `object_name` (`object_name`);
 
 --
--- Indexes for table `jms_risk`
+-- Chỉ mục cho bảng `jms_risk`
 --
 ALTER TABLE `jms_risk`
   ADD PRIMARY KEY (`id_risk`);
 
 --
--- Indexes for table `jms_risk_lang`
+-- Chỉ mục cho bảng `jms_risk_lang`
 --
 ALTER TABLE `jms_risk_lang`
   ADD PRIMARY KEY (`id_risk`,`id_lang`),
   ADD KEY `id_risk` (`id_risk`);
 
 --
--- Indexes for table `jms_search_engine`
+-- Chỉ mục cho bảng `jms_search_engine`
 --
 ALTER TABLE `jms_search_engine`
   ADD PRIMARY KEY (`id_search_engine`);
 
 --
--- Indexes for table `jms_search_index`
+-- Chỉ mục cho bảng `jms_search_index`
 --
 ALTER TABLE `jms_search_index`
   ADD PRIMARY KEY (`id_word`,`id_product`),
   ADD KEY `id_product` (`id_product`,`weight`);
 
 --
--- Indexes for table `jms_search_word`
+-- Chỉ mục cho bảng `jms_search_word`
 --
 ALTER TABLE `jms_search_word`
   ADD PRIMARY KEY (`id_word`),
   ADD UNIQUE KEY `id_lang` (`id_lang`,`id_shop`,`word`);
 
 --
--- Indexes for table `jms_sekeyword`
+-- Chỉ mục cho bảng `jms_sekeyword`
 --
 ALTER TABLE `jms_sekeyword`
   ADD PRIMARY KEY (`id_sekeyword`);
 
 --
--- Indexes for table `jms_shop`
+-- Chỉ mục cho bảng `jms_shop`
 --
 ALTER TABLE `jms_shop`
   ADD PRIMARY KEY (`id_shop`),
   ADD KEY `IDX_74B3FAF4F5C9E40` (`id_shop_group`);
 
 --
--- Indexes for table `jms_shop_group`
+-- Chỉ mục cho bảng `jms_shop_group`
 --
 ALTER TABLE `jms_shop_group`
   ADD PRIMARY KEY (`id_shop_group`);
 
 --
--- Indexes for table `jms_shop_url`
+-- Chỉ mục cho bảng `jms_shop_url`
 --
 ALTER TABLE `jms_shop_url`
   ADD PRIMARY KEY (`id_shop_url`),
@@ -33265,7 +33133,7 @@ ALTER TABLE `jms_shop_url`
   ADD KEY `id_shop` (`id_shop`,`main`);
 
 --
--- Indexes for table `jms_smarty_cache`
+-- Chỉ mục cho bảng `jms_smarty_cache`
 --
 ALTER TABLE `jms_smarty_cache`
   ADD PRIMARY KEY (`id_smarty_cache`),
@@ -33274,19 +33142,19 @@ ALTER TABLE `jms_smarty_cache`
   ADD KEY `modified` (`modified`);
 
 --
--- Indexes for table `jms_smarty_last_flush`
+-- Chỉ mục cho bảng `jms_smarty_last_flush`
 --
 ALTER TABLE `jms_smarty_last_flush`
   ADD PRIMARY KEY (`type`);
 
 --
--- Indexes for table `jms_smarty_lazy_cache`
+-- Chỉ mục cho bảng `jms_smarty_lazy_cache`
 --
 ALTER TABLE `jms_smarty_lazy_cache`
   ADD PRIMARY KEY (`template_hash`,`cache_id`,`compile_id`);
 
 --
--- Indexes for table `jms_specific_price`
+-- Chỉ mục cho bảng `jms_specific_price`
 --
 ALTER TABLE `jms_specific_price`
   ADD PRIMARY KEY (`id_specific_price`),
@@ -33302,34 +33170,34 @@ ALTER TABLE `jms_specific_price`
   ADD KEY `to` (`to`);
 
 --
--- Indexes for table `jms_specific_price_priority`
+-- Chỉ mục cho bảng `jms_specific_price_priority`
 --
 ALTER TABLE `jms_specific_price_priority`
   ADD PRIMARY KEY (`id_specific_price_priority`,`id_product`),
   ADD UNIQUE KEY `id_product` (`id_product`);
 
 --
--- Indexes for table `jms_specific_price_rule`
+-- Chỉ mục cho bảng `jms_specific_price_rule`
 --
 ALTER TABLE `jms_specific_price_rule`
   ADD PRIMARY KEY (`id_specific_price_rule`),
   ADD KEY `id_product` (`id_shop`,`id_currency`,`id_country`,`id_group`,`from_quantity`,`from`,`to`);
 
 --
--- Indexes for table `jms_specific_price_rule_condition`
+-- Chỉ mục cho bảng `jms_specific_price_rule_condition`
 --
 ALTER TABLE `jms_specific_price_rule_condition`
   ADD PRIMARY KEY (`id_specific_price_rule_condition`),
   ADD KEY `id_specific_price_rule_condition_group` (`id_specific_price_rule_condition_group`);
 
 --
--- Indexes for table `jms_specific_price_rule_condition_group`
+-- Chỉ mục cho bảng `jms_specific_price_rule_condition_group`
 --
 ALTER TABLE `jms_specific_price_rule_condition_group`
   ADD PRIMARY KEY (`id_specific_price_rule_condition_group`,`id_specific_price_rule`);
 
 --
--- Indexes for table `jms_state`
+-- Chỉ mục cho bảng `jms_state`
 --
 ALTER TABLE `jms_state`
   ADD PRIMARY KEY (`id_state`),
@@ -33338,13 +33206,13 @@ ALTER TABLE `jms_state`
   ADD KEY `id_zone` (`id_zone`);
 
 --
--- Indexes for table `jms_statssearch`
+-- Chỉ mục cho bảng `jms_statssearch`
 --
 ALTER TABLE `jms_statssearch`
   ADD PRIMARY KEY (`id_statssearch`);
 
 --
--- Indexes for table `jms_stock`
+-- Chỉ mục cho bảng `jms_stock`
 --
 ALTER TABLE `jms_stock`
   ADD PRIMARY KEY (`id_stock`),
@@ -33353,7 +33221,7 @@ ALTER TABLE `jms_stock`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `jms_stock_available`
+-- Chỉ mục cho bảng `jms_stock_available`
 --
 ALTER TABLE `jms_stock_available`
   ADD PRIMARY KEY (`id_stock_available`),
@@ -33364,7 +33232,7 @@ ALTER TABLE `jms_stock_available`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indexes for table `jms_stock_mvt`
+-- Chỉ mục cho bảng `jms_stock_mvt`
 --
 ALTER TABLE `jms_stock_mvt`
   ADD PRIMARY KEY (`id_stock_mvt`),
@@ -33372,57 +33240,57 @@ ALTER TABLE `jms_stock_mvt`
   ADD KEY `id_stock_mvt_reason` (`id_stock_mvt_reason`);
 
 --
--- Indexes for table `jms_stock_mvt_reason`
+-- Chỉ mục cho bảng `jms_stock_mvt_reason`
 --
 ALTER TABLE `jms_stock_mvt_reason`
   ADD PRIMARY KEY (`id_stock_mvt_reason`);
 
 --
--- Indexes for table `jms_stock_mvt_reason_lang`
+-- Chỉ mục cho bảng `jms_stock_mvt_reason_lang`
 --
 ALTER TABLE `jms_stock_mvt_reason_lang`
   ADD PRIMARY KEY (`id_stock_mvt_reason`,`id_lang`);
 
 --
--- Indexes for table `jms_store`
+-- Chỉ mục cho bảng `jms_store`
 --
 ALTER TABLE `jms_store`
   ADD PRIMARY KEY (`id_store`);
 
 --
--- Indexes for table `jms_store_lang`
+-- Chỉ mục cho bảng `jms_store_lang`
 --
 ALTER TABLE `jms_store_lang`
   ADD PRIMARY KEY (`id_store`,`id_lang`);
 
 --
--- Indexes for table `jms_store_shop`
+-- Chỉ mục cho bảng `jms_store_shop`
 --
 ALTER TABLE `jms_store_shop`
   ADD PRIMARY KEY (`id_store`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_supplier`
+-- Chỉ mục cho bảng `jms_supplier`
 --
 ALTER TABLE `jms_supplier`
   ADD PRIMARY KEY (`id_supplier`);
 
 --
--- Indexes for table `jms_supplier_lang`
+-- Chỉ mục cho bảng `jms_supplier_lang`
 --
 ALTER TABLE `jms_supplier_lang`
   ADD PRIMARY KEY (`id_supplier`,`id_lang`);
 
 --
--- Indexes for table `jms_supplier_shop`
+-- Chỉ mục cho bảng `jms_supplier_shop`
 --
 ALTER TABLE `jms_supplier_shop`
   ADD PRIMARY KEY (`id_supplier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_supply_order`
+-- Chỉ mục cho bảng `jms_supply_order`
 --
 ALTER TABLE `jms_supply_order`
   ADD PRIMARY KEY (`id_supply_order`),
@@ -33431,7 +33299,7 @@ ALTER TABLE `jms_supply_order`
   ADD KEY `reference` (`reference`);
 
 --
--- Indexes for table `jms_supply_order_detail`
+-- Chỉ mục cho bảng `jms_supply_order_detail`
 --
 ALTER TABLE `jms_supply_order_detail`
   ADD PRIMARY KEY (`id_supply_order_detail`),
@@ -33440,7 +33308,7 @@ ALTER TABLE `jms_supply_order_detail`
   ADD KEY `id_product_product_attribute` (`id_product`,`id_product_attribute`);
 
 --
--- Indexes for table `jms_supply_order_history`
+-- Chỉ mục cho bảng `jms_supply_order_history`
 --
 ALTER TABLE `jms_supply_order_history`
   ADD PRIMARY KEY (`id_supply_order_history`),
@@ -33449,7 +33317,7 @@ ALTER TABLE `jms_supply_order_history`
   ADD KEY `id_state` (`id_state`);
 
 --
--- Indexes for table `jms_supply_order_receipt_history`
+-- Chỉ mục cho bảng `jms_supply_order_receipt_history`
 --
 ALTER TABLE `jms_supply_order_receipt_history`
   ADD PRIMARY KEY (`id_supply_order_receipt_history`),
@@ -33457,31 +33325,31 @@ ALTER TABLE `jms_supply_order_receipt_history`
   ADD KEY `id_supply_order_state` (`id_supply_order_state`);
 
 --
--- Indexes for table `jms_supply_order_state`
+-- Chỉ mục cho bảng `jms_supply_order_state`
 --
 ALTER TABLE `jms_supply_order_state`
   ADD PRIMARY KEY (`id_supply_order_state`);
 
 --
--- Indexes for table `jms_supply_order_state_lang`
+-- Chỉ mục cho bảng `jms_supply_order_state_lang`
 --
 ALTER TABLE `jms_supply_order_state_lang`
   ADD PRIMARY KEY (`id_supply_order_state`,`id_lang`);
 
 --
--- Indexes for table `jms_tab`
+-- Chỉ mục cho bảng `jms_tab`
 --
 ALTER TABLE `jms_tab`
   ADD PRIMARY KEY (`id_tab`);
 
 --
--- Indexes for table `jms_tab_advice`
+-- Chỉ mục cho bảng `jms_tab_advice`
 --
 ALTER TABLE `jms_tab_advice`
   ADD PRIMARY KEY (`id_tab`,`id_advice`);
 
 --
--- Indexes for table `jms_tab_lang`
+-- Chỉ mục cho bảng `jms_tab_lang`
 --
 ALTER TABLE `jms_tab_lang`
   ADD PRIMARY KEY (`id_tab`,`id_lang`),
@@ -33489,14 +33357,14 @@ ALTER TABLE `jms_tab_lang`
   ADD KEY `IDX_788C5C0BBA299860` (`id_lang`);
 
 --
--- Indexes for table `jms_tab_module_preference`
+-- Chỉ mục cho bảng `jms_tab_module_preference`
 --
 ALTER TABLE `jms_tab_module_preference`
   ADD PRIMARY KEY (`id_tab_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`id_tab`,`module`);
 
 --
--- Indexes for table `jms_tag`
+-- Chỉ mục cho bảng `jms_tag`
 --
 ALTER TABLE `jms_tag`
   ADD PRIMARY KEY (`id_tag`),
@@ -33504,26 +33372,26 @@ ALTER TABLE `jms_tag`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indexes for table `jms_tag_count`
+-- Chỉ mục cho bảng `jms_tag_count`
 --
 ALTER TABLE `jms_tag_count`
   ADD PRIMARY KEY (`id_group`,`id_tag`),
   ADD KEY `id_group` (`id_group`,`id_lang`,`id_shop`,`counter`);
 
 --
--- Indexes for table `jms_tax`
+-- Chỉ mục cho bảng `jms_tax`
 --
 ALTER TABLE `jms_tax`
   ADD PRIMARY KEY (`id_tax`);
 
 --
--- Indexes for table `jms_tax_lang`
+-- Chỉ mục cho bảng `jms_tax_lang`
 --
 ALTER TABLE `jms_tax_lang`
   ADD PRIMARY KEY (`id_tax`,`id_lang`);
 
 --
--- Indexes for table `jms_tax_rule`
+-- Chỉ mục cho bảng `jms_tax_rule`
 --
 ALTER TABLE `jms_tax_rule`
   ADD PRIMARY KEY (`id_tax_rule`),
@@ -33532,26 +33400,26 @@ ALTER TABLE `jms_tax_rule`
   ADD KEY `category_getproducts` (`id_tax_rules_group`,`id_country`,`id_state`,`zipcode_from`);
 
 --
--- Indexes for table `jms_tax_rules_group`
+-- Chỉ mục cho bảng `jms_tax_rules_group`
 --
 ALTER TABLE `jms_tax_rules_group`
   ADD PRIMARY KEY (`id_tax_rules_group`);
 
 --
--- Indexes for table `jms_tax_rules_group_shop`
+-- Chỉ mục cho bảng `jms_tax_rules_group_shop`
 --
 ALTER TABLE `jms_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_tax_rules_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_timezone`
+-- Chỉ mục cho bảng `jms_timezone`
 --
 ALTER TABLE `jms_timezone`
   ADD PRIMARY KEY (`id_timezone`);
 
 --
--- Indexes for table `jms_translation`
+-- Chỉ mục cho bảng `jms_translation`
 --
 ALTER TABLE `jms_translation`
   ADD PRIMARY KEY (`id_translation`),
@@ -33559,13 +33427,13 @@ ALTER TABLE `jms_translation`
   ADD KEY `key` (`domain`);
 
 --
--- Indexes for table `jms_warehouse`
+-- Chỉ mục cho bảng `jms_warehouse`
 --
 ALTER TABLE `jms_warehouse`
   ADD PRIMARY KEY (`id_warehouse`);
 
 --
--- Indexes for table `jms_warehouse_carrier`
+-- Chỉ mục cho bảng `jms_warehouse_carrier`
 --
 ALTER TABLE `jms_warehouse_carrier`
   ADD PRIMARY KEY (`id_warehouse`,`id_carrier`),
@@ -33573,14 +33441,14 @@ ALTER TABLE `jms_warehouse_carrier`
   ADD KEY `id_carrier` (`id_carrier`);
 
 --
--- Indexes for table `jms_warehouse_product_location`
+-- Chỉ mục cho bảng `jms_warehouse_product_location`
 --
 ALTER TABLE `jms_warehouse_product_location`
   ADD PRIMARY KEY (`id_warehouse_product_location`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_product_attribute`,`id_warehouse`);
 
 --
--- Indexes for table `jms_warehouse_shop`
+-- Chỉ mục cho bảng `jms_warehouse_shop`
 --
 ALTER TABLE `jms_warehouse_shop`
   ADD PRIMARY KEY (`id_warehouse`,`id_shop`),
@@ -33588,21 +33456,21 @@ ALTER TABLE `jms_warehouse_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_webservice_account`
+-- Chỉ mục cho bảng `jms_webservice_account`
 --
 ALTER TABLE `jms_webservice_account`
   ADD PRIMARY KEY (`id_webservice_account`),
   ADD KEY `key` (`key`);
 
 --
--- Indexes for table `jms_webservice_account_shop`
+-- Chỉ mục cho bảng `jms_webservice_account_shop`
 --
 ALTER TABLE `jms_webservice_account_shop`
   ADD PRIMARY KEY (`id_webservice_account`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indexes for table `jms_webservice_permission`
+-- Chỉ mục cho bảng `jms_webservice_permission`
 --
 ALTER TABLE `jms_webservice_permission`
   ADD PRIMARY KEY (`id_webservice_permission`),
@@ -33612,1050 +33480,1050 @@ ALTER TABLE `jms_webservice_permission`
   ADD KEY `id_webservice_account` (`id_webservice_account`);
 
 --
--- Indexes for table `jms_web_browser`
+-- Chỉ mục cho bảng `jms_web_browser`
 --
 ALTER TABLE `jms_web_browser`
   ADD PRIMARY KEY (`id_web_browser`);
 
 --
--- Indexes for table `jms_wishlist`
+-- Chỉ mục cho bảng `jms_wishlist`
 --
 ALTER TABLE `jms_wishlist`
   ADD PRIMARY KEY (`id_wishlist`);
 
 --
--- Indexes for table `jms_wishlist_product`
+-- Chỉ mục cho bảng `jms_wishlist_product`
 --
 ALTER TABLE `jms_wishlist_product`
   ADD PRIMARY KEY (`id_wishlist_product`);
 
 --
--- Indexes for table `jms_zone`
+-- Chỉ mục cho bảng `jms_zone`
 --
 ALTER TABLE `jms_zone`
   ADD PRIMARY KEY (`id_zone`);
 
 --
--- Indexes for table `jms_zone_shop`
+-- Chỉ mục cho bảng `jms_zone_shop`
 --
 ALTER TABLE `jms_zone_shop`
   ADD PRIMARY KEY (`id_zone`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `jms_address`
+-- AUTO_INCREMENT cho bảng `jms_address`
 --
 ALTER TABLE `jms_address`
   MODIFY `id_address` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_admin_filter`
+-- AUTO_INCREMENT cho bảng `jms_admin_filter`
 --
 ALTER TABLE `jms_admin_filter`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_advice`
+-- AUTO_INCREMENT cho bảng `jms_advice`
 --
 ALTER TABLE `jms_advice`
-  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
--- AUTO_INCREMENT for table `jms_alias`
+-- AUTO_INCREMENT cho bảng `jms_alias`
 --
 ALTER TABLE `jms_alias`
   MODIFY `id_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_attachment`
+-- AUTO_INCREMENT cho bảng `jms_attachment`
 --
 ALTER TABLE `jms_attachment`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_attachment_lang`
+-- AUTO_INCREMENT cho bảng `jms_attachment_lang`
 --
 ALTER TABLE `jms_attachment_lang`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_attribute`
+-- AUTO_INCREMENT cho bảng `jms_attribute`
 --
 ALTER TABLE `jms_attribute`
   MODIFY `id_attribute` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT for table `jms_attribute_group`
+-- AUTO_INCREMENT cho bảng `jms_attribute_group`
 --
 ALTER TABLE `jms_attribute_group`
   MODIFY `id_attribute_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_attribute_impact`
+-- AUTO_INCREMENT cho bảng `jms_attribute_impact`
 --
 ALTER TABLE `jms_attribute_impact`
   MODIFY `id_attribute_impact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_authorization_role`
+-- AUTO_INCREMENT cho bảng `jms_authorization_role`
 --
 ALTER TABLE `jms_authorization_role`
   MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=845;
 
 --
--- AUTO_INCREMENT for table `jms_badge`
+-- AUTO_INCREMENT cho bảng `jms_badge`
 --
 ALTER TABLE `jms_badge`
   MODIFY `id_badge` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
 
 --
--- AUTO_INCREMENT for table `jms_carrier`
+-- AUTO_INCREMENT cho bảng `jms_carrier`
 --
 ALTER TABLE `jms_carrier`
   MODIFY `id_carrier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_cart`
+-- AUTO_INCREMENT cho bảng `jms_cart`
 --
 ALTER TABLE `jms_cart`
-  MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_cart_rule`
+-- AUTO_INCREMENT cho bảng `jms_cart_rule`
 --
 ALTER TABLE `jms_cart_rule`
   MODIFY `id_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_cart_rule_product_rule`
+-- AUTO_INCREMENT cho bảng `jms_cart_rule_product_rule`
 --
 ALTER TABLE `jms_cart_rule_product_rule`
   MODIFY `id_product_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_cart_rule_product_rule_group`
+-- AUTO_INCREMENT cho bảng `jms_cart_rule_product_rule_group`
 --
 ALTER TABLE `jms_cart_rule_product_rule_group`
   MODIFY `id_product_rule_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_category`
+-- AUTO_INCREMENT cho bảng `jms_category`
 --
 ALTER TABLE `jms_category`
   MODIFY `id_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `jms_cms`
+-- AUTO_INCREMENT cho bảng `jms_cms`
 --
 ALTER TABLE `jms_cms`
   MODIFY `id_cms` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_cms_category`
+-- AUTO_INCREMENT cho bảng `jms_cms_category`
 --
 ALTER TABLE `jms_cms_category`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_cms_category_shop`
+-- AUTO_INCREMENT cho bảng `jms_cms_category_shop`
 --
 ALTER TABLE `jms_cms_category_shop`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_cms_role`
+-- AUTO_INCREMENT cho bảng `jms_cms_role`
 --
 ALTER TABLE `jms_cms_role`
   MODIFY `id_cms_role` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_condition`
+-- AUTO_INCREMENT cho bảng `jms_condition`
 --
 ALTER TABLE `jms_condition`
   MODIFY `id_condition` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
--- AUTO_INCREMENT for table `jms_configuration`
+-- AUTO_INCREMENT cho bảng `jms_configuration`
 --
 ALTER TABLE `jms_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=499;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=502;
 
 --
--- AUTO_INCREMENT for table `jms_configuration_kpi`
+-- AUTO_INCREMENT cho bảng `jms_configuration_kpi`
 --
 ALTER TABLE `jms_configuration_kpi`
   MODIFY `id_configuration_kpi` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
--- AUTO_INCREMENT for table `jms_connections`
+-- AUTO_INCREMENT cho bảng `jms_connections`
 --
 ALTER TABLE `jms_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
--- AUTO_INCREMENT for table `jms_connections_source`
+-- AUTO_INCREMENT cho bảng `jms_connections_source`
 --
 ALTER TABLE `jms_connections_source`
   MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_contact`
+-- AUTO_INCREMENT cho bảng `jms_contact`
 --
 ALTER TABLE `jms_contact`
   MODIFY `id_contact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_country`
+-- AUTO_INCREMENT cho bảng `jms_country`
 --
 ALTER TABLE `jms_country`
   MODIFY `id_country` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
--- AUTO_INCREMENT for table `jms_cronjobs`
+-- AUTO_INCREMENT cho bảng `jms_cronjobs`
 --
 ALTER TABLE `jms_cronjobs`
   MODIFY `id_cronjob` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_currency`
+-- AUTO_INCREMENT cho bảng `jms_currency`
 --
 ALTER TABLE `jms_currency`
   MODIFY `id_currency` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_customer`
+-- AUTO_INCREMENT cho bảng `jms_customer`
 --
 ALTER TABLE `jms_customer`
   MODIFY `id_customer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_customer_message`
+-- AUTO_INCREMENT cho bảng `jms_customer_message`
 --
 ALTER TABLE `jms_customer_message`
   MODIFY `id_customer_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_customer_thread`
+-- AUTO_INCREMENT cho bảng `jms_customer_thread`
 --
 ALTER TABLE `jms_customer_thread`
   MODIFY `id_customer_thread` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_customization`
+-- AUTO_INCREMENT cho bảng `jms_customization`
 --
 ALTER TABLE `jms_customization`
   MODIFY `id_customization` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_customization_field`
+-- AUTO_INCREMENT cho bảng `jms_customization_field`
 --
 ALTER TABLE `jms_customization_field`
   MODIFY `id_customization_field` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_date_range`
+-- AUTO_INCREMENT cho bảng `jms_date_range`
 --
 ALTER TABLE `jms_date_range`
   MODIFY `id_date_range` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_delivery`
+-- AUTO_INCREMENT cho bảng `jms_delivery`
 --
 ALTER TABLE `jms_delivery`
   MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_emailsubscription`
+-- AUTO_INCREMENT cho bảng `jms_emailsubscription`
 --
 ALTER TABLE `jms_emailsubscription`
   MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_employee`
+-- AUTO_INCREMENT cho bảng `jms_employee`
 --
 ALTER TABLE `jms_employee`
   MODIFY `id_employee` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_feature`
+-- AUTO_INCREMENT cho bảng `jms_feature`
 --
 ALTER TABLE `jms_feature`
   MODIFY `id_feature` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_feature_value`
+-- AUTO_INCREMENT cho bảng `jms_feature_value`
 --
 ALTER TABLE `jms_feature_value`
   MODIFY `id_feature_value` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `jms_gender`
+-- AUTO_INCREMENT cho bảng `jms_gender`
 --
 ALTER TABLE `jms_gender`
   MODIFY `id_gender` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_group`
+-- AUTO_INCREMENT cho bảng `jms_group`
 --
 ALTER TABLE `jms_group`
   MODIFY `id_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_group_reduction`
+-- AUTO_INCREMENT cho bảng `jms_group_reduction`
 --
 ALTER TABLE `jms_group_reduction`
   MODIFY `id_group_reduction` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_guest`
+-- AUTO_INCREMENT cho bảng `jms_guest`
 --
 ALTER TABLE `jms_guest`
-  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `jms_homeslider`
+-- AUTO_INCREMENT cho bảng `jms_homeslider`
 --
 ALTER TABLE `jms_homeslider`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_homeslider_slides`
+-- AUTO_INCREMENT cho bảng `jms_homeslider_slides`
 --
 ALTER TABLE `jms_homeslider_slides`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_hook`
+-- AUTO_INCREMENT cho bảng `jms_hook`
 --
 ALTER TABLE `jms_hook`
   MODIFY `id_hook` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
 
 --
--- AUTO_INCREMENT for table `jms_hook_alias`
+-- AUTO_INCREMENT cho bảng `jms_hook_alias`
 --
 ALTER TABLE `jms_hook_alias`
   MODIFY `id_hook_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
--- AUTO_INCREMENT for table `jms_hook_module_exceptions`
+-- AUTO_INCREMENT cho bảng `jms_hook_module_exceptions`
 --
 ALTER TABLE `jms_hook_module_exceptions`
   MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_hotdeals`
+-- AUTO_INCREMENT cho bảng `jms_hotdeals`
 --
 ALTER TABLE `jms_hotdeals`
   MODIFY `id_hotdeals` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_hotdeals_items`
+-- AUTO_INCREMENT cho bảng `jms_hotdeals_items`
 --
 ALTER TABLE `jms_hotdeals_items`
   MODIFY `id_hotdeals` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_image`
+-- AUTO_INCREMENT cho bảng `jms_image`
 --
 ALTER TABLE `jms_image`
   MODIFY `id_image` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=373;
 
 --
--- AUTO_INCREMENT for table `jms_image_type`
+-- AUTO_INCREMENT cho bảng `jms_image_type`
 --
 ALTER TABLE `jms_image_type`
   MODIFY `id_image_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_import_match`
+-- AUTO_INCREMENT cho bảng `jms_import_match`
 --
 ALTER TABLE `jms_import_match`
   MODIFY `id_import_match` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_info`
+-- AUTO_INCREMENT cho bảng `jms_info`
 --
 ALTER TABLE `jms_info`
   MODIFY `id_info` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_categories`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_categories`
 --
 ALTER TABLE `jms_jmsblog_categories`
   MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_categories_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_categories_lang`
 --
 ALTER TABLE `jms_jmsblog_categories_lang`
   MODIFY `category_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_posts`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_posts`
 --
 ALTER TABLE `jms_jmsblog_posts`
   MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_posts_comments`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_posts_comments`
 --
 ALTER TABLE `jms_jmsblog_posts_comments`
   MODIFY `comment_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_jmsblog_posts_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsblog_posts_lang`
 --
 ALTER TABLE `jms_jmsblog_posts_lang`
   MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmsbrands`
+-- AUTO_INCREMENT cho bảng `jms_jmsbrands`
 --
 ALTER TABLE `jms_jmsbrands`
   MODIFY `brand_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_jmsbrands_logos`
+-- AUTO_INCREMENT cho bảng `jms_jmsbrands_logos`
 --
 ALTER TABLE `jms_jmsbrands_logos`
   MODIFY `brand_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_jmsbrands_logos_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsbrands_logos_lang`
 --
 ALTER TABLE `jms_jmsbrands_logos_lang`
   MODIFY `brand_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_jmsfacebookusers`
+-- AUTO_INCREMENT cho bảng `jms_jmsfacebookusers`
 --
 ALTER TABLE `jms_jmsfacebookusers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_jmshtml_left`
+-- AUTO_INCREMENT cho bảng `jms_jmshtml_left`
 --
 ALTER TABLE `jms_jmshtml_left`
   MODIFY `html_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmshtml_left_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmshtml_left_lang`
 --
 ALTER TABLE `jms_jmshtml_left_lang`
   MODIFY `html_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmaploc`
+-- AUTO_INCREMENT cho bảng `jms_jmsmaploc`
 --
 ALTER TABLE `jms_jmsmaploc`
   MODIFY `id_loc` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmaploc_locs`
+-- AUTO_INCREMENT cho bảng `jms_jmsmaploc_locs`
 --
 ALTER TABLE `jms_jmsmaploc_locs`
   MODIFY `id_loc` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmaploc_locs_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmsmaploc_locs_lang`
 --
 ALTER TABLE `jms_jmsmaploc_locs_lang`
   MODIFY `id_loc` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_jmsmegamenu`
+-- AUTO_INCREMENT cho bảng `jms_jmsmegamenu`
 --
 ALTER TABLE `jms_jmsmegamenu`
-  MODIFY `mitem_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
+  MODIFY `mitem_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=214;
 
 --
--- AUTO_INCREMENT for table `jms_jmspagebuilder`
+-- AUTO_INCREMENT cho bảng `jms_jmspagebuilder`
 --
 ALTER TABLE `jms_jmspagebuilder`
   MODIFY `id_homepage` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_jmspagebuilder_homepages`
+-- AUTO_INCREMENT cho bảng `jms_jmspagebuilder_homepages`
 --
 ALTER TABLE `jms_jmspagebuilder_homepages`
   MODIFY `id_homepage` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_jmstestimonials`
+-- AUTO_INCREMENT cho bảng `jms_jmstestimonials`
 --
 ALTER TABLE `jms_jmstestimonials`
   MODIFY `id_testimonial` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jmstestimonials_lang`
+-- AUTO_INCREMENT cho bảng `jms_jmstestimonials_lang`
 --
 ALTER TABLE `jms_jmstestimonials_lang`
   MODIFY `id_testimonial` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_jms_producttab`
+-- AUTO_INCREMENT cho bảng `jms_jms_producttab`
 --
 ALTER TABLE `jms_jms_producttab`
   MODIFY `tab_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT for table `jms_jms_producttab_ctab`
+-- AUTO_INCREMENT cho bảng `jms_jms_producttab_ctab`
 --
 ALTER TABLE `jms_jms_producttab_ctab`
   MODIFY `tab_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT for table `jms_jms_producttab_ctab_lang`
+-- AUTO_INCREMENT cho bảng `jms_jms_producttab_ctab_lang`
 --
 ALTER TABLE `jms_jms_producttab_ctab_lang`
   MODIFY `tab_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT for table `jms_jms_product_video`
+-- AUTO_INCREMENT cho bảng `jms_jms_product_video`
 --
 ALTER TABLE `jms_jms_product_video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=217;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slides`
+-- AUTO_INCREMENT cho bảng `jms_jms_slides`
 --
 ALTER TABLE `jms_jms_slides`
   MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slides_lang`
+-- AUTO_INCREMENT cho bảng `jms_jms_slides_lang`
 --
 ALTER TABLE `jms_jms_slides_lang`
   MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slides_layers`
+-- AUTO_INCREMENT cho bảng `jms_jms_slides_layers`
 --
 ALTER TABLE `jms_jms_slides_layers`
   MODIFY `id_layer` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 
 --
--- AUTO_INCREMENT for table `jms_jms_slides_shop`
+-- AUTO_INCREMENT cho bảng `jms_jms_slides_shop`
 --
 ALTER TABLE `jms_jms_slides_shop`
   MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `jms_lang`
+-- AUTO_INCREMENT cho bảng `jms_lang`
 --
 ALTER TABLE `jms_lang`
   MODIFY `id_lang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_layered_category`
+-- AUTO_INCREMENT cho bảng `jms_layered_category`
 --
 ALTER TABLE `jms_layered_category`
   MODIFY `id_layered_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
--- AUTO_INCREMENT for table `jms_layered_filter`
+-- AUTO_INCREMENT cho bảng `jms_layered_filter`
 --
 ALTER TABLE `jms_layered_filter`
   MODIFY `id_layered_filter` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_linksmenutop`
+-- AUTO_INCREMENT cho bảng `jms_linksmenutop`
 --
 ALTER TABLE `jms_linksmenutop`
   MODIFY `id_linksmenutop` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_link_block`
+-- AUTO_INCREMENT cho bảng `jms_link_block`
 --
 ALTER TABLE `jms_link_block`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_link_block_shop`
+-- AUTO_INCREMENT cho bảng `jms_link_block_shop`
 --
 ALTER TABLE `jms_link_block_shop`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_log`
+-- AUTO_INCREMENT cho bảng `jms_log`
 --
 ALTER TABLE `jms_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=237;
 
 --
--- AUTO_INCREMENT for table `jms_mail`
+-- AUTO_INCREMENT cho bảng `jms_mail`
 --
 ALTER TABLE `jms_mail`
   MODIFY `id_mail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_manufacturer`
+-- AUTO_INCREMENT cho bảng `jms_manufacturer`
 --
 ALTER TABLE `jms_manufacturer`
   MODIFY `id_manufacturer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_memcached_servers`
+-- AUTO_INCREMENT cho bảng `jms_memcached_servers`
 --
 ALTER TABLE `jms_memcached_servers`
   MODIFY `id_memcached_server` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_message`
+-- AUTO_INCREMENT cho bảng `jms_message`
 --
 ALTER TABLE `jms_message`
   MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_meta`
+-- AUTO_INCREMENT cho bảng `jms_meta`
 --
 ALTER TABLE `jms_meta`
   MODIFY `id_meta` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT for table `jms_module`
+-- AUTO_INCREMENT cho bảng `jms_module`
 --
 ALTER TABLE `jms_module`
   MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
--- AUTO_INCREMENT for table `jms_module_history`
+-- AUTO_INCREMENT cho bảng `jms_module_history`
 --
 ALTER TABLE `jms_module_history`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_module_preference`
+-- AUTO_INCREMENT cho bảng `jms_module_preference`
 --
 ALTER TABLE `jms_module_preference`
   MODIFY `id_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_operating_system`
+-- AUTO_INCREMENT cho bảng `jms_operating_system`
 --
 ALTER TABLE `jms_operating_system`
   MODIFY `id_operating_system` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `jms_orders`
+-- AUTO_INCREMENT cho bảng `jms_orders`
 --
 ALTER TABLE `jms_orders`
   MODIFY `id_order` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_order_carrier`
+-- AUTO_INCREMENT cho bảng `jms_order_carrier`
 --
 ALTER TABLE `jms_order_carrier`
   MODIFY `id_order_carrier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_order_cart_rule`
+-- AUTO_INCREMENT cho bảng `jms_order_cart_rule`
 --
 ALTER TABLE `jms_order_cart_rule`
   MODIFY `id_order_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_detail`
+-- AUTO_INCREMENT cho bảng `jms_order_detail`
 --
 ALTER TABLE `jms_order_detail`
   MODIFY `id_order_detail` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_order_history`
+-- AUTO_INCREMENT cho bảng `jms_order_history`
 --
 ALTER TABLE `jms_order_history`
   MODIFY `id_order_history` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `jms_order_invoice`
+-- AUTO_INCREMENT cho bảng `jms_order_invoice`
 --
 ALTER TABLE `jms_order_invoice`
   MODIFY `id_order_invoice` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_message`
+-- AUTO_INCREMENT cho bảng `jms_order_message`
 --
 ALTER TABLE `jms_order_message`
   MODIFY `id_order_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_order_payment`
+-- AUTO_INCREMENT cho bảng `jms_order_payment`
 --
 ALTER TABLE `jms_order_payment`
   MODIFY `id_order_payment` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_return`
+-- AUTO_INCREMENT cho bảng `jms_order_return`
 --
 ALTER TABLE `jms_order_return`
   MODIFY `id_order_return` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_return_state`
+-- AUTO_INCREMENT cho bảng `jms_order_return_state`
 --
 ALTER TABLE `jms_order_return_state`
   MODIFY `id_order_return_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_order_slip`
+-- AUTO_INCREMENT cho bảng `jms_order_slip`
 --
 ALTER TABLE `jms_order_slip`
   MODIFY `id_order_slip` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_order_state`
+-- AUTO_INCREMENT cho bảng `jms_order_state`
 --
 ALTER TABLE `jms_order_state`
   MODIFY `id_order_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `jms_page`
+-- AUTO_INCREMENT cho bảng `jms_page`
 --
 ALTER TABLE `jms_page`
   MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_pagenotfound`
+-- AUTO_INCREMENT cho bảng `jms_pagenotfound`
 --
 ALTER TABLE `jms_pagenotfound`
   MODIFY `id_pagenotfound` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_page_type`
+-- AUTO_INCREMENT cho bảng `jms_page_type`
 --
 ALTER TABLE `jms_page_type`
   MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_product`
+-- AUTO_INCREMENT cho bảng `jms_product`
 --
 ALTER TABLE `jms_product`
   MODIFY `id_product` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
--- AUTO_INCREMENT for table `jms_product_attribute`
+-- AUTO_INCREMENT cho bảng `jms_product_attribute`
 --
 ALTER TABLE `jms_product_attribute`
   MODIFY `id_product_attribute` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=186;
 
 --
--- AUTO_INCREMENT for table `jms_product_download`
+-- AUTO_INCREMENT cho bảng `jms_product_download`
 --
 ALTER TABLE `jms_product_download`
   MODIFY `id_product_download` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_product_supplier`
+-- AUTO_INCREMENT cho bảng `jms_product_supplier`
 --
 ALTER TABLE `jms_product_supplier`
   MODIFY `id_product_supplier` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_profile`
+-- AUTO_INCREMENT cho bảng `jms_profile`
 --
 ALTER TABLE `jms_profile`
   MODIFY `id_profile` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_quick_access`
+-- AUTO_INCREMENT cho bảng `jms_quick_access`
 --
 ALTER TABLE `jms_quick_access`
   MODIFY `id_quick_access` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_range_price`
+-- AUTO_INCREMENT cho bảng `jms_range_price`
 --
 ALTER TABLE `jms_range_price`
   MODIFY `id_range_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_range_weight`
+-- AUTO_INCREMENT cho bảng `jms_range_weight`
 --
 ALTER TABLE `jms_range_weight`
   MODIFY `id_range_weight` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_reassurance`
+-- AUTO_INCREMENT cho bảng `jms_reassurance`
 --
 ALTER TABLE `jms_reassurance`
   MODIFY `id_reassurance` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_reassurance_lang`
+-- AUTO_INCREMENT cho bảng `jms_reassurance_lang`
 --
 ALTER TABLE `jms_reassurance_lang`
   MODIFY `id_reassurance` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_referrer`
+-- AUTO_INCREMENT cho bảng `jms_referrer`
 --
 ALTER TABLE `jms_referrer`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_referrer_shop`
+-- AUTO_INCREMENT cho bảng `jms_referrer_shop`
 --
 ALTER TABLE `jms_referrer_shop`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_request_sql`
+-- AUTO_INCREMENT cho bảng `jms_request_sql`
 --
 ALTER TABLE `jms_request_sql`
   MODIFY `id_request_sql` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_required_field`
+-- AUTO_INCREMENT cho bảng `jms_required_field`
 --
 ALTER TABLE `jms_required_field`
   MODIFY `id_required_field` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_risk`
+-- AUTO_INCREMENT cho bảng `jms_risk`
 --
 ALTER TABLE `jms_risk`
   MODIFY `id_risk` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jms_search_engine`
+-- AUTO_INCREMENT cho bảng `jms_search_engine`
 --
 ALTER TABLE `jms_search_engine`
   MODIFY `id_search_engine` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT for table `jms_search_word`
+-- AUTO_INCREMENT cho bảng `jms_search_word`
 --
 ALTER TABLE `jms_search_word`
   MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17001;
 
 --
--- AUTO_INCREMENT for table `jms_sekeyword`
+-- AUTO_INCREMENT cho bảng `jms_sekeyword`
 --
 ALTER TABLE `jms_sekeyword`
   MODIFY `id_sekeyword` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_shop`
+-- AUTO_INCREMENT cho bảng `jms_shop`
 --
 ALTER TABLE `jms_shop`
   MODIFY `id_shop` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_shop_group`
+-- AUTO_INCREMENT cho bảng `jms_shop_group`
 --
 ALTER TABLE `jms_shop_group`
   MODIFY `id_shop_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_shop_url`
+-- AUTO_INCREMENT cho bảng `jms_shop_url`
 --
 ALTER TABLE `jms_shop_url`
   MODIFY `id_shop_url` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price`
+-- AUTO_INCREMENT cho bảng `jms_specific_price`
 --
 ALTER TABLE `jms_specific_price`
   MODIFY `id_specific_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_priority`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_priority`
 --
 ALTER TABLE `jms_specific_price_priority`
   MODIFY `id_specific_price_priority` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_rule`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_rule`
 --
 ALTER TABLE `jms_specific_price_rule`
   MODIFY `id_specific_price_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_rule_condition`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_rule_condition`
 --
 ALTER TABLE `jms_specific_price_rule_condition`
   MODIFY `id_specific_price_rule_condition` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_specific_price_rule_condition_group`
+-- AUTO_INCREMENT cho bảng `jms_specific_price_rule_condition_group`
 --
 ALTER TABLE `jms_specific_price_rule_condition_group`
   MODIFY `id_specific_price_rule_condition_group` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_state`
+-- AUTO_INCREMENT cho bảng `jms_state`
 --
 ALTER TABLE `jms_state`
   MODIFY `id_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=377;
 
 --
--- AUTO_INCREMENT for table `jms_statssearch`
+-- AUTO_INCREMENT cho bảng `jms_statssearch`
 --
 ALTER TABLE `jms_statssearch`
   MODIFY `id_statssearch` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_stock`
+-- AUTO_INCREMENT cho bảng `jms_stock`
 --
 ALTER TABLE `jms_stock`
   MODIFY `id_stock` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_stock_available`
+-- AUTO_INCREMENT cho bảng `jms_stock_available`
 --
 ALTER TABLE `jms_stock_available`
   MODIFY `id_stock_available` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=253;
 
 --
--- AUTO_INCREMENT for table `jms_stock_mvt`
+-- AUTO_INCREMENT cho bảng `jms_stock_mvt`
 --
 ALTER TABLE `jms_stock_mvt`
   MODIFY `id_stock_mvt` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
--- AUTO_INCREMENT for table `jms_stock_mvt_reason`
+-- AUTO_INCREMENT cho bảng `jms_stock_mvt_reason`
 --
 ALTER TABLE `jms_stock_mvt_reason`
   MODIFY `id_stock_mvt_reason` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `jms_store`
+-- AUTO_INCREMENT cho bảng `jms_store`
 --
 ALTER TABLE `jms_store`
   MODIFY `id_store` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `jms_supplier`
+-- AUTO_INCREMENT cho bảng `jms_supplier`
 --
 ALTER TABLE `jms_supplier`
   MODIFY `id_supplier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order`
+-- AUTO_INCREMENT cho bảng `jms_supply_order`
 --
 ALTER TABLE `jms_supply_order`
   MODIFY `id_supply_order` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_detail`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_detail`
 --
 ALTER TABLE `jms_supply_order_detail`
   MODIFY `id_supply_order_detail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_history`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_history`
 --
 ALTER TABLE `jms_supply_order_history`
   MODIFY `id_supply_order_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_receipt_history`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_receipt_history`
 --
 ALTER TABLE `jms_supply_order_receipt_history`
   MODIFY `id_supply_order_receipt_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_supply_order_state`
+-- AUTO_INCREMENT cho bảng `jms_supply_order_state`
 --
 ALTER TABLE `jms_supply_order_state`
   MODIFY `id_supply_order_state` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `jms_tab`
+-- AUTO_INCREMENT cho bảng `jms_tab`
 --
 ALTER TABLE `jms_tab`
   MODIFY `id_tab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
 
 --
--- AUTO_INCREMENT for table `jms_tab_module_preference`
+-- AUTO_INCREMENT cho bảng `jms_tab_module_preference`
 --
 ALTER TABLE `jms_tab_module_preference`
   MODIFY `id_tab_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_tag`
+-- AUTO_INCREMENT cho bảng `jms_tag`
 --
 ALTER TABLE `jms_tag`
   MODIFY `id_tag` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_tax`
+-- AUTO_INCREMENT cho bảng `jms_tax`
 --
 ALTER TABLE `jms_tax`
   MODIFY `id_tax` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 
 --
--- AUTO_INCREMENT for table `jms_tax_rule`
+-- AUTO_INCREMENT cho bảng `jms_tax_rule`
 --
 ALTER TABLE `jms_tax_rule`
   MODIFY `id_tax_rule` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=679;
 
 --
--- AUTO_INCREMENT for table `jms_tax_rules_group`
+-- AUTO_INCREMENT cho bảng `jms_tax_rules_group`
 --
 ALTER TABLE `jms_tax_rules_group`
   MODIFY `id_tax_rules_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
--- AUTO_INCREMENT for table `jms_timezone`
+-- AUTO_INCREMENT cho bảng `jms_timezone`
 --
 ALTER TABLE `jms_timezone`
   MODIFY `id_timezone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=561;
 
 --
--- AUTO_INCREMENT for table `jms_translation`
+-- AUTO_INCREMENT cho bảng `jms_translation`
 --
 ALTER TABLE `jms_translation`
   MODIFY `id_translation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `jms_warehouse`
+-- AUTO_INCREMENT cho bảng `jms_warehouse`
 --
 ALTER TABLE `jms_warehouse`
   MODIFY `id_warehouse` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_warehouse_product_location`
+-- AUTO_INCREMENT cho bảng `jms_warehouse_product_location`
 --
 ALTER TABLE `jms_warehouse_product_location`
   MODIFY `id_warehouse_product_location` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_webservice_account`
+-- AUTO_INCREMENT cho bảng `jms_webservice_account`
 --
 ALTER TABLE `jms_webservice_account`
   MODIFY `id_webservice_account` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_webservice_permission`
+-- AUTO_INCREMENT cho bảng `jms_webservice_permission`
 --
 ALTER TABLE `jms_webservice_permission`
   MODIFY `id_webservice_permission` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_web_browser`
+-- AUTO_INCREMENT cho bảng `jms_web_browser`
 --
 ALTER TABLE `jms_web_browser`
   MODIFY `id_web_browser` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `jms_wishlist`
+-- AUTO_INCREMENT cho bảng `jms_wishlist`
 --
 ALTER TABLE `jms_wishlist`
   MODIFY `id_wishlist` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_wishlist_product`
+-- AUTO_INCREMENT cho bảng `jms_wishlist_product`
 --
 ALTER TABLE `jms_wishlist_product`
   MODIFY `id_wishlist_product` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jms_zone`
+-- AUTO_INCREMENT cho bảng `jms_zone`
 --
 ALTER TABLE `jms_zone`
   MODIFY `id_zone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;

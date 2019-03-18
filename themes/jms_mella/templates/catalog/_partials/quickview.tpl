@@ -27,7 +27,7 @@
    <div class="modal-content">
      <div class="modal-header">
        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
+         <span aria-hidden="true">×</span>
        </button>
      </div>
      <div class="modal-body" id="main">
@@ -94,9 +94,6 @@
                 <input type="hidden" name="token" value="{$static_token}">
                 <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                 <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
-                {block name='product_variants'}
-                  {include file='catalog/_partials/product-variants.tpl'}
-                {/block}
 				
                 {block name='product_add_to_cart'}
                   {include file='catalog/_partials/product-add-to-cart.tpl'}

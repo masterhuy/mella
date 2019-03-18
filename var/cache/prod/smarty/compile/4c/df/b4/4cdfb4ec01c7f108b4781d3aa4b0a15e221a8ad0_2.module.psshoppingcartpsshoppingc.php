@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-14 06:24:50
+/* Smarty version 3.1.33, created on 2019-03-18 05:31:03
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c8a2bf2ebed67_81713451',
+  'unifunc' => 'content_5c8f65572472c9_13577195',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4cdfb4ec01c7f108b4781d3aa4b0a15e221a8ad0' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1552292667,
+      1 => 1552901267,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c8a2bf2ebed67_81713451 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c8f65572472c9_13577195 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="cart-wrap clearfix">
 	<a class="preview-image" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -43,22 +43,14 @@ function content_5c8a2bf2ebed67_81713451 (Smarty_Internal_Template $_smarty_tpl)
 
 				</span>
 			</div>
-			<div class="quantity-formated">
-				<span class="quantity">
-					x <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
-
-				</span>
-			</div>
 			<span class="remove_link">
 				<a class="remove-from-cart" rel="nofollow" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['remove_from_cart_url'], ENT_QUOTES, 'UTF-8');?>
 " data-link-action="remove-from-cart" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Remove from cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 " >
-					<i class="fa fa-trash-o"></i>
+					<i class="fa fa-times" aria-hidden="true"></i>
 				</a>
 			</span>
 		</div>
-		
 	</div>
-	
 </div><?php }
 }
