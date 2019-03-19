@@ -24,29 +24,31 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="btn-group module-group-box">
-<a title="Search" data-toggle="dropdown" class="btn-groupmodule dropdown-toggle" href="#">
-{if $icon_class}
-<i class="{$icon_class}"></i>
-{/if}
-{if $addon_title}
-{$addon_title|escape:'htmlall':'UTF-8'}
-{/if}
-{if $addon_desc}
-<span>{$addon_desc|escape:'htmlall':'UTF-8'}</span>
-{/if}
-</a>
-<div role="menu" class="dropdown-menu">
-	{if $module1_content}
-	{$module1_content nofilter}
-	{/if}
-	{if $module2_content}
-	{$module2_content nofilter}
-	{/if}
-	{if $module3_content}
-	{$module3_content nofilter}
-	{/if}
-	{if $module4_content}
-	{$module4_content nofilter}
-	{/if}
-</div>
+	<a title="Search" data-toggle="collapse" class="btn-groupmodule" href="#module-group">
+		{if $icon_class}
+			<i class="{$icon_class}"></i>
+		{/if}
+		{if $addon_title}
+			{$addon_title|escape:'htmlall':'UTF-8'}
+		{/if}
+		{if $addon_desc}
+			<span>{$addon_desc|escape:'htmlall':'UTF-8'}</span>
+		{/if}
+	</a>
+	<div id="module-group" class="collapse">
+		<div>
+			{if $module1_content}
+				{$module1_content nofilter}
+			{/if}
+			{if $module2_content}
+				{$module2_content nofilter}
+			{/if}
+			{if $module3_content}
+				{$module3_content nofilter}
+			{/if}
+			{if $module4_content}
+				{$module4_content nofilter}
+			{/if}
+		</div>
+	</div>
 </div>

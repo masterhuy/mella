@@ -105,7 +105,10 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #e1e1e1; }
-
+.flex-middle{
+  display: flex;
+  align-items: center;
+}
 .wrap {
   width: auto;
   clear: both; }
@@ -3839,13 +3842,6 @@ footer .blog-carousel {
     font-weight: 600;
     text-transform: uppercase; }
 
-/*Brand*/
-.brand-carousel{
-  background-color: #f7f7f7;
-}
-
-
-/*end brand*/
 /*Blog*/
 .blog-carousel .post-info {
   margin-top: 26px;
@@ -5733,6 +5729,7 @@ button,
 .wishlist_top i,
 .cart-icon i,
 .jms-banner,
+.brand-item img,
 .arrows.js-arrows i, 
 .scroll-box-arrows i,
 .images-container .product-images > li.thumb-container > .thumb{

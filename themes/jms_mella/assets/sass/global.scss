@@ -37,6 +37,48 @@
 	display: block !important;
 }
 
+//header left fixed
+.header-left-fixed {
+	text-align: center;
+	position: fixed;
+	padding-top: 57px;
+	top: 0;
+	left: 0;
+	width: 300px;
+	border-right: 1px solid #ddd;
+	height: 100%;
+	background: #fff;
+	z-index: 999;
+	.container{
+		width: 100%;
+	}
+	.btn-search{
+		i{
+			font-size: 24px;
+		}
+	}
+	.addon-logo{
+		margin-top: 339px;
+		margin-bottom: 347px;
+		.addon-box{
+			display: flex;
+			justify-content: center;
+		}
+	}
+	#social_block ul li {
+		margin: 0 17px;
+	}
+	#jms_ajax_search .btn-search{
+		display: inline-flex;
+		align-items: center;
+		span{
+		    display: block;
+		    margin-left: 23px;
+		}
+	}
+}
+//
+
 //header type 1
 .header-type-1{
 	width: 100%;
@@ -84,6 +126,11 @@
 }
 //
 
+//close search
+#jms_ajax_search #search-form .close-search{
+	background: #b20f0f url('../img/icon/close-search.png') no-repeat center;
+}
+//
 .top_menu_second{
 	.container > .row{
 		margin: 0;
@@ -169,6 +216,19 @@
 		transition: .4s all;
 	}
 }
+
+//brand
+.brand-carousel{
+	&:hover .brand-item img{
+		opacity: .6;
+	}
+	.brand-item img:hover{
+		opacity: 1;
+	}
+}
+
+//
+
 //countdown
 .countdown-box{ 
 	.row{
@@ -2078,42 +2138,6 @@ a.wishlist_top{
 	border: 2px solid #e6e6e6;
 }
 
-// module group
-.btn-groupmodule{
-	width: 22px;
-	height: 16px;
-	display: inline-block;
-	&::before{
-		content: url("../img/icon/setting.png");
-	}
-	+ .dropdown-menu{
-	  padding: 20px 15px;
-	  display: block;
-	  top: calc(100% + 15px);
-	  left: -15px;
-	  &::before{
-	  	left: 20px;
-	  }
-	  .flag{
-	  	position: relative;
-	  	top: -2px;
-	  }
-	  .title{
-	  	font-weight: 600;
-	  	margin: 5px 0;
-		display: block;
-	  }
-	  li{
-	    line-height: 30px;
-	    &.current a{
-	    	color: $active;
-	    }
-	  }
-	  ul{
-	  	margin-bottom: 0;
-	  }
-	}
-}
 
 //cart
 .ajax_cart_quantity {
@@ -2258,7 +2282,7 @@ a.wishlist_top{
 //magetab right
 .mega-tab-right{
 	.mega_cates_tab{
-		.addon-title, .addon_desc{
+		.addon-title, .addon-desc{
 			text-align: left;
 			h3{
 				text-align: left;
@@ -2682,12 +2706,6 @@ a.wishlist_top{
 	.block_c_right{
 		form{
 			position: relative;
-		}
-		.alert {
-			position: absolute;
-			margin: 0;
-			top: calc(100% + 10px);
-			z-index: 9;
 		}
 	}
 }

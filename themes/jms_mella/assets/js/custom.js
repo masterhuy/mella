@@ -1025,9 +1025,23 @@ $(document).ready(function() {
 		}, 3000);		
 		initialLoad = false;
 	}
+
 	$('.mega_menu').click(function(event) {
 		$('.main-site').toggleClass('open-sidebar1');
 	});
+
+	$('#jms_ajax_search .btn-search').click(function(event) {
+		$("#search-form").addClass('open');
+	});
+	$('#jms_ajax_search .close-search').click(function(event) {
+		$("#search-form").removeClass('open');
+	});
+
+	$('.jms-popup').addClass('collapse');
+	setTimeout( function(){
+    	$('.jms-popup').addClass('flipInX animated in');
+    },800);
+	 
 });
 
 jQuery(function ($) {

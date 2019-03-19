@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-18 05:34:32
+/* Smarty version 3.1.33, created on 2019-03-19 03:38:49
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c8f6628535097_57863093',
+  'unifunc' => 'content_5c909c89c6fcc4_10283649',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1552901647,
+      1 => 1552981063,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c8f6628535097_57863093 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c909c89c6fcc4_10283649 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -42,6 +42,9 @@ function content_5c8f6628535097_57863093 (Smarty_Internal_Template $_smarty_tpl)
 						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-active">
 							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign Up','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 
+						</button>
+						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup">
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>

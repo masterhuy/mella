@@ -37,7 +37,7 @@
 			</div>
 		{/if}
 			<div class="right-info">
-				<a class="product-link" href="{$product.link nofilter}" title="{$product.name|truncate:50:'...' nofilter}">
+				<a class="search-product-link" href="{$product.link nofilter}" title="{$product.name|truncate:50:'...' nofilter}">
 					{$product.name|truncate:90:'...' nofilter}
 				</a>
 				{if $description}

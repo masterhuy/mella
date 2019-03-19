@@ -37,6 +37,9 @@
 						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-active">
 							{l s='Sign Up' d='Shop.Theme.Global'}
 						</button>
+						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup">
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>
 					{if $msg}

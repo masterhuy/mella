@@ -23,14 +23,13 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="_desktop_user_info">
-	<div class="user-info menu-collapse btn-group compact-hidden type1">
+	<div class="user-info menu-collapse btn-group compact-hidden">
 		{if $logged} 
 			<a href="#login" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse">      
-		   		<i class="icon-user-1"></i>
+		   		{$customerName}
 		  	</a>
 			<div id="login" class="collapse">
 				<ul>
-					<li><a>{$customerName}</a></li>
 					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 					<li><a href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">{l s='My Wishlist' d='Shop.Theme.CustomerAccount'} </a></li>
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
@@ -39,7 +38,8 @@
 			</div>
 		{else}   
 			<a href="#login" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse">
-				<i class="icon-user-1"></i>
+				<i class="fa fa-user" aria-hidden="true"></i>
+				{l s='My Account' d='Shop.Theme.Actions'}
 			</a>
 			<div id="login" class="collapse">
 				<ul>
