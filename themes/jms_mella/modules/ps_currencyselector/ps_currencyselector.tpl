@@ -22,11 +22,28 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info">
-   	<a href="#currency" class="title btn-xs" data-toggle="collapse">
+<div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-1">
+   	<a href="#currency-1" class="title btn-xs" data-toggle="collapse">
 		{$current_currency.iso_code} <i class="fa fa-caret-down" aria-hidden="true"></i>
 	</a>
-	<div id="currency" class="collapse">
+	<div id="currency-1" class="collapse">
+		<ul>
+			{foreach from=$currencies item=currency}
+				<li {if $currency.current} class="current" {/if}>
+					<a title="{$currency.name}" rel="nofollow" href="{$currency.url}" class="collapse-item">
+						<b>{$currency.sign}</b> {$currency.iso_code}
+					</a>
+				</li>
+			{/foreach}
+		</ul>
+	</div>
+</div>
+<div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-2">
+	<p class="">{l s='Select Currency' d='Shop.Theme.Actions'}</p>
+   	<a href="#currency-2" class="title btn-xs" data-toggle="collapse">
+		{$current_currency.iso_code} <i class="fa fa-angle-down" aria-hidden="true"></i>
+	</a>
+	<div id="currency-2" class="collapse">
 		<ul>
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>

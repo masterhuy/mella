@@ -24,11 +24,32 @@
 *}
 <!-- Block languages module -->
 {if count($languages) > 1}
-	<div class="btn-group compact-hidden languages-info">
-		<a href="#languages" class="btn-xs" data-toggle="collapse">
+	<div class="btn-group compact-hidden languages-info type-1">
+		<a href="#languages-1" class="btn-xs" data-toggle="collapse">
 			{$current_language.name_simple|truncate:3:''} <i class="fa fa-caret-down" aria-hidden="true"></i>
 		</a>
-		<div id="languages" class="collapse">
+		<div id="languages-1" class="collapse">
+			<ul>
+				{foreach from=$languages key=k item=language name="languages"}
+					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
+						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
+							<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="16" height="11"/>
+							{$language.name_simple}
+						</a>
+					</li>
+				{/foreach}		
+			</ul>
+		</div>
+	</div>
+{/if}
+
+{if count($languages) > 1}
+	<div class="btn-group compact-hidden languages-info type-2">
+		<p class="">{l s='Select Language' d='Shop.Theme.Actions'}</p>
+		<a href="#languages-2" class="btn-xs" data-toggle="collapse">
+			{$current_language.name_simple} <i class="fa fa-angle-down" aria-hidden="true"></i>
+		</a>
+		<div id="languages-2" class="collapse">
 			<ul>
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>

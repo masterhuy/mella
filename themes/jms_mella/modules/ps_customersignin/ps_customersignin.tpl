@@ -23,28 +23,55 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="_desktop_user_info">
-	<div class="user-info menu-collapse btn-group compact-hidden">
+	<div class="user-info menu-collapse btn-group compact-hidden type-1">
 		{if $logged} 
-			<a href="#login" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse">      
-		   		{$customerName}
+			<a href="#login-1" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse">      
+				<i class="icon-user-1"></i>
 		  	</a>
-			<div id="login" class="collapse">
+			<div id="login-1" class="collapse">
 				<ul>
+					<li>{$customerName}</li>
 					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
-					<li><a href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">{l s='My Wishlist' d='Shop.Theme.CustomerAccount'} </a></li>
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
 					<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
 				</ul>
 			</div>
 		{else}   
 			<a href="#login" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse">
-				<i class="fa fa-user" aria-hidden="true"></i>
-				{l s='My Account' d='Shop.Theme.Actions'}
+				<i class="icon-user-1"></i>
 			</a>
 			<div id="login" class="collapse">
 				<ul>
 					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
-					<li><a href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">{l s='My Wishlist' d='Shop.Theme.CustomerAccount'} </a></li>
+					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
+					<li><a class="logout" href="{$link->getPageLink('my-account', true)}" title="{l s='Login' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>
+				</ul>
+			</div>
+		{/if}
+	</div>
+</div>
+
+<div id="_desktop_user_info">
+	<div class="user-info menu-collapse btn-group compact-hidden type-2">
+		{if $logged} 
+			<a href="#login-2" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse">      
+				<i class="fa fa-user"></i>
+				{$customerName}
+		  	</a>
+			<div id="login-2" class="collapse">
+				<ul>
+					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
+					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
+					<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
+				</ul>
+			</div>
+		{else}   
+			<a href="#login-2" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse">
+				<i class="fa fa-user"></i>
+				{l s='My account' d='Shop.Theme.Actions'}
+			</a>
+			<div id="login-2" class="collapse">
+				<ul>		
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
 					<li><a class="logout" href="{$link->getPageLink('my-account', true)}" title="{l s='Login' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>
 				</ul>

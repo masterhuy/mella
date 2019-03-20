@@ -97,18 +97,6 @@
 }
 //
 
-//header type 2
-.header-type-2 {
-	padding: 60px 0;
-	.container-fluid{
-		max-width: 1800px;
-	}
-	.left-icon-group .addon-box{
-		margin-left: 27px;
-	}
-}
-//
-
 //slider type 1
 .slider-type-1{
 	.fraction-slider .prev{
@@ -126,11 +114,139 @@
 }
 //
 
+//header type 2
+.header-type-2 {
+	padding: 60px 0;
+	.container-fluid{
+		max-width: 1800;
+		width: 100%;
+	}
+	.left-icon-group .addon-box{
+		margin-left: 27px;
+	}
+}
+//
+
+//header type 3
+.headr-type-3{
+	background: #f2f2f2;
+	.container-fluid{
+		max-width: 1800;
+		width: 100%;
+	}
+}
+
+//left group btn 1
+.left-group-btn-1{
+	.addon-box{
+		margin-right: 20px;
+	}
+	p{
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+	}
+	img{
+		margin-right: 11px;
+	}
+}
+//
+
+//
+
 //close search
 #jms_ajax_search #search-form .close-search{
 	background: #b20f0f url('../img/icon/close-search.png') no-repeat center;
 }
 //
+
+//module group
+.left-icon-group{
+	.module-group{
+		width: 304px;
+		padding: 30px;
+		.collapse, .collapsing{
+			position: unset !important;
+			box-shadow: unset;
+		}
+		.btn-group{
+			p{
+				font-weight: 500;
+				margin-bottom: 13px;
+			}
+			.btn-xs {
+				font-size: 12px;
+				font-weight: 400;
+				text-transform: capitalize;
+				letter-spacing: 0;
+				color: #8f8f8f;
+				border: 1px solid #ddd;
+				border-radius: 0;
+				width: 100%;
+				display: block;
+				height: 40px;
+				line-height: 40px;
+				padding: 0 20px;
+				position: relative;
+			}
+			.btn-xs i {
+				position: absolute;
+				right: 20px;
+				top: 14px;
+			}
+		}
+		.currency-info{
+			&.type-2{
+				display: block;
+				margin-bottom: 36px;
+			}
+			&.type-1{
+				display: none;
+			}
+			ul{
+				border: 1px solid #ddd;
+				border-top: 0;
+			}
+		}
+		.languages-info{
+			&.type-1{
+				display: none;
+			}
+			&.type-2{
+				display: block;
+				margin-bottom: 34px;
+			}
+			ul{
+				border: 1px solid #ddd;
+				border-top: 0;
+			}
+		}
+		#_desktop_user_info{
+			.user-info{
+				> .account{
+					text-transform: uppercase;
+					color: #8f8f8f;
+					font-weight: 500;
+					.fa{
+						color: #000;
+						margin-right: 4px;
+					}
+					&:hover{
+						color: $active;
+					}
+				}
+			}
+			.type-2 {
+				display: block;
+			}
+			.type-1{
+				display: none;
+			}
+		}
+	}
+}
+//
+
 .top_menu_second{
 	.container > .row{
 		margin: 0;
@@ -441,19 +557,12 @@
 		}
 	}
 }
-.lh-50{
-	line-height: 50px;
-}
 .jms-advsearch .input-group.keyword-group {
     width: 100%;
 }
-#_desktop_user_info .dropdown-menu{
-	left: -30px;
-	width: 100px;
-	min-width: auto;
-	text-align: center;
-	li > a{
-		
+#_desktop_user_info{
+	.type-2{
+		display: none;
 	}
 }
 .languages-info, #_desktop_currency_selector, #_desktop_user_info {
@@ -2106,28 +2215,6 @@ a.wishlist_top{
 	}
 }
 
-.view-all{
-  font-size: 14px;
-  padding-right: 5px;
-  position: relative;
-  text-transform: uppercase;
-  &.link{
-  	margin-left: 70px;
-  }
-  &::after{
-  	content: "";
-	position: relative;
-	background: $active url("../img/icon/icon-left.png") no-repeat center;
-	top: 2px;
-	left: 4px;
-	width: 16px;
-	height: 16px;
-	display: inline-flex;
-	border-radius: 50%;
-  }
-}
-
-
 // about us
 .force-full-width{
 	.feature-icon span{
@@ -2138,6 +2225,12 @@ a.wishlist_top{
 	border: 2px solid #e6e6e6;
 }
 
+//currency-info
+.currency-info{
+	&.type-2{
+		display: none;
+	}
+}
 
 //cart
 .ajax_cart_quantity {
@@ -2281,19 +2374,22 @@ a.wishlist_top{
 }
 //magetab right
 .mega-tab-right{
-	.mega_cates_tab{
-		.addon-title, .addon-desc{
+	.addon-title, .addon-desc{
+		text-align: left;
+		h3{
 			text-align: left;
-			h3{
-				text-align: left;
-			}
 		}
-		.jms-tab{
-			position: absolute;
-			top: 24px;
-			right: 0;
-			ul .nav-item:not(:first-child){
+	}
+	.jms-tab{
+		position: absolute;
+		top: 24px;
+		right: 15px;
+		ul{
+			.nav-item:not(:first-child){
 				margin-left: 47px;
+			}
+			li:last-child{
+				margin-right: 0;
 			}
 		}
 	}
@@ -2789,6 +2885,9 @@ a.wishlist_top{
 	}
 }
 .languages-info{
+	&.type-2{
+		display: none;
+	}
 	@include icon_dropdown(4);
 	.dropdown-menu{
 		min-width: 140px;

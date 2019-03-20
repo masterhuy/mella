@@ -36,7 +36,7 @@
 		{/if}
 	</a>
 	<div id="module-group" class="collapse">
-		<div>
+		<div class="module-group">
 			{if $module1_content}
 				{$module1_content nofilter}
 			{/if}

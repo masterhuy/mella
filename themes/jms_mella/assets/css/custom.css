@@ -105,9 +105,17 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #e1e1e1; }
+  
 .flex-middle{
   display: flex;
   align-items: center;
+}
+.flex-center .addon-box{
+  display: flex;
+  justify-content: center;
+}
+.view-all{
+  margin-top: 30px;
 }
 .wrap {
   width: auto;
@@ -133,6 +141,9 @@ hr {
   padding: 12px 26px;
   background: #fff;
   box-shadow: 0 0 3px rgba(0,0,0,0.06);
+}
+.bg-color-f2{
+  background: #f2f2f2;
 }
 
 .warning, .alert-warning, .warning_inline {
@@ -1553,9 +1564,6 @@ ul.cart_block_list li:not(:last-child){
 
 .product-preview {
   position: relative;
-  background: #fff;
-  border-radius: 5px;
-  border: 2px solid transparent;
 }
   .product-miniature .preview {
     position: relative;

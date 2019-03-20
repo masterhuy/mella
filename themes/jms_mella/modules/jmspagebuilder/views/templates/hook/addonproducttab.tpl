@@ -150,3 +150,6 @@ var auto_play_tab = {if $autoplay == 1}true{else}false{/if};
 		{$cf = $cf + 1}
 	{/if}
 </div>
+<div class="text-center view-all">
+	<a href="index.php?id_category=2&controller=category&id_lang=1" class="btn-underline">{l s='view all products'  d='Shop.Theme'}</a>
+</div>

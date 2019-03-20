@@ -6,11 +6,19 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>10 key steps after installing your PrestaShop online store</title>
+    <link>https://www.prestashop.com/en/blog/the-10-recommended-steps-installing-your-online-store</link>
+    <description>If you are reading this article, that means you have installed and created your online store with PrestaShop: congratulations!</description>
+     <pubDate>Mon, 18 Mar 2019 12:01:09 +0100</pubDate>
+ <dc:creator>Sarah Dib</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/the-10-recommended-steps-installing-your-online-store</guid>
+  </item>
+  <item>
     <title>Dropshipping, tips and advice to create your ecommerce website without stock</title>
     <link>https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</link>
     <description>In very simple terms, “Dropshipping” is a business strategy in which an online store owner does not keep goods in stock but helps retailers or customers to access goods directly from the manufactur</description>
      <pubDate>Fri, 15 Mar 2019 11:50:32 +0100</pubDate>
- <dc:creator>Invertus EN</dc:creator>
+ <dc:creator>Invertus</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</guid>
   </item>
   <item>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 07 Dec 2018 16:00:35 +0100</pubDate>
  <dc:creator>Méguy Solvet</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/press-release/end-of-marketing-prestabox</guid>
-  </item>
-  <item>
-    <title>Bitcoin and Blockchain: are you reaping the benefits for your business?</title>
-    <link>https://www.prestashop.com/en/blog/bitcoin-blockchain-cryptocurrency-gateway</link>
-    <description>Bitcoin has just celebrated its 10th birthday on October 31. Anniversary set aside, it seems that there is no stopping to the cryptocurrency movement.</description>
-     <pubDate>Mon, 03 Dec 2018 14:42:37 +0100</pubDate>
- <dc:creator>Coingate</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/bitcoin-blockchain-cryptocurrency-gateway</guid>
   </item>
   </channel>
 </rss>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-19 06:19:14
+/* Smarty version 3.1.33, created on 2019-03-19 22:39:34
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmspagebuilder\views\templates\hook\addonmodulegroup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c90c222cfebb5_53505319',
+  'unifunc' => 'content_5c91a7e650c7b3_59372991',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c6b25019ce3c8c1d65790eb8c656953331c71dd6' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonmodulegroup.tpl',
-      1 => 1552990750,
+      1 => 1553049570,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c90c222cfebb5_53505319 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c91a7e650c7b3_59372991 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group module-group-box">
 	<a title="Search" data-toggle="collapse" class="btn-groupmodule" href="#module-group">
 		<?php if ($_smarty_tpl->tpl_vars['icon_class']->value) {?>
@@ -37,7 +37,7 @@ function content_5c90c222cfebb5_53505319 (Smarty_Internal_Template $_smarty_tpl)
 		<?php }?>
 	</a>
 	<div id="module-group" class="collapse">
-		<div>
+		<div class="module-group">
 			<?php if ($_smarty_tpl->tpl_vars['module1_content']->value) {?>
 				<?php echo $_smarty_tpl->tpl_vars['module1_content']->value;?>
 
