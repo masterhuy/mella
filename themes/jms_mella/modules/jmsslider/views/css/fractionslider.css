@@ -10,10 +10,6 @@
 	z-index:500;
 }
 
-.fraction-slider .active-slide {
-	z-index:999;
-}
-
 .fraction-slider .fs_obj{
 	display:block; display:none;
 	position:absolute;

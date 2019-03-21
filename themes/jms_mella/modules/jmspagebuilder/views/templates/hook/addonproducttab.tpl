@@ -50,7 +50,7 @@ var auto_play_tab = {if $autoplay == 1}true{else}false{/if};
 		{$cf = $cf + 1}
 		{/if}	
 		{if $config.show_new eq '1'}
-			<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#latest">{l s='Latest'  d='Shop.Theme'}</a></li>
+			<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#latest">{l s='New Arrival'  d='Shop.Theme'}</a></li>
 			{$cf = $cf + 1}
 		{/if}		
 		{if $config.show_topseller eq '1'}

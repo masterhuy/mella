@@ -33,9 +33,9 @@
 	{/if}
 	<div class="contact-info{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}">
 		<ul>
-	       {if $ci_address != ''}<li class="address">{$ci_address|escape:'html':'UTF-8'}</li>{/if}
-	       {if $phone != ''}<li class="phone"><span>{l s='Call: ' d='Shop.Theme.Global'} </span><a href="tel:{$phone|escape:'html':'UTF-8'}">{$phone|escape:'html':'UTF-8'}</a></li>{/if}
-		   {if $email != ''}<li class="email"><span>{l s='Email: ' d='Shop.Theme.Global'}</span><a href="mailto:{$email|escape:'html':'UTF-8'}">{$email|escape:'html':'UTF-8'}</a></li>{/if}
+	       {if $ci_address != ''}<li class="address"><span>{l s='Address' d='Shop.Theme.Global'} </span>{$ci_address|escape:'html':'UTF-8'}</li>{/if}
+		   {if $email != ''}<li class="email"><span>{l s='Email' d='Shop.Theme.Global'} </span><a href="mailto:{$email|escape:'html':'UTF-8'}">{$email|escape:'html':'UTF-8'}</a></li>{/if}
+		   {if $phone != ''}<li class="phone"><span>{l s='Phone' d='Shop.Theme.Global'} </span><a href="tel:{$phone|escape:'html':'UTF-8'}">{$phone|escape:'html':'UTF-8'}</a></li>{/if}
 		   {if $opentime != ''}<li class="open_time"><span>{l s='Opening: ' d='Shop.Theme.Global'} </span>{$opentime|escape:'html':'UTF-8'}</li>{/if}
 	    </ul>
 	</div>

@@ -116,6 +116,10 @@ hr {
 }
 .view-all{
   margin-top: 30px;
+  display: none;
+}
+.home_4 .view-all{
+  display: block;
 }
 .wrap {
   width: auto;
@@ -1646,6 +1650,10 @@ ul.cart_block_list li:not(:last-child){
 .product-preview:hover .product_action{
   margin-top: -110px;
 }
+.product-preview:hover .product-info{
+  opacity: 0;
+  visibility: hidden;
+}
 .product_action {
   padding-bottom: 50px;
   margin-top: -80px;
@@ -1653,7 +1661,6 @@ ul.cart_block_list li:not(:last-child){
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
   transition: .4s all;
   z-index: 99;
 }
@@ -1664,14 +1671,6 @@ ul.cart_block_list li:not(:last-child){
 .product-preview:hover .product_action{
   opacity: 1;
   visibility: visible;
-}
-.product-preview:hover .product_action::before{
-  content: "";
-  width: 100%;
-  height: 11px;
-  background: #fff;
-  top: -9px;
-  position: absolute;
 }
 .product-preview:hover .preview{
   border-radius: 10px 10px 0 0;

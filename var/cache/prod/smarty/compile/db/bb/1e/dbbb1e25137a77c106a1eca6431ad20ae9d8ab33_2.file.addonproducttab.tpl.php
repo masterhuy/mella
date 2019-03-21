@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-20 04:26:52
+/* Smarty version 3.1.33, created on 2019-03-21 00:35:27
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmspagebuilder\views\templates\hook\addonproducttab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c91f94ccdead2_18989348',
+  'unifunc' => 'content_5c93148fc46e87_25624494',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dbbb1e25137a77c106a1eca6431ad20ae9d8ab33' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproducttab.tpl',
-      1 => 1553070376,
+      1 => 1553142923,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 5,
   ),
 ),false)) {
-function content_5c91f94ccdead2_18989348 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c93148fc46e87_25624494 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var tab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -65,7 +65,7 @@ if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
 		<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 		<?php }?>	
 		<?php if ($_smarty_tpl->tpl_vars['config']->value['show_new'] == '1') {?>
-			<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#latest"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Latest','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+			<li class="nav-item"><a class="<?php if ($_smarty_tpl->tpl_vars['cf']->value == 0) {?>active<?php }?> button" data-toggle="tab" href="#latest"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'New Arrival','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </a></li>
 			<?php $_smarty_tpl->_assignInScope('cf', $_smarty_tpl->tpl_vars['cf']->value+1);?>
 		<?php }?>		

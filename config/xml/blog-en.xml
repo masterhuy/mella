@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Open source, PrestaShop, project, company, etc.by Antoine Thomas, Developer Advocate at PrestaShop</title>
+    <link>https://www.prestashop.com/en/blog/open-source-prestashop-project-company</link>
+    <description>Here is a review to clarify certain recurring questions.</description>
+     <pubDate>Wed, 20 Mar 2019 12:26:25 +0100</pubDate>
+ <dc:creator>Antoine Thomas</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/open-source-prestashop-project-company</guid>
+  </item>
+  <item>
     <title>10 key steps after installing your PrestaShop online store</title>
     <link>https://www.prestashop.com/en/blog/the-10-recommended-steps-installing-your-online-store</link>
     <description>If you are reading this article, that means you have installed and created your online store with PrestaShop: congratulations!</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 07 Jan 2019 15:31:18 +0100</pubDate>
  <dc:creator>Méguy Solvet</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/features-prestashop-1-7-5-0</guid>
-  </item>
-  <item>
-    <title>Final curtain call for PrestaBox</title>
-    <link>https://www.prestashop.com/en/press-release/end-of-marketing-prestabox</link>
-    <description>Following the end of the offer’s marketing in 2015, PrestaShop hereby announces the withdrawal of PrestaBox, its first Cloud offer, on March 07, 2019.</description>
-     <pubDate>Fri, 07 Dec 2018 16:00:35 +0100</pubDate>
- <dc:creator>Méguy Solvet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/press-release/end-of-marketing-prestabox</guid>
   </item>
   </channel>
 </rss>

@@ -20,6 +20,11 @@
 .collection .owl-dots {
   display: block !important; }
 
+.header-center {
+  padding: 40px 0; }
+  .header-center .jms-megamenu .nav.level0 {
+    text-align: center; }
+
 .header-left-fixed {
   text-align: center;
   position: fixed;
@@ -397,7 +402,7 @@
   background: #fff;
   -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
-  z-index: 9; }
+  z-index: 999; }
   .collapse li, .collapsing li {
     line-height: 35px; }
   .collapse .collapse-item, .collapsing .collapse-item {
@@ -2330,7 +2335,7 @@ a.wishlist_top {
     font-weight: 600;
     letter-spacing: -0.6px;
     padding-bottom: 17px; }
-  #newsletter_block_left .addon-title span {
+  #newsletter_block_left .addon-title > span {
     color: #8f8f8f;
     padding-bottom: 26px;
     display: inline-block; }
@@ -2357,6 +2362,126 @@ a.wishlist_top {
 
 #new-products .blog-widget {
   display: none; }
+
+.newsletter-type-2 .btn-text {
+  display: none; }
+
+.newsletter-type-2 #newsletter_block_left {
+  padding: 55px 60px 60px;
+  background: #f1f1f1; }
+  .newsletter-type-2 #newsletter_block_left .form-group {
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    margin-bottom: 0;
+    background: transparent; }
+    .newsletter-type-2 #newsletter_block_left .form-group .newsletter-btn {
+      background: transparent;
+      width: auto;
+      color: #b20f0f; }
+      .newsletter-type-2 #newsletter_block_left .form-group .newsletter-btn .fa {
+        font-size: 14px; }
+    .newsletter-type-2 #newsletter_block_left .form-group #newsletter-input {
+      padding: 0;
+      font-size: 12px;
+      height: 45px; }
+  .newsletter-type-2 #newsletter_block_left .addon-title h3 {
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    line-height: 1.4;
+    padding-bottom: 19px; }
+    .newsletter-type-2 #newsletter_block_left .addon-title h3 span {
+      color: #b20f0f; }
+  .newsletter-type-2 #newsletter_block_left .addon-title > span {
+    font-size: 13px;
+    padding-bottom: 32px; }
+
+.contact_info {
+  padding-right: 0 !important; }
+  .contact_info .addon-box {
+    background: #f1f1f1; }
+    .contact_info .addon-box:first-child {
+      padding: 57px 40px 0px 55px; }
+  .contact_info .addon-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -0.4px;
+    padding-bottom: 30px; }
+  .contact_info .contact-info ul {
+    margin-bottom: 0; }
+  .contact_info .contact-info li {
+    color: #8f8f8f;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+    .contact_info .contact-info li a {
+      color: #8f8f8f; }
+    .contact_info .contact-info li span {
+      display: inline-block;
+      min-width: 75px;
+      color: #000; }
+  .contact_info .find-us {
+    text-align: left; }
+  .contact_info #social_block {
+    padding: 29px 55px 62px; }
+    .contact_info #social_block ul li {
+      margin: 0;
+      margin-right: 28px; }
+
+.help_service {
+  padding-left: 0 !important; }
+  .help_service .addon-box {
+    background: #f1f1f1;
+    padding: 57px 11px 40px; }
+  .help_service .addon-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -0.4px;
+    padding-bottom: 28px; }
+  .help_service li a {
+    display: block;
+    position: relative;
+    color: #8f8f8f;
+    line-height: 29.5px; }
+    .help_service li a:hover {
+      color: #b20f0f; }
+      .help_service li a:hover::before {
+        color: #b20f0f; }
+    .help_service li a::before {
+      display: inline-block;
+      content: "\f0da";
+      font-family: fontawesome;
+      color: #000;
+      margin-right: 6px;
+      -webkit-transition: .4s all;
+      -o-transition: .4s all;
+      transition: .4s all; }
+
+.footer-one-row {
+  padding: 90px 0 100px; }
+  .footer-one-row .container > .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer-one-row p {
+    margin-bottom: 0; }
+  .footer-one-row .flex-middle p {
+    margin-left: 19px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    letter-spacing: 0.6px; }
+    .footer-one-row .flex-middle p span {
+      color: #b20f0f; }
 
 .footer-top-1 {
   padding: 100px 0; }
