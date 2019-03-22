@@ -29,6 +29,9 @@
 			<h3>{l s='Keep Updated & Get' d='Shop.Theme.Global'} <span>{l s='Unlimited' d='Shop.Theme.Global'}</span> {l s=' Discount' d='Shop.Theme.Global'}</h3>
 			<span>{l s='Sign up for our newsletter to receive updates and exclusive offers' d='Shop.Theme.Global'}</span>
 		</div>
+		<div class="textnews_h5 addon-title">
+			<h3>{l s='Newsletter' d='Shop.Theme.Global'}</h3>
+		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">

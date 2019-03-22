@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-11 05:39:03
+/* Smarty version 3.1.33, created on 2019-03-21 23:14:28
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c862cb71ef809_09065638',
+  'unifunc' => 'content_5c9453145a80e9_81128297',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '235442b3fabe05bcd3c3d603512ff87b020a2068' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1552292667,
+      1 => 1553224464,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c862cb71ef809_09065638 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c9453145a80e9_81128297 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -87,7 +87,7 @@ if ($_smarty_tpl->tpl_vars['settingpanel']->value) {?>
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
 	<a id="jmstools-arrow" class="pull-right">
 		<i class="la la-cog"></i>
-		<i class="la la-close"></i>
+		<i class="fa fa-close"></i>
 	</a>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">

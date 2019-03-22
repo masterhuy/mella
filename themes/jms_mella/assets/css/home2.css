@@ -9,10 +9,19 @@
   width: 100%;
   z-index: 9999; }
 
+.mega_menu {
+  padding-bottom: 7px; }
+
 .fs-pager-wrapper {
   width: auto;
   left: 18.8vw;
   bottom: 2.7vw; }
+
+.fs-pager-wrapper a,
+.fs-custom-pager-wrapper a {
+  margin: 0 7px;
+  width: 18px;
+  height: 18px; }
 
 .jms-slider-wrapper .text-1 {
   text-transform: uppercase;

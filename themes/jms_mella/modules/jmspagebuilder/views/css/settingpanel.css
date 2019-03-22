@@ -36,11 +36,11 @@
 	line-height:40px;
 	color:#FFF;
 }
-#jmstools-arrow .la-close,
+#jmstools-arrow .fa-close,
 .jmsopen #jmstools-arrow .la-cog{
 	display: none;
 }
-.jmsopen #jmstools-arrow .la-close{
+.jmsopen #jmstools-arrow .fa-close{
 	display: block;
 }
 #jmstools-content {

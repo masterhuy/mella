@@ -48,7 +48,7 @@
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
 	<a id="jmstools-arrow" class="pull-right">
 		<i class="la la-cog"></i>
-		<i class="la la-close"></i>
+		<i class="fa fa-close"></i>
 	</a>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">

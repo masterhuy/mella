@@ -101,15 +101,15 @@
     position: absolute;
     text-align: center;
     width: 100%;
-    z-index: 999;
+    z-index: 990;
 }
 .fs-pager-wrapper a, .fs-custom-pager-wrapper a {
-	margin: 0 7px;
+	margin: 0 5px;
 	font-weight: 600;
 	font-size: 10px;
 	position: relative;
-	width: 18px;
-	height: 18px;
+	width: 14px;
+	height: 14px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;

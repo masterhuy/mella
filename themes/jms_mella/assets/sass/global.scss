@@ -36,6 +36,27 @@
 .collection .owl-dots{
 	display: block !important;
 }
+.banner-product-name {
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.7px;
+	&.large{
+		font-size: 24px;
+	}
+}
+.banner-product-price {
+	font-size: 16px;
+	font-weight: 500;
+	color: $sub-cl;
+}
+.mg-20{
+	.container > .row{
+		margin: - 10px;
+	}
+	.layout-column{
+		padding: 0 10px;
+	}
+}
 //header center
 .header-center{
 	padding: 40px 0;
@@ -125,7 +146,7 @@
 .header-type-2 {
 	padding: 60px 0;
 	.container-fluid{
-		max-width: 1800;
+		max-width: 1800px;
 		width: 100%;
 	}
 	.left-icon-group .addon-box{
@@ -152,6 +173,7 @@
 		font-weight: 600;
 		display: flex;
 		align-items: center;
+		margin-bottom: 0;
 	}
 	img{
 		margin-right: 11px;
@@ -830,7 +852,7 @@ a.wishlist_top{
 }
 .mega_menu{
 	cursor: pointer;
-	padding-top: 4px;
+	margin-bottom: 0;
 	.close_menu{
 		display: none;
 	}
@@ -2384,7 +2406,7 @@ a.wishlist_top{
 	.addon-title, .addon-desc{
 		text-align: left;
 		h3{
-			text-align: left;
+			text-align: left !important;
 		}
 	}
 	.jms-tab{
@@ -2752,20 +2774,19 @@ a.wishlist_top{
 
 //service
 .feature-box{
-	@include flex(center, center);
+	display: flex;
+	align-items: center;
 	border-radius: 8px;
 	padding: 30.5px 0;
 	.include_content_s{
-		margin-left: 12px;
+		margin-left: 33px;
 		p{
 			margin-bottom: 0;
 		}
 		.text-1{
-			font-size: 16px;
-			color: #000;
-			font-weight: 500;
-			letter-spacing: 0.6px;
-			margin-bottom: 9px;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 3px;
 		}
 		.text-2{
 			letter-spacing: 0.2px;
@@ -2780,6 +2801,12 @@ a.wishlist_top{
 #newsletter_block_left{
 	max-width: 770px;
 	margin: 0 auto;
+	.btn-icon{
+		display: none;
+	}
+	.textnews_h5{
+		display: none;
+	}
 	.addon-title{
 		h3{
 			font-size: 24px;
@@ -2839,6 +2866,9 @@ a.wishlist_top{
 				background: transparent;
 				width: auto;
 				color: $active;
+				&.btn-icon{
+					display: block;
+				}
 				.fa{
 					font-size: 14px;
 				}
@@ -3013,6 +3043,59 @@ a.wishlist_top{
 }
 //
 
+//footer top 2
+.footer-top-2{
+	.container{
+		padding: 59px 0 20px;
+		border-top: 1px solid #ddd;
+		> .row{
+			display: flex;
+			align-items: center;
+		}
+	}
+	.flex-middle{
+		.find-us{
+			margin-left: -10px;
+		}
+	}
+	#newsletter_block_left{
+		padding: 0;
+		background: transparent;
+		.form-group{
+			width: 368px;
+			margin-left: 31px;
+		}
+		.textnews_h5{
+			display: block;
+		}
+		.addon-title h3{
+			padding-bottom: 0;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 0;
+		}
+		#newsletter-input{
+			height: 47px !important;
+			padding: 0 !important;
+			margin-top: 0 !important;
+		}
+		.newsletter-btn{
+			height: 47px !important;
+			width: auto !important;
+			margin-top: 0 !important;
+			.fa{
+				font-size: 16px !important;
+			}
+		}
+		.block_content{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+	}
+}
+//
+
 //footer-bottom-1
 .footer-bottom-1{
 	line-height: 54px;
@@ -3032,6 +3115,36 @@ a.wishlist_top{
 }
 //
 
+//footer bottom 2
+.footer-bottom-2{
+	.layout-column{
+		line-height: 35px;
+	}
+	p{
+		margin-bottom: 0;
+		font-size: 12px;
+		font-weight: 500;
+		color: $sub-cl;
+		span{
+			color: #000;
+		}
+	}
+	ul{
+		text-align: right;
+		li{
+			display: inline-block;
+			margin-left: 26px;
+			a{
+				font-size: 12px;
+				font-weight: 500;
+				color: $sub-cl;
+				&:hover{
+					color: $active;
+				}
+			}
+		}
+	}
+}
 
 .menu .features .image img {
 	width: 100%;
