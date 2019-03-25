@@ -105,7 +105,8 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #e1e1e1; }
-  
+
+
 .flex-middle{
   display: flex;
   align-items: center;
@@ -1584,29 +1585,29 @@ ul.cart_block_list li:not(:last-child){
 .product-miniature .preview .label {
   color: #fff;
   margin-bottom: 10px;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 15px;
+  font-size: 12px;
+  font-weight: 500;
   padding: 0;
   position: relative;
-  text-transform: capitalize;
-  min-width: 40px;
-  height: 19px;
+  text-transform: uppercase;
+  min-width: 67px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0;
+  border-radius: 4px;
 }
-      .product-miniature .preview .label.label-sale {
-        background: #f6372d;
-        display: none;}
-      .product-miniature .preview .label.label-new {
-        background: #3a71ec;
-        display: none;
-      }
-      .product-miniature .preview .label.label-discount {
+.product-miniature .preview .label.label-sale {
+  background: #fc427b;
+}
+.product-miniature .preview .label.label-new {
+  background: #55e6c1;
+  display: none;
+}
+.product-miniature .preview .label.label-discount {
   background: #52c238;
   top: 0 !important;
+  display: none;
 }
 .cat-name{
     font-size: 16px;

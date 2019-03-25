@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-21 22:37:25
+/* Smarty version 3.1.33, created on 2019-03-25 04:03:43
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c944a65a16c12_87845795',
+  'unifunc' => 'content_5c988b5f4e0a64_12417387',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1553221984,
+      1 => 1553500916,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c944a65a16c12_87845795 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c988b5f4e0a64_12417387 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -35,6 +35,14 @@ function content_5c944a65a16c12_87845795 (Smarty_Internal_Template $_smarty_tpl)
 		<div class="textnews_h5 addon-title">
 			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Newsletter','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </h3>
+		</div>
+		<div class="textnews_h8 addon-title">
+			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Get Discount','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+ <span>40%</span> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>' Off','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</h3>
+			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe with us the newsletter and get hot discount','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+ <span>40%</span> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'off','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</span>
 		</div>
 		<div class="news_content">
         	<div  class="block_c_right">

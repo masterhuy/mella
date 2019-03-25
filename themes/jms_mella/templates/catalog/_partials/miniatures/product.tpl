@@ -54,7 +54,7 @@
 					{/foreach}
 					{if $product.has_discount}
 						{if $product.discount_type === 'percentage'}
-	                	<span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
+	            <span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
 						{/if}
 					{/if}
 			   {/block}	

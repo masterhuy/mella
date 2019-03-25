@@ -322,7 +322,7 @@
 	font-weight: 600;
 	letter-spacing: -0.6px;
 }
-.featured_lookbook{
+.banner_category{
 	.jms-banner{
 		a::before {
 			content: '';
@@ -486,6 +486,14 @@
 		margin-left: 25px;
 		padding-top: 6px;
 	}
+}
+
+.intro-text {
+	font-size: 32px;
+	letter-spacing: -1px;
+	line-height: 1.15;
+	margin-bottom: 0;
+	padding: 95px 20px 91px;
 }
 
 //collapse
@@ -2804,7 +2812,7 @@ a.wishlist_top{
 	.btn-icon{
 		display: none;
 	}
-	.textnews_h5{
+	.textnews_h5, .textnews_h8{
 		display: none;
 	}
 	.addon-title{
@@ -2847,6 +2855,7 @@ a.wishlist_top{
 		display: none;
 	}
 }
+
 //newsletter type 2
 .newsletter-type-2{
 	.btn-text{
@@ -2892,6 +2901,72 @@ a.wishlist_top{
 			> span{
 				font-size: 13px;
 				padding-bottom: 32px;
+			}
+		}
+	}
+}
+//
+
+//newsletter type 3
+.newsletter-type-3{
+	.btn-text{
+		display: none;
+	}
+	#newsletter_block_left{
+		max-width: 100%;
+		padding: 57px 0;
+		border-bottom: 1px solid #ddd;
+		.block_content{
+			display: flex;
+			align-items: center;
+		}
+		.textnews_h1{
+			display: none;
+		}
+		.textnews_h8{
+			display: block;
+			width: 60%;
+			text-align: left;
+		}
+		.news_content{
+			width: 40%;
+		}
+		.form-group {
+			padding: 0;
+			border: 0;
+			border-bottom: 1px solid #ddd;
+			border-radius: 0;
+			margin-bottom: 0;
+			background: transparent;
+			.newsletter-btn {
+				background: transparent;
+				width: auto;
+				color: $active;
+				&.btn-icon{
+					display: block;
+				}
+				.fa{
+					font-size: 16px;
+				}
+			}
+			#newsletter-input {
+				padding: 0;
+				font-size: 13px;
+				height: 45px;
+			}
+		}
+		.addon-title{
+			h3{
+				font-size: 24px;
+				letter-spacing: 0;
+				line-height: 1.4;
+				padding-bottom: 0;
+				text-align: left;
+				font-weight: 500;
+			}
+			> span{
+				font-size: 14px;
+				padding-bottom: 0;
 			}
 		}
 	}

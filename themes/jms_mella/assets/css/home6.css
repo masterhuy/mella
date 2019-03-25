@@ -58,13 +58,6 @@ body {
   opacity: 0;
   visibility: hidden; }
 
-.intro-text {
-  font-size: 32px;
-  letter-spacing: -1px;
-  line-height: 1.15;
-  margin-bottom: 0;
-  padding: 95px 20px 91px; }
-
 .jms-banner .banner-content {
   position: absolute;
   top: auto;

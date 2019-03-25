@@ -34,7 +34,7 @@
 	display:inline-block;
 	zoom:1;
 	width: 9px;
-	*display:inline
+	display:inline;
 }
 .owl-slider-outer .owl-slider-next:hover, .owl-slider-outer .owl-slider-prev:hover, .owl-theme .owl-controls  div:hover {	
 }
@@ -43,9 +43,9 @@
 }
 .owl-theme .owl-controls div.owl-prev, .owl-theme .owl-controls div.owl-next {
 	display: inline-block;
-	height: 37px;
+	height: 65px;
 	text-align: center;
-	width: 20px;
+	width: 54px;
 	cursor: pointer;
 	z-index: 2;
 }
@@ -58,29 +58,40 @@
 	top: 50%; 
 	transform: translateY(-50%);
 }
-.jms-row:hover .owl-theme .owl-controls div{
+.owl-theme .owl-controls div:hover{
 	opacity: 1;
+}
+.owl-theme .owl-controls div::before{
+	font-family: "icomoon";
+	font-size: 54px;
+}
+.jms-row:hover .owl-theme .owl-controls div{
+	opacity: 0.3;
 	visibility: visible;
 }
 .owl-theme .owl-controls  div.owl-prev {
-    background: url("../../../../assets/img/icon/left.png") no-repeat center;
-	left: -70px;
+	left: -83px;
+}
+.owl-theme .owl-controls  div.owl-prev::before {
+	content:"\e909";
 }
 .owl-theme .owl-controls div.owl-next {
-	background: url("../../../../assets/img/icon/right.png") no-repeat center ;
-	right: -70px;
+	right: -83px;
+}
+.owl-theme .owl-controls  div.owl-next::before {
+	content:"\e90a";
 }
 .jms-row:hover .owl-theme .owl-controls div.owl-prev {
-    left: -50px;
+    left: -73px;
 }
 .owl-theme .owl-controls div.owl-prev:hover {
-    background: url("../../../../assets/img/icon/left_hover.png") no-repeat center;
+    opacity: 1;
 }
 .jms-row:hover .owl-theme .owl-controls div.owl-next {
-    right: -50px;
+    right: -73px;
 }
 .owl-theme .owl-controls div.owl-next:hover {
-    background: url("../../../../assets/img/icon/right_hover.png") no-repeat center;
+    opacity: 1;
 }
 .owl-dot > span {
     background: #d7d7d7;

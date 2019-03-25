@@ -32,6 +32,10 @@
 		<div class="textnews_h5 addon-title">
 			<h3>{l s='Newsletter' d='Shop.Theme.Global'}</h3>
 		</div>
+		<div class="textnews_h8 addon-title">
+			<h3>{l s='Get Discount' d='Shop.Theme.Global'} <span>40%</span> {l s=' Off' d='Shop.Theme.Global'}</h3>
+			<span>{l s='Subscribe with us the newsletter and get hot discount' d='Shop.Theme.Global'} <span>40%</span> {l s='off' d='Shop.Theme.Global'}</span>
+		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
