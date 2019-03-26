@@ -190,90 +190,89 @@
 //
 
 //module group
-.left-icon-group{
-	.module-group{
-		width: 304px;
-		padding: 30px;
-		.collapse, .collapsing{
-			position: unset !important;
-			box-shadow: unset;
+.module-group{
+	width: 304px;
+	padding: 30px;
+	.collapse, .collapsing{
+		position: unset !important;
+		box-shadow: unset;
+	}
+	.btn-group{
+		p{
+			font-weight: 500;
+			margin-bottom: 13px;
 		}
-		.btn-group{
-			p{
-				font-weight: 500;
-				margin-bottom: 13px;
-			}
-			.btn-xs {
-				font-size: 12px;
-				font-weight: 400;
-				text-transform: capitalize;
-				letter-spacing: 0;
+		.btn-xs {
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: capitalize;
+			letter-spacing: 0;
+			color: #8f8f8f;
+			border: 1px solid #ddd;
+			border-radius: 0;
+			width: 100%;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 20px;
+			position: relative;
+		}
+		.btn-xs i {
+			position: absolute;
+			right: 20px;
+			top: 14px;
+		}
+	}
+	.currency-info{
+		&.type-2{
+			display: block;
+			margin-bottom: 36px;
+		}
+		&.type-1{
+			display: none;
+		}
+		ul{
+			border: 1px solid #ddd;
+			border-top: 0;
+		}
+	}
+	.languages-info{
+		&.type-1{
+			display: none;
+		}
+		&.type-2{
+			display: block;
+			margin-bottom: 34px;
+		}
+		ul{
+			border: 1px solid #ddd;
+			border-top: 0;
+		}
+	}
+	#_desktop_user_info{
+		.user-info{
+			> .account{
+				text-transform: uppercase;
 				color: #8f8f8f;
-				border: 1px solid #ddd;
-				border-radius: 0;
-				width: 100%;
-				display: block;
-				height: 40px;
-				line-height: 40px;
-				padding: 0 20px;
-				position: relative;
-			}
-			.btn-xs i {
-				position: absolute;
-				right: 20px;
-				top: 14px;
-			}
-		}
-		.currency-info{
-			&.type-2{
-				display: block;
-				margin-bottom: 36px;
-			}
-			&.type-1{
-				display: none;
-			}
-			ul{
-				border: 1px solid #ddd;
-				border-top: 0;
-			}
-		}
-		.languages-info{
-			&.type-1{
-				display: none;
-			}
-			&.type-2{
-				display: block;
-				margin-bottom: 34px;
-			}
-			ul{
-				border: 1px solid #ddd;
-				border-top: 0;
-			}
-		}
-		#_desktop_user_info{
-			.user-info{
-				> .account{
-					text-transform: uppercase;
-					color: #8f8f8f;
-					font-weight: 500;
-					.fa{
-						color: #000;
-						margin-right: 4px;
-					}
-					&:hover{
-						color: $active;
-					}
+				font-weight: 500;
+				.fa{
+					color: #000;
+					margin-right: 4px;
+				}
+				&:hover{
+					color: $active;
 				}
 			}
-			.type-2 {
-				display: block;
-			}
-			.type-1{
-				display: none;
-			}
+		}
+		.type-2 {
+			display: block;
+		}
+		.type-1{
+			display: none;
 		}
 	}
 }
+
 //
 
 .top_menu_second{

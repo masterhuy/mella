@@ -1,0 +1,25 @@
+@import "mixin";
+@import "varians";
+
+.header{
+	padding: 60px 0;
+}
+.intro-text{
+	padding: 0;
+	margin-bottom: 47px;
+}
+.jms-banner{
+	&:hover > a img{
+		transform: unset !important;
+	}
+	.banner-content{
+		position: unset;
+		p{
+			font-size: 21px;
+			margin-top: 13px;
+		}
+	}
+}
+.footer-one-row .find-us {
+	text-align: center !important;
+}

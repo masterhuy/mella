@@ -138,17 +138,17 @@
 #jms_ajax_search #search-form .close-search {
   background: #b20f0f url("../img/icon/close-search.png") no-repeat center; }
 
-.left-icon-group .module-group {
+.module-group {
   width: 304px;
   padding: 30px; }
-  .left-icon-group .module-group .collapse, .left-icon-group .module-group .collapsing {
+  .module-group .collapse, .module-group .collapsing {
     position: unset !important;
     -webkit-box-shadow: unset;
     box-shadow: unset; }
-  .left-icon-group .module-group .btn-group p {
+  .module-group .btn-group p {
     font-weight: 500;
     margin-bottom: 13px; }
-  .left-icon-group .module-group .btn-group .btn-xs {
+  .module-group .btn-group .btn-xs {
     font-size: 12px;
     font-weight: 400;
     text-transform: capitalize;
@@ -162,38 +162,38 @@
     line-height: 40px;
     padding: 0 20px;
     position: relative; }
-  .left-icon-group .module-group .btn-group .btn-xs i {
+  .module-group .btn-group .btn-xs i {
     position: absolute;
     right: 20px;
     top: 14px; }
-  .left-icon-group .module-group .currency-info.type-2 {
+  .module-group .currency-info.type-2 {
     display: block;
     margin-bottom: 36px; }
-  .left-icon-group .module-group .currency-info.type-1 {
+  .module-group .currency-info.type-1 {
     display: none; }
-  .left-icon-group .module-group .currency-info ul {
+  .module-group .currency-info ul {
     border: 1px solid #ddd;
     border-top: 0; }
-  .left-icon-group .module-group .languages-info.type-1 {
+  .module-group .languages-info.type-1 {
     display: none; }
-  .left-icon-group .module-group .languages-info.type-2 {
+  .module-group .languages-info.type-2 {
     display: block;
     margin-bottom: 34px; }
-  .left-icon-group .module-group .languages-info ul {
+  .module-group .languages-info ul {
     border: 1px solid #ddd;
     border-top: 0; }
-  .left-icon-group .module-group #_desktop_user_info .user-info > .account {
+  .module-group #_desktop_user_info .user-info > .account {
     text-transform: uppercase;
     color: #8f8f8f;
     font-weight: 500; }
-    .left-icon-group .module-group #_desktop_user_info .user-info > .account .fa {
+    .module-group #_desktop_user_info .user-info > .account .fa {
       color: #000;
       margin-right: 4px; }
-    .left-icon-group .module-group #_desktop_user_info .user-info > .account:hover {
+    .module-group #_desktop_user_info .user-info > .account:hover {
       color: #b20f0f; }
-  .left-icon-group .module-group #_desktop_user_info .type-2 {
+  .module-group #_desktop_user_info .type-2 {
     display: block; }
-  .left-icon-group .module-group #_desktop_user_info .type-1 {
+  .module-group #_desktop_user_info .type-1 {
     display: none; }
 
 .top_menu_second .container > .row {

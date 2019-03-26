@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Four International Brands Using PrestaShop E-commerce in China</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-ecommerce-china-international-brands</link>
+    <description>Despite the ups and downs of the local economy, E-commerce continues to be a positive trend in China. The Chinese market has become a major goal for international brands.</description>
+     <pubDate>Mon, 25 Mar 2019 11:36:30 +0100</pubDate>
+ <dc:creator>QPSoftware</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-ecommerce-china-international-brands</guid>
+  </item>
+  <item>
     <title>5 Great Tips for Combating Credit Card Fraud for Your Webshop</title>
     <link>https://www.prestashop.com/en/blog/tips-for-combating-credit-card-fraud</link>
     <description>As we are increasingly shopping on the internet, tons of companies are accepting online payments, which also increases the risk for credit card fraud.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 18 Jan 2019 10:38:42 +0100</pubDate>
  <dc:creator>prestashop-partners</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-best-practices-in-native-advertising</guid>
-  </item>
-  <item>
-    <title>The E-commerce Calendar: a free tool to help make 2019 a success!</title>
-    <link>https://www.prestashop.com/en/blog/2019-e-commerce-calendar</link>
-    <description>You were all eagerly awaiting it and now it’s available...</description>
-     <pubDate>Tue, 15 Jan 2019 16:01:51 +0100</pubDate>
- <dc:creator>MLNielsen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/2019-e-commerce-calendar</guid>
   </item>
   </channel>
 </rss>

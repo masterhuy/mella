@@ -1,0 +1,20 @@
+.header {
+  padding: 60px 0; }
+
+.intro-text {
+  padding: 0;
+  margin-bottom: 47px; }
+
+.jms-banner:hover > a img {
+  -webkit-transform: unset !important;
+  -ms-transform: unset !important;
+  transform: unset !important; }
+
+.jms-banner .banner-content {
+  position: unset; }
+  .jms-banner .banner-content p {
+    font-size: 21px;
+    margin-top: 13px; }
+
+.footer-one-row .find-us {
+  text-align: center !important; }
