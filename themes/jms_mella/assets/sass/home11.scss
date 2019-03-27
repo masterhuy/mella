@@ -1,7 +1,12 @@
 @import "mixin";
 @import "varians";
 
-
+.container-fluid{
+	max-width: 1800px;
+}
+.header{
+	padding: 60px 0;
+}
 .main-site.open-sidebar1{
 	overflow: unset;
 	transform: translateX(343px);
@@ -72,44 +77,19 @@
 		}
 	}
 }
-.header{
-	padding: 60px 0;
-}
 .intro-text{
 	padding: 0;
 	margin-bottom: 47px;
 }
-.jms-banner{
-	&:hover{
-		> a img{
-			transform: unset !important;
-		}
-		.banner-content p::after{
-			transform: scale(1);
-		}
+.jms-row.video{
+	.addon-video{
+		background: url('../img/h11-addon-vd-bg.jpg') no-repeat center bottom;
+		background-size: contain;
+		padding-bottom: 95px;
 	}
-	.banner-content{
-		position: unset;
-		text-align: center;
-		p{
-			font-size: 21px;
-			margin-top: 13px;
-			display: inline-block;
-			position: relative;
-			padding: 0 7px 3px;
-			&::after{
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 2px;
-				background: #000;
-				transition: all .2s;
-				transform: scale(0,1);
-			}
-		}
-	}
+}
+.product-image > img{
+	background: #f8f8f8;
 }
 .footer-one-row .find-us {
 	text-align: center !important;

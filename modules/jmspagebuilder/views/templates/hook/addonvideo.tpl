@@ -23,16 +23,18 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-{if $addon_title}
-<div class="addon-title">
-	<h3>{$addon_title nofilter}</h3>
-</div>
-{/if}
-{if $addon_desc}
-<p class="addon-desc">{$addon_desc nofilter}</p>
-{/if}
-<div class="jms-addon jms-video">
-{if $src}
-    <iframe width="{$width nofilter}" height="{$height nofilter}" src="{$src nofilter}" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-{/if}
+<div class="addon-video">
+    {if $addon_title}
+        <div class="addon-title">
+            <h3>{$addon_title nofilter}</h3>
+        </div>
+    {/if}
+    {if $addon_desc}
+        <p class="addon-desc">{$addon_desc nofilter}</p>
+    {/if}
+    <div class="jms-addon jms-video">
+        {if $src}
+            <iframe width="{$width nofilter}" height="{$height nofilter}" src="{$src nofilter}" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        {/if}
+    </div>
 </div>

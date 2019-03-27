@@ -161,26 +161,23 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{			
 				1199:{
-					items:6
-				},
-				991:{
-					items:5
-				},
-				768:{
-					items:4
-				},
-				481:{
 					items:3
 				},
-				361:{
+				991:{
+					items:3
+				},
+				768:{
 					items:2
 				},
+				481:{
+					items:1
+				},
 				0:{
-					items:2
+					items:1
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 2,
 			nav: true,
 			dots: false,
 			autoplay: false,
@@ -1025,6 +1022,10 @@ $(document).ready(function() {
 		}, 3000);		
 		initialLoad = false;
 	}
+
+	$('.jms-video').click(function() {
+		$('.jms-video').addClass('show-video');
+	});
 
 	$('.mega_menu').click(function(event) {
 		$('.main-site').toggleClass('open-sidebar1');

@@ -1,0 +1,74 @@
+@import "mixin";
+@import "varians";
+
+.header{
+	padding: 60px 0;
+	.flex-middle{
+		.addon-box{
+			margin-right: 30px;
+		}
+	}
+}
+.page-index{
+	background: #f8f8f8;
+	#wrapper{
+		max-width: 1290px;
+		margin: 0 auto;
+		border: 60px solid #fff;
+		background: #fff;
+	}
+}
+.jms-slider-wrapper{
+	.text-1{
+		font-weight: 600;
+		letter-spacing: -0.086vw;
+	}
+	.text-2{
+		font-weight: 500;
+		line-height: 2.1;
+	}
+}
+.fs-pager-wrapper {
+	width: auto;
+	left: 4.85vw;
+	bottom: 2.8vw;
+}
+.fs-pager-wrapper a, 
+.fs-custom-pager-wrapper a {
+	margin: 0 4.5px;
+	width: 11px;
+	height: 11px;
+}
+.banner_category{
+	.jms-banner:hover .banner-content{
+		transform: translateY(-83px);
+	}
+	.banner-content{
+		margin-top: 18px;
+		p{
+			font-size: 32px;
+			letter-spacing: -0.6px;
+		}
+	}
+}
+#footer{
+	padding-top: 36px;
+}
+.footer-one-row{
+	padding: 60px 0;
+	#social_block ul li{
+		margin-left: 0 !important;
+		margin: 0 15px !important;
+	}
+	.find-us {
+	    text-align: center !important;
+	}
+	.flex-middle p{
+		text-transform: capitalize;
+		letter-spacing: 0;
+		span{
+			color: #000;
+		}
+
+	}
+}
