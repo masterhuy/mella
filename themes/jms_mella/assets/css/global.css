@@ -2342,6 +2342,15 @@ a.wishlist_top {
     right: 20px;
     top: 16px; }
 
+.banner-product .container-fluid > .row {
+  margin: 0 -10px; }
+
+.banner-product .layout-column {
+  padding: 0 10px; }
+
+.banner-product .jms-banner {
+  margin-bottom: 20px; }
+
 .addon-instagram {
   text-align: center;
   position: relative; }
@@ -2393,7 +2402,7 @@ a.wishlist_top {
       margin-bottom: 3px; }
     .feature-box .include_content_s .text-2 {
       letter-spacing: 0.2px; }
-  .feature-box i {
+  .feature-box .feature-img i {
     font-size: 48px;
     color: #b20f0f; }
 

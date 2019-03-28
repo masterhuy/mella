@@ -2801,7 +2801,19 @@ a.wishlist_top{
 		top: 16px;
 	}
 }
-
+//banner product
+.banner-product{
+	.container-fluid > .row{
+		margin: 0 -10px;
+	}
+	.layout-column{
+		padding: 0 10px;
+	}
+	.jms-banner{
+		margin-bottom: 20px;
+	}
+}
+//
 
 //instagram
 .addon-instagram{
@@ -2857,7 +2869,7 @@ a.wishlist_top{
 			letter-spacing: 0.2px;
 		}
 	}
-	i{
+	.feature-img i{
 		font-size: 48px;
 		color:$active;
 	}

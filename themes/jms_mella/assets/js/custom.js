@@ -1004,7 +1004,7 @@ jQuery(function ($) {
     $(window).scroll(function () {
 		if ($(window).scrollTop() >= 50) {
 			$("#back-to-top").addClass('show');
-		} else if ($(window).scrollTop() < $('header').outerHeight()) {
+		} else if ($(window).scrollTop() < 50) {
 			$("#back-to-top").removeClass('show');
 		}
     });

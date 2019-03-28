@@ -1,2 +1,160 @@
 @import "mixin";
 @import "varians";
+
+.container-fluid{
+	max-width: 1880px;
+}
+.feature-box{
+	display: block;
+	padding: 0;
+	position: relative;
+	margin-bottom: 20px;
+	&.box-1{
+		.js-circle{
+			position: absolute;
+			left: 55%;
+			top: 30%;
+		}
+		.dropdown-menu{
+			left: calc(55% + 34px);
+			top: calc(30% + 34px);
+		}
+	}
+	&.box-2{
+		.js-circle{
+			position: absolute;
+			left: 38%;
+			top: 75%;
+		}
+		.dropdown-menu{
+			left: calc(38% + 34px);
+			top: calc(75% + 34px);
+		}
+	}
+	&.box-3{
+		.js-circle{
+			position: absolute;
+			left: 50%;
+			top: 45%;
+		}
+		.dropdown-menu{
+			left: calc(50% + 34px);
+			top: calc(45% + 34px);
+		}
+	}
+	&.box-4{
+		.js-circle{
+			position: absolute;
+			left: 33%;
+			top: 40%;
+		}
+		.dropdown-menu{
+			left: calc(33% + 34px);
+			top: calc(40% + 34px);
+		}
+	}
+	&.box-5{
+		.js-circle{
+			position: absolute;
+			left: 37%;
+			top: 49%;
+		}
+		.dropdown-menu{
+			left: calc(37% + 34px);
+			top: calc(49% + 34px);
+		}
+	}
+	&.box-6{
+		.js-circle{
+			position: absolute;
+			left: 49%;
+			top: 64%;
+		}
+		.dropdown-menu{
+			left: calc(49% + 34px);
+			top: calc(64% + 34px);
+		}
+	}
+	&.box-7{
+		.js-circle{
+			position: absolute;
+			left: 57%;
+			top: 84%;
+		}
+		.dropdown-menu{
+			left: calc(57% + 34px);
+			top: calc(54% + 34px);
+		}
+	}
+	&.box-8{
+		.js-circle{
+			position: absolute;
+			left: 28%;
+			top: 50%;
+		}
+		.dropdown-menu{
+			left: calc(28% + 34px);
+			top: calc(50% + 34px);
+		}
+	}
+	.dropdown-menu{
+		padding: 0;
+	}
+	.include_content_s{
+		margin: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		.product-preview{
+			&:hover{
+				.product_action{
+					margin-top: -60px;
+				}
+			}
+			.product-info{
+				min-height: auto;
+			}
+		}
+		.product_action{
+			margin-top: -30px;
+		}
+		.js-circle {
+			cursor: pointer;
+			position: absolute;
+			background: #fff;
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			&:hover{
+				background: #000;
+				border: 2px solid #fff;
+				i{
+					color: #fff;
+				}
+			}
+			i{
+				font-size: 16px;
+				color: #000;
+			}
+		}
+		.product-miniature{
+			width: 270px;
+			background: #fff;
+			border: 10px solid #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+	}
+}
+.footer-top-2 .container{
+	border: 0;
+}
+#footer {
+	padding: 22px 0 80px;
+}
+
