@@ -1,0 +1,161 @@
+.left-column {
+  width: 17.4%;
+  float: left;
+  padding-right: 20px;
+  text-align: center; }
+  .left-column .container-fluid {
+    background: #f2f2f2; }
+  .left-column .mega_menu {
+    margin: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .left-column .logo {
+    margin-bottom: 524px; }
+  .left-column .btn-group > a {
+    font-size: 24px; }
+  .left-column #cart_block {
+    margin: 15px 0; }
+  .left-column #social_block {
+    margin-top: 610px;
+    padding-bottom: 32px; }
+    .left-column #social_block ul li {
+      margin: 0 27px; }
+      .left-column #social_block ul li a {
+        font-size: 16px; }
+
+.right-column {
+  width: 82.6%;
+  float: left;
+  padding-left: 20px; }
+
+.jms-banner {
+  margin-bottom: 30px; }
+  .jms-banner > a img {
+    width: 100%; }
+
+.page-index #content {
+  max-width: 1840px;
+  margin: 30px auto; }
+
+.page-index .top_menu_second {
+  padding-top: 21px;
+  width: 343px !important;
+  left: -343px;
+  right: auto;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  background: #222;
+  border-right: 0;
+  height: 1500px; }
+  .page-index .top_menu_second .container {
+    width: 100%; }
+  .page-index .top_menu_second #social_block {
+    margin-top: 445px; }
+    .page-index .top_menu_second #social_block ul li {
+      margin: 0 27px; }
+    .page-index .top_menu_second #social_block::before {
+      width: 240px;
+      top: -38px;
+      background: #2e2e2e; }
+  .page-index .top_menu_second .jms-megamenu .item-fullwidth > .dropdown-menu {
+    left: 100% !important;
+    right: auto; }
+  .page-index .top_menu_second .jms-megamenu .mega-nav li > a {
+    text-align: left; }
+    .page-index .top_menu_second .jms-megamenu .mega-nav li > a::after {
+      right: 22px !important;
+      left: auto !important;
+      top: auto !important;
+      -webkit-transform: unset !important;
+      -ms-transform: unset !important;
+      transform: unset !important; }
+  .page-index .top_menu_second .jms-megamenu .dropdown-menu {
+    right: auto !important;
+    left: 100% !important; }
+  .page-index .top_menu_second .jms-megamenu .nav > li > a {
+    color: #bababa;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 5px 43px;
+    font-size: 16px;
+    text-align: left; }
+    .page-index .top_menu_second .jms-megamenu .nav > li > a > .caret {
+      display: block;
+      border: 0;
+      top: 4px;
+      position: absolute;
+      right: 59px;
+      -webkit-transform: skewX(13deg);
+      -ms-transform: skewX(13deg);
+      transform: skewX(13deg); }
+      .page-index .top_menu_second .jms-megamenu .nav > li > a > .caret::after {
+        content: '\f105';
+        font-family: FontAwesome; }
+
+.main-site.open-sidebar1 {
+  overflow: unset;
+  -webkit-transform: translateX(343px);
+  -ms-transform: translateX(343px);
+  transform: translateX(343px); }
+  .main-site.open-sidebar1 #jmstools {
+    display: none; }
+
+.jms-banner:hover .banner-content {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.jms-banner .banner-content {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  background: rgba(255, 255, 255, 0.95);
+  top: 40px;
+  left: 40px;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all; }
+
+.jms-banner .product-link {
+  font-size: 18px; }
+
+.jms-banner .product_action {
+  padding-bottom: 0;
+  margin-top: 27px;
+  position: unset;
+  opacity: 1;
+  visibility: visible; }
+  .jms-banner .product_action a {
+    margin: 0; }
+  .jms-banner .product_action .addToWishlist {
+    margin: 0 35px; }
+  .jms-banner .product_action .btn-group {
+    float: none; }
+  .jms-banner .product_action .cart-button {
+    border: 0;
+    background: transparent;
+    color: #bababa;
+    padding: 0; }
+    .jms-banner .product_action .cart-button .icon-shopping-cart {
+      font-size: 16px; }
+    .jms-banner .product_action .cart-button::before, .jms-banner .product_action .cart-button::after {
+      display: none; }
+
+.jms-banner .checked .text-addcart {
+  display: none; }
