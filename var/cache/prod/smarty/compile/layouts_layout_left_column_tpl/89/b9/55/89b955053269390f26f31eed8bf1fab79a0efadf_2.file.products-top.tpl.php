@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-21 00:30:34
+/* Smarty version 3.1.33, created on 2019-04-01 03:31:25
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\templates\catalog\_partials\products-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c93136a460f24_08445157',
+  'unifunc' => 'content_5ca1be4d8081f7_16631915',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '89b955053269390f26f31eed8bf1fab79a0efadf' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\templates\\catalog\\_partials\\products-top.tpl',
-      1 => 1552292667,
+      1 => 1554103881,
       2 => 'file',
     ),
   ),
@@ -21,17 +21,18 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/sort-orders.tpl' => 1,
   ),
 ),false)) {
-function content_5c93136a460f24_08445157 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca1be4d8081f7_16631915 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 view-mode left clearfix">
-			<label class="sort-by">View mode:</label>
+			<label class="sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'View as','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+</label>
 			<div class="button">
 				<a class="view-grid <?php if ($_smarty_tpl->tpl_vars['jpb_grid']->value == 1) {?>active<?php }?>" href="#">
-					<i class="fa fa-th"></i>
+					<i class="fa fa-th-large"></i>
 				</a> 
 				<a class="view-list <?php if ($_smarty_tpl->tpl_vars['jpb_grid']->value == 0) {?>active<?php }?>" href="#">
 					<i class="fa fa-th-list"></i>
@@ -41,7 +42,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 right">
 			<div class="view-mode ">
 				<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18721197075c93136a460f20_96619995', 'sort_by');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10275430275ca1be4d8004f8_81445369', 'sort_by');
 ?>
 
 			</div>
@@ -50,12 +51,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18721197075c93136a
 </div>
 <?php }
 /* {block 'sort_by'} */
-class Block_18721197075c93136a460f20_96619995 extends Smarty_Internal_Block
+class Block_10275430275ca1be4d8004f8_81445369 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'sort_by' => 
   array (
-    0 => 'Block_18721197075c93136a460f20_96619995',
+    0 => 'Block_10275430275ca1be4d8004f8_81445369',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

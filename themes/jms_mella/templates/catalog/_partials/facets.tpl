@@ -28,7 +28,7 @@
 			<h3 class="hidden-sm-down">{l s='Filter By' d='Shop.Theme.Actions'}</h3>
 		</div>
 		<div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
-		  <button data-search-url="{$clear_all_link}" class="btn-default btn-tertiary js-search-filters-clear-all">
+		  <button data-search-url="{$clear_all_link}" class="btn-default active btn-tertiary js-search-filters-clear-all">
 				{l s='Clear all' d='Shop.Theme.Actions'}
 		  </button>
 		</div>
@@ -63,7 +63,6 @@
                             {else}
                             <span {if !$js_enabled} class="ps-shown-by-js" {/if}></span>
                           {/if}
-						  
                         </span>
                       {else}
                         <span class="custom-checkbox">
@@ -84,7 +83,7 @@
                       >
                         {$filter.label}
 						{if $filter.magnitude}
-                          <span class="magnitude">({$filter.magnitude})</span>
+                          <span class="magnitude">{$filter.magnitude}</span>
                         {/if}
                       </a>
                     </label>

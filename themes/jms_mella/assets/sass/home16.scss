@@ -1,7 +1,7 @@
 @import "mixin";
 @import "varians";
 
-.left-column{
+.left_column{
 	width: 17.4%;
 	float: left;
 	padding-right: 20px;
@@ -17,7 +17,7 @@
 	.logo{
 		margin-bottom: 524px;
 	}
-	.btn-group{
+	.addon-box > .btn-group{
 		> a{
 			font-size: 24px;
 		}
@@ -36,7 +36,7 @@
 		}
 	}
 }
-.right-column{
+.right_column{
 	width: 82.6%;
 	float: left;
 	padding-left: 20px;
@@ -51,6 +51,17 @@
 	#content{
 		max-width: 1840px;
 		margin: 30px auto;
+	}
+	#cart-cl, #module-group {
+		left: 100%;
+		text-align: left;
+		top: -100px;
+	}
+	#module-group{
+		width: 304px;
+	}
+	#cart-cl{
+		width: 367px;
 	}
 	.top_menu_second {
 		padding-top: 21px;
@@ -139,6 +150,9 @@
 		align-items: center;
 		text-align: center;
 		transition: .4s all;
+	}
+	.product-info{
+		padding: 0 50px;
 	}
 	.product-link{
 		font-size: 18px;

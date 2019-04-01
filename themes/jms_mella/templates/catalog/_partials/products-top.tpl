@@ -25,10 +25,10 @@
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 view-mode left clearfix">
-			<label class="sort-by">View mode:</label>
+			<label class="sort-by">{l s='View as' d='Shop.Theme'}</label>
 			<div class="button">
 				<a class="view-grid {if $jpb_grid == 1}active{/if}" href="#">
-					<i class="fa fa-th"></i>
+					<i class="fa fa-th-large"></i>
 				</a> 
 				<a class="view-list {if $jpb_grid == 0}active{/if}" href="#">
 					<i class="fa fa-th-list"></i>

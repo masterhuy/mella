@@ -25,7 +25,8 @@
 <nav class="pagination col-lg-12 col-sm-12 col-xs-12 col-md-12">
   <div class="col-md-6 col-sm-6 col-xs-6 left-pagination">
     {block name='pagination_summary'}
-      {l s='Showing %from%-%to% of %total% item(s)' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}
+    <span>{l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}</span>
+      {l s='Products Found' d='Shop.Theme.Catalog'}
     {/block}
   </div>
 
@@ -45,9 +46,9 @@
                   class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
                 >
                   {if $page.type === 'previous'}
-                    <i class="fa fa-angle-left"></i>
+                    Previous
                   {elseif $page.type === 'next'}
-                   <i class="fa fa-angle-right"></i>
+                    Next
                   {else}
                     {$page.page}
                   {/if}

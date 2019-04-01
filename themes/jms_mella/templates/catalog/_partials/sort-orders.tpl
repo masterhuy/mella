@@ -22,23 +22,23 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div class="inlude_sort_by">
-<span class="hidden-sm-down sort-by">{l s='Sort by:' d='Shop.Theme'}</span>
-<div class="{if !empty($listing.rendered_facets)}{else}{/if}  products-sort-order dropdown">
-  <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span>{if isset($listing.sort_selected)}{$listing.sort_selected}{else}{l s='Select' d='Shop.Theme.Actions'}{/if}</span>
-    <i class="fa fa-angle-down"></i>
-  </a>
-  <div class="dropdown-menu">
-    {foreach from=$listing.sort_orders item=sort_order}
-      <a
-        rel="nofollow"
-        href="{$sort_order.url}"
-        class="select-list {['current' => $sort_order.current, 'js-search-link' => true]|classnames}"
-      >
-        {$sort_order.label}
-      </a>
-    {/foreach}
-  </div>
-</div>
+<div class="inlude_sort_by">
+	<span class="hidden-sm-down sort-by">{l s='Sort by' d='Shop.Theme'}</span>
+	<div class="{if !empty($listing.rendered_facets)}{else}{/if}  products-sort-order dropdown">
+		<a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span>{if isset($listing.sort_selected)}{$listing.sort_selected}{else}{l s='Select' d='Shop.Theme.Actions'}{/if}</span>
+			<i class="fa fa-angle-down"></i>
+		</a>
+		<div class="dropdown-menu">
+			{foreach from=$listing.sort_orders item=sort_order}
+			<a
+				rel="nofollow"
+				href="{$sort_order.url}"
+				class="select-list {['current' => $sort_order.current, 'js-search-link' => true]|classnames}"
+			>
+				{$sort_order.label}
+			</a>
+			{/foreach}
+		</div>
+	</div>
 </div>

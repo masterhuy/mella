@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-12 23:00:01
+/* Smarty version 3.1.33, created on 2019-04-01 04:03:32
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmsproductvideo\views\templates\hook\jmsproductvideo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c887231a05804_54346759',
+  'unifunc' => 'content_5ca1c5d4551057_16153889',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c887231a05804_54346759 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca1c5d4551057_16153889 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Video\'s Product','mod'=>'jmsproductvideo'),$_smarty_tpl ) );?>
 </h3>
 <input type = "hidden" id="edit" value="0" name="edit" />

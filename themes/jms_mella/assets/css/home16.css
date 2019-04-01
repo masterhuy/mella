@@ -1,11 +1,11 @@
-.left-column {
+.left_column {
   width: 17.4%;
   float: left;
   padding-right: 20px;
   text-align: center; }
-  .left-column .container-fluid {
+  .left_column .container-fluid {
     background: #f2f2f2; }
-  .left-column .mega_menu {
+  .left_column .mega_menu {
     margin: 40px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13,21 +13,21 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .left-column .logo {
+  .left_column .logo {
     margin-bottom: 524px; }
-  .left-column .btn-group > a {
+  .left_column .addon-box > .btn-group > a {
     font-size: 24px; }
-  .left-column #cart_block {
+  .left_column #cart_block {
     margin: 15px 0; }
-  .left-column #social_block {
+  .left_column #social_block {
     margin-top: 610px;
     padding-bottom: 32px; }
-    .left-column #social_block ul li {
+    .left_column #social_block ul li {
       margin: 0 27px; }
-      .left-column #social_block ul li a {
+      .left_column #social_block ul li a {
         font-size: 16px; }
 
-.right-column {
+.right_column {
   width: 82.6%;
   float: left;
   padding-left: 20px; }
@@ -40,6 +40,17 @@
 .page-index #content {
   max-width: 1840px;
   margin: 30px auto; }
+
+.page-index #cart-cl, .page-index #module-group {
+  left: 100%;
+  text-align: left;
+  top: -100px; }
+
+.page-index #module-group {
+  width: 304px; }
+
+.page-index #cart-cl {
+  width: 367px; }
 
 .page-index .top_menu_second {
   padding-top: 21px;
@@ -131,6 +142,9 @@
   -webkit-transition: .4s all;
   -o-transition: .4s all;
   transition: .4s all; }
+
+.jms-banner .product-info {
+  padding: 0 50px; }
 
 .jms-banner .product-link {
   font-size: 18px; }

@@ -31,12 +31,12 @@
             {if $depth===0}
 				<a href="{$node.link}">
 					{$node.name}
-					{if $node.children}
-						<span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
-							<i class="material-icons add"></i>
-						</span>
-					{/if}
 				</a>
+        {if $node.children}
+          <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+            <i class="material-icons add"></i>
+          </span>
+        {/if}
 				{if $node.children}
 					<div class="sub-list collapse" id="exCollapsingNavbar{$node.id}">
 						{categories nodes=$node.children depth=$depth+1}

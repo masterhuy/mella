@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-21 00:30:33
+/* Smarty version 3.1.33, created on 2019-04-01 03:10:55
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\templates\catalog\_partials\facets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c931369bb3f25_41128714',
+  'unifunc' => 'content_5ca1b97f47c727_55358163',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bc513353bf0243b7236567aebcf2c6989cf453fd' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\templates\\catalog\\_partials\\facets.tpl',
-      1 => 1552292667,
+      1 => 1554102544,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c931369bb3f25_41128714 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca1b97f47c727_55358163 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_mella\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
   <div id="search_filters">
@@ -31,7 +31,7 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_mell
 		</div>
 		<div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
 		  <button data-search-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['clear_all_link']->value, ENT_QUOTES, 'UTF-8');?>
-" class="btn-default btn-tertiary js-search-filters-clear-all">
+" class="btn-default active btn-tertiary js-search-filters-clear-all">
 				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Clear all','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
 		  </button>
@@ -90,7 +90,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['filter']->value) {
                             <?php } else { ?>
                             <span <?php if (!$_smarty_tpl->tpl_vars['js_enabled']->value) {?> class="ps-shown-by-js" <?php }?>></span>
                           <?php }?>
-						  
                         </span>
                       <?php } else { ?>
                         <span class="custom-checkbox">
@@ -115,8 +114,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['filter']->value) {
                         <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['filter']->value['label'], ENT_QUOTES, 'UTF-8');?>
 
 						<?php if ($_smarty_tpl->tpl_vars['filter']->value['magnitude']) {?>
-                          <span class="magnitude">(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['filter']->value['magnitude'], ENT_QUOTES, 'UTF-8');?>
-)</span>
+                          <span class="magnitude"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['filter']->value['magnitude'], ENT_QUOTES, 'UTF-8');?>
+</span>
                         <?php }?>
                       </a>
                     </label>

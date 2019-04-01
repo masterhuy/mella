@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-18 23:19:52
+/* Smarty version 3.1.33, created on 2019-04-01 02:49:11
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c905fd84692d0_66411805',
+  'unifunc' => 'content_5ca1b467f0e7d9_74715224',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c905fd84692d0_66411805 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca1b467f0e7d9_74715224 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group menu-collapse compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-search">
 		<i class="icon-magnifying-glass"></i>

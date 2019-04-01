@@ -1,11 +1,14 @@
 #product_list {
-	margin-bottom: 80px;
+	margin-bottom: 163px;
+}
+.search-link{
+	color: #8f8f8f;
 }
 #search_filters .filter-box {
 	margin: 28px 0 40px;
 }
 #search_filters .facet {
-    margin-bottom: 28px;
+    margin-bottom: 49px;
     padding-bottom: 0;
 	margin-right:0px;
 }
@@ -15,24 +18,23 @@
 }
 #search_filters .facet .facet-title {
 	padding-bottom: 6px;
-	font-size: 18px;
-	font-weight: 700;
-	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 6px;
 	position: relative;
-	text-transform: uppercase;
-	color: #000;
-	border-bottom: 1px solid #eee;
+	color: #7f7f7f;
 }
 #search_filters .facet.size ul li a {
-	background: transparent;
-	color: #222;
 	display: inline-block;
-	font-size: 15px;
-	font-weight: 500;
-	line-height: 32px;
-	min-width: 54px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 48px;
+	min-width: 48px;
 	text-align: center;
-	border: 2px solid #eee;
+	height: 48px;
+	background: #f2f2f2;
+	border-radius: 50%;
+	color: #8f8f8f;
 }
 #search_filters {
 	margin-bottom: 21px;
@@ -41,11 +43,11 @@
 	display:none;
 }
 #search_filters .facet li {
-	padding: 4.5px 0;
+	padding: 2px 0;
 	position: relative;
 }
 #search_filters .facet.size ul li {
-	margin-right:10px;
+	margin-right: 4px;
 	float: left;
 }
 .products-list-in-column.item-gutter-40 .js-product-miniature:hover::after {
@@ -192,7 +194,20 @@
   width:100%;
 }
 #search_filters .custom-checkbox {
-	margin-right: 8px;
+	margin-right: 0;
+}
+#search_filters .custom-checkbox > input{
+	display: none;
+}
+#search_filters .facet.color .custom-checkbox {
+	margin-right: 4px;
+}
+.facet.color ul li a {
+	display: none;
+}
+.facet.color ul{
+	display: flex;
+	flex-wrap: wrap;
 }
 #category .banner-and-desc {
 	width: 60%;
@@ -206,26 +221,38 @@
 	display: block;
 }
 #category .facet.size ul li a .magnitude {
-	position: absolute;
-	right: 30px;
-	top: calc(50% - 8.5px;);
+	display: none;
 }
 #category .facet.size ul li{
 	border-bottom: 0;
 }
+#category .color-style .custom-checkbox input {
+    display: none;
+}
 #category .color-style .custom-checkbox .color {
 	border-radius: 50%;
 	display: block;
-	height: 15px;
-	width: 15px;
+	height: 48px;
+	width: 48px;
 	cursor: pointer;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
+	position: relative;
+	box-shadow: 0 0 13px rgba(0,0,0,0.17);
+}
+#category .color-style .custom-checkbox input:checked ~ span {
+	border: 2px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #category .color-style .custom-checkbox input:checked ~ .color::after {
 	display: block;
+}
+#category .color-style .custom-checkbox .color::after {
+	content: "\f00c";
+	font-family: FontAwesome;
+	color: #fff;
+	font-size: 16px;
+	display: none;
 }
 #category .facet >.flex-box {
 	display: flex;

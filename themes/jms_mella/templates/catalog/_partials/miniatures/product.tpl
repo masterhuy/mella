@@ -28,17 +28,17 @@
 		{block name='product_thumbnail'}
 		  	<a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
 				<img class="img-responsive product-img1"
-				  src = "{$product.cover.bySize.home_default.url}"
-				  alt = "{$product.cover.legend}"
+				    src = "{$product.cover.bySize.home_default.url}"
+				    alt = "{$product.cover.legend}"
 					title="{$product.name|escape:'html':'UTF-8'}"
-				  data-full-size-image-url = "{$product.cover.large.url}"
+				    data-full-size-image-url = "{$product.cover.large.url}"
 				/>
 				{if isset($jpb_phover) && $jpb_phover == 'image_swap' && $product.images.1}
 					<img class="img-responsive product-img2"
-					  src = "{$product.images.1.bySize.home_default.url}"
-					  alt = "{$product.images.1.legend}"
+					    src = "{$product.images.1.bySize.home_default.url}"
+					    alt = "{$product.images.1.legend}"
 						title="{$product.name|escape:'html':'UTF-8'}"
-					  data-full-size-image-url = "{$product.images.1.large.url}"
+					    data-full-size-image-url = "{$product.images.1.large.url}"
 					/>
 				{/if}
 		  	</a>
@@ -46,15 +46,15 @@
 			  	{block name='product_flags'}
 					{foreach from=$product.flags item=flag}
 						{if $flag.label == 'New'}
-						<span class="label label-new">{$flag.label}</span>
+						    <span class="label label-new">{$flag.label}</span>
 						{/if}
 						{if $flag.label == 'On sale!'}
-						<span class="label label-sale">{l s='Sale' d='Shop.Theme'}</span>
+						    <span class="label label-sale">{l s='Sale' d='Shop.Theme'}</span>
 						{/if}
 					{/foreach}
 					{if $product.has_discount}
 						{if $product.discount_type === 'percentage'}
-	            <span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
+	                        <span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
 						{/if}
 					{/if}
 			   {/block}	
@@ -82,6 +82,16 @@
 		{block name='product_name'}
 			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</a>
 		{/block}
+        <div class="btn-group">
+	   	    <a href="#" data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
+				<i class="icon-enlarge"></i>
+			</a>
+			{if isset($jpb_wishlist) && $jpb_wishlist}							
+				<a href="#" class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+					<i class="icon-heart"></i>
+				</a>
+			{/if}
+		</div>
 			  
 		{block name='product_price_and_shipping'}
 			{if $product.show_price}
@@ -107,12 +117,12 @@
 			{$product.description_short|truncate:170:'...' nofilter}
 		</div>
         <div class="product_button">
-			<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-				<span class="la la-spin la-spinner"></span>
-				<span class="la la-check"></span>
-				<span class="text-addcart"><i class="la la-cart-plus"></i></span>		
-				<span class="text-outofstock"><i class="la la-ban"></i></span>								   
-			</button>
+			<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart btn-underline product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+			<span class="la la-spin la-spinner"></span>
+			<span class="la la-check"></span>
+			<span class="text-addcart"><span class="plus">+</span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+			<span class="text-outofstock"><i class="la la-ban"></i></span>								   
+		</button>
 		</div>
 	</div>
 	<div class="product_action">
@@ -123,7 +133,7 @@
 			<span class="text-outofstock"><i class="la la-ban"></i></span>								   
 		</button>
 		<div class="btn-group">
-	   	<a href="#" data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
+	   	    <a href="#" data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
 				<i class="icon-enlarge"></i>
 			</a>
 			{if isset($jpb_wishlist) && $jpb_wishlist}							
@@ -132,6 +142,6 @@
 				</a>
 			{/if}
 		</div>
-  </div>
+    </div>
 </div>
 
