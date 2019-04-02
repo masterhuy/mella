@@ -634,6 +634,30 @@
 	}
 }
 
+//product page
+.top-info{
+	display: flex;
+	text-align: center;
+	.category{
+		margin-bottom: 0;
+		font-weight: 500;
+		color: $sub-cl;
+		text-transform: capitalize;
+		a{
+			color: $active;
+
+		}
+	}
+	#product-availability {
+		font-size: 12px;
+		letter-spacing: 0;
+		color: #5b9d21;
+		padding-top: 3px;
+		margin-left: 35px;
+	}
+}
+//
+
 @keyframes slideDown {
   0% {
       transform: translateY(-100%);
@@ -867,6 +891,7 @@ a.wishlist_top{
 		right: 0;
 		top: 0;
 		width: auto;
+		display: block !important;
 	}
 	.product-preview:hover{
 		box-shadow: unset;
@@ -1050,14 +1075,70 @@ a.wishlist_top{
 	}
 }
 
+//quick view
+.quickview{
+	.product-variants-item{
+		display: block;
+		margin-right: 0;
+		&:not(:last-child){
+			margin-bottom: 35px;
+		}
+		ul{
+			justify-content: center;
+		}
+	}
+	.product-quantity {
+		display: flex;
+		justify-content: center;
+	}
+	.right{
+		text-align: center;
+		.top-info{
+			justify-content: center;
+		}
+		.content_price .price.new{
+			text-align: center;
+		}
+	}
+	.arrows.js-arrows i{
+		text-indent: 0;
+		border: 0;
+	}
+	.images-container{
+		.product-images > li.thumb-container {
+		    img{
+		    	width: 90px;
+		    }
+		}
+	}
+	.content_price{
+		text-align: left;
+	}
+	.arrows.js-arrows i{
+		position: unset;
+		&:hover{
+			color: #000;
+		}
+		&.arrow-up{
+			margin-top: -6px;
+		}
+		&.arrow-down{
+			position: absolute;
+			bottom: -9px;
+			top: auto;
+		}
+	}
+}
+//
+
+//thumbnail carousel
+.thumbnail-carousel{
+	display: block !important;
+}
+//
+
 .product-info .color_to_pick_list{
 	display: none;
-}
-#product{
-	 #footer {
-		display: inline-block;
-		width: 100%;
-	}
 }
 #category{
 	#header{
@@ -1074,35 +1155,14 @@ a.wishlist_top{
 }
 #more_info_block + .featured-products{
 	.customs-carousel-product{
-		padding-top: 26px;
+		padding-top: 60px;
 	}
 }
-#product .owl-theme .owl-controls{
-	position: absolute;
-	top: -31px;
-	right: 0;
-	div{
-		position: unset;
-		transform: unset;
-		opacity: 1;
-		visibility: visible;
-		&.owl-prev, &.owl-next{
-			width: 7px;
-			height: 11px;
-		}
-		&.owl-prev{
-			background: url("../img/icon/left-h6.png") no-repeat center;
-			&:hover{
-				background: url("../img/icon/left-hover-h6.png") no-repeat center;
-			}
-		}
-		&.owl-next{
-			margin-left: 15px;
-			background: url("../img/icon/right-h6.png") no-repeat center;
-			&:hover{
-				background: url("../img/icon/right-hover-h6.png") no-repeat center;
-			}
-		}
+#product{
+	#footer {
+		display: inline-block;
+		width: 100%;
+		margin-top: 34px;
 	}
 }
 #search #content .search-box {
@@ -1157,44 +1217,24 @@ a.wishlist_top{
 	}
 }
 #product, .quickview{
-	.content_price{
-		text-align: left;
-	}
 	.product-variants-item.size input{
 		+ span{
 			display: flex;
-			min-width: 54px;
-		    min-height: 32px;
+			width: 48px;
+		    height: 48px;
+		    border-radius: 50%;
 		    align-items: center;
 		    justify-content: center;
+		    font-weight: 600;
+			font-size: 16px;
+			color: #8f8f8f;
+			background: #f1f1f1;
 		    z-index: 0;
-			&::before{
-				content: "";
-			    position: absolute;
-			    width: 54px;
-			    height: 32px;
-			    left: 50%;
-			    top: 50%;
-			    transform: translate(-50%, -50%);
-			    border: 2px solid #e6e6e6;
-			    border-radius: 3px;
-			    z-index: -1;
-			}
 		}
 		&:checked + span{
 		    position: relative;
 		    color: #fff;
-		    &::after{
-		    	content: "";
-			    position: absolute;
-			    width: 53px;
-			    height: 32px;
-			    left: 50%;
-			    top: 50%;
-			    border-radius: 3px;
-			    transform: translate(-50%, -50%);
-			    z-index: -1;
-		    }
+		    background: $active;
 		}
 	}
 }
@@ -1440,24 +1480,8 @@ a.wishlist_top{
 	div.modal-dialog.cover_product1 .product-add-to-cart {
 		margin-top: 0;
 	}
-	div.quickview .arrows.js-arrows i.arrow-down {
-		bottom: 35px;
-	}
-	div.quickview .images-container .js-qv-mask {
-		width: 70%;
-		max-height: 300px;
-	}
 	.product-variants .product-variants-item:not(:last-child){
 		margin-bottom: 15px;
-	}
-	div.quickview .product-add-to-cart .text{
-		display: none;
-	}
-	div.quickview .product-quantity .qty {
-		margin-right: 15px;
-	}
-	div.quickview .product-quantity .add-to-cart{
-		padding: 12px 15px;
 	}
 	.ver_mobile{
 		display: block;
@@ -1565,65 +1589,6 @@ a.wishlist_top{
 	}
 	.footer_t .layout-column:not(:last-child){
 		margin-bottom: 20px;
-	}
-}
-
-.quickview{
-	.product-information .product-desc{
-		margin-bottom: 0;
-	}
-	.arrows.js-arrows i{
-		text-indent: 0;
-		border: 0;
-	}
-	.images-container{
-		display: flex;
-		.js-qv-product-cover {
-			border-radius: 10px;
-		}
-		.product-images > li.thumb-container {
-		    display: block;
-		    img{
-		    	width: 90px;
-		    }
-		}
-		.product-cover{
-			order: 2;
-		}
-		.js-qv-mask{
-			order: 1;
-			width: 35%;
-			max-height: 400px;
-			overflow: hidden;
-			margin-right: 0;
-			margin-top: 20px !important;
-		}
-	}
-	.content_price{
-		text-align: left;
-	}
-	.arrows.js-arrows i{
-		position: unset;
-		&:hover{
-			color: #000;
-		}
-		&.arrow-up{
-			margin-top: -6px;
-		}
-		&.arrow-down{
-			position: absolute;
-			bottom: -9px;
-			top: auto;
-		}
-	}
-	.arrows {
-	    position: absolute;
-	    top: 0;
-	    bottom: 0;
-	    max-height: 441px;
-		left: 36px;
-		width: 0;
-	    z-index: 0;
 	}
 }
 

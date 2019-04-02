@@ -24,17 +24,15 @@
  *}
 <section class="featured-products clearfix mt-3 addon-title">
   <h3>
-    {l s='related products' d='Shop.Theme.Catalog'}
+    {l s='You Might Like Also' d='Shop.Theme.Catalog'}
   </h3>
   <div class="product_box">
-    <div class="products customs-carousel-product">
-        
-            {foreach from=$products item="product"}
-                <div class="item ajax_block_product">
-                    {include file="catalog/_partials/miniatures/product.tpl" product=$product}
-                </div>
-            {/foreach}
-        
+    <div class="products customs-carousel-product"> 
+      {foreach from=$products item="product"}
+          <div class="item ajax_block_product">
+              {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+          </div>
+      {/foreach}
     </div>
   </div>
 </section>

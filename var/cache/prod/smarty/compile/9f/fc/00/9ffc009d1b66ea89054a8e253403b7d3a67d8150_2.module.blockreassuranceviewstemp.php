@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-13 06:11:25
+/* Smarty version 3.1.33, created on 2019-04-02 02:47:23
   from 'module:blockreassuranceviewstemp' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c88d74dd24195_66824080',
+  'unifunc' => 'content_5ca3057b9dae83_91754065',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9ffc009d1b66ea89054a8e253403b7d3a67d8150' => 
     array (
       0 => 'module:blockreassuranceviewstemp',
-      1 => 1552292666,
+      1 => 1554085275,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c88d74dd24195_66824080 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca3057b9dae83_91754065 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['elements']->value) {?>
   <div id="block-reassurance">
     <ul>
@@ -46,6 +46,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['element']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </ul>
   </div>
+<?php }?>
+
+
+
+
 <?php }
-}
 }

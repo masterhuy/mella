@@ -27,7 +27,6 @@
         {block name='product_quantity'}
             <div class="product-quantity">
                 <div class="customs">
-                    <span class="control-label">Quantity:</span>
                     <div class="qty">
                       <input
                         type="text"
@@ -38,9 +37,6 @@
                         min="{$product.minimal_quantity}"
                       />
                     </div>
-                    {block name='product_variants'}
-                        {include file='catalog/_partials/product-variants.tpl'}
-                    {/block}
                 </div>
       		    
                 <div class="add">
@@ -48,12 +44,16 @@
                         {if !$product.add_to_cart_url}
                           disabled
                         {/if}>
-    					<span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
-    					<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
+    					<span class="text-addcart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </span>		
+    					<span class="text-outofstock">
+                            <i class="la la-ban"></i>
+                        </span>
     				</button>
                     {if isset($jpb_wishlist) && $jpb_wishlist}                          
                         <a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
-                            <i class="la la-heart-o"></i>
+                            <i class="icon-heart"></i>
                         </a>
                     {/if}
                 </div>

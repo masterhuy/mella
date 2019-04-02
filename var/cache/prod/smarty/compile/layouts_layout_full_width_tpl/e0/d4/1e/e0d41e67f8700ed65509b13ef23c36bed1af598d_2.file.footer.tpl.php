@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-01 02:49:14
+/* Smarty version 3.1.33, created on 2019-04-02 02:47:23
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ca1b46a5b4719_68917572',
+  'unifunc' => 'content_5ca3057bea9723_21762249',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ca1b46a5b4719_68917572 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca3057bea9723_21762249 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="btn-default back-to-top" id="back-to-top" title="Back to top">
 	<i class="fa fa-chevron-up" aria-hidden="true"></i>
 </div>

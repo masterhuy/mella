@@ -23,95 +23,118 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="quickview-modal-{$product.id}-{$product.id_product_attribute}" class="modal fade quickview" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog cover_product1 container" role="document">
-   <div class="modal-content">
-     <div class="modal-header">
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">×</span>
-       </button>
-     </div>
-     <div class="modal-body" id="main">
-      <div class="row">
-        <div class="col-md-7 col-sm-7 hidden-xs-down left">
-          {block name='product_cover_tumbnails'}
-            {include file='catalog/_partials/product-cover-thumbnails.tpl'}
-          {/block}
-					<div class="arrows js-arrows">
-            <i class="material-icons arrow-up js-arrow-up">&#xE316;</i>
-            <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
-          </div>
-					<div class="modal-footer">
-          <span>Share with:</span>
-		   {hook h='displayProductButtons' product=$product}
-		  </div>
-        </div>
-		
-        <div class="col-md-5 col-sm-5 right">
-          <h2 class="product-name">{$product.name}</h2>
-		  {block name='product_prices'}
-					{include file='catalog/_partials/product-prices.tpl'}
-		  {/block}
-      <div class="product-information">
-          {block name='product_description_short'}
-            
-            <div id="product-description-short-{$product.id}" class="product-desc"itemprop="description">{$product.description_short|strip_tags|truncate:150:"..."}</div>
-            
-          {/block}
-		    <ul class="other-info">
-						{if $product.reference}
-												<!-- number of item in stock -->
-						<li id="product_reference">
-							<label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
-							<span class="editable">{$product.reference}</span>
-						</li>
-						{/if}
-												<!-- availability or doesntExist -->
-						<li id="availability_statut">
-							<label id="availability_label">
-								{l s='Availability:' d='Shop.Theme.Catalog'}
-							</label>
-							<span id="availability_value" class="label-availability">
-								{if $product.quantity|intval <= 0}
-									{l s='Out stock' d='Shop.Theme.Catalog'}
-								{else}
-									{l s='In stock' d='Shop.Theme.Catalog'}
-								{/if}
-							</span>
-						</li>
-						<li>
-						{if $product.additional_shipping_cost > 0}
-							<label>{l s='Shipping tax: '}</label>
-								<span class="shipping_cost">{$product.additional_shipping_cost}</span>
-						{else}
-							<label>{l s='Shipping tax:'}</label><span class="shipping_cost">{l s=' Free'}</span>
-						{/if}
-					</li>
-	   </ul>
-	   
-          {block name='product_buy'}
-            <div class="product-actions">
-              <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
-                <input type="hidden" name="token" value="{$static_token}">
-                <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
-                <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
-				
-                {block name='product_add_to_cart'}
-                  {include file='catalog/_partials/product-add-to-cart.tpl'}
-                {/block}
+    <div class="modal-dialog cover_product1 container" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
                 
-                {block name='product_refresh'}
-                  <input class="product-refresh" data-url-update="false" name="refresh" type="submit" value="{l s='Refresh' d='Shop.Theme.Actions'}" hidden>
-                {/block}
-				
-            </form>
-          </div>
+            </div>
+            <div class="modal-body" id="main">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left">
+                        {block name='product_cover_tumbnails'}
+                            {include file='catalog/_partials/product-cover-thumbnails-quickview.tpl'}
+                        {/block}
+                        <div class="arrows js-arrows">
+                            <i class="material-icons arrow-up js-arrow-up">&#xE316;</i>
+                            <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down right">
+                        {block name='page_header_container'}
+                            {block name='page_header'}
+                                <h2 itemprop="name" class="pd-name">{block name='page_title'}{$product.name}{/block}</h2>
+                            {/block}
+                        {/block}
+                        {block name='product_prices'}
+                            {include file='catalog/_partials/product-prices.tpl'}
+                        {/block}
+                
+                        <div class="product-information">
+                            {block name='product_description_short'}
+                                <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:350:"..." nofilter}</div>
+                            {/block}
+                        
+                            {if $product.is_customizable && count($product.customizations.fields)}
+                                {block name='product_customization'}
+                                    {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
+                                {/block}
+                            {/if}
+                            
+                        
+                            <div class="product-actions">
+                                {block name='product_buy'}
+                                    <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
+                                        <input type="hidden" name="token" value="{$static_token}">
+                                        <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
+                                        <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
+
+                                        {block name='product_pack'}
+                                            {if $packItems}
+                                                <section class="product-pack">
+                                                    <h3 class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</h3>
+                                                    {foreach from=$packItems item="product_pack"}
+                                                        {block name='product_miniature'}
+                                                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack}
+                                                        {/block}
+                                                    {/foreach}
+                                                </section>
+                                            {/if}
+                                        {/block}
+                                        
+                                        {block name='product_discounts'}
+                                            {include file='catalog/_partials/product-discounts.tpl'}
+                                        {/block}
+                                        
+                                        {block name='product_variants'}
+                                            {include file='catalog/_partials/product-variants.tpl'}
+                                        {/block}
+
+                                        {block name='product_add_to_cart'}
+                                            {include file='catalog/_partials/product-add-to-cart.tpl'}
+                                        {/block}
+
+                                    </form>
+                                {/block}
+                            </div>
+                            
+                            <ul class="other-info">
+                                {if $product.reference}
+                                    <!-- number of item in stock -->
+                                    <li id="product_reference">
+                                        <label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
+                                        <span class="editable">{$product.reference}</span>
+                                    </li>
+                                {/if}
+                                <!-- availability or doesntExist -->
+                                <li id="availability_statut">
+                                    <label id="availability_label">
+                                        {l s='Availability:' d='Shop.Theme.Catalog'}
+                                    </label>
+                                    <span id="availability_value" class="label-availability">
+                                        {if $product.quantity|intval <= 0}
+                                            {l s='Out stock' d='Shop.Theme.Catalog'}
+                                        {else}
+                                            {l s='In stock' d='Shop.Theme.Catalog'}
+                                        {/if}
+                                    </span>
+                                </li>
+                                <li>
+                                    {if $product.additional_shipping_cost > 0}
+                                        <label>{l s='Shipping tax: '}</label>
+                                        <span class="shipping_cost">{$product.additional_shipping_cost}</span>
+                                    {else}
+                                        <label>{l s='Shipping tax:'}</label>
+                                        <span class="shipping_cost">{l s=' Free'}</span>
+                                    {/if}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-		  
-        {/block}
-        </div>
-      </div>
-     </div>
-     
-   </div>
- </div>
+    </div>
 </div>

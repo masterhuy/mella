@@ -1707,10 +1707,6 @@ ul.cart_block_list li:not(:last-child){
 .product-btn.checking .la-check {
   display: none; }
 
-.product-btn .la{
-  font-size: 14px;
-  letter-spacing: 0
-}
 .product-btn.checking .la-spin {
   display: inline-block; }
 
@@ -1772,28 +1768,30 @@ ul.cart_block_list li:not(:last-child){
   margin-top: 14px;
   text-align: center;
 }
-
-  .product-preview .product-info .categoryname {
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    text-transform: capitalize;
-    white-space: nowrap;
-    width: 100%;
-    text-align: left; }
-  .product-preview .product-info a.product-name {
-    display: block;
-    font-size: 14px;
-    line-height: 1.2;
-    text-align: center;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    top: -7px;
-    white-space: nowrap;
-    width: 100%;
-    text-transform: capitalize;
-    color: #111; }
+.product-preview .product-info .btn-group{
+  display: none;
+}
+.product-preview .product-info .categoryname {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+  width: 100%;
+  text-align: left; }
+.product-preview .product-info a.product-name {
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  top: -7px;
+  white-space: nowrap;
+  width: 100%;
+  text-transform: capitalize;
+  color: #111; }
 
 .btn-cart:hover {
   color: #fff !important;
@@ -2127,7 +2125,7 @@ li.product-flag {
     margin-left: 10px; }
 
 .featured-products {
-  margin-top: 47px;
+  margin-top: 80px;
 }
 /*==================================================
 =            Product List          =
@@ -2826,12 +2824,6 @@ ul.footer_links {
 }
 
 /* Quick view */
-.quickview .product-actions .product-variants select {
-   
-}
-.quickview .product-variants .product-variants-item:not(:last-child){
-  margin-bottom: 15px;
-}
 .modal-dialog.cover_product1 {
   width: 1170px;
   margin: 66px auto; }
@@ -3025,13 +3017,13 @@ ul.footer_links {
   margin-left: 47px;
 }
 .breadcrumb-inner ol li::after {
-  content: "/";
+  content: "\f101";
   font-family: FontAwesome;
   position: absolute;
   right: -30px;
   top: 50%;
   transform: translateY(-50%);
-  font-weight: 600;
+  color: #8f8f8f;
 }
 .breadcrumb-inner ol li:last-child:after {
   display: none; 

@@ -36,9 +36,6 @@
 {if $addon_title}
 <div class="addon-title">
 	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
-	<div class="pull-right">
-		<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all link fw-bold">view all</a>
-	</div>
 </div>
 {/if}
 {if $addon_desc}
