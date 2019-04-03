@@ -23,7 +23,18 @@
 	$('#mobile-vermegamenu').addClass('collapse');
 	
 	//initiate the plugin and pass the id of the div containing gallery images
-    $("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true});
+	$("#zoom_01").elevateZoom({
+		gallery: 'gal1',
+		zoomType: "lens",
+		lensShape : "round",
+		lensSize : 200
+	});
+	
+	// $("#zoom_01").elevateZoom({
+	// 	zoomType: "inner",
+	// 	cursor: "crosshair"
+	//   });
+    // $("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true});
     //pass the images to Fancybox
     $("#zoom_01").bind("click", function (e) { var ez = $('#zoom_01').data('elevateZoom'); $.fancybox(ez.getGalleryList()); return false; });
 
@@ -125,7 +136,7 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{            
 				1199:{
-                  	items:4
+                  	items:3
 				},
 				991:{
 					items:3

@@ -1,6 +1,14 @@
 .page-not-found {
 	text-align: center;
 }
+#pagenotfound .breadcrumb{
+	display: none;
+}
+#pagenotfound #wrapper{
+	padding: 200px 0;
+	background: url('../img/bg-error.jpg') no-repeat;
+	background-size: cover;
+}
 .page-not-found .small-text{
 	margin-bottom: 50px;
 }
@@ -9,7 +17,7 @@
 	margin-bottom: 30px;
 }
 .page-not-found #search_widget{
-	max-width: 290px;
+	max-width: 370px;
 }
 .page-not-found h3 {
 	text-transform: capitalize;
@@ -21,23 +29,21 @@
 	margin-top: 13px;
 }
 .page-not-found .back-to-home {
-	font-size: 18px;
-	font-weight: 700;
-	padding: 13px 96px;
-	letter-spacing: 0.4px;
-	margin-bottom: 130px;
+	color: #b20f0f;
 }
 .page-not-found p.text-1 {
-	margin-top: -10px;
-	font-weight: 700;
-	font-size: 28px;
-	letter-spacing: 0.65px;
-	margin-bottom: 56px;
-	color: #000;
+	margin-top: 12px;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 3.6px;
+	margin-bottom: 21px;
+	text-transform: uppercase;
 }
 .page-not-found p.text-2 {
-	margin-bottom: 136px;
-	letter-spacing: 0;
+	margin-bottom: 59px;
+	color: #8f8f8f;
+	letter-spacing: 0.3px;
+	line-height: 1.7;
 }
 .page-not-found .search-box {
 	display:flex;

@@ -23,12 +23,24 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <section id="content" class="page-content page-not-found">
-	<h3>{l s='404' d='Shop.Theme'}</h3>
-	<p class="text-1">{l s='Oops! This page Could Not Be Found!' d='Shop.Theme'}</p>
-	<p class="text-2">{l s='Sorry bit the page you are looking for does not exist, have been removed or name changed' d='Shop.Theme'}</p>
-	<a class="btn-default btn-active back-to-home" href="{$urls.base_url}">{l s='Back to homepage' d='Shop.Theme'}</a>
-    {block name='hook_not_found'}
-      {hook h='displayNotFound'}
-    {/block}
-	</div>
+    <div class="row">
+        <div class="col-lg-5 col-xs-12 text-left">
+            <img src="{$urls.base_url}themes/jms_mella/assets/img/error.png">
+            <p class="text-1">{l s='This page not be found' d='Shop.Theme'}</p>
+            <p class="text-2">
+                {l s='We are really sorry, but the page you requested is missing..
+                Perhaps searching again can help. Or back to' d='Shop.Theme'}
+                <a class="back-to-home" href="{$urls.base_url}">{l s='home page' d='Shop.Theme'}</a>
+            </p>
+            
+            {block name='search'}
+                {hook h='displaySearch'}
+            {/block}
+        
+            {block name='hook_not_found'}
+                {hook h='displayNotFound'}
+            {/block}
+        </div>
+        <div class="col-lg-7"></div>
+    </div>
 </section>

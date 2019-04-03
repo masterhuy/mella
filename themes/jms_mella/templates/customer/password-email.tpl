@@ -34,7 +34,6 @@
     <header>
       <p>{l s='Please enter the email address you used to register. You will receive a temporary link to reset your password.' d='Shop.Theme.CustomerAccount'}</p>
     </header>
-
     <section class="form-fields">
       <div class="form-group row">
         <label class="col-md-3 form-control-label required">{l s='Email address' d='Shop.Forms.Labels'}</label>

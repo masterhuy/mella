@@ -44,6 +44,8 @@
                         {if !$product.add_to_cart_url}
                           disabled
                         {/if}>
+                        <span class="la la-spin la-spinner"></span>
+				        <span class="la la-check"></span>
     					<span class="text-addcart">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </span>		

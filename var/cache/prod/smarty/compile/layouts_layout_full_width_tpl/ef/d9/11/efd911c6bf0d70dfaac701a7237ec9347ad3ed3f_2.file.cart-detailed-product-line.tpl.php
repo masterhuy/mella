@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-18 05:26:47
+/* Smarty version 3.1.33, created on 2019-04-03 05:09:58
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\templates\checkout\_partials\cart-detailed-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c8f6457686919_73264576',
+  'unifunc' => 'content_5ca47866394a83_37223619',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'efd911c6bf0d70dfaac701a7237ec9347ad3ed3f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\templates\\checkout\\_partials\\cart-detailed-product-line.tpl',
-      1 => 1552292667,
+      1 => 1554282595,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c8f6457686919_73264576 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca47866394a83_37223619 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-line-grid">
     <!-- remove button -->
     <div class="row_cs remove-button col-lg-1 col-md-1 col-sm-1 col-xs-12">
@@ -39,7 +39,7 @@ function content_5c8f6457686919_73264576 (Smarty_Internal_Template $_smarty_tpl)
 "
             >
             <?php if (!isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) || !$_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>
-                <i class="pull-xs-left la la-times"></i>
+                <i class="pull-xs-left fa fa-times"></i>
             <?php }?>
             </a>
             <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayCartExtraProductActions','product'=>$_smarty_tpl->tpl_vars['product']->value),$_smarty_tpl ) );?>

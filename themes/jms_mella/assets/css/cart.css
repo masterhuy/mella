@@ -1,4 +1,7 @@
 /* Checkout page */
+#cart #footer{
+	margin-top: 100px;
+}
 .cart-block h1 {
     color: rgba(17, 17, 17, 0.9);
     font-size: 22px;
@@ -12,8 +15,7 @@
 	background:#fff;
 }
 .cart-items {
-	border: 1px solid #ebebeb;
-	border-top: 0;
+	border-bottom: 1px solid #ebebeb;
 }
 .cart-items li {
 	border-bottom:1px solid #e1e1e1;
@@ -37,7 +39,7 @@
 	padding: 14px 51px;
 }
 .cart-box .btn-shopping {
-	float: left;
+	float: right;
 }
 .card.cart-summary .btn-checkout {
 	width: 100%;
@@ -60,12 +62,18 @@
 .text-xs-center{
 	text-align:center;
 }
+.product-image > .product-line-info {
+	margin-left: 50px;
+	text-align: left;
+}
 .product-line-info .value {
-	font-weight:300;
+	font-weight: 400;
+	color: #8f8f8f;
+	text-transform: uppercase;
 }
 .product-price .value {
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 16px;
+	font-weight: 500;
 	color: #000;
 }
 .cart-line-product-actions {
@@ -78,20 +86,21 @@
 }
 .product-qty .bootstrap-touchspin{
 	display: flex;
+	width: 120px;
+	height: 38px;
+	border: 1px solid #ddd;
+	border-radius: 30px;
 }
 .product-qty .input-group-btn-vertical {
-	display: flex;
-	flex-direction: column;
+	
 }
-.product-qty .input-group-btn-vertical button:hover i::after{
-	color: #fff;
+.product-qty .input-group-btn-vertical button:hover i{
+	color: #b20f0f;
 }
 .product-qty .js-cart-line-product-quantity {
-	width: 55px;
-	height: 45px;
-	font-size: 18px;
-	color: #603813;
-	font-weight: 700;
+	font-size: 14px;
+	font-weight: 600;
+	background: transparent;
 }
 .product-qty .bootstrap-touchspin .input-group-btn-vertical .touchspin-up::after {
 	content: "\f067";
@@ -104,15 +113,20 @@
 	font-size: 10px;
 }
 .product-qty .btn-touchspin {
-	width: 31px;
-	height: 22.5px;
 	padding: 0;
 	border-radius: 0;
-	border-color: #ebebeb;
-	background: transparent;
+	border: 0;
+	background: transparent !important;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 99;
 }
 .product-qty .btn-touchspin.bootstrap-touchspin-up{
-	border-bottom: 0;
+	right: 15px;
+}
+.product-qty .btn-touchspin.bootstrap-touchspin-down{
+	left: 15px;
 }
 .product-qty .btn-touchspin i{
 	display: flex;
@@ -131,22 +145,22 @@
 .product-line-grid {
 	display: flex;
 	align-items: center;
-	padding: 3px 0;
+	padding: 60px 0;
 }
 .product-image.media-middle {
 	display: flex;
 	align-items: center;
 }
 .cart-grid .product-image.media-middle > img {
-	width: 171px;
-	height: 183px;
 	margin-right: 0;
+	width: 20%;
 }
 .js-cart-line-product-quantity.form-control {
 	border: 1px solid #ebebeb;
 	padding: 0 10px;
 	text-align: center;
-	border-right: 0;
+	border: 0;
+	height: 38px;
 }
 .product-line-grid-right span.input-group-btn-vertical button {
 	border-radius: 0;
@@ -226,26 +240,25 @@
 	font-size: 16px;
 	padding: 0;
 	font-weight: 400;
+	color: #8f8f8f;
 }
 .cart-summary .value {
 	float: right;
-	font-size: 20px;
-	font-weight: 700;
-	color: #000;
+	font-size: 16px;
+	font-weight: 600;
 }
 .cart-summary-line{
 	padding: 3px 0;
 }
 .label-title > div {
-	font-size: 18px;
-	font-weight: 700;
-	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
 	text-transform: uppercase;
 }
 .label-title {
-	background: #f5f5f5;
+	background: #878787;
 	padding: 18px 0;
-	border: 1px solid #ebebeb;
 }
 .cart-grid .cart-overview.js-cart {
 	margin-bottom: 40px;
@@ -256,13 +269,10 @@
 }
 .cart-grid-right .right-box .card.cart-summary {
 	padding: 30px;
-	background: #f9f9f9;
-	border-radius: 5px 5px 0 0;
+	background: #f2f2f2;
 	width: 100%;
 	border: 0;
-	margin-top: -75px;
-	border: 1px solid #ebebeb;
-	border-bottom: 0;
+	border-radius: 0;
 }
 .cart-grid-right.pull-right {
 	margin-top: 30px;
@@ -331,10 +341,7 @@
 .cart-grid-right #block-reassurance {
 	padding: 20px;
 	clear: both;
-	background: #f9f9f9;
-	border-radius: 0 0 5px 5px;
-	border: 1px solid #ebebeb;
-	border-top: 0;
+	background: #f2f2f2;
 }
 @media(max-width:1199px){
 	.cart-grid-right {

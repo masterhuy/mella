@@ -8,6 +8,19 @@
 	right: 10px;
 	color: #111 !important;
 }
+#authentication .breadcrumb{
+	display: none;
+}
+.forgot-password a,
+.no-account a{
+	font-size: 12px;
+	color: #8f8f8f;
+}
+#authentication #wrapper{
+	padding: 200px 0;
+	background: url('../img/bg-login.jpg') no-repeat;
+	background-size: cover;
+}
 #authentication .show-pass button:before {
 	content:"\f06e";
 	font-family:"FontAwesome";

@@ -40,8 +40,8 @@
 					</div>
 
 					{block name='continue_shopping'}
-			  			<a class="btn-shopping btn-continue" href="{$urls.pages.index}">
-							{l s='Continue shopping' d='Shop.Theme.Actions'}
+			  			<a class="btn-shopping btn-continue btn-default active" href="{$urls.pages.index}">
+								{l s='Continue shopping' d='Shop.Theme.Actions'}
 			  			</a>
 					{/block}
 

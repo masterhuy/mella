@@ -36,12 +36,13 @@
                 <span id="product-availability">
                     {if $product.availability == 'available'}
                         <img src="{$urls.base_url}themes/jms_mella/assets/img/icon/available.png" alt="">
+                        <span style="color:#5b9d21;">{$product.availability_message}</span>
                     {elseif $product.availability == 'last_remaining_items'}
                         <i class="material-icons product-last-items">&#xE002;</i>
                     {else}
-                        <i class="material-icons product-unavailable">&#xE14B;</i>
+                        <img src="{$urls.base_url}themes/jms_mella/assets/img/icon/outofstock.png" alt="">
+                        <span style="color:#ce2c2c;">{$product.availability_message}</span>
                     {/if}
-                    {$product.availability_message}
                 </span>
                 {/if}
             {/block}

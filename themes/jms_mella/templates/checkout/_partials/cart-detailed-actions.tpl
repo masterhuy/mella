@@ -32,7 +32,7 @@
     </div>
   {else}
     <div class="text-xs-center">
-      <a href="{$urls.pages.order}" class="btn-default btn-active btn-checkout">{l s='Proceed to Checkout' d='Shop.Theme.Actions'}</a>
+      <a href="{$urls.pages.order}" class="btn-default active btn-checkout">{l s='Proceed to Checkout' d='Shop.Theme.Actions'}</a>
       {hook h='displayExpressCheckout'}
     </div>
   {/if}

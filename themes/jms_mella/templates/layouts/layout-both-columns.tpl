@@ -69,40 +69,42 @@
 			   {include file='_partials/breadcrumb.tpl'}
 			{/block}
 		{/if}
-        <div id="wrapper" {if $page.page_name != 'index'}class="container"{/if}> 
-		{if $page.page_name != 'index'}
-		<div class="row">
-		{/if}
-          {block name="left_column"}
-            <div id="left-column" class="page-column col-sm-12 col-md-3 col-lg-3 col-xs-12 col-sm-12">
-              {if $page.page_name == 'product'}
-                {hook h='displayLeftColumnProduct'}
-              {else}
-                {hook h="displayLeftColumn"}
-              {/if}
-            </div>
-          {/block}
+        <div id="wrapper" {if $page.page_name != 'index'}{/if}> 
+          <div class="container">
+            {if $page.page_name != 'index'}
+            <div class="row">
+            {/if}
+            {block name="left_column"}
+              <div id="left-column" class="page-column col-sm-12 col-md-3 col-lg-3 col-xs-12 col-sm-12">
+                {if $page.page_name == 'product'}
+                  {hook h='displayLeftColumnProduct'}
+                {else}
+                  {hook h="displayLeftColumn"}
+                {/if}
+              </div>
+            {/block}
 
-          {block name="content_wrapper"}
-            <div id="content-wrapper" class="left-column right-column col-sm-12 col-md-6">
-              {block name="content"}
-                <p>Hello world! This is HTML5 Boilerplate.</p>
-              {/block}
-            </div>
-          {/block}
+            {block name="content_wrapper"}
+              <div id="content-wrapper" class="left-column right-column col-sm-12 col-md-6">
+                {block name="content"}
+                  <p>Hello world! This is HTML5 Boilerplate.</p>
+                {/block}
+              </div>
+            {/block}
 
-          {block name="right_column"}
-            <div id="right-column" class="col-xs-12 col-sm-12 col-md-3">
-              {if $page.page_name == 'product'}
-                {hook h='displayRightColumnProduct'}
-              {else}
-                {hook h="displayRightColumn"}
-              {/if}
-            </div>
-          {/block}
+            {block name="right_column"}
+              <div id="right-column" class="col-xs-12 col-sm-12 col-md-3">
+                {if $page.page_name == 'product'}
+                  {hook h='displayRightColumnProduct'}
+                {else}
+                  {hook h="displayRightColumn"}
+                {/if}
+              </div>
+            {/block}
 			
-        {if $page.page_name != 'index'}
-		</div>
+          {if $page.page_name != 'index'}
+          </div>
+		    </div>
 		{/if}
       </div>
 
