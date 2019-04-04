@@ -26,16 +26,16 @@
 <div class="block-contact links wrapper">
     <div class="hidden-sm-down">
         <div class="addon-title">
-            <h3 class="text-uppercase block-contact-title">
-                {l s='Our Store' d='Shop.Theme.Global'}
-            </h3>
+            <h6 class="text-uppercase block-contact-title">
+                {l s='Headquarter' d='Shop.Theme.Global'}
+            </h6>
         </div>
         <div class="address section">
-            {$contact_infos.company nofilter} {$contact_infos.address.address1 nofilter}
+            <p class="info-company">{$contact_infos.company nofilter}</h3>
+            <p class="info-address">{$contact_infos.address.address1 nofilter}</p>
         </div>
         {if $contact_infos.phone}
             <div class="phone section">
-                <div class="label">{l s='Hotline:' d='Shop.Theme.Global'}</div>
                 {* [1][/1] is for a HTML tag. *}
                 <p>
                 {l s='[1]%phone%[/1]'
@@ -67,12 +67,10 @@
         {/if}
 
         {if $contact_infos.email}
-            <div class="career section">
-                <div class="label">{l s='Career:' d='Shop.Theme.Global'}</div>
+            <div class="email section">
                 {* [1][/1] is for a HTML tag. *}
                 <p>
-                    {l s='If you’re interested in employment opportunities at' d='Shop.Theme.Global'} {$contact_infos.company nofilter}, {l s='please email us:' d='Shop.Theme.Global'}
-                    <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                     {l
                         s='[1]%email%[/1]'
                         sprintf=[
@@ -86,4 +84,5 @@
       {/if}
   </div>
 </div>
+
 

@@ -15,7 +15,7 @@
 
       <div class="form-group col-lg-12 col-md-12 col-sm-12 col-sm-12">
           <div class="addon-title">
-            <h3>{l s='Get In Touch' d='Shop.Theme.Global'}</h3>
+            <h3>{l s='Send Us Message' d='Shop.Theme.Global'}</h3>
           </div>
       </div>
 
@@ -33,7 +33,7 @@
             name="from"
             type="email"
             value="{$contact.email}"
-            placeholder="{l s='Your@email.com' d='Shop.Forms.Help'}"
+            placeholder="{l s='Email address' d='Shop.Forms.Help'}"
           >
       </div>
 
@@ -58,7 +58,7 @@
           <textarea
             class="form-control"
             name="message"
-            placeholder="{l s='How can we help?' d='Shop.Forms.Help'}"
+            placeholder="{l s='Comment' d='Shop.Forms.Help'}"
             rows="3"
           >{if $contact.message}{$contact.message}{/if}</textarea>
       </div>
@@ -74,7 +74,7 @@
         </style>
         <input type="text" name="url" value=""/>
         <input type="hidden" name="token" value="{$token}" />
-        <input class="btn-default btn-active" type="submit" name="submitMessage" value="{l s='Send message' d='Shop.Theme.Actions'}">
+        <input class="btn-underline" type="submit" name="submitMessage" value="{l s='Submit review' d='Shop.Theme.Actions'}">
       </footer>
     {/if}
   </form>

@@ -2350,14 +2350,106 @@ a.wishlist_top{
 }
 
 // about us
+.cms-id-4 .breadcrumb{
+	background: url('../img/bg-aboutus.jpg');
+	background-size: cover;
+}
+.our-team{
+	margin-bottom: 70px;
+}
+.au-testimonial-body {
+	padding: 0 100px;
+	margin-top: 94px;
+	margin-bottom: 90px;
+}
+.au-comment {
+	font-size: 21px;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	line-height: 1.7;
+	margin-top: 32px;
+	.au-name-client {
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: 500;
+		margin-top: 23px;
+		display: block;
+	}
+}
+.au-video {
+	position: relative;
+	padding-bottom: 107px;
+	a{
+		position: relative;
+		z-index: 2;
+	}
+	&::after{
+		content: url('../img/bg-video-au.jpg');
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		z-index: 1;
+	}
+}
+.au-brand {
+	margin-bottom: 88px;
+}
+.au-title {
+	font-size: 24px;
+	font-weight: 500;
+	padding: 0px 110px;
+	letter-spacing: -0.7px;
+	line-height: 1.25;
+	margin-bottom: 53px;
+}
+.au-desc {
+	font-size: 16px;
+	padding: 0 200px;
+	line-height: 1.87;
+	margin-bottom: 60px;
+}
+.member-job {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.member:hover{
+	.social-team{
+		opacity: 1;
+		visibility: visible;
+	}
+	.member-name{
+		color: $active;
+	}
+}
+.member-photo {
+	position: relative;
+	.social-team {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		width: calc(100% - 30px);
+		height: calc(100% - 30px);
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: .4s all;
+		a{
+			font-size: 12px;
+			margin: 0 13px;
+		}
+	}
+}
 .force-full-width{
 	.feature-icon span{
 		display: none;
 	}
 }
-.our-team .member img{
-	border: 2px solid #e6e6e6;
-}
+
+//
 
 //currency-info
 .currency-info{
