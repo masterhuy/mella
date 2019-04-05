@@ -657,6 +657,28 @@
 }
 //
 
+//sidebar
+#search_widget h3{
+	display: none;
+}
+.page-column{
+	#search_widget{
+		h3{
+			display: block;
+		}
+		button{
+			font-size: 20px;
+			color: #000;
+			padding-left: 0;
+		}
+		form{
+			border: 0;
+			background: #f2f2f2;
+		}
+	}
+}
+//
+
 @keyframes slideDown {
   0% {
       transform: translateY(-100%);
@@ -1658,6 +1680,7 @@ a.wishlist_top{
 	.comment-item{
 		span{
 			font-weight: 600;
+			color: #000;
 		}
 	}
 	&.widget-recent-post{
@@ -1678,15 +1701,12 @@ a.wishlist_top{
 			width: 69%;
 			margin-left: 15px;
 			.post-title {
-				font-size: 17px;
-				font-weight: 700;
+				font-size: 14px;
+				font-weight: 600;
 				padding-bottom: 5px;
 				margin-top: 2px;
 				line-height: 1.5;
 				letter-spacing: 0.1px;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				overflow: hidden;
 				color: #000;
 				display: block;
 				&:hover{
@@ -1695,7 +1715,9 @@ a.wishlist_top{
 			}
 			.post-created {
 				margin: 0;
-				font-size: 13px;
+				font-size: 12px;
+				color: #8f8f8f;
+				font-weight: 500;
 			}
 		}
 	}
@@ -1704,28 +1726,57 @@ a.wishlist_top{
 	display: flex;
 	.left{
 		h6{
-			padding-bottom: 0;
+			padding-bottom: 11px;
 			font-size: 14px;
-			margin-top: -5px;
+			margin-top: 0;
 			color: #888;
 			span{
-				font-weight: 700;
-				font-size: 17px;
+				font-weight: 600;
+				font-size: 16px;
 				color: #000;
 			}
 		}
 		.title{
-			display: flex;
 			margin-bottom: 12px;
+			p{
+				font-size: 12px;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: #8f8f8f;
+				margin-bottom: 19px;
+				i{
+					color: $active;
+					margin-right: 4px;
+				}
+			}
 		}
 	}
 	.post-comment-content {
 		margin-bottom: 0;
 		line-height: 1.88;
+		font-size: 13px;
+		color: $sub-cl;
 	}
 }
-#module-jmsblog-post .breadcrumb{
-	margin-bottom: 87px;
+#module-jmsblog-post{
+	#header{
+		position: absolute;
+		width: 100%;
+	}
+	.breadcrumb{
+		padding-top: 166px;
+		padding-bottom: 127px;
+		background: url('../img/bg-aboutus.jpg');
+	}
+	.breadcrumb-box.container{
+		display: block;
+	}
+	.breadcrumb-inner, .title_meta{
+		text-align: center;
+	}
+	.breadcrumb-inner ol li{
+		margin: 0;
+	}
 }
 #commentForm{
 	padding-top: 35px;
@@ -1734,16 +1785,19 @@ a.wishlist_top{
 		margin-bottom: 0;
 	}
 	input, textarea{
-		border-radius: 5px;
 		height: 38px;
 		padding-left: 13px;
-		background: #f9f9f9;
+		border: 0;
+		border-bottom: 1px solid #ededed;
+		padding: 0;
+		font-size: 12px;
+		letter-spacing: 0.5px;
 	}
 	textarea{
 		height: auto;
 		padding-top: 10px;
-		padding-left: 15px;
-		padding-bottom: 19px;
+		padding-bottom: 10px;
+		margin-top: 30px;
 	}
 	label{
 		color: #222;
@@ -1756,18 +1810,17 @@ a.wishlist_top{
 		}
 	}
 	#new_comment_form_footer {
-		margin-top: 29px;
+		margin-top: 46px;
 		display: flex;
 		justify-content: flex-start;
 		p{
 			margin-bottom: 0;
 		}
 		button {
-			font-size: 16px;
-			font-weight: 700;
-			border-radius: 5px;
 			height: 36px;
-			padding: 0 32px;
+			padding: 0;
+			border: 0;
+			background: transparent;
 		}
 	}
 }
@@ -3319,7 +3372,7 @@ a.wishlist_top{
 	.collapse{
 		overflow: auto;
 	}
-	#currency, #languages {
+	#currency-1, #languages-1 {
 		max-height: 125px;
 		right: -20px;
 	}
@@ -3432,6 +3485,61 @@ a.wishlist_top{
 		}
 	}
 }
+
+//blog single
+.commentForm{
+	.addon-title{
+		h3{
+			font-size: 24px !important;
+			font-weight: 600;
+			text-align: left;
+			letter-spacing: 0;
+		}
+	}
+}
+#module-jmsblog-post{
+	.character-first {
+		color: #000;
+		font-size: 54px;
+		font-weight: 600;
+		float: left;
+		line-height: 0.8;
+		margin-right: 5px;
+		position: relative;
+		top: 4px;
+		left: -4px;
+	}
+	.block-img {
+		margin-top: 97px;
+		margin-bottom: 98px;
+	}
+	.video{
+		margin-top: 50px;
+		margin-bottom: 91px;
+	}
+	.f-semibold {
+		margin-top: 55px;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.17px;
+		padding-bottom: 47px;
+	}
+	.au-testimonial-body {
+		margin-top: 52px;
+		margin-bottom: 50px;
+		.au-comment{
+			color: #000;
+		}
+	}
+	.entry-description{
+		p{
+			color: #8f8f8f;
+			letter-spacing: 0.14px;
+			line-height: 1.7;
+		}
+	}
+}
+//
 
 .menu .features .image img {
 	width: 100%;

@@ -40,15 +40,18 @@
 			{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
 				<li>
 					<span>
-						{l s='In:' d='Modules.JmsBlog'} 
+						{l s='In' d='Modules.JmsBlog'} 
 						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
 							{$post.category_name|escape:'html':'UTF-8'}
 						</a>
 					</span>
 				</li>
 			{/if}
-			<li>
-				<span>{l s='Posted:' d='Modules.JmsBlog'} {$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}</span>
+			<li class="created">
+				<span>
+					{l s='on' d='Modules.JmsBlog'} 
+					<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}</span>
+				</span>
 			</li>
 			{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
 				<li>
@@ -108,7 +111,11 @@
 	{if $jmsblog_setting.JMSBLOG_COMMENT_ENABLE}	
 		<div id="comments">
 			{if $jmsblog_setting.JMSBLOG_FACEBOOK_COMMENT == 0}	
-				{if $msg == 1}<div class="success">{l s='Your comment submited' d='Modules.JmsBlog'} ! {if $jmsblog_setting.JMSBLOG_AUTO_APPROVE_COMMENT == 0} {l s='Please waiting approve from Admin' d='Modules.JmsBlog'}.{/if}</div>{/if}
+				{if $msg == 1}
+					<div class="success">
+						{l s='Your comment submited' d='Modules.JmsBlog'} ! {if $jmsblog_setting.JMSBLOG_AUTO_APPROVE_COMMENT == 0} {l s='Please waiting approve from Admin' d='Modules.JmsBlog'}.{/if}
+					</div>
+				{/if}
 				{if $cerrors|@count gt 0}
 					<ul>
 					{foreach from=$cerrors item=cerror}
@@ -128,12 +135,15 @@
 											<div class="title">
 												<h6>
 													<span>{$comment.customer_name|escape:'html':'UTF-8'}</span>
-													- {$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
 												</h6>
+												<p>
+													<i class="fa fa-calendar"></i>
+													{l s='POSTED ON' d='Modules.JmsBlog'}
+													{$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
+												</p>
 											</div>
 											<p class="post-comment-content">{$comment.comment|truncate:200:'...'|escape:'html':'UTF-8'}</p>
 										</div>
-										
 									</div>
 								</div>
 							{/foreach}	
@@ -144,47 +154,47 @@
 				{if $jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT || (!$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && $logged)}	
 				<div class="commentForm">
 					<div class="addon-title">
-						<h3>{l s='Comments' d='Modules.JmsBlog'}</h3>
+						<h3>{l s='Leave a reply' d='Modules.JmsBlog'}</h3>
 					</div>
 					<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=jmsblog&controller=post&post_id={$post.post_id|escape:'html':'UTF-8'}&action=submitComment">	
 						<div class="row">
 							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
-									<input id="customer_name" placeholder="Your name *" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
+									<input id="customer_name" placeholder="Full name" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
 								</div>	
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
-									<input id="comment_title" placeholder="Your email *" class="form-control" name="email" type="text" value="{$customer.email}" required />
+									<input id="comment_title" placeholder="Email address" class="form-control" name="email" type="text" value="{$customer.email}" required />
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
-									<input id="customer_site" placeholder="Your website" class="form-control" name="customer_site" type="text" value=""/></br>
+									<input id="customer_site" placeholder="Website" class="form-control" name="customer_site" type="text" value=""/>
 								</div>
 							</div>
 						</div>
 						
 						<div class="form-group">
-							<textarea id="comment" placeholder="Your message *" class="form-control" name="comment" rows="2" required></textarea>
+							<textarea id="comment" placeholder="Comment" class="form-control" name="comment" rows="2" required></textarea>
 						</div>
 						<div id="new_comment_form_footer">
 							<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 							<p class="">
-								<button id="submitComment" class="btn-default btn-active" name="submitComment" type="submit">{l s='Submit' d='Modules.JmsBlog'}</button>
+								<button id="submitComment" class="btn-underline" name="submitComment" type="submit">{l s='Submit review' d='Modules.JmsBlog'}</button>
 							</p>
 						</div>
 					</form>
 					<script>
 					$("#commentForm").validate({
-					  rules: {		
-						customer_name: "required",		
-						email: {
-						  required: true,
-						  email: true
-						}
-					  }
+					  	rules: {		
+							customer_name: "required",		
+							email: {
+						  		required: true,
+						  		email: true
+							}
+					  	}
 					});
 					</script>
 				</div>
