@@ -36,6 +36,4 @@
     
     {hook h='displayCMSPrintButton'}
   </section>  
-  <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9p77jYCRrlLa3xx1hwemtEjUyH3YcZo&callback=initMap">
-  </script>	
 {/block}

@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>PrestaShop increases the stability of version 1.7</title>
+    <link>https://www.prestashop.com/en/blog/stability-version-1-7</link>
+    <description>The latest version of PrestaShop was launched in December 2018.</description>
+     <pubDate>Fri, 05 Apr 2019 12:15:03 +0200</pubDate>
+ <dc:creator>MLNielsen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/stability-version-1-7</guid>
+  </item>
+  <item>
     <title>Four International Brands Using PrestaShop E-commerce in China</title>
     <link>https://www.prestashop.com/en/blog/prestashop-ecommerce-china-international-brands</link>
     <description>Despite the ups and downs of the local economy, E-commerce continues to be a positive trend in China. The Chinese market has become a major goal for international brands.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 01 Feb 2019 17:26:07 +0100</pubDate>
  <dc:creator>Florane Abeille</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-addons-awards-2019</guid>
-  </item>
-  <item>
-    <title>E-commerce Best Practices in Native Advertising: Trends to Follow in 2019</title>
-    <link>https://www.prestashop.com/en/blog/e-commerce-best-practices-in-native-advertising</link>
-    <description>Heading into the new year, online merchants looking to increase their visibility may well consider native advertising, which is growing at an exponential pace.</description>
-     <pubDate>Fri, 18 Jan 2019 10:38:42 +0100</pubDate>
- <dc:creator>prestashop-partners</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-best-practices-in-native-advertising</guid>
   </item>
   </channel>
 </rss>

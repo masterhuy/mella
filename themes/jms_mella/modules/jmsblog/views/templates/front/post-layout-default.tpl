@@ -130,7 +130,9 @@
 							{foreach from=$comments item=comment key = k}
 								<div class="post-comment clearfix">
 									<div class="post-comment-info">
-										<img class="attachment-widget wp-post-image img-responsive" src="{$image_baseurl|escape:'html':'UTF-8'}user.png" />
+										<div class="user-image">
+											<img class="attachment-widget wp-post-image img-responsive" src="{$image_baseurl|escape:'html':'UTF-8'}user.png" />
+										</div>
 										<div class="left">
 											<div class="title">
 												<h6>

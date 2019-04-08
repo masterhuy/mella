@@ -48,21 +48,22 @@
 					{/if}
 					<div class="post-info">
 						<h4 class="post-title">
-							<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+							<a class="blog-list-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
 						</h4>
 						<ul class="post-meta">
 							{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
 								<li>
 									<span>
-										{l s='In:' d='Modules.JmsBlog'} 
+										{l s='In' d='Modules.JmsBlog'} 
 									</span>
-										<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
-											{$post.category_name|escape:'html':'UTF-8'}
-										</a>
+									<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
+										{$post.category_name|escape:'html':'UTF-8'}
+									</a>
 								</li>
 							{/if}
-							<li>
-								{l s='Posted:' d='Modules.JmsBlog'} {$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}
+							<li class="created">
+								{l s='on' d='Modules.JmsBlog'} 
+								<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}</span>
 							</li>
 							{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
 								<li>
@@ -76,10 +77,10 @@
 							{/if}
 						</ul>
 						<div class="post-intro">
-							{$post.introtext|truncate:200:'...' nofilter}
+							{$post.introtext|truncate:400:'...' nofilter}
 						</div>
-						<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
-							{l s='Read more' d='Modules.JmsBlog'}
+						<a class="btn-underline" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
+							{l s='Continue' d='Modules.JmsBlog'}
 						</a>
 					</div>
 				</div>

@@ -103,7 +103,7 @@
 	<ul>
 	{foreach from=$archives item=archive}
 		{assign var=aparams value=['archive' => $archive.postmonth]}
-		<li><a href="{jmsblog::getPageLink('jmsblog-archive', $aparams)}">{$archive.postmonth nofilter}</a></li>
+		<li><a class="archive" href="{jmsblog::getPageLink('jmsblog-archive', $aparams)}">{$archive.postmonth nofilter}</a></li>
 	{/foreach}
 	</ul>
 </aside>

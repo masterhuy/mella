@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-05 05:29:29
+/* Smarty version 3.1.33, created on 2019-04-07 22:39:43
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ca71ff950afb0_78057054',
+  'unifunc' => 'content_5caab46fb28084_34800039',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'beee551a4757ad62a49997104f14e24056fe51ee' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\jmsblogwidget\\views\\templates\\hook\\sidebar-widget.tpl',
-      1 => 1554456549,
+      1 => 1554691159,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ca71ff950afb0_78057054 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5caab46fb28084_34800039 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_mella\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">
@@ -146,7 +146,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['archive']->value) {
 ?>
 		<?php $_smarty_tpl->_assignInScope('aparams', array('archive'=>$_smarty_tpl->tpl_vars['archive']->value['postmonth']));?>
-		<li><a href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-archive',$_smarty_tpl->tpl_vars['aparams']->value), ENT_QUOTES, 'UTF-8');?>
+		<li><a class="archive" href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-archive',$_smarty_tpl->tpl_vars['aparams']->value), ENT_QUOTES, 'UTF-8');?>
 "><?php echo $_smarty_tpl->tpl_vars['archive']->value['postmonth'];?>
 </a></li>
 	<?php

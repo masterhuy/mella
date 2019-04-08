@@ -22,29 +22,32 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<article>
-  <div class="card">
-    <div class="pack-product-container">
-      <div class="thumb-mask">
-        <div class="mask">
-          <img
-            src = "{$product.cover.small.url}"
-            alt = "{$product.cover.legend}"
-            data-full-size-image-url = "{$product.cover.large.url}"
-          >
-        </div>
-      </div>
-      <div class="pack-product-name">
-        {$product.name}
-      </div>
-      <div class="pack-product-price">
-        <strong>{$product.price}</strong>
-      </div>
-      <div class="pack-product-quantity">
-        <span>x {$product.pack_quantity}</span>
-      </div>
-    </div>
-  </div>
-</article>
+
+<tbody>
+    <tr>
+        <td class="d-flex" scope="row">
+            <img
+                src = "{$product.cover.small.url}"
+                alt = "{$product.cover.legend}"
+                data-full-size-image-url = "{$product.cover.large.url}"
+            >
+            <div class="pack-product-name">
+                {$product.name}
+            </div>
+        </td>
+        <td>
+            <div class="pack-product-price">
+                <strong>{$product.price}</strong>
+            </div>
+        </td>
+        <td>
+            <div class="pack-product-quantity">
+                <span>x {$product.pack_quantity}</span>
+            </div>
+        </td>
+    </tr>
+</tbody>
+           
+        
 
 

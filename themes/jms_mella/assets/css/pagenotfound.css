@@ -73,6 +73,9 @@
 	font-weight: 400;
 	margin-bottom: 50px;
 }
+#pagenotfound #footer{
+	margin-top: 0;
+}
 @media(max-width:767px) {
 	#search .page-content, #pagenotfound .page-content{
 		padding: 0;

@@ -44,6 +44,9 @@
 						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-text btn-active">
 							{l s='Sign Up' d='Shop.Theme.Global'}
 						</button>
+						<button type="submit" name="submitNewsletter" class="btn-underline">
+							{l s='Sign Up' d='Shop.Theme.Global'}
+						</button>
 						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-icon btn-popup">
 							<i class="fa fa-paper-plane" aria-hidden="true"></i>
 						</button>

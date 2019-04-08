@@ -106,6 +106,9 @@ hr {
   border: 0;
   border-top: 1px solid #e1e1e1; }
 
+.d-flex{
+  display: flex;
+}
 
 .flex-middle{
   display: flex;
@@ -246,11 +249,10 @@ h6 {
 }
 
 .page-heading {
-  color: #000;
   font-size: 22px;
   line-height: 24px;
   padding-bottom: 30px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -343,7 +345,8 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 14px;
+  color: #8f8f8f;
 }
 
 code, kbd, pre, samp {
@@ -2039,6 +2042,16 @@ li.product-flag {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
+.product-pack thead {
+  background: #f2f2f2;
+}
+.product-pack thead > tr > th{
+  font-size: 14px;
+  color: #000;
+}
+.product-pack .table tbody > tr > td {
+  border: 0;
+}
 .product-pack h3 {
   font-size: 14px;
   padding-bottom: 30px;
@@ -2067,6 +2080,7 @@ li.product-flag {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
+  margin-left: 10px;
   font-size: 12px; }
 
 .pack-product-container .mask > img {
@@ -2315,6 +2329,7 @@ li.product-flag {
   margin-top: 50px; }
 
 .product-preview .preview img {
+  background: #f1f1f1;
   width: 100%;
   transition: all 1s; }
 
@@ -3006,6 +3021,16 @@ ul.footer_links {
   padding: 43.5px 0;
   margin-bottom: 98px;
   border-radius: 0;
+}
+.breadcrumb.outofstock{
+  background: #000;
+}
+.breadcrumb.outofstock,
+.breadcrumb.outofstock .breadcrumb-inner ol li a{
+  color: #fff;
+}
+.breadcrumb.outofstock .breadcrumb-inner ol li:last-child a{
+  color: #8f8f8f;
 }
 .breadcrumb-box.container {
   display: flex;

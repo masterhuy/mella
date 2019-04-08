@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-02 03:23:23
+/* Smarty version 3.1.33, created on 2019-04-07 22:56:53
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ca30deb681861_39228204',
+  'unifunc' => 'content_5caab8754b13a5_44507273',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1553500916,
+      1 => 1554692153,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ca30deb681861_39228204 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5caab8754b13a5_44507273 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -54,6 +54,10 @@ function content_5ca30deb681861_39228204 (Smarty_Internal_Template $_smarty_tpl)
 " placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Enter your email address here','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 " />
 						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-text btn-active">
+							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign Up','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+
+						</button>
+						<button type="submit" name="submitNewsletter" class="btn-underline">
 							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign Up','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 
 						</button>
