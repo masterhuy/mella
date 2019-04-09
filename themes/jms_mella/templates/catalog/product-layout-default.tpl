@@ -87,6 +87,14 @@
                     {block name='product_description_short'}
                         <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:350:"..." nofilter}</div>
                     {/block}
+
+                    {if isset($product.specific_prices.to) && $product.specific_prices.to > 0}
+                        <div class="specific_prices">
+                            <div class="countdown-box">
+                                <div class="countdown">{$product.specific_prices.to}</div>
+                            </div>
+                        </div>
+                    {/if}
                 
                     {if $product.is_customizable && count($product.customizations.fields)}
                         {block name='product_customization'}

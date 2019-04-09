@@ -1377,6 +1377,7 @@ ul.cart_block_list li:not(:last-child){
   line-height: 1.2;
   margin-bottom: -4px;
   font-weight: 600;
+  padding-right: 20px;
 }
 .cart-wrap .content_price .price.new{
   font-size: 14px;
@@ -1645,8 +1646,9 @@ ul.cart_block_list li:not(:last-child){
   transform: scale(0);
   display: none;
 }
-.product-preview:hover .product_action{
-  margin-top: -110px;
+.product-preview:hover .product_action {
+  margin-top: -139px;
+  padding-top: 13px;
 }
 .product-preview:hover .product-info{
   opacity: 0;
@@ -1654,12 +1656,13 @@ ul.cart_block_list li:not(:last-child){
 }
 .product_action {
   padding-bottom: 50px;
-  margin-top: -80px;
+  margin-top: -90px;
   width: 100%;
   position: absolute;
   opacity: 0;
   visibility: hidden;
   transition: .4s all;
+  background: #fff;
   z-index: 99;
 }
 .feature-box .image{
@@ -1736,6 +1739,7 @@ ul.cart_block_list li:not(:last-child){
   justify-content: flex-end;
   float: right;
   width: auto;
+  padding-top: 6px;
 }
 .addToWishlist {
   cursor: pointer;
@@ -1814,6 +1818,7 @@ ul.cart_block_list li:not(:last-child){
   background: transparent;
   position: relative;
   float: left;
+  letter-spacing: 0;
 }
 .product-preview button.cart-button:hover{
   color: #b20f0f;
@@ -2089,6 +2094,18 @@ li.product-flag {
 .product-information {
   position: relative; }
 
+.specific_prices .countdown-box{
+  padding: 0;
+}
+
+.specific_prices .countdown-box .countdown-section{
+  background: #f7f7f7;
+}
+
+.specific_prices .countdown-box .countdown-amount{
+  font-size: 46px;
+}
+
 .product-desc ul {
   padding-left: 15px;
   margin-bottom: 13px;
@@ -2136,14 +2153,15 @@ li.product-flag {
   padding-bottom: 0;
   vertical-align: middle;
   cursor: pointer;
-  font-size: 0; }
-  .popup-active h3::after {
-    bottom: 20px;
-    color: #ccc;
-    content: "";
-    font-family: "fontawesome";
-    font-size: 40px;
-    margin-left: 10px; }
+  font-size: 0;}
+
+.popup-active h3 span{
+  display: none;
+}
+
+/*.show-video .jms-popup-box{
+  display: block !important;
+}*/
 
 .featured-products {
   margin-top: 80px;
@@ -2636,7 +2654,10 @@ li.product-flag {
   margin-bottom: 10px;
 }
 .product-layout-3columns .pb-right-column .product-add-to-cart {
-  margin-top: 6px;
+  margin-top: 20px;
+}
+.product-layout-3columns .product-quantity .customs{
+  margin-bottom: 20px;
 }
 #product_list.item-gutter-0 .product-preview:hover .product_action {
   left: 0;

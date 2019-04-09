@@ -23,7 +23,7 @@
 	$('#mobile-vermegamenu').addClass('collapse');
 	
 	//initiate the plugin and pass the id of the div containing gallery images
-	$("#zoom_01").elevateZoom({
+	$(".zoom_01").elevateZoom({
 		gallery: 'gal1',
 		zoomType: "lens",
 		lensShape : "round",
@@ -36,7 +36,7 @@
 	//   });
     // $("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true});
     //pass the images to Fancybox
-    $("#zoom_01").bind("click", function (e) { var ez = $('#zoom_01').data('elevateZoom'); $.fancybox(ez.getGalleryList()); return false; });
+    $(".zoom_01").bind("click", function (e) { var ez = $('.zoom_01').data('elevateZoom'); $.fancybox(ez.getGalleryList()); return false; });
 
 });
 $(window).load(function(){
@@ -968,6 +968,36 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".image-layout-carousel").length) {
+		var imageLayoutCarousel = $(".image-layout-carousel");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		imageLayoutCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:3
+					},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				}
+			},
+			rtl: rtl,
+			margin: 30,
+			nav: true,
+			dots: true,
+			autoplay: false,
+			slideSpeed: 200,
+			loop: true
+		});
+	}
+
 	var rtl = false;
 	if ($("body").hasClass("rtl")) rtl = true;
 	$('.thumbnail-slick').slick({
@@ -1035,7 +1065,7 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
-	$('.jms-video').click(function() {
+	$('.jms-addon.jms-video').click(function() {
 		$('.jms-video').addClass('show-video');
 	});
 
@@ -1046,6 +1076,7 @@ $(document).ready(function() {
 	$('#jms_ajax_search .btn-search').click(function(event) {
 		$("#search-form").addClass('open');
 	});
+
 	$('#jms_ajax_search .close-search').click(function(event) {
 		$("#search-form").removeClass('open');
 	});
@@ -1053,7 +1084,8 @@ $(document).ready(function() {
 	$('.jms-popup').addClass('collapse');
 	setTimeout( function(){
     	$('.jms-popup').addClass('flipInX animated in');
-    },800);
+	},800);
+	
 	$(".faq-left-column li a").attr("data-toggle","tab");
 });
 

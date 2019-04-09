@@ -187,11 +187,67 @@
 }
 //
 
+//jmsproductvideov
+#product #main{
+	position: relative;
+}
+#jmsproductvideo{
+	position: unset;
+	.jms-popup-wrap{
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.popup_close {
+		font-size: 17px;
+		float: right;
+		color: #FFF;
+		cursor: pointer;
+	}
+	.open-video{
+		.jms-popup-overlay{
+			opacity: 1 !important;
+			display: block !important;
+			background: rgba(0,0,0,0.9);
+		}
+		.jms-popup-box{
+			display: block;
+		}
+	}
+
+	.jms-popup-box{
+		z-index: 999;
+	}
+	.jms-video{
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 10000;
+	}
+	.addon-title i{
+		width: 60px;
+		height: 60px;
+		background: #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 24px;
+		transition: .4s all;
+		box-shadow: 0 0 13px rgba(0,0,0,0.1);
+		&:hover{
+			background: $active;
+			color: #fff;
+		}
+	}
+}
+//
+
 //video
 .addon-video{
 	text-align: center;
 }
-.jms-video{
+.jms-addon.jms-video{
 	display: inline-flex;
 	background: url("../img/h11-bg-video.jpg") no-repeat;
 	background-size: cover;
@@ -685,6 +741,46 @@
 			border: 0;
 			background: #f2f2f2;
 		}
+	}
+}
+//
+
+//product layout sticky
+.product-detail.sticky{
+	.images-container .js-qv-mask{
+		margin-top: 0 !important;
+	}
+	.product-images{
+		.product-cover:not(:last-child){
+			margin-bottom: 40px;
+		}
+	}
+	+ #more_info_block{
+		margin-top: 95px;
+	}
+}
+//
+
+//product layout carousel
+.product-detail.carousel{
+	.pb-left-column, .pb-right-column{
+		width: 100%;
+	}
+	.top-info, .product-quantity{
+		justify-content: center;
+	}
+	.product-actions .product-variants{
+		justify-content: center;
+	}
+	.product-variants-item:last-child{
+		margin-right: 0;
+	}
+	.addthis-animated{
+		display: flex !important;
+		justify-content: center;
+	}
+	#more_info_block .nav.nav-tabs {
+		text-align: center;
 	}
 }
 //
@@ -1851,8 +1947,8 @@ a.wishlist_top{
 }
 .product-cover{
 	position: relative;
-	border: 1px solid #ebebeb;
 	overflow: hidden;
+	margin-bottom: 10px;
 }
 #product{
 	.product-cover{

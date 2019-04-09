@@ -27,6 +27,8 @@
         <span class="title_meta">
             {if $product.quantity < 1}
                 {l s='Product out of stock' d='Shop.Theme.Actions'}
+            {elseif isset($product.specific_prices.to) && $product.specific_prices.to > 0}
+                {l s='Product deal day' d='Shop.Theme.Actions'}
             {else}
                 {$page.meta.title}
             {/if}

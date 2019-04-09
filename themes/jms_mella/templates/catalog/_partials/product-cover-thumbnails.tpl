@@ -25,7 +25,7 @@
 <div class="images-container">
   {block name='product_cover'}
     <div class="product-cover">
-      <img id="zoom_01" class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+      <img class="zoom_01 js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
     </div>
   {/block}
 
