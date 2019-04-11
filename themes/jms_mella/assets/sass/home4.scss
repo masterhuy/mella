@@ -2,11 +2,20 @@
 @import "varians";
 
 
-.main-site.open-sidebar1{
-	overflow: unset;
-	transform: translateX(343px);
-	#jmstools{
-		display: none;
+.main-site{
+	left: 0;
+	&.open-sidebar1{
+		overflow: unset;
+		left: 343px;
+		.header.fixed{
+			left: 343px;
+		}
+		#jmstools{
+			display: none;
+		}
+		.top_menu_second{
+			left: 0;
+		}
 	}
 }
 .top_menu_second {

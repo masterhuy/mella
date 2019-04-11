@@ -39,7 +39,7 @@
 </p>
 {/if}
 
-<div class="wlp_bought aaa">
+<div class="wlp_bought">
     <ul class="clearfix wlp_bought_list">
         {foreach from=$products item=product name=i}
             <li id="wlp_{$product.id_product}_{$product.id_product_attribute}" class="clearfix address {if $smarty.foreach.i.index % 2}alternate_{/if}item">

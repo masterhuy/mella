@@ -1,10 +1,14 @@
-.main-site.open-sidebar1 {
-  overflow: unset;
-  -webkit-transform: translateX(370px);
-  -ms-transform: translateX(370px);
-  transform: translateX(370px); }
-  .main-site.open-sidebar1 #jmstools {
-    display: none; }
+.main-site {
+  left: 0; }
+  .main-site.open-sidebar1 {
+    overflow: unset;
+    left: 370px; }
+    .main-site.open-sidebar1 .header.fixed {
+      left: 370px; }
+    .main-site.open-sidebar1 #jmstools {
+      display: none; }
+    .main-site.open-sidebar1 .top_menu_second {
+      left: 0; }
 
 .top_menu_second {
   left: -370px;

@@ -116,9 +116,8 @@
 }
 #checkout section#content #js-checkout-summary p {
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: capitalize;
-	color: #000;
 }
 #checkout section#content #js-checkout-summary p a {
 	font-size: 14px;
@@ -132,7 +131,7 @@
 }
 #checkout section#content #js-checkout-summary .card-block .label {
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 30px;
 	padding: 0;
 	text-transform: uppercase;
@@ -140,7 +139,7 @@
 }
 #checkout section#content #js-checkout-summary .card-block .value {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	color: #000;
 }
 .price .product-price {
@@ -212,11 +211,10 @@
 	margin-left:10px;
 }
 #checkout .right-box {
-	border:1px solid #ebebeb;
-	box-shadow:2px 2px 11px 0 rgba(0, 0, 0, 0.1);
+	background: #f2f2f2;
 }
 #checkout .right-box .card.js-cart, #checkout .right-box #block-reassurance {
-	padding:20px;
+	padding: 30px;
 }
 /* chekout step */
 body#checkout section.checkout-step.-complete .step-title {
@@ -232,7 +230,7 @@ body#checkout section.checkout-step .step-title {
 	font-size: 16px;
 	margin: 0;
 	padding: 13px 15px;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	color: #000;
 }
@@ -248,6 +246,7 @@ body#checkout section.checkout-step .step-edit {
 }
 body#checkout section.checkout-step .step-edit .edit {
     font-size: 1.5rem; 
+    margin-right: 5px;
 }
 body#checkout section.checkout-step .not-allowed {
     cursor: not-allowed;

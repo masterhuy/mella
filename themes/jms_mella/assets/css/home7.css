@@ -1,14 +1,31 @@
-.main-site.open-sidebar1 {
-  overflow: unset;
-  -webkit-transform: translateX(-370px);
-  -ms-transform: translateX(-370px);
-  transform: translateX(-370px); }
+.main-site {
+  right: 0; }
+  .main-site.open-sidebar1 {
+    overflow: unset;
+    right: 370px; }
+    .main-site.open-sidebar1 .header.fixed {
+      right: 370px;
+      left: auto; }
+    .main-site.open-sidebar1 .top_menu_second {
+      right: 0; }
 
-#header {
+.jms-row.header {
+  left: auto;
+  right: 0;
   padding: 60px 0; }
+  .jms-row.header.fixed {
+    padding: 10px 0; }
 
 .left-icon-group .addon-box:last-child {
-  margin-left: 50px; }
+  margin-left: 46px; }
+
+.left-icon-group .addon-box {
+  padding-top: 0;
+  margin-left: 29px; }
+
+.left-icon-group #_desktop_user_info, .left-icon-group #cart_block {
+  padding-top: 8px;
+  display: inline-block; }
 
 .intro-text {
   padding-top: 36px; }

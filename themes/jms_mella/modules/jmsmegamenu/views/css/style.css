@@ -12,6 +12,9 @@
     left: 0 !important;
     transform: unset !important;
 }
+.collection .mod-content:hover .sub-cate-name{
+    color: #b20f0f;
+}
 .jms-megamenu .menu-align-center.collection > .dropdown-menu{
     padding-bottom: 68px !important;
 }
@@ -134,14 +137,17 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .mega-nav li > a {
     border-radius: 0;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 23px;
     padding: 3.5px 30px;
     position: relative;
     text-transform: capitalize;
+    font-weight: 500;
+    color: #8f8f8f;
 }
 .jms-megamenu .mega-nav li > a:hover{
     padding-left: 35px;
+    color: #b20f0f;
 }
 .jms-megamenu .mega-nav li:last-child > a:hover {
     border: medium none;
@@ -348,8 +354,8 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav .mega-nav li.group > a {
     color: #000;
     display: block;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 32px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -357,7 +363,6 @@ div.jms-megamenu .dropdown-menu::before{
     white-space: nowrap;
     width: 100%;
     letter-spacing: 0;
-    text-transform: uppercase;
 }
 .jms-megamenu .nav .item-fullwidth .mega-nav li.group > a{
 	padding-left:0;

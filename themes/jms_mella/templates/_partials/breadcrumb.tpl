@@ -22,16 +22,10 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="breadcrumb {if $product.quantity < 1}outofstock{/if}">
+<div class="breadcrumb">
     <div class="breadcrumb-box container">
         <span class="title_meta">
-            {if $product.quantity < 1}
-                {l s='Product out of stock' d='Shop.Theme.Actions'}
-            {elseif isset($product.specific_prices.to) && $product.specific_prices.to > 0}
-                {l s='Product deal day' d='Shop.Theme.Actions'}
-            {else}
-                {$page.meta.title}
-            {/if}
+            {$page.meta.title}
         </span>
         <div data-depth="{$breadcrumb.count}" class="breadcrumb-inner hidden-sm-down">
             <ol itemscope itemtype="http://schema.org/BreadcrumbList">

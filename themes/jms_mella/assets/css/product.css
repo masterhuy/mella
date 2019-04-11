@@ -126,9 +126,6 @@
 .product-images > li.thumb-container > .thumb:hover {
     border: 1px solid #b20f0f;
 }
-.scroll-box-arrows.scroll {
-
-}
 .images-container .flex-box {
  	display: flex;
 }
@@ -148,8 +145,20 @@
 }
 #product #content{
     position: relative;
-} 
+}
+#product .page-content:hover .scroll-box-arrows i{
+    opacity: 1;
+    visibility: visible;
+}
+#product .page-content:hover .scroll-box-arrows i.left{
+    left: 0;
+}
+#product .page-content:hover .scroll-box-arrows i.right{
+    right: 0;
+}
 .scroll-box-arrows i {
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     height: 139.5px;
     margin: 0;
@@ -162,6 +171,7 @@
     justify-content: center;
     align-items: center;
     color: #c1c1c1;
+    transition: .4s all;
 }
 .scroll-box-arrows i:hover {
     color: #000;
@@ -169,11 +179,12 @@
 .scroll-box-arrows i.right {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -20px;
 }
 .scroll-box-arrows i.left {
     position: absolute;
     bottom: 0;
+    left: -20px;
 }
 .images-container .thumb-box .js-qv-mask.mask {
   max-height: 100%;
@@ -276,14 +287,30 @@
     opacity: 0;
     position: absolute;
     width: 48px;
+    z-index: 99;
 }
 .product-variants-item .color {
     display: block;
+    position: relative;
     height: 48px;
     width: 48px;
     border-radius: 50%;
     border: 2px solid #d8d8d8;
     box-shadow: 0 0 13px rgba(0,0,0,0.17);
+}
+.product-variants-item .color.texture{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.product-variants-item input:checked ~ .color.texture::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+
 }
 .product-variants-item .color::after{
     content: "\f00c";
@@ -291,6 +318,9 @@
     color: #fff;
     font-size: 16px;
     display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .product-variants-item input:checked ~ .color::after{
     display: block;

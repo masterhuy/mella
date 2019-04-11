@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-15 04:33:17
+/* Smarty version 3.1.33, created on 2019-04-11 04:17:52
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmspagebuilder\views\templates\hook\addonproductcarousel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c8b634d8add85_53314389',
+  'unifunc' => 'content_5caef83075ad60_08853131',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '667b3593555d6aa1ff1d67feabf63cd192445ab0' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproductcarousel.tpl',
-      1 => 1552292667,
+      1 => 1554195142,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c8b634d8add85_53314389 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5caef83075ad60_08853131 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var p_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -48,9 +48,6 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 <div class="addon-title">
 	<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </h3>
-	<div class="pull-right">
-		<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all link fw-bold">view all</a>
-	</div>
 </div>
 <?php }
 if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>

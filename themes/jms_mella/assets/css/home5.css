@@ -1,8 +1,11 @@
-.main-site {
+.page-index .main-site {
   background: #f6f6f6; }
 
 .product-preview .preview img {
   background: #f6f6f6; }
+
+.product_action {
+  background: transparent; }
 
 .jms-slider-wrapper .text-1 {
   font-weight: 600;

@@ -64,10 +64,6 @@
                                 {block name='product_cover_tumbnails'}
                                     {include file='catalog/_partials/product-cover-thumbnails-carousel.tpl'}
                                 {/block}
-                                <div class="scroll-box-arrows">
-                                    <i class="fa fa-angle-left left"></i>
-                                    <i class="fa fa-angle-right right"></i>
-                                </div>
                             {/block}
                         </section>
                     {/block}

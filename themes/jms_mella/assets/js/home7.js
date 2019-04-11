@@ -10,9 +10,6 @@
 */
 jQuery(document).ready(function($) {
 	var header = $(".jms-row.header");
-	var cateTab = $(".cate_tab");
-
-	$("#jms-vermegamenu-container").addClass('collapse');
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 300){
@@ -21,5 +18,4 @@ jQuery(document).ready(function($) {
 			header.removeClass("fixed");
     	}
     });
-
 });

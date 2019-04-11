@@ -22,26 +22,19 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *} 
- {$layout}
+{$layout}
 {extends file=$layout}
-
 {block name='content'}
-
-  <section id="main">
-	
-    {block name='page_content_container'}
-      <section id="content" class="page-content card card-block">
-        {block name='page_content_top'}{/block}
-        {block name='page_content'}
-          <!-- Page content -->
+    <section id="main">
+        {block name='page_content_container'}
+            <section id="content" class="page-content card card-block">
+                {block name='page_content_top'}{/block}
+                {block name='page_content'}
+                    <!-- Page content -->
+                {/block}
+            </section>
         {/block}
-      </section>
-    {/block}
-
-    {block name='page_footer_container'}
-     
-    {/block}
-
-  </section>
-
+        {block name='page_footer_container'}
+        {/block}
+    </section>
 {/block}
