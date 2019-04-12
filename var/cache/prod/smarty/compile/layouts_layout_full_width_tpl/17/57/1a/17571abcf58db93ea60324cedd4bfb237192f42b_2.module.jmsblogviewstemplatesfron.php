@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-07 22:14:41
+/* Smarty version 3.1.33, created on 2019-04-12 02:55:31
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5caaae910a8607_84514590',
+  'unifunc' => 'content_5cb03663079b68_63101695',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '17571abcf58db93ea60324cedd4bfb237192f42b' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1554689678,
+      1 => 1555052098,
       2 => 'module',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5caaae910a8607_84514590 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cb03663079b68_63101695 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21326349225caaae91046b71_39083038', 'head_seo_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7861177365cb03663027ad3_46777992', 'head_seo_title');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2252667315caaae910526f8_81490695', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18679370745cb0366302f7d5_16193959', "page_content");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'head_seo_title'} */
-class Block_21326349225caaae91046b71_39083038 extends Smarty_Internal_Block
+class Block_7861177365cb03663027ad3_46777992 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head_seo_title' => 
   array (
-    0 => 'Block_21326349225caaae91046b71_39083038',
+    0 => 'Block_7861177365cb03663027ad3_46777992',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -50,12 +50,12 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['current_category']->value['title']
 }
 /* {/block 'head_seo_title'} */
 /* {block "page_content"} */
-class Block_2252667315caaae910526f8_81490695 extends Smarty_Internal_Block
+class Block_18679370745cb0366302f7d5_16193959 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_2252667315caaae910526f8_81490695',
+    0 => 'Block_18679370745cb0366302f7d5_16193959',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,8 +65,7 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_mell
 <?php $_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, 'path', null, null);
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['current_category']->value['title'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');
 $_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);?>
-<h1 class="page-heading"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_category']->value['title'], ENT_QUOTES, 'UTF-8');?>
-</h1>
+
 <?php if (isset($_smarty_tpl->tpl_vars['posts']->value) && $_smarty_tpl->tpl_vars['posts']->value) {?>		
 	<div class="cat-post-list">
 		<?php

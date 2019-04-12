@@ -1,8 +1,10 @@
-#contact #content-wrapper{
-	width: 66.66666667%;
+body#contact #wrapper #content-wrapper{
+	width: 54.3%;
+	padding-right: 65px;
 }
 #contact #right-column{
-	width: 33.33333333%;
+	width: 45.7%;
+	padding-left: 65px;
 }
 #contact .info-company {
 	font-size: 24px;
@@ -71,7 +73,7 @@
 	font-size: 20px;
 }
 #contact .form-group {
-	margin-bottom: 10px;
+	margin-bottom: 45px;
 }
 #contact .form-fields textarea{
 	padding-bottom: 21px;
@@ -86,6 +88,9 @@
 	border-bottom: 1px solid #ededed;
 	letter-spacing: 0.5px;
 }
+#contact .form-fields textarea{
+	padding-bottom: 10px;
+}
 #contact .form-fields select,
 #contact .form-fields input{
 	height: 40px;
@@ -95,6 +100,7 @@
 	font-weight: 600;
 	text-align: left;
 	letter-spacing: 0;
+	padding-bottom: 40px;
 }
 #contact #wrapper #left-column .contact-rich h4 .fa-envelope {
 	font-size:21px;
@@ -138,6 +144,7 @@
 }
 #contact #wrapper #content-wrapper .contact-form .form-footer {
 	text-align: left;
+	margin-top: 9px;
 }
 #contact .form-control.form-control-select {
 	color: #8f8f8f;

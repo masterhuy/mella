@@ -26,7 +26,7 @@
 {block name='head_seo_title'}{$current_category.title}{/block}
 {block name="page_content"}
 {capture name=path}{$current_category.title|escape:'html':'UTF-8'}{/capture}
-<h1 class="page-heading">{$current_category.title}</h1>
+
 {if isset($posts) AND $posts}		
 	<div class="cat-post-list">
 		{foreach from=$posts item=post}

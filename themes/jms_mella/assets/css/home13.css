@@ -2,11 +2,16 @@
   padding: 13px 0;
   background: #f8f8f8; }
 
-.main-site.open-sidebar1 {
-  overflow: unset;
-  -webkit-transform: translateX(-370px);
-  -ms-transform: translateX(-370px);
-  transform: translateX(-370px); }
+.main-site {
+  right: 0; }
+  .main-site.open-sidebar1 {
+    overflow: unset;
+    right: 370px; }
+    .main-site.open-sidebar1 .header.fixed {
+      right: 370px;
+      left: auto; }
+    .main-site.open-sidebar1 .top_menu_second {
+      right: 0; }
 
 .header {
   position: absolute;

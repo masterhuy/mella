@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-09 23:09:23
+/* Smarty version 3.1.33, created on 2019-04-12 03:36:25
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\templates\catalog\_partials\product-cover-thumbnails-carousel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cad5e63061c15_64791377',
+  'unifunc' => 'content_5cb03ff942a791_19198030',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '984805af2ae45cde5975e2b437fb5bb32d7da3d2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\templates\\catalog\\_partials\\product-cover-thumbnails-carousel.tpl',
-      1 => 1554865760,
+      1 => 1555054578,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cad5e63061c15_64791377 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cb03ff942a791_19198030 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
   
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11701835245cad5e6304a518_51697307', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20468937665cb03ff940f213_27836590', 'product_images');
 ?>
 
 </div>
@@ -36,12 +36,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11701835245cad5e63
 
 <?php }
 /* {block 'product_images'} */
-class Block_11701835245cad5e6304a518_51697307 extends Smarty_Internal_Block
+class Block_20468937665cb03ff940f213_27836590 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_11701835245cad5e6304a518_51697307',
+    0 => 'Block_20468937665cb03ff940f213_27836590',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

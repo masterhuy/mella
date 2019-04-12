@@ -18,6 +18,22 @@
 		background: #fff;
 	}
 }
+.main-site{
+	left: 0;
+	&.open-sidebar1{
+		overflow: unset;
+		left: 343px;
+		.header.fixed{
+			left: 343px;
+		}
+		#jmstools{
+			display: none;
+		}
+		.top_menu_second{
+			left: 0;
+		}
+	}
+}
 .jms-slider-wrapper{
 	.text-1{
 		font-weight: 600;

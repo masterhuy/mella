@@ -33,6 +33,9 @@
         <p class="addon-desc">{$addon_desc nofilter}</p>
     {/if}
     <div class="jms-addon jms-video">
+        <div class="close-video">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
         {if $src}
             <iframe width="{$width nofilter}" height="{$height nofilter}" src="{$src nofilter}" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         {/if}

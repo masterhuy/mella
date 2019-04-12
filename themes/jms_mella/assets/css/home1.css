@@ -6,6 +6,10 @@ body {
   width: 100%;
   z-index: 9999; }
 
+.jms-row.header.fixed {
+  padding-left: 20px;
+  padding-right: 20px; }
+
 .jms-slider-wrapper .text-1 {
   letter-spacing: 0.01vw; }
   .jms-slider-wrapper .text-1::after {

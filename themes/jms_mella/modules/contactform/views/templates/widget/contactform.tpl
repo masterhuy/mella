@@ -13,7 +13,7 @@
     {if !$notifications || $notifications.nw_error}
     <section class="form-fields row">
 
-      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-sm-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
           <div class="addon-title">
             <h3>{l s='Send Us Message' d='Shop.Theme.Global'}</h3>
           </div>
@@ -59,7 +59,7 @@
             class="form-control"
             name="message"
             placeholder="{l s='Comment' d='Shop.Forms.Help'}"
-            rows="3"
+            rows="2"
           >{if $contact.message}{$contact.message}{/if}</textarea>
       </div>
 

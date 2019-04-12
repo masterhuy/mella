@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-03 22:27:13
+/* Smarty version 3.1.33, created on 2019-04-12 03:18:05
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\contactform\views\templates\widget\contactform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ca56b81b78612_28731048',
+  'unifunc' => 'content_5cb03badb55b99_37588479',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e0bd0bec0d080e6dda56dc0781036a8cf017d0ff' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\contactform\\views\\templates\\widget\\contactform.tpl',
-      1 => 1554344830,
+      1 => 1555053159,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ca56b81b78612_28731048 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cb03badb55b99_37588479 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="contact-form">
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['contact'], ENT_QUOTES, 'UTF-8');?>
 " method="post" <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>enctype="multipart/form-data"<?php }?>>
@@ -45,7 +45,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <?php if (!$_smarty_tpl->tpl_vars['notifications']->value || $_smarty_tpl->tpl_vars['notifications']->value['nw_error']) {?>
     <section class="form-fields row">
 
-      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-sm-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
           <div class="addon-title">
             <h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send Us Message','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </h3>
@@ -115,7 +115,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             name="message"
             placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Comment','d'=>'Shop.Forms.Help'),$_smarty_tpl ) );?>
 "
-            rows="3"
+            rows="2"
           ><?php if ($_smarty_tpl->tpl_vars['contact']->value['message']) {
 echo htmlspecialchars($_smarty_tpl->tpl_vars['contact']->value['message'], ENT_QUOTES, 'UTF-8');
 }?></textarea>

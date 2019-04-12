@@ -76,7 +76,8 @@
     .feature-box .include_content_s .product-preview .product-info {
       min-height: auto; }
     .feature-box .include_content_s .product_action {
-      margin-top: -30px; }
+      margin-top: -30px;
+      background: transparent; }
     .feature-box .include_content_s .js-circle {
       cursor: pointer;
       position: absolute;

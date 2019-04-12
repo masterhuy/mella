@@ -23,69 +23,6 @@
 		}
 	}
 }
-.top_menu_second {
-	padding-top: 21px;
-	width: 343px !important;
-	left: -343px;
-	right: auto;
-	box-shadow: unset;
-	background: #222;
-	border: 20px solid #fff;
-	border-right: 0;
-	.container{
-		width: 323px;
-	}
-	#social_block{
-		margin-top: 445px;
-		ul li{
-			margin: 0 27px;
-		}
-		&::before{
-			width: 240px;
-			top: -38px;
-			background: #2e2e2e;
-		}
-	}
-	.jms-megamenu{
-		.item-fullwidth > .dropdown-menu {
-			left: 100% !important;
-			right: auto;
-		}
-		.mega-nav li > a {
-		    text-align: left;
-		    &::after{
-		    	right: 22px !important;
-				left: auto !important;
-				top: auto !important;
-				transform: unset !important;
-		    }
-		}
-		.dropdown-menu {
-			right: auto !important;
-			left: 100% !important;
-		}
-		.nav > li > a{
-			color: #bababa;
-			text-transform: capitalize;
-			font-weight: 500;
-			padding: 5px 43px;
-			font-size: 16px;
-			text-align: left;
-			> .caret{
-				display: block;
-				border: 0;
-				top: 4px;
-				position: absolute;
-				right: 59px;
-				transform: skewX(13deg);
-				&::after{
-					content: '\f105';
-					font-family: FontAwesome;
-				}
-			}
-		}
-	}
-}
 .intro-text{
 	padding: 0;
 	margin-bottom: 47px;
@@ -95,15 +32,6 @@
 		background: url('../img/h11-addon-vd-bg.jpg') no-repeat center bottom;
 		background-size: contain;
 		padding-bottom: 95px;
-		// .show-video::after{
-		// 	content: "";
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background: rgba(0,0,0,0.9);
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// }
 	}
 }
 .product-image > img{

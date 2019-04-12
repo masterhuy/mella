@@ -11,6 +11,18 @@
     border: 60px solid #fff;
     background: #fff; }
 
+.main-site {
+  left: 0; }
+  .main-site.open-sidebar1 {
+    overflow: unset;
+    left: 343px; }
+    .main-site.open-sidebar1 .header.fixed {
+      left: 343px; }
+    .main-site.open-sidebar1 #jmstools {
+      display: none; }
+    .main-site.open-sidebar1 .top_menu_second {
+      left: 0; }
+
 .jms-slider-wrapper .text-1 {
   font-weight: 600;
   letter-spacing: -0.086vw; }

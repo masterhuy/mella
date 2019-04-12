@@ -10,43 +10,6 @@
     .main-site.open-sidebar1 .top_menu_second {
       left: 0; }
 
-.top_menu_second {
-  left: -370px;
-  right: auto; }
-  .top_menu_second .jms-megamenu .item-fullwidth > .dropdown-menu {
-    left: 100% !important;
-    right: auto; }
-  .top_menu_second .jms-megamenu .mega-nav li > a {
-    text-align: left; }
-    .top_menu_second .jms-megamenu .mega-nav li > a::after {
-      right: 22px !important;
-      left: auto !important;
-      top: auto !important;
-      -webkit-transform: unset !important;
-      -ms-transform: unset !important;
-      transform: unset !important; }
-  .top_menu_second .jms-megamenu .dropdown-menu {
-    right: auto !important;
-    left: 100% !important; }
-  .top_menu_second .jms-megamenu .nav > li > a {
-    text-transform: capitalize;
-    font-weight: 500;
-    padding: 5px 43px;
-    font-size: 16px;
-    text-align: left; }
-    .top_menu_second .jms-megamenu .nav > li > a > .caret {
-      display: block;
-      border: 0;
-      top: 4px;
-      position: absolute;
-      right: 59px;
-      -webkit-transform: skewX(13deg);
-      -ms-transform: skewX(13deg);
-      transform: skewX(13deg); }
-      .top_menu_second .jms-megamenu .nav > li > a > .caret::after {
-        content: '\f105';
-        font-family: FontAwesome; }
-
 .header {
   padding: 60px 0; }
   .header .flex-middle .addon-box {

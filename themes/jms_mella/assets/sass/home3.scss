@@ -1,14 +1,7 @@
 @import "mixin";
 @import "varians";
 
-#header{
-	position: relative;
-	z-index: 2;
-}
-#wrapper{
-	position: relative;
-	z-index: 1;
-}
+
 .jms-megamenu .nav > li > a{
 	line-height: 136px;
 }

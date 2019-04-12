@@ -1,6 +1,23 @@
 @import "mixin";
 @import "varians";
 
+
+.main-site{
+	left: 0;
+	&.open-sidebar1{
+		overflow: unset;
+		left: 343px;
+		.header.fixed{
+			left: 343px;
+		}
+		#jmstools{
+			display: none;
+		}
+		.top_menu_second{
+			left: 0;
+		}
+	}
+}
 .left_column{
 	width: 17.4%;
 	float: left;
@@ -63,76 +80,6 @@
 	#cart-cl{
 		width: 367px;
 	}
-	.top_menu_second {
-		padding-top: 21px;
-		width: 343px !important;
-		left: -343px;
-		right: auto;
-		box-shadow: unset;
-		background: #222;
-		border-right: 0;
-		height: 1500px;
-		.container{
-			width: 100%;
-		}
-		#social_block{
-			margin-top: 445px;
-			ul li{
-				margin: 0 27px;
-			}
-			&::before{
-				width: 240px;
-				top: -38px;
-				background: #2e2e2e;
-			}
-		}
-		.jms-megamenu{
-			.item-fullwidth > .dropdown-menu {
-				left: 100% !important;
-				right: auto;
-			}
-			.mega-nav li > a {
-			    text-align: left;
-			    &::after{
-			    	right: 22px !important;
-					left: auto !important;
-					top: auto !important;
-					transform: unset !important;
-			    }
-			}
-			.dropdown-menu {
-				right: auto !important;
-				left: 100% !important;
-			}
-			.nav > li > a{
-				color: #bababa;
-				text-transform: capitalize;
-				font-weight: 500;
-				padding: 5px 43px;
-				font-size: 16px;
-				text-align: left;
-				> .caret{
-					display: block;
-					border: 0;
-					top: 4px;
-					position: absolute;
-					right: 59px;
-					transform: skewX(13deg);
-					&::after{
-						content: '\f105';
-						font-family: FontAwesome;
-					}
-				}
-			}
-		}
-	}
-}
-.main-site.open-sidebar1{
-	overflow: unset;
-	transform: translateX(343px);
-	#jmstools{
-		display: none;
-	}
 }
 .jms-banner{
 	&:hover .banner-content{
@@ -163,6 +110,7 @@
 		position: unset;
 		opacity: 1;
 		visibility: visible;
+		background: transparent;
 		a{
 			margin: 0;
 		}

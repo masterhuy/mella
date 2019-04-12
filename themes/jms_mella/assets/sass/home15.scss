@@ -28,6 +28,9 @@
 	width: 142px;
 	background: #fff;
 	z-index: 999;
+	.container, .layout-column, #cart_block{
+		position: unset;
+	}
 	.container{
 		width: 142px;
 	}
@@ -40,8 +43,18 @@
 	.module-group{
 		text-align: left;
 	}
-	#cart_block .shoppingcart-box{
-		text-align: left;
+	#module-group{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	#cart_block{
+		#cart-cl{
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.shoppingcart-box{
+			text-align: left;
+		}
 	}
 	#cart-cl, #module-group{
 		&.collapse, &.collapsing{
@@ -56,73 +69,6 @@
 .main-site.open-sidebar1 .top_menu_second {
 	opacity: 1;
 	visibility: visible;
-}
-.top_menu_second {
-	display: flex;
-	align-items: center;
-	width: 320px !important;
-	height: 100%;
-	top: 0;
-	left: 142px;
-	right: auto;
-	box-shadow: unset;
-	background: #222;
-	border-right: 0;
-	background: #f8f8f8;
-	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05);
-	opacity: 0;
-	visibility: hidden;
-	transition: .4s all;
-	.container{
-		width: 320px;
-	}
-	.jms-megamenu{
-		.mega-nav li > a {
-			color: #8f8f8f;
-		}
-		.collection > .dropdown-menu {
-			width: 1325px;
-		}
-		.item-fullwidth > .dropdown-menu {
-			left: 100% !important;
-			right: auto;
-		}
-		.mega-nav li > a {
-		    text-align: left;
-		    &::after{
-		    	right: 22px !important;
-				left: auto !important;
-				top: auto !important;
-				transform: unset !important;
-		    }
-		}
-		.dropdown-menu {
-			right: auto !important;
-			left: 100% !important;
-			background: #f3f3f3 !important;
-			box-shadow: 8px 0px 8px rgba(0,0,0,0.05);
-		}
-		.nav > li > a{
-			text-transform: capitalize;
-			font-weight: 500;
-			padding: 5px 60px;
-			font-size: 16px;
-			text-align: left;
-			> .caret{
-				display: block;
-				border: 0;
-				top: 4px;
-				position: absolute;
-				right: 59px;
-				transform: skewX(13deg);
-				&::after{
-					content: '\f105';
-					font-family: FontAwesome;
-					margin-left: -13px;
-				}
-			}
-		}
-	}
 }
 .logo{
 	padding: 60px 0;
