@@ -42,6 +42,9 @@
     text-transform: capitalize;
     position: relative;
 }
+#off-canvas-menu .dropdown-menu > li.group > a{
+    font-weight: 600;
+}
 #off-canvas-menu .dropdown-menu > li > a::before {
     top: 50%;
     left: 30px;
@@ -146,7 +149,10 @@
 #off-canvas-menu .nav {
     padding-bottom: 30px;
 }
-#off-canvas-menu .menu-item.mega .mod-content {
+#off-canvas-menu .collection.menu-item.mega > ul > li > a{
+    display: none;
+}
+#off-canvas-menu .menu-item.collection > .dropdown-menu::before{
     display: none;
 }
 #off-canvas-menu .btn-group.currency-info {

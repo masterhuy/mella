@@ -10,6 +10,12 @@ body {
   padding-left: 20px;
   padding-right: 20px; }
 
+@media (min-width: 1800px) {
+  .header-type-1 .mega-menu {
+    width: 73.2%; }
+  .header-type-1 .left-icon-group {
+    width: 10.1333333%; } }
+
 .jms-slider-wrapper .text-1 {
   letter-spacing: 0.01vw; }
   .jms-slider-wrapper .text-1::after {
@@ -128,3 +134,123 @@ body {
 
 .countdown-box {
   padding: 100px 0; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 730px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 953px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+@media (max-width: 1199px) {
+  .footer-bottom-1 .layout-column .addon-box {
+    padding: 0 20px; } }
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .countdown-box {
+    padding: 100px 20px; }
+  .addon-instagram {
+    padding: 0 20px; } }
+
+@media (max-width: 991px) {
+  .page-index header {
+    position: unset; } }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .banner1 .banner-content .text-1 {
+    font-size: 22px;
+    margin-bottom: 0; }
+  .banner1 .banner-content .text-2 {
+    font-size: 40px;
+    margin-bottom: 0; }
+  .banner2 .banner-content .text-2 {
+    font-size: 35px; }
+  .banner3 .banner-content .text-1 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .banner3 .banner-content .text-2 {
+    font-size: 30px; }
+    .banner3 .banner-content .text-2 span {
+      font-size: 16px;
+      bottom: 11px; }
+  .banner3 .banner-content .text-3 {
+    font-size: 14px; }
+  .banner4 .banner-content .text-1 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .banner4 .banner-content .text-2 {
+    font-size: 25px; }
+  .banner4 .banner-content .text-3 {
+    font-size: 14px; }
+  .banner5 .banner-content {
+    padding: 0 50px; }
+    .banner5 .banner-content .text-1 {
+      font-size: 16px; }
+    .banner5 .banner-content .text-2 {
+      font-size: 35px; }
+    .banner5 .banner-content .text-3 {
+      font-size: 22px; } }
+
+@media (max-width: 767px) {
+  body {
+    border: 0; }
+  #header {
+    padding: 15px; }
+  .fraction-slider .prev, .fraction-slider .next {
+    display: none; }
+  .banner1 {
+    margin-bottom: 15px; }
+  .banner-4 {
+    margin-bottom: 15px; } }
+
+@media (max-width: 481px) {
+  .jms-banner .btn-underline {
+    font-size: 10px; }
+  .banner1 .banner-content {
+    padding: 0 15px; }
+    .banner1 .banner-content .text-1 {
+      font-size: 10px;
+      margin-bottom: 0; }
+    .banner1 .banner-content .text-2 {
+      font-size: 25px;
+      margin-bottom: 0; }
+    .banner1 .banner-content .text-3 {
+      font-size: 10px;
+      margin-bottom: 5px; }
+  .banner2 .banner-content .text-2 {
+    font-size: 35px; }
+  .banner3 .banner-content .text-1 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .banner3 .banner-content .text-2 {
+    font-size: 30px; }
+    .banner3 .banner-content .text-2 span {
+      font-size: 16px;
+      bottom: 11px; }
+  .banner3 .banner-content .text-3 {
+    font-size: 14px; }
+  .banner4 {
+    margin-bottom: 15px; }
+    .banner4 .banner-content {
+      padding: 0 15px; }
+      .banner4 .banner-content .text-1 {
+        font-size: 16px;
+        margin-bottom: 0; }
+      .banner4 .banner-content .text-2 {
+        font-size: 25px; }
+      .banner4 .banner-content .text-3 {
+        font-size: 14px; }
+  .banner5 .banner-content {
+    padding: 0 15px; }
+    .banner5 .banner-content .text-1 {
+      font-size: 10px; }
+    .banner5 .banner-content .text-2 {
+      font-size: 25px;
+      margin-bottom: 0; }
+    .banner5 .banner-content .text-3 {
+      font-size: 12px; } }

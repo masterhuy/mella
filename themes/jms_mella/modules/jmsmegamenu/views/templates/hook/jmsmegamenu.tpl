@@ -7,7 +7,9 @@
 *}
 
 <div class="jms-megamenu-wrap">
-	<a id="open-button" class="open-button hidden-lg hidden-md" href="#"></a>
+	<a id="open-button" class="open-button hidden-lg hidden-md" href="#">
+		<i class="fa fa-bars"></i>
+	</a>
 	{$menu_html|escape:'' nofilter}
 </div>
 <script type="text/javascript">
