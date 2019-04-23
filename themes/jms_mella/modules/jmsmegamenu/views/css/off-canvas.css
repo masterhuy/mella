@@ -111,8 +111,7 @@
     width: 45px;
     padding: 0;
     border: 0;
-    position: relative;
-    top: 3px;
+    color: #000;
     display: inline-block;
     background: transparent;
 }
@@ -125,6 +124,7 @@
     border-radius: 5px 0 0 5px;
     padding-left: 20px;
     height: 45px;
+    padding: 0 21px;
     background: transparent;
 }
 #off-canvas-menu #search_widget {

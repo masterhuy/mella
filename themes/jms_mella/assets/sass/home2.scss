@@ -107,3 +107,28 @@
 		position: relative;
 	}
 }
+@media (max-width: 991px){
+	#module-group{
+		right: 0;
+	}
+}
+@media (max-width: 767px){
+	.banner-1{
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 481px){
+	.banner-1 .banner-content .text, 
+	.banner-2 .banner-content .text{
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+	.jms-slider-wrapper{
+		.text-1, .btn-underline{
+			font-size: 5px !important;
+		}
+		.text-2{
+			font-size: 9px !important;
+		}
+	}
+}	

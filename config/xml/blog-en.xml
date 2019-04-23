@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The Ultimate SEO Checklist for PrestaShop (2019)</title>
+    <link>https://www.prestashop.com/en/blog/ultimate-seo-checklist-for-prestashop</link>
+    <description>Search Engine Optimization (SEO) has become an integral part of promoting and marketing a website online.</description>
+     <pubDate>Fri, 19 Apr 2019 10:32:09 +0200</pubDate>
+ <dc:creator>Zeeshan Khalid</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ultimate-seo-checklist-for-prestashop</guid>
+  </item>
+  <item>
+    <title>New developments at PrestaShop! What’s the latest?</title>
+    <link>https://www.prestashop.com/en/blog/new-features-prestashop-2019</link>
+    <description>We often say that a picture is worth a thousand words.</description>
+     <pubDate>Thu, 18 Apr 2019 17:17:30 +0200</pubDate>
+ <dc:creator>Méguy Solvet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/new-features-prestashop-2019</guid>
+  </item>
+  <item>
     <title>5 signs you need a PIM system for your PrestaShop</title>
     <link>https://www.prestashop.com/en/blog/pim-system-for-your-prestashop</link>
     <description>Do you need to integrate your PrestaShop webshop with a Product Information Management system? That depends on a couple of things. Is your product range quite small?</description>
@@ -68,22 +84,6 @@
      <pubDate>Wed, 06 Mar 2019 16:06:20 +0100</pubDate>
  <dc:creator>store</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/promote-prestashop-store-using-domain-names</guid>
-  </item>
-  <item>
-    <title>Here’s Why You Should Prioritize Your Product and Category Texts</title>
-    <link>https://www.prestashop.com/en/blog/prioritize-your-product-and-category-texts</link>
-    <description>Link building, outreach, UX, Google Ads, and much more. These are all important aspects you need to focus on if you want to outdo your competition and be alone at the top.</description>
-     <pubDate>Wed, 06 Mar 2019 15:07:15 +0100</pubDate>
- <dc:creator>bulldesign</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prioritize-your-product-and-category-texts</guid>
-  </item>
-  <item>
-    <title>End of life for PHP 5.6: make sure your PrestaShop store is secure!</title>
-    <link>https://www.prestashop.com/en/blog/php-5-6-online-store-security</link>
-    <description>Since the end of 2018, PHP versions earlier than 5.6 are no longer supported by the community.</description>
-     <pubDate>Tue, 12 Feb 2019 10:33:29 +0100</pubDate>
- <dc:creator>Méguy Solvet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/php-5-6-online-store-security</guid>
   </item>
   </channel>
 </rss>

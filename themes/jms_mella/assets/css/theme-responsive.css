@@ -113,9 +113,6 @@
 		display: inline-block;
 		padding-top: 4px;
 	}
-	#open-button span{
-		display: none;
-	}
 	.flash_countdown {
 		text-align: center;
 		width: 70%;
@@ -433,12 +430,9 @@
 	.text-large {
 		font-size: 4.5vw;
 	}
-	.fs-pager-wrapper a, .fs-custom-pager-wrapper a{
+	div.fs-pager-wrapper a, div.fs-custom-pager-wrapper a{
 		width: 6px;
 		height: 6px;
-	}
-	.fs-pager-wrapper a.active{
-		width: 16px;
 	}
 	.fs-pager-wrapper {
         bottom: 2px

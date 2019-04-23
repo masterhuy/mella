@@ -85,3 +85,22 @@
 #footer {
   background: #fff;
   padding-bottom: 80px; }
+
+@media (max-width: 991px) {
+  .col-logo .addon-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media (max-width: 767px) {
+  .banner-1, .banner-2, .banner-4, .banner-5 {
+    margin-bottom: 20px; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .text-1, .jms-slider-wrapper .btn-underline {
+    font-size: 5px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 9px !important; } }

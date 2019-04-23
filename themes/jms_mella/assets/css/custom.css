@@ -109,7 +109,12 @@ hr {
 .d-flex{
   display: flex;
 }
-
+.pt-2{
+  padding-top: 20px;
+}
+.pb-2{
+  padding-bottom: 20px;
+}
 .flex-middle{
   display: flex;
   align-items: center;
@@ -2893,6 +2898,7 @@ ul.footer_links {
 /* Quick view */
 .modal-dialog.cover_product1 {
   max-width: 1170px;
+  width: 100%;
   margin: 66px auto; }
 
 .modal-dialog.cover_product1 h2.product-name {

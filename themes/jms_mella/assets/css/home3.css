@@ -32,16 +32,13 @@
   line-height: 3.1vw; }
 
 .jms-slider-wrapper .fraction-slider .prev, .jms-slider-wrapper .fraction-slider .next {
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -o-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
   font-family: "icomoon";
-  font-size: 34px;
+  font-size: 1.75vw;
   text-align: center;
   color: #c2c2c2;
   background: #fff;
-  width: 84px;
-  height: 84px;
+  width: 4.5vw;
+  height: 4.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,3 +80,22 @@
 
 .newsletter .container {
   background: #f1f1f1; }
+
+.brand-carousel.owl-theme .owl-controls {
+  display: none; }
+
+@media (max-width: 1800px) {
+  .header-left-fixed {
+    display: none; } }
+
+@media (max-width: 767px) {
+  #module-group {
+    right: 0; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .text-1, .jms-slider-wrapper .btn-underline {
+    font-size: 5px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 9px !important; }
+  .footer_b img {
+    width: 100%; } }

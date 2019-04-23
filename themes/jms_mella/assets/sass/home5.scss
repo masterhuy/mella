@@ -99,3 +99,25 @@
 	background: #fff;
 	padding-bottom: 80px;
 }
+
+@media (max-width: 991px){
+	.col-logo .addon-box{
+		display: flex;
+		justify-content: center;
+	}
+}
+@media (max-width: 767px){
+	.banner-1, .banner-2, .banner-4, .banner-5{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 481px){
+	.jms-slider-wrapper{
+		.text-1, .btn-underline{
+			font-size: 5px !important;
+		}
+		.text-2{
+			font-size: 9px !important;
+		}
+	}
+}	
