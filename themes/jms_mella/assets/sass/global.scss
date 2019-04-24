@@ -875,6 +875,9 @@
 		margin-left: 25px;
 		padding-top: 6px;
 	}
+	p{
+		margin-bottom: 0;
+	}
 }
 
 .intro-text {
@@ -3963,6 +3966,33 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 767px){
+	.newsletter-type-3 #newsletter_block_left{
+		.textnews_h8{
+			width: 100%;
+		}
+		.news_content{
+			margin-top: 20px;			
+			width: 100%;
+		}
+		.block_content{
+			display: block;
+		}
+	}
+	.breadcrumb-box.container{
+		display: block;
+	}
+	.intro-text{
+		font-size: 16px;
+	}
+	.banner-product-name.large {
+		font-size: 16px;
+	}
+	.banner-product-price {
+		font-size: 14px;
+	}
+	.mgb-15{
+		margin-bottom: 15px;
+	}
 	div#module-group{
 		right: 0;
 	}

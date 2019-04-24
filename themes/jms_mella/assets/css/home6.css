@@ -95,3 +95,52 @@ body {
 
 .footer-one-row {
   padding: 100px 0 100px; }
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .newsletter-type-2 #newsletter_block_left {
+    padding: 55px 30px 60px; } }
+
+@media (max-width: 1199px) {
+  body {
+    border: 0; }
+  .page-index header {
+    position: unset; }
+  .jms-megamenu .mega-nav li > a {
+    text-align: right; }
+    .jms-megamenu .mega-nav li > a::after {
+      right: auto;
+      left: 22px;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .jms-megamenu .mega-nav > .mega > .dropdown-menu {
+    left: auto;
+    right: 100%; } }
+
+@media (max-width: 991px) {
+  a#open-button {
+    padding-top: 0;
+    position: relative;
+    bottom: 5px; }
+  .newsletter-type-2 {
+    margin-bottom: 20px; }
+  .contact_info {
+    padding-right: 10px !important;
+    margin-bottom: 20px; }
+  .help_service {
+    padding-left: 10px !important; }
+    .help_service .addon-box {
+      padding-left: 60px;
+      padding-right: 60px; } }
+
+@media (max-width: 767px) {
+  .left-icon-group .addon-box:first-child, .left-icon-group .addon-box:nth-child(3) {
+    display: none; } }
+
+@media (max-width: 481px) {
+  .fraction-slider {
+    height: 70vw !important; }
+  .jms-slider-wrapper .text-1 {
+    font-size: 8px !important; }
+  .jms-slider-wrapper .text-2, .jms-slider-wrapper .btn-underline {
+    font-size: 5px !important; } }
