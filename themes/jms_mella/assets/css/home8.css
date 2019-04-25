@@ -83,12 +83,7 @@
   .fs-pager-wrapper {
     left: 7.5vw; }
   .left-icon-group .addon-box:first-child, .left-icon-group .addon-box:nth-child(2) {
-    display: none; }
-  .f_payments {
-    text-align: center;
-    margin-top: 30px; }
-    .f_payments img {
-      float: none !important; } }
+    display: none; } }
 
 @media (max-width: 481px) {
   .fraction-slider {

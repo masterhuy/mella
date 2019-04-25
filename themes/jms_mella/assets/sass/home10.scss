@@ -18,6 +18,9 @@
 		}
 	}
 }
+.top_menu_second.v2{
+	border-color: #fff;
+}
 .header{
 	padding: 60px 0;
 }
@@ -59,4 +62,13 @@
 }
 .footer-one-row .find-us {
 	text-align: center !important;
+}
+
+@media (max-width: 991px){
+	.header {
+		padding: 20px 0;
+	}
+}
+@media (max-width: 767px){
+
 }

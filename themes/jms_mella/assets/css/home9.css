@@ -16,46 +16,50 @@
     display: -ms-flexbox;
     display: flex; }
 
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 45px;
-  z-index: 998;
-  width: 217px;
-  background: #fff;
-  height: 100%; }
+@media (min-width: 992px) {
+  #wrapper {
+    margin-left: 176px; }
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 45px;
+    z-index: 998;
+    width: 217px;
+    background: #fff;
+    height: 100%; }
+  .header-left {
+    width: 100%;
+    text-align: center; }
+    .header-left .container {
+      width: 100%; }
+    .header-left .layout-column .addon-box:first-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .header-left .ajax_cart_quantity {
+      top: 13px;
+      right: -4px; }
+    .header-left .mega_menu {
+      margin-top: 405px;
+      margin-bottom: 283px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .header-left .addon-box:nth-child(3), .header-left .addon-box:nth-child(4) {
+      margin-bottom: 25px; } }
 
-.header-left {
-  width: 100%;
-  text-align: center; }
-  .header-left .container {
-    width: 100%; }
-  .header-left .layout-column .addon-box:first-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .header-left .ajax_cart_quantity {
-    top: 13px;
-    right: -4px; }
-  .header-left .mega_menu {
-    margin-top: 405px;
-    margin-bottom: 283px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .header-left .btn-group > a i {
-    font-size: 24px; }
-  .header-left .btn-group > a i.fa {
-    font-size: 14px; }
-  .header-left .addon-box:nth-child(3), .header-left .addon-box:nth-child(4) {
-    margin-bottom: 25px; }
+.header-left .btn-group > a i {
+  font-size: 24px; }
+
+.header-left .btn-group > a i.fa {
+  font-size: 14px; }
 
 .main-site.open-sidebar1 .top_menu_second {
   opacity: 1;
@@ -63,9 +67,6 @@
 
 .top_menu_second.v4 {
   left: 217px; }
-
-#wrapper {
-  margin-left: 176px; }
 
 .jms-slider-wrapper .text-1 {
   line-height: 0.85; }
@@ -82,6 +83,8 @@
 .banner_category {
   position: relative;
   z-index: 2; }
+  .banner_category .right {
+    margin-top: -160px; }
 
 .newsletter {
   max-width: 1820px;
@@ -107,7 +110,52 @@
     top: auto;
     width: 304px; } }
 
-@media (max-height: 800px) {
+@media (max-height: 720px) {
   .header-left .mega_menu {
-    margin-top: 250px;
-    margin-bottom: 250px; } }
+    margin-top: 185px;
+    margin-bottom: 185px; } }
+
+@media (max-width: 1366px) and (min-width: 992px) {
+  #header {
+    width: 176px; }
+  .top_menu_second.v4 {
+    left: 191px; } }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  div#cart_block {
+    position: relative; }
+  div#cart-cl {
+    top: calc(100% + 16px);
+    right: -145px; } }
+
+@media (max-width: 991px) {
+  .header_slider {
+    margin-top: 0; }
+  .header-left .layout-column {
+    text-align: center; }
+    .header-left .layout-column .addon-box:first-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 20px 0; }
+    .header-left .layout-column .addon-box:not(:first-child) {
+      display: inline-block;
+      margin: 0 14px; }
+  .shoppingcart-box {
+    text-align: left; } }
+
+@media (max-width: 767px) {
+  .btn-group.module-group-box {
+    position: unset; }
+  div#module-group {
+    top: 100%;
+    right: 15px; }
+  .banner_category .right {
+    margin-top: 50px; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .text-2, .jms-slider-wrapper .btn-underline {
+    font-size: 6px !important; } }
