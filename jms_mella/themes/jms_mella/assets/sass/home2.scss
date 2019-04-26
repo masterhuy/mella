@@ -1,0 +1,134 @@
+@import "mixin";
+@import "varians";
+
+.main-site{
+	right: 0;
+	&.open-sidebar1{
+		overflow: unset;
+		right: 370px;
+		.header.fixed{
+			right: 370px;
+			left: auto;
+		}
+		.top_menu_second{
+			right: 0;
+		}
+	}
+}
+.jms-row.header{
+	left: auto;
+	right: 0;
+}
+.page-index header{
+	position: absolute;
+	width: 100%;
+	z-index: 9999;
+}
+.mega_menu{
+	padding-bottom: 7px;
+}
+.fs-pager-wrapper{
+	width: auto;
+	left: 18.8vw;
+	bottom: 2.7vw;
+}
+.fs-pager-wrapper a, 
+.fs-custom-pager-wrapper a {
+	margin: 0 7px;
+	width: 18px;
+	height: 18px;
+}
+.jms-slider-wrapper{
+	.text-1{
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 0.165vw;
+		&::after {
+			content: "";
+			width: 2.7vw;
+			height: 3px;
+			background: #b20f0f;
+			position: absolute;
+			top: 4.05vw;
+			margin-left: 1vw;
+			left: -1vw;
+		}
+	}
+	.text-2 {
+		font-weight: 600;
+		letter-spacing: -0.089vw;
+		line-height: 3.1vw;
+	}
+	.social-wb:not(:last-child){
+		.wb::after{
+			content: ".";
+			color: #8f8f8f;
+			position: absolute;
+			bottom: -2.4vw;
+			font-size: 1vw;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.banner-1, .banner-2{
+	.banner-content{
+		bottom: 46px;
+		top: auto;
+		.text{
+			font-size: 42px;
+			text-transform: uppercase;
+			letter-spacing: -3.6px;
+			line-height: 0.87;
+			margin-bottom: 48px;
+		}
+	}
+}
+.banner-1{
+	.banner-content{
+		text-align: right;
+		right: 43px;
+		left: auto;
+	}
+}
+.banner-2{
+	.banner-content{
+		left: 43px;
+	}
+}
+.blog{
+	background: #f2f2f2;
+	padding: 99px 0 84px;
+}
+
+@media (max-width: 1199px){
+	.page-index header{
+		position: relative;
+	}
+}
+@media (max-width: 991px){
+	#module-group{
+		right: 0;
+	}
+}
+@media (max-width: 767px){
+	.banner-1{
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 481px){
+	.banner-1 .banner-content .text, 
+	.banner-2 .banner-content .text{
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+	.jms-slider-wrapper{
+		.text-1, .btn-underline{
+			font-size: 5px !important;
+		}
+		.text-2{
+			font-size: 9px !important;
+		}
+	}
+}	

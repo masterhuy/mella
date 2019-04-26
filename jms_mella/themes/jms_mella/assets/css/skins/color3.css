@@ -1,0 +1,423 @@
+.cart-box .btn-shopping:hover,
+.cart-box .btn-shopping:active,
+.cart-box .btn-shopping:focus {
+	background: #006cff;
+	border-color: #006cff !important;
+}
+.cart-line-product-actions .remove-from-cart:hover{
+	color: #006cff;
+}
+.alert.alert-danger.js-error {
+	background: #006cff;
+}
+body#checkout section.checkout-step.-complete .step-title {
+	background-color: #006cff;
+}
+#contact .block-contact .label{
+	color: #006cff;
+}
+  a:hover, a:focus, a:active, a:focus {
+    color: #006cff; }
+ .jms-megamenu .dropdown-menu::before {
+  border-bottom-color: #006cff;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  color: #006cff; }
+.btn-default:hover, .btn-default:active, .btn-default:focus{
+  border-color: #006cff;
+}
+.btn.active, .btn:active, .btn:hover {
+  background-color: #006cff; }
+.btn-active {
+  background: #006cff;
+  border-color: #006cff; }
+.btn-shopnow {
+  background: #006cff;
+}
+.btn-shopnow-h5{
+  color: #006cff;
+}
+.btn-shopnow1:hover,
+.btn-shopnow1:active,
+.btn-shopnow1:focus{
+  background: #006cff !important;
+}
+.btn-effect1:hover{
+  background: #006cff;
+}
+.btn-effect1::before {
+  background-color: #006cff;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+  background: #006cff; }
+.btn-transparent:hover {
+  background-color: #006cff;
+  border-color: #006cff; }
+.btn-transparent:hover {
+  background-color: #006cff;
+  border-color: #006cff; }
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+  background-color: #006cff; }
+.btn-mega:hover, .btn-mega:focus, .btn-mega:active {
+  background-color: #006cff; }
+.cart-prices .value {
+  color: #006cff;
+}
+.btn-cart:hover {
+  background: #006cff;
+  border-color: #006cff;
+}
+.product-preview button.cart-button {
+  background: #006cff;
+}
+.product_list.products-list-in-row .product-info .addToWishlist:hover{
+  background: #006cff;
+}
+li.product-flag {
+  background-color: #006cff;
+}
+.pagination li > a.previous:hover,
+.pagination li > a.next:hover{
+  color: #006cff !important;
+}
+.pagination .current a {
+    background-color: #006cff;
+ }
+.pagination .current a:focus {
+	background-color: #006cff;
+ }
+.pagination .active a:hover {
+	background-color: #006cff;
+ }
+.pagination .current a {
+    background-color: #006cff;
+ }
+.pagination .current a:focus {
+  background-color: #006cff ;
+ }
+.pagination .current span:hover {
+	background-color: #006cff;
+}
+.pagination li a:focus, .pagination li a:hover {
+    background-color: #006cff;
+ }
+.pagination li span:focus, .pagination li span:hover {
+    background-color: #006cff;
+ }
+.products-list-in-row .product-preview button.cart-button:hover {
+  background: #006cff;
+}
+.modal-dialog.cover_product1 .modal-footer .block-social ul li a:hover::before {
+  color: #006cff;
+}
+.footer_t .contact_us .email {
+  color: #006cff;
+}
+.top_menu_second .email {
+  color: #006cff;
+}
+.top_menu_second .jms-megamenu .nav > li.open > a{
+  color: #006cff;
+}
+.newsletter-btn {
+  background: #006cff;
+}
+.countdown.is-countdown {
+  background: #006cff;
+}
+.post-readmore:hover {
+  border-color: #006cff;
+  background: #006cff;
+}
+.hotdeal-carousel {
+  border-color: #006cff;
+}
+.jms-hotdeal > .label {
+  background-color: #006cff;
+}
+.button-search {
+  background: #006cff;
+}
+.product-preview .product_action button.cart-button:hover{
+  background: #006cff;
+}
+.footer_t ul li a::before {
+  color: #006cff;
+}
+.jms-tab ul .nav-item.active a::after, 
+.jms-tab ul .nav-item a.active::after {
+  border-top-color: #006cff;
+}
+.jms-tab ul .nav-item.active a::before,
+.jms-tab ul .nav-item a.active::before{
+  background-color: #006cff;
+}
+.breadcrumb-inner ol li a:hover {
+    color: #006cff; }
+.languages-info ul > li.current > a, #_desktop_currency_selector ul > li.current > a, #_desktop_user_info ul > li.current > a {
+  color: #006cff; }
+.languages-info ul > li > a:hover, #_desktop_currency_selector ul > li > a:hover, #_desktop_user_info ul > li > a:hover {
+    color: #006cff; }
+.facet-label.active a {
+  color: #006cff !important; }
+.view-mode .button a.active {
+    color: #006cff; }
+.products-list-in-row .addToWishlist:hover {
+    color: #006cff; }
+.ver_mobile {
+  background: #006cff; }
+.big_save .addon-box ul li.code {
+	background: #006cff; }
+.jmsflashsales-tab ul li.active a {
+    background: #006cff;}
+.jmsflashsales-tab ul li a::after {
+  border-left-color: #006cff;
+ }
+.jmsflashsales-tab ul li a.active {
+  background: #006cff;
+}
+.jmsflashsales-tab2 .nav li.active a {
+  border-color: #006cff;
+  background: #006cff;
+ }
+.jmsflashsales-tab2 .nav li a::after {
+    border-left-color: #006cff;
+ }
+  .jmsflashsales-tab2 .nav li a.active {
+    border-color: #006cff;
+    background: #006cff;}
+.jmsflashsales .flashsales-slick .slick-active:nth-child(2n + 1) .flex-box.product-box {
+    border-color: #006cff; }
+ .btn-groupmodule + .dropdown-menu li.current a {
+    color: #006cff; }
+ .cart-icon.type2 {
+    background: #006cff;
+ }
+ .jms-slider-wrapper .countdown-section {
+	  border-color: #006cff;
+ }
+.wishlist_top.home_page:hover {
+    color: #006cff; }
+.jms-megamenu .features .mega-dropdown-inner ul li:not(.group) a::before {
+    background-color: #006cff; }
+.feature-box i {
+    color: #006cff; }
+#footer #social_block a:hover {
+      background-color: #006cff;
+      border-color: #006cff; }
+
+/*home1*/
+.home_1 .header #ajax_search {
+    border-color: #006cff; }
+.home_1 .menu {
+  background: #006cff; }
+.home_1 .banner4 .banner-content .text-3 {
+    background: #006cff; }
+ .home_1 .banner5 .banner-content .text-3 {
+    background: #006cff; }
+
+/*home2*/
+.home_2 .topbar .right ul li a:hover {
+    color: #006cff; }
+.home_2 .menu .jms-advsearch #searchbox {
+  border-color: #006cff; }
+.home_2 .cates .jms-banner:hover {
+    border-color: #006cff; }
+
+/*home3*/
+.home_3 .header #ajax_search {
+	border-color: #006cff; }
+.home_3 .header .cart-icon.type2 {
+    color: #006cff;
+    border-color: #006cff; }
+.home_3 .header .cart-icon.type2 .ajax_cart_quantity {
+      color: #006cff; }
+.home_3 .header .jms-advsearch #searchbox {
+    border-color: #006cff; }
+.home_3 .jms-megamenu .nav > li.open > a {
+  color: #006cff; }
+
+ @media (min-width: 1200px){
+ 	.home_3 .ver_menu {
+    background: #006cff; }
+ }
+ .home_3 #footer #social_block ul li a:hover {
+      color: #006cff; }
+
+ /*home4*/
+ .home_4 .header .jms-advsearch #searchbox {
+    border-color: #006cff; }
+ .home_4 .jms-megamenu .nav > li.open > a {
+  color: #006cff; }
+ .home_4 .banner .banner-content .text-2 {
+    color: #006cff; }
+ .home_4 .cates .jms-banner:hover {
+    border-color: #006cff; }
+
+ /*home5*/
+  .home_5 .banner_html ul{
+  background: #006cff !important;
+ }
+  .home_5 .topbar .left li:last-child span{
+  color: #006cff !important;
+ }
+  .home_5 .banner1 .banner-content .text-1 .fw-black {
+  color: #006cff;
+}
+ .home_5 .header .jms-advsearch #searchbox {
+    border-color: #006cff; }
+.home_5 .menu .jms-advsearch #searchbox {
+    border-color: #006cff; }
+
+/*home6*/
+.home_6 .banner1 .text-2 span{
+  color: #006cff !important;
+}
+ .home_6 .topbar .left li:last-child span{
+  color: #006cff !important;
+}
+.home_6 .mega_menu {
+  background: #006cff; }
+ @media (min-width: 992px) {
+  .home_6 .ver_menu {
+    background: #006cff; }
+ }
+.home_6 .hotdeal .addon-box {
+  border-color: #006cff; }
+.home_6 .categories .jms-banner:hover {
+    border-color: #006cff; }
+.home_6 #footer #social_block ul li a:hover {
+	color: #006cff; }
+
+/*home7*/
+.home_7 .border-e8 .text-3{
+  background-color: #006cff !important;
+}
+.home_7 .header .jms-advsearch #searchbox {
+      border-color: #006cff; }
+ .home_7 .jms-slider-wrapper .section {
+  border-color: #006cff;
+ }
+.home_7 .jms-slider-wrapper .fs-pager-wrapper a.active {
+   border-color: #006cff; }
+.home_7 .newsletter #social_block a:hover {
+  color: #006cff; }
+
+/*end home*/
+
+#order-confirmation .title-block{
+	background-color: #006cff;
+}
+.block-categories .title-block + ul > li > a::before{
+    background: #006cff;
+}
+.product-images > li.thumb-container > .thumb.selected, 
+.product-images > li.thumb-container > .thumb:hover {
+    border-color: #006cff;
+}
+.arrows.js-arrows i:hover, 
+.scroll-box-arrows i:hover {
+    border-color: #006cff;
+}
+.scroll-box-arrows i.right:hover {
+    background-color: #006cff;
+}
+.scroll-box-arrows i.left:hover {
+    background-color: #006cff;
+}
+.product-quantity .add-to-cart {
+    background: #006cff;
+}
+.product-quantity .btn-touchspin:hover::before{
+    color: #006cff;
+}
+.product-add-to-cart .addToWishlist:hover{
+    background: #006cff;
+}
+.other-info > li label::before {
+    background: #006cff;
+}
+.product-preview.flex-box button.cart-button:hover{
+    background: #006cff;
+}
+#jms_ajax_search .search-box.dropdown-menu::before{
+    border-bottom-color: #006cff;
+}
+.blog-widget .comment-item p::before {
+	background: #006cff;
+}
+.widget-archives li a::before{
+	background: #006cff;
+}
+.widget-categories li a::before {
+	background: #006cff;
+}
+.cat-post-list .post-meta a:hover{
+	color: #006cff;
+}
+.single-blog .post-meta a:hover{
+	color: #006cff;
+}
+.commentForm > h3::before{
+	background: #006cff;
+}
+#off-canvas-menu .dropdown-menu > li > a::before {
+    background-color: #006cff;
+}
+.jms-megamenu .nav > li > a:hover, 
+.jms-megamenu .nav > li > a:focus {
+    color: #006cff;
+}
+.jms-megamenu .nav > li.open > a{
+    color: #006cff;
+}
+.owl-dot.active span {
+    background-color: #006cff;
+}
+.jms-popup #social_block {
+  background: #006cff;
+}
+.fs-pager-wrapper a.active {
+	background: #006cff;
+}
+.jms-vermegamenu .mega-inner ul li:not(.group) a::before{
+    background-color: #006cff;
+}
+.jms-banner .banner-content .btn-shopnow-banner + img {
+  background: #006cff;
+}
+.view-all::after {
+  background-color: #006cff;
+}
+#cart_block #button_order_cart {
+  background: #006cff;
+}
+.jms-hotdeal > .label::before {
+  border-left-color: #006cff;
+}
+.btn-shopnow:hover {
+  background: #006cff;
+}
+.owl-theme .owl-controls div.owl-next:hover {
+  background-image: url("../../img/icon/right_hover_color3.png");
+}
+.owl-theme .owl-controls div.owl-prev:hover {
+  background-image: url("../../img/icon/left_hover_color3.png");
+}
+.home_6 .owl-theme .owl-controls div.owl-next:hover,
+#product .owl-theme .owl-controls div.owl-next:hover {
+  background-image: url("../../img/icon/right-hover-h6-color3.png");
+}
+.home_6 .owl-theme .owl-controls div.owl-prev:hover,
+#product .owl-theme .owl-controls div.owl-prev:hover {
+  background-image: url("../../img/icon/left-hover-h6-color3.png");
+}
+.jms-popup .btn-popup {
+  background: #006cff;
+}
+.jms-hotdeal.type2 > .label::before {
+  border-top-color: #006cff;
+}
+.jms-hotdeal.type2 > .label::after {
+  border-right-color: #006cff;
+}

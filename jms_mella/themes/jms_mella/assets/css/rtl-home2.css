@@ -1,0 +1,41 @@
+.topbar .left .addon-box {
+  float: right;
+}
+.topbar .left .addon-box:not(:last-child) {
+  margin-left: 42px;
+  margin-right: 0;
+}
+.topbar .left .addon-box:not(:last-child)::after {
+  left: -20px;
+  right: auto;
+}
+.topbar .right {
+  text-align: left;
+}
+.topbar .right ul li:not(:first-child) {
+  margin-right: 34px;
+  margin-left: 0;
+}
+.topbar .right ul li:not(:first-child)::before {
+  right: -20px;
+  left: auto;
+}
+.header .jms-megamenu .nav > li:last-child {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.menu .jms-advsearch .input-group-addon.icon-drop-down {
+  left: 0;
+  right: auto;
+}
+.menu .jms-advsearch .input-group-addon.icon-drop-down::before {
+  left: auto;
+  right: 0;
+}
+.menu .jms-advsearch .input-group-addon.input-group-search::before {
+  right: 0px;
+  left: auto;
+}
+.special_deal .center .product-preview .product-info {
+  text-align: right;
+}

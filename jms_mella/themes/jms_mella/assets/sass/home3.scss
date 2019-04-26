@@ -1,0 +1,111 @@
+@import "mixin";
+@import "varians";
+
+
+.jms-megamenu .nav > li > a{
+	line-height: 136px;
+}
+.menu .container > .row{
+	display: flex;
+	align-items: center;
+}
+.sub-home{
+	padding-left: 0 !important;
+}
+.jms-slider-wrapper{
+	.text-1{
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 0.165vw;
+		&::after {
+			content: "";
+			width: 2.7vw;
+			height: 3px;
+			background: #b20f0f;
+			position: absolute;
+			top: 4.05vw;
+			margin-left: 1vw;
+			left: -1vw;
+		}
+	}
+	.text-2 {
+		font-weight: 600;
+		letter-spacing: -0.089vw;
+		line-height: 3.1vw;
+	}
+	.fraction-slider{
+		.prev, .next{
+			font-family: "icomoon";
+			font-size: 1.75vw;
+			text-align: center;
+			color: #c2c2c2;
+			background: #fff;
+			width: 4.5vw;
+			height: 4.5vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: unset !important;
+			bottom: -84px;
+			top: auto;
+			opacity: 0.7 !important;
+			visibility: hidden;
+			transition: .4s all;
+		}
+		.prev{
+			right: 7.35vw !important;
+			left: auto !important;
+			&:before{
+				content: "\eb36";
+			}
+		}
+		.next{
+			right: 3vw !important;
+			left: auto !important;
+			&::before{
+				content: "\eb37";
+			}
+		}
+	}
+	&:hover .fraction-slider{
+		.prev, .next{
+			bottom: 0;
+			visibility: visible !important;
+		}
+		.prev:hover, .next:hover{
+			opacity: 1 !important;
+		}
+	}
+}
+.newsletter{
+	.container{
+		background: #f1f1f1;
+	}
+}
+.brand-carousel.owl-theme .owl-controls{
+	display: none;
+}
+
+@media (max-width: 1800px){
+	.header-left-fixed{
+		display: none;
+	}
+}
+@media (max-width: 767px){
+	#module-group{
+		right: 0;
+	}
+}
+@media (max-width: 481px){
+	.jms-slider-wrapper{
+		.text-1, .btn-underline{
+			font-size: 5px !important;
+		}
+		.text-2{
+			font-size: 9px !important;
+		}
+	}
+	.footer_b img{
+		width: 100%;
+	}
+}

@@ -1,0 +1,78 @@
+@import "mixin";
+@import "varians";
+
+.container-fluid{
+	max-width: 1800px;
+}
+.header{
+	padding: 60px 0;
+}
+.main-site{
+	left: 0;
+	&.open-sidebar1{
+		overflow: unset;
+		left: 343px;
+		.header.fixed{
+			left: 343px;
+		}
+		#jmstools{
+			display: none;
+		}
+		.top_menu_second{
+			left: 0;
+		}
+	}
+}
+.intro-text{
+	padding: 0;
+	margin-bottom: 47px;
+}
+.jms-row.video{
+	.addon-video{
+		background: url('../img/h11-addon-vd-bg.jpg') no-repeat center bottom;
+		background-size: contain;
+		padding-bottom: 95px;
+	}
+}
+.product-image > img{
+	background: #f8f8f8;
+}
+.top_menu_second.v2{
+	border-color: #fff;
+}
+.footer-one-row .find-us {
+	text-align: center !important;
+}
+
+@media (max-width: 991px){
+	.header {
+		padding: 20px 0;
+	}
+}
+@media (max-width: 767px){
+	.jms-row.video .addon-video{
+		background: transparent;
+		padding-bottom: 0;
+	}
+	.jms-addon.jms-video{
+		iframe{
+			width: auto !important;
+			height: auto !important;
+		}
+	}
+}
+@media (max-width: 767px) and (min-width: 482px){
+	.jms-addon.jms-video{
+		width: 452px;
+		height: 246px;
+	}
+}
+@media (max-width: 481px){
+	.jms-addon.jms-video{
+		width: 290px;
+		height: 158px;
+	}
+	.jms-row.cates-carousel .container-fluid {
+		border: 15px solid #fff;
+	}
+}

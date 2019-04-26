@@ -1,0 +1,49 @@
+.topbar .left ul li:not(:last-child) {
+  margin-left: 34px;
+  margin-right: 0;
+}
+.topbar .left ul li:not(:first-child)::before {
+  left: auto;
+  right: -21px;
+}
+.topbar .right .addon-box {
+  margin-right: 42px;
+  margin-left: 0;
+}
+.topbar .right .addon-box:not(:first-child)::before {
+  left: auto;
+  right: -23px;
+}
+.header .right .addon-box:not(:first-child) {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.header .jms-advsearch .input-group-addon.icon-drop-down {
+  left: 0;
+  right: auto;
+}
+.header .jms-advsearch .input-group-addon.icon-drop-down::before {
+  right: 0;
+  left: auto;
+}
+.header #ajax_advsearch {
+  background: transparent url("../img/icon/search-h4.png") no-repeat 475px 13px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.menu .ver_menu {
+  justify-content: center;
+}
+.jms-megamenu .nav > li:first-child {
+  padding-right: 0;
+  padding-left: 15px;
+}
+.menu .center {
+  text-align: right;
+}
+.menu .right p{
+  text-align: left !important;
+}
+.intro .addon-box{
+  justify-content: flex-start;
+}

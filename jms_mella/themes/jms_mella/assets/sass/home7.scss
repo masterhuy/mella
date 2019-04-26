@@ -1,0 +1,182 @@
+@import "mixin";
+@import "varians";
+
+
+.main-site{
+	right: 0;
+	&.open-sidebar1{
+		overflow: unset;
+		right: 370px;
+		.header.fixed{
+			right: 370px;
+			left: auto;
+		}
+		.top_menu_second{
+			right: 0;
+		}
+	}
+}
+.jms-row.header{
+	left: auto;
+	right: 0;
+	padding: 60px 0;
+	&.fixed{
+		padding: 10px 0;
+	}
+}
+.left-icon-group{
+	.addon-box:last-child{
+		margin-left: 46px;
+	}
+	.addon-box{
+		padding-top: 0;
+		margin-left: 29px;
+	}
+	#_desktop_user_info, #cart_block{
+		padding-top: 8px;
+		display: inline-block;
+	}
+}
+.intro-text {
+	padding-top: 36px;
+}
+.jms-banner{
+	&:hover{
+		.banner-content .text-2{
+			color: $active;
+		}
+	}
+	> a img{
+		width: auto;
+		transform: unset !important;
+	}
+	.banner-content{
+		.text-1{
+			font-size: 24px;
+			font-weight: 500;
+			letter-spacing: -0.6px;
+		}
+		.text-2{
+			font-size: 18px;
+			font-weight: 500;
+			color: $sub-cl;
+			letter-spacing: -0.6px;
+			transition: .4s all;
+		}
+	}
+}
+.banner-1{
+	> a img{
+		float: right;
+	}
+	.banner-content{
+		text-align: right;
+		top: auto;
+		bottom: 131px;
+		left: 65px;
+	}
+}
+.banner-2{
+	margin-top: -182px;
+	> a img{
+		float: left;
+	}
+	.banner-content{
+		text-align: left;
+		top: auto;
+		bottom: 63px;
+		right: 58px;
+		left: auto;
+	}
+}
+.banner-3{
+	> a img{
+		float: right;
+	}
+	.banner-content{
+		text-align: right;
+		top: auto;
+		bottom: 136px;
+		left: 87px;
+	}
+}
+.banner-4{
+	margin-top: -79px;
+	> a img{
+		float: left;
+	}
+	.banner-content{
+		text-align: left;
+		top: auto;
+		bottom: 59px;
+		right: 6px;
+		left: auto;
+	}
+}
+.product-miniature img{
+	background: #f1f1f1;
+}
+.newsletter{
+	.container-fluid{
+		max-width: 1880px;
+		background: #f1f1f1;
+	}
+}
+
+@media (max-width: 991px){
+	.banner-2{
+		margin-top: 0;
+	}
+	.banner-4{
+		margin-top: 0;
+	}
+	.jms-row.header {
+		padding: 20px 0;
+	}
+	.left-icon-group{
+		justify-content: center;
+		.addon-box{
+			margin: 0;
+			margin: 0 14px !important;
+		}
+	}
+	#newsletter_block_left{
+		padding: 0 20px;
+	}
+	div.menu-wrap{
+		left: auto;
+		right: -300px;
+		transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	}
+	.show-menu div.menu-wrap{
+		transition: right 0.4s;
+		left: auto;
+		right: 0;
+	}
+}
+@media (max-width: 767px){
+	.jms-banner{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 481px){
+	.left-icon-group .addon-box {
+		margin: 0 11px !important;
+	}
+	.banner-1, .banner-3{
+		.banner-content {
+			bottom: 15px;
+			left: 15px;
+		}
+	}
+	.banner-2 .banner-content {
+		bottom: 15px;
+		right: 15px;
+	}
+	.banner-content .text-1{
+		font-size: 16px;
+	}
+	#currency-1, #languages-1{
+		right: auto;
+	}
+}

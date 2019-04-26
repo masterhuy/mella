@@ -1,0 +1,134 @@
+@import "mixin";
+@import "varians";
+
+.main-site{
+	left: 0;
+	&.open-sidebar1{
+		overflow: unset;
+		left: 370px;
+		.header.fixed{
+			left: 370px;
+		}
+		#jmstools{
+			display: none;
+		}
+		.top_menu_second{
+			left: 0;
+		}
+	}
+}
+.header{
+	padding: 60px 0;
+	.flex-middle{
+		.addon-box{
+			margin-right: 30px;
+		}
+	}
+}
+.jms-slider-wrapper{
+	.text-1{
+		font-weight: 600;
+		letter-spacing: -0.086vw;
+	}
+	.text-2{
+		font-weight: 500;
+		line-height: 2.1;
+	}
+}
+.fs-pager-wrapper {
+	width: auto;
+	left: 4.85vw;
+	bottom: 2.8vw;
+}
+.fs-pager-wrapper a, 
+.fs-custom-pager-wrapper a {
+	margin: 0 4.5px;
+	width: 11px;
+	height: 11px;
+}
+.banner_category{
+	.jms-banner:hover .banner-content{
+		transform: translateY(-83px);
+	}
+	.banner-content{
+		margin-top: 18px;
+		p{
+			font-size: 32px;
+			letter-spacing: -0.6px;
+		}
+	}
+}
+.footer-one-row{
+	padding: 60px 0;
+	#social_block ul li{
+		margin-left: 0 !important;
+		margin: 0 15px !important;
+	}
+	.find-us {
+	    text-align: center !important;
+	}
+	.flex-middle p{
+		text-transform: capitalize;
+		letter-spacing: 0;
+		span{
+			color: #000;
+		}
+
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px){
+	.fs-pager-wrapper{
+		left: 76px;
+	}
+}
+@media (max-width: 991px){
+	#currency-1, #languages-1{
+		right: auto;
+	}
+	.logo-2{
+		padding: 20px 0;
+	}
+	.header{
+		padding: 20px 0;
+		.flex-middle p{
+			margin-bottom: 0;
+		}
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.fs-pager-wrapper{
+		left: 60px;
+	}
+}
+@media (max-width: 767px){
+	.banner_category .banner-content p {
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+	.fs-pager-wrapper {
+		left: 7.5vw;
+	}
+	.left-icon-group{
+		.addon-box{
+			&:first-child, &:nth-child(2){
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 481px){
+	.fraction-slider{
+		height: 70vw !important;
+	}
+	.header .flex-middle .addon-box {
+		margin-right: 15px;
+	}
+	.jms-slider-wrapper{
+		.text-1{
+			font-size: 12px !important;
+		}
+		.text-2, .btn-underline{
+			font-size: 6px !important;
+		}
+	}
+}

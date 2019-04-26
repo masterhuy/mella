@@ -1,0 +1,101 @@
+.jms-megamenu .nav > li > a {
+  line-height: 136px; }
+
+.menu .container > .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.sub-home {
+  padding-left: 0 !important; }
+
+.jms-slider-wrapper .text-1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.165vw; }
+  .jms-slider-wrapper .text-1::after {
+    content: "";
+    width: 2.7vw;
+    height: 3px;
+    background: #b20f0f;
+    position: absolute;
+    top: 4.05vw;
+    margin-left: 1vw;
+    left: -1vw; }
+
+.jms-slider-wrapper .text-2 {
+  font-weight: 600;
+  letter-spacing: -0.089vw;
+  line-height: 3.1vw; }
+
+.jms-slider-wrapper .fraction-slider .prev, .jms-slider-wrapper .fraction-slider .next {
+  font-family: "icomoon";
+  font-size: 1.75vw;
+  text-align: center;
+  color: #c2c2c2;
+  background: #fff;
+  width: 4.5vw;
+  height: 4.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: unset !important;
+  -ms-transform: unset !important;
+  transform: unset !important;
+  bottom: -84px;
+  top: auto;
+  opacity: 0.7 !important;
+  visibility: hidden;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all; }
+
+.jms-slider-wrapper .fraction-slider .prev {
+  right: 7.35vw !important;
+  left: auto !important; }
+  .jms-slider-wrapper .fraction-slider .prev:before {
+    content: "\eb36"; }
+
+.jms-slider-wrapper .fraction-slider .next {
+  right: 3vw !important;
+  left: auto !important; }
+  .jms-slider-wrapper .fraction-slider .next::before {
+    content: "\eb37"; }
+
+.jms-slider-wrapper:hover .fraction-slider .prev, .jms-slider-wrapper:hover .fraction-slider .next {
+  bottom: 0;
+  visibility: visible !important; }
+
+.jms-slider-wrapper:hover .fraction-slider .prev:hover, .jms-slider-wrapper:hover .fraction-slider .next:hover {
+  opacity: 1 !important; }
+
+.newsletter .container {
+  background: #f1f1f1; }
+
+.brand-carousel.owl-theme .owl-controls {
+  display: none; }
+
+@media (max-width: 1800px) {
+  .header-left-fixed {
+    display: none; } }
+
+@media (max-width: 767px) {
+  #module-group {
+    right: 0; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .text-1, .jms-slider-wrapper .btn-underline {
+    font-size: 5px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 9px !important; }
+  .footer_b img {
+    width: 100%; } }
