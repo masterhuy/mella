@@ -203,8 +203,12 @@ body{
 	}
 }
 @media (max-width: 991px){
-	.page-index header{
+	body{
+		border: 0;
+	}
+	#header{
 		position: unset;
+		padding: 20px 15px;
 	}
 }
 @media (max-width: 991px) and (min-width: 768px){
@@ -290,9 +294,19 @@ body{
 	.banner-4{
 		margin-bottom: 15px;
 	}
+	.jms-slider-wrapper{
+		.text-3, .text-4{
+			display: none !important;
+		}
+	}
 }
 
 @media (max-width: 481px){
+	.jms-slider-wrapper{
+		.text-1, .btn-underline{
+			font-size: 6px !important;
+		}
+	}
 	.jms-banner .btn-underline{
 		font-size: 10px;
 	}

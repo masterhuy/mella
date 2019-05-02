@@ -176,9 +176,10 @@ body#contact #wrapper #content-wrapper{
 	}
 }
 @media(max-width:767px) {
-	#contact #content-wrapper{
+	body#contact #wrapper #content-wrapper{
 		width: 100%;
 		margin-bottom: 50px;
+		padding-right: 0;
 	}
 	#contact #right-column{
 		width: 100%;

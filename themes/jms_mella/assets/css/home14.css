@@ -1,5 +1,6 @@
 .container-fluid {
-  max-width: 1880px; }
+  max-width: 1910px;
+  padding: 0 15px; }
 
 .feature-box {
   display: block;
@@ -29,11 +30,12 @@
     top: calc(45% + 34px); }
   .feature-box.box-4 .js-circle {
     position: absolute;
-    left: 33%;
-    top: 40%; }
+    right: 33%;
+    top: 33%; }
   .feature-box.box-4 .dropdown-menu {
-    left: calc(33% + 34px);
-    top: calc(40% + 34px); }
+    right: calc(33% + 45px);
+    top: calc(24% + 0px);
+    left: auto; }
   .feature-box.box-5 .js-circle {
     position: absolute;
     left: 37%;
@@ -51,19 +53,21 @@
   .feature-box.box-7 .js-circle {
     position: absolute;
     left: 57%;
-    top: 84%; }
+    top: 78%; }
   .feature-box.box-7 .dropdown-menu {
     left: calc(57% + 34px);
     top: calc(54% + 34px); }
   .feature-box.box-8 .js-circle {
     position: absolute;
-    left: 28%;
-    top: 50%; }
+    left: 55%;
+    top: 70%; }
   .feature-box.box-8 .dropdown-menu {
-    left: calc(28% + 34px);
+    left: calc(55% + 34px);
     top: calc(50% + 34px); }
   .feature-box .dropdown-menu {
-    padding: 0; }
+    width: 200px;
+    padding: 0;
+    z-index: 9 !important; }
   .feature-box .include_content_s {
     margin: 0;
     position: absolute;
@@ -75,6 +79,8 @@
       margin-top: -60px; }
     .feature-box .include_content_s .product-preview .product-info {
       min-height: auto; }
+    .feature-box .include_content_s .product-link {
+      font-size: 14px; }
     .feature-box .include_content_s .product_action {
       margin-top: -30px;
       background: transparent; }
@@ -105,7 +111,6 @@
         font-size: 16px;
         color: #000; }
     .feature-box .include_content_s .product-miniature {
-      width: 270px;
       background: #fff;
       border: 10px solid #fff;
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -116,3 +121,21 @@
 
 #footer {
   padding: 22px 0 80px; }
+
+@media (max-width: 991px) {
+  .feature-box.box-2 .dropdown-menu {
+    left: calc(29% + 34px);
+    top: calc(79% + 34px); }
+  .feature-box.box-6 .dropdown-menu {
+    left: calc(0% + 0px);
+    top: calc(64% + 40px); }
+  .feature-box.box-8 .dropdown-menu {
+    left: calc(0% + -19px);
+    top: calc(16% + 34px); } }
+
+@media (max-width: 767px) {
+  .feature-box .dropdown-menu {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; } }

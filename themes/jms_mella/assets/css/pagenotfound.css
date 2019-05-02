@@ -73,12 +73,27 @@
 	font-weight: 400;
 	margin-bottom: 50px;
 }
-#pagenotfound #footer{
+#pagenotfound #footer {
 	margin-top: 0;
+	border-top: 0;
+}
+@media (max-width: 1366px){
+	#pagenotfound #wrapper{
+		padding: 100px 0;
+	}
 }
 @media(max-width:767px) {
 	#search .page-content, #pagenotfound .page-content{
 		padding: 0;
+	}
+	#pagenotfound .text-left{
+		text-align: center;
+	}
+	#pagenotfound .text-left img{
+		width: 50%;
+	}
+	#pagenotfound #search_widget{
+		margin: auto;
 	}
 }
 @media (max-width: 481px){

@@ -97,10 +97,14 @@
 
 @media (max-width: 767px) {
   .banner-1, .banner-2, .banner-4, .banner-5 {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .jms-banner .banner-content {
+    bottom: 10px; }
+  .jms-banner .category-name {
+    font-size: 16px; } }
 
 @media (max-width: 481px) {
   .jms-slider-wrapper .text-1, .jms-slider-wrapper .btn-underline {
     font-size: 5px !important; }
   .jms-slider-wrapper .text-2 {
-    font-size: 9px !important; } }
+    font-size: 10px !important; } }

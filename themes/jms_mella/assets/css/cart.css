@@ -378,7 +378,13 @@
 		border: 1px solid #ebebeb;
 	}
 	.product-line-grid .product-info .product-line-info{
-		text-align: left;
+		text-align: center;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.row_cs.product-qty{
+		display: flex;
+		justify-content: center;
 	}
 	.product-line-grid .row_cs:not(:last-child){
 		margin-bottom: 20px;

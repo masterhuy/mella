@@ -329,14 +329,14 @@
 	}
 }
 @media(max-width:481px) {
+	#category .banner-and-desc{
+		width: 100%;
+	}
 	.filters-panel .right {
 		text-align: right;
 	}
 	#category-description > p {
-		width: 100% !important;
-		padding: 20px 10px;
-		position: relative;
-		top: 20px;
+		width: 100% ;
 	}
 	.filters-panel .col-xs-12 {
 		margin-bottom:10px;

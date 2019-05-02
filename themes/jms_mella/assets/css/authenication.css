@@ -11,6 +11,10 @@
 #authentication .breadcrumb{
 	display: none;
 }
+#authentication #footer{
+	border-top: 0;
+	margin-top: 0;
+}
 .forgot-password a,
 .no-account a{
 	font-size: 12px;
@@ -55,4 +59,9 @@
 }
 #authentication .form-control-comment {
 	line-height:40px;
+}
+@media (max-width: 1199px){
+	#authentication{
+		border: 0;
+	}
 }

@@ -59,7 +59,7 @@
 }
 .fs-pager-wrapper a, 
 .fs-custom-pager-wrapper a {
-	margin: 0.26vw 0;
+	margin: 0.26vw 0 !important;
 	width: 14px;
 	height: 14px;
 }
@@ -74,8 +74,11 @@
 		padding-top: 0;
 	}
 	.page-index{
-		padding: 20px 0;
+		padding: 0;
 		background: transparent;
+	}
+	#header{
+		padding: 20px 0 10px;
 	}
 	.header{
 		position: unset;
@@ -104,6 +107,35 @@
 		.container-fluid{
 			max-width: 100%;
 			padding: 0 15px;
+		}
+	}
+}
+@media (max-width: 481px){
+	#header{
+		padding: 50px 0;
+	}
+	.jms-slider-wrapper{
+		.text-1, .btn-underline{
+			font-size: 5px !important;
+		}
+		.text-2{
+			font-size: 12px !important;
+		}
+	}
+	.fraction-slider{
+		height: 100vw !important;
+	}
+	.fs-pager-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.left-icon-group{
+		.module-group-box{
+			position: unset;
+		}
+		#module-group{
+			right: 15px;
 		}
 	}
 }

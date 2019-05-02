@@ -158,8 +158,11 @@ body {
     padding: 0 20px; } }
 
 @media (max-width: 991px) {
-  .page-index header {
-    position: unset; } }
+  body {
+    border: 0; }
+  #header {
+    position: unset;
+    padding: 20px 15px; } }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .banner1 .banner-content .text-1 {
@@ -206,9 +209,13 @@ body {
   .banner1 {
     margin-bottom: 15px; }
   .banner-4 {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .jms-slider-wrapper .text-3, .jms-slider-wrapper .text-4 {
+    display: none !important; } }
 
 @media (max-width: 481px) {
+  .jms-slider-wrapper .text-1, .jms-slider-wrapper .btn-underline {
+    font-size: 6px !important; }
   .jms-banner .btn-underline {
     font-size: 10px; }
   .banner1 .banner-content {

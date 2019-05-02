@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Building an eCommerce site for your customer base.</title>
+    <link>https://www.prestashop.com/en/blog/building-ecommerce-site-for-customer-base</link>
+    <description>Depends on the industry and type of selling goods the e-commerce set up will be different each time, the same as different will be customer’s expectations.</description>
+     <pubDate>Mon, 29 Apr 2019 15:29:46 +0200</pubDate>
+ <dc:creator>Code Sphere Network.</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/building-ecommerce-site-for-customer-base</guid>
+  </item>
+  <item>
+    <title>Is cryptocurrency the E-Commerce Game Changer? Here you go!</title>
+    <link>https://www.prestashop.com/en/blog/cryptocurrency-the-e-commerce-game-changer</link>
+    <description>Cryptocurrency is the hottest cake in the market right now and bringing it into E-commerce shall take the booming industry to much greater heights.</description>
+     <pubDate>Fri, 26 Apr 2019 16:10:05 +0200</pubDate>
+ <dc:creator>Shamla Tech Agency</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/cryptocurrency-the-e-commerce-game-changer</guid>
+  </item>
+  <item>
     <title>The Ultimate SEO Checklist for PrestaShop (2019)</title>
     <link>https://www.prestashop.com/en/blog/ultimate-seo-checklist-for-prestashop</link>
     <description>Search Engine Optimization (SEO) has become an integral part of promoting and marketing a website online.</description>
@@ -68,22 +84,6 @@
      <pubDate>Mon, 18 Mar 2019 12:01:09 +0100</pubDate>
  <dc:creator>Sarah Dib</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/the-10-recommended-steps-installing-your-online-store</guid>
-  </item>
-  <item>
-    <title>Dropshipping, tips and advice to create your ecommerce website without stock</title>
-    <link>https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</link>
-    <description>In very simple terms, “Dropshipping” is a business strategy in which an online store owner does not keep goods in stock but helps retailers or customers to access goods directly from the manufactur</description>
-     <pubDate>Fri, 15 Mar 2019 11:50:32 +0100</pubDate>
- <dc:creator>Invertus</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</guid>
-  </item>
-  <item>
-    <title>How to promote your PrestaShop store using domain names</title>
-    <link>https://www.prestashop.com/en/blog/promote-prestashop-store-using-domain-names</link>
-    <description>To become a seasoned marketer and successful store owner, you need to promote your PrestaShop store in a way that attracts quality traffic.</description>
-     <pubDate>Wed, 06 Mar 2019 16:06:20 +0100</pubDate>
- <dc:creator>store</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/promote-prestashop-store-using-domain-names</guid>
   </item>
   </channel>
 </rss>
