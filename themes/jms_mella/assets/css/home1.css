@@ -208,7 +208,7 @@ body {
     display: none; }
   .banner1 {
     margin-bottom: 15px; }
-  .banner-4 {
+  .banner4 {
     margin-bottom: 15px; }
   .jms-slider-wrapper .text-3, .jms-slider-wrapper .text-4 {
     display: none !important; } }
@@ -241,17 +241,15 @@ body {
       bottom: 11px; }
   .banner3 .banner-content .text-3 {
     font-size: 14px; }
-  .banner4 {
-    margin-bottom: 15px; }
-    .banner4 .banner-content {
-      padding: 0 15px; }
-      .banner4 .banner-content .text-1 {
-        font-size: 16px;
-        margin-bottom: 0; }
-      .banner4 .banner-content .text-2 {
-        font-size: 25px; }
-      .banner4 .banner-content .text-3 {
-        font-size: 14px; }
+  .banner4 .banner-content {
+    padding: 0 15px; }
+    .banner4 .banner-content .text-1 {
+      font-size: 16px;
+      margin-bottom: 0; }
+    .banner4 .banner-content .text-2 {
+      font-size: 25px; }
+    .banner4 .banner-content .text-3 {
+      font-size: 14px; }
   .banner5 .banner-content {
     padding: 0 15px; }
     .banner5 .banner-content .text-1 {

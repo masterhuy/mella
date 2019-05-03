@@ -31,9 +31,6 @@
 }
 }
 @media (max-width: 1366px){
-	.cart_block_list {
-		max-height: 238px;
-	}
 	#cart_block .shoppingcart-box{
 		max-width: 490px;
 		right: 0;

@@ -1,40 +1,21 @@
-.topbar .left ul li:not(:last-child) {
-	margin-left: 34px;
-	margin-right: 0;
+.jms-megamenu .nav.level0{
+	display: flex;
 }
-.topbar .left ul li:not(:first-child)::before {
-	right: -21px;
-	left: auto;
+.jms-slider-wrapper .text-1::after {
+  left: 100%;
 }
-.topbar .right .addon-box {
-	margin-right: 42px;
+.left-icon-group .addon-box {
+	margin-right: 25px;
 	margin-left: 0;
 }
-.topbar .right .addon-box:not(:first-child)::before {
-	right: -23px;
-	left: auto;
+.footer-top-1 .group-btn .addon-box {
+  margin-right: 27px;
+  margin-left: 0;
 }
-.header .right .addon-box:not(:first-child) {
-	margin-right: 15px;
+#footer .find-us {
+  text-align: left;
+}
+#footer #social_block ul li {
 	margin-left: 0;
-}
-.menu .jms-megamenu .nav > li:first-child {
-	padding-right: 0;
-	padding-left: 15px;
-}
-.menu .center {
-	text-align: right;
-}
-.jms-slider-wrapper .text-2{
-	text-align: left;
-}
-#newsletter_block_left .addon-title h3 {
-	text-align: left;
-}
-#newsletter_block_left .addon-title{
-	text-align: left;
-	direction: ltr !important;
-}
-#newsletter_block_left .form-group{
-	justify-content: flex-end;
+	margin-right: 28px;
 }

@@ -5660,7 +5660,7 @@ sup.required {
 }
 .jms-tab ul .nav-item a {
   padding: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
 }
 
 .btn-name.account {

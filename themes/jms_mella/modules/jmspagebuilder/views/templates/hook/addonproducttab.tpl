@@ -34,122 +34,124 @@ var p_pag_tab = {if $pagination == 1}true{else}false{/if};
 var auto_play_tab = {if $autoplay == 1}true{else}false{/if};
 </script>
 </script>
-{if $addon_title}
-<div class="addon-title">
-	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
-</div>
-{/if}
-{if $addon_desc}
-<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
-{/if}		
-<div class="jms-tab">
-	<ul class="nav" role="tablist">
-	{$cf = 0}
+<div class="product_tab">
+	{if $addon_title}
+	<div class="addon-title">
+		<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+	</div>
+	{/if}
+	{if $addon_desc}
+	<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
+	{/if}		
+	<div class="jms-tab">
+		<ul class="nav" role="tablist">
+		{$cf = 0}
+			{if $config.show_featured eq '1'}
+				<li class="nav-item"><a class="button active" data-toggle="tab" href="#featured">{l s='Featured'  d='Shop.Theme'}</a></li>
+			{$cf = $cf + 1}
+			{/if}	
+			{if $config.show_new eq '1'}
+				<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#latest">{l s='New Arrival'  d='Shop.Theme'}</a></li>
+				{$cf = $cf + 1}
+			{/if}		
+			{if $config.show_topseller eq '1'}
+				<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#topseller">{l s='Best Seller' d='Shop.Theme'}</a></li>
+				{$cf = $cf + 1}
+			{/if}		
+			{if $config.show_special eq '1'}
+				<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#special">{l s='Special'  d='Shop.Theme'}</a></li>
+				{$cf = $cf + 1}
+			{/if}			
+			{if $config.show_onsale eq '1'}
+				<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#onsale">{l s='Sale Off'  d='Shop.Theme'}</a></li>
+				{$cf = $cf + 1}
+			{/if}			
+		</ul>
+	</div>
+	<div class="tab-content">
+		{$cf = 0}
 		{if $config.show_featured eq '1'}
-			<li class="nav-item"><a class="button active" data-toggle="tab" href="#featured">{l s='Featured'  d='Shop.Theme'}</a></li>
-		{$cf = $cf + 1}
-		{/if}	
+			<div role="tabpanel" class="tab-pane active fade in" id="featured">
+			  	<div class="product_box">
+				  	<div class="producttab-carousel">	
+						{foreach from = $featured_products item = products_slide}
+							<div class="item">
+								{foreach from = $products_slide item = product}
+									{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+								{/foreach}
+							</div>
+						{/foreach}
+					</div>
+				</div>
+			</div>
+			{$cf = $cf + 1}
+		{/if}
 		{if $config.show_new eq '1'}
-			<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#latest">{l s='New Arrival'  d='Shop.Theme'}</a></li>
+			 <div role="tabpanel" class="tab-pane fade{if $cf eq 0}active in{/if}" id="latest">
+			 	<div class="product_box">
+					<div class="producttab-carousel">	
+						{foreach from = $new_products item = products_slide}
+							<div class="item">
+								{foreach from = $products_slide item = product}
+									{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+								{/foreach}
+							</div>
+						{/foreach}
+					</div>
+				</div>
+			 </div>
 			{$cf = $cf + 1}
-		{/if}		
+		{/if}
 		{if $config.show_topseller eq '1'}
-			<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#topseller">{l s='Best Seller' d='Shop.Theme'}</a></li>
+			 <div role="tabpanel" class="tab-pane  fade {if $cf eq 0}active in{/if}" id="topseller">
+			 	<div class="product_box">
+					<div class="producttab-carousel">	
+						{foreach from = $topseller_products item = products_slide}
+							<div class="item">
+								{foreach from = $products_slide item = product}
+									{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+								{/foreach}
+							</div>
+						{/foreach}
+					</div>
+				</div>
+			 </div>
 			{$cf = $cf + 1}
-		{/if}		
+		{/if}
 		{if $config.show_special eq '1'}
-			<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#special">{l s='Special'  d='Shop.Theme'}</a></li>
+			 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active in{/if}" id="special">
+				<div class="product_box">
+					<div class="producttab-carousel">	
+						{foreach from = $special_products item = products_slide}
+							<div class="item">
+								{foreach from = $products_slide item = product}
+									{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+								{/foreach}
+							</div>
+						{/foreach}
+					</div>
+				</div>
+			 </div>
 			{$cf = $cf + 1}
-		{/if}			
+		{/if}
 		{if $config.show_onsale eq '1'}
-			<li class="nav-item"><a class="{if $cf eq 0}active{/if} button" data-toggle="tab" href="#onsale">{l s='Sale Off'  d='Shop.Theme'}</a></li>
+			 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active in{/if}" id="onsale">
+				<div class="product_box">
+					<div class="producttab-carousel">	
+						{foreach from = $onsale_products item = products_slide}
+							<div class="item">
+								{foreach from = $products_slide item = product}
+									{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+								{/foreach}
+							</div>
+						{/foreach}
+					</div>
+				</div>
+			 </div>
 			{$cf = $cf + 1}
-		{/if}			
-	</ul>
-</div>
-<div class="tab-content">
-	{$cf = 0}
-	{if $config.show_featured eq '1'}
-		<div role="tabpanel" class="tab-pane active fade in" id="featured">
-		  	<div class="product_box">
-			  	<div class="producttab-carousel">	
-					{foreach from = $featured_products item = products_slide}
-						<div class="item">
-							{foreach from = $products_slide item = product}
-								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-							{/foreach}
-						</div>
-					{/foreach}
-				</div>
-			</div>
-		</div>
-		{$cf = $cf + 1}
-	{/if}
-	{if $config.show_new eq '1'}
-		 <div role="tabpanel" class="tab-pane fade{if $cf eq 0}active in{/if}" id="latest">
-		 	<div class="product_box">
-				<div class="producttab-carousel">	
-					{foreach from = $new_products item = products_slide}
-						<div class="item">
-							{foreach from = $products_slide item = product}
-								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-							{/foreach}
-						</div>
-					{/foreach}
-				</div>
-			</div>
-		 </div>
-		{$cf = $cf + 1}
-	{/if}
-	{if $config.show_topseller eq '1'}
-		 <div role="tabpanel" class="tab-pane  fade {if $cf eq 0}active in{/if}" id="topseller">
-		 	<div class="product_box">
-				<div class="producttab-carousel">	
-					{foreach from = $topseller_products item = products_slide}
-						<div class="item">
-							{foreach from = $products_slide item = product}
-								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-							{/foreach}
-						</div>
-					{/foreach}
-				</div>
-			</div>
-		 </div>
-		{$cf = $cf + 1}
-	{/if}
-	{if $config.show_special eq '1'}
-		 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active in{/if}" id="special">
-			<div class="product_box">
-				<div class="producttab-carousel">	
-					{foreach from = $special_products item = products_slide}
-						<div class="item">
-							{foreach from = $products_slide item = product}
-								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-							{/foreach}
-						</div>
-					{/foreach}
-				</div>
-			</div>
-		 </div>
-		{$cf = $cf + 1}
-	{/if}
-	{if $config.show_onsale eq '1'}
-		 <div role="tabpanel" class="tab-pane fade {if $cf eq 0}active in{/if}" id="onsale">
-			<div class="product_box">
-				<div class="producttab-carousel">	
-					{foreach from = $onsale_products item = products_slide}
-						<div class="item">
-							{foreach from = $products_slide item = product}
-								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-							{/foreach}
-						</div>
-					{/foreach}
-				</div>
-			</div>
-		 </div>
-		{$cf = $cf + 1}
-	{/if}
-</div>
-<div class="text-center view-all">
-	<a href="index.php?id_category=2&controller=category&id_lang=1" class="btn-underline">{l s='view all products'  d='Shop.Theme'}</a>
+		{/if}
+	</div>
+	<div class="text-center view-all">
+		<a href="index.php?id_category=2&controller=category&id_lang=1" class="btn-underline">{l s='view all products'  d='Shop.Theme'}</a>
+	</div>
 </div>

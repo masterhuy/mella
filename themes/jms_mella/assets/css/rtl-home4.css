@@ -1,49 +1,47 @@
-.topbar .left ul li:not(:last-child) {
-  margin-left: 34px;
-  margin-right: 0;
+.left-group-btn-1 img {
+	margin-left: 11px;
+	margin-right: 0;
 }
-.topbar .left ul li:not(:first-child)::before {
-  left: auto;
-  right: -21px;
+.left-icon-group .addon-box {
+	margin-right: 25px;
+	margin-left: 0;
 }
-.topbar .right .addon-box {
-  margin-right: 42px;
-  margin-left: 0;
+.contact_info .addon-title h3,
+.help_service .addon-title h3 {
+	text-align: right;
 }
-.topbar .right .addon-box:not(:first-child)::before {
-  left: auto;
-  right: -23px;
+.contact_info .find-us {
+	text-align: right;
 }
-.header .right .addon-box:not(:first-child) {
-  margin-right: 15px;
-  margin-left: 0;
+.contact_info #social_block{
+	padding-right: 40px;
 }
-.header .jms-advsearch .input-group-addon.icon-drop-down {
-  left: 0;
-  right: auto;
+.contact_info #social_block ul li {
+	margin-left: 28px;
+	margin-right: 0;
 }
-.header .jms-advsearch .input-group-addon.icon-drop-down::before {
+.contact_info {
+	padding-left: 0 !important;
+	padding-right: 15px !important;
+}
+.help_service {
+	padding-right: 0 !important;
+	padding-left: 15px !important;
+}
+.help_service li a::before{
+	margin-left: 6px;
+	margin-right: 0;
+	transform: rotate(180deg);
+}
+.main-site {
   right: 0;
-  left: auto;
+  left: auto; 
 }
-.header #ajax_advsearch {
-  background: transparent url("../img/icon/search-h4.png") no-repeat 475px 13px;
-  padding-right: 50px;
-  padding-left: 50px;
+.main-site.open-sidebar1 {
+    right: 343px;
+    left: auto; 
 }
-.menu .ver_menu {
-  justify-content: center;
-}
-.jms-megamenu .nav > li:first-child {
-  padding-right: 0;
-  padding-left: 15px;
-}
-.menu .center {
-  text-align: right;
-}
-.menu .right p{
-  text-align: left !important;
-}
-.intro .addon-box{
-  justify-content: flex-start;
+.main-site.open-sidebar1 .header.fixed {
+    right: 343px; 
+    left: auto;
 }

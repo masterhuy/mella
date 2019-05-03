@@ -1,32 +1,12 @@
-.jms-slider-wrapper .text-2 {
-  text-align: left;
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0 !important;
+	padding-left: 18.5px !important;
 }
-.topbar .left ul li:not(:last-child) {
-  margin-left: 34px;
-  margin-right: 0;
+.left-icon-group .addon-box {
+	margin-right: 25px;
+	margin-left: 0;
 }
-.topbar .left ul li:not(:first-child)::before {
-  right: -21px;
-  left: auto;
-}
-.jms-megamenu .nav > li:first-child {
-  padding-right: 0;
-  padding-left: 15px;
-}
-.menu .center {
-  text-align: right;
-}
-#footer .footer_b .find-us {
-  text-align: right;
-}
-#footer #social_block ul li a {
-  margin-left: 20px;
-  margin-right: 0;
-}
-#footer #newsletter_block_left .newsletter-btn {
-  margin-right: 0;
-}
-#footer #newsletter_block_left .text-footer > span {
-  padding-left: 15px;
-  padding-right: 0;
+.header-left-fixed #jms_ajax_search .btn-search span {
+	margin-right: 23px;
+	margin-left: 0;
 }
