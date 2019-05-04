@@ -1,0 +1,39 @@
+.left-icon-group .addon-box {
+	margin-right: 25px;
+	margin-left: 0;
+}
+.contact_info .addon-title h3,
+.help_service .addon-title h3 {
+	text-align: right;
+}
+.jms-megamenu .nav.level0 .sub-contact {
+	padding-left: 0;
+	padding-right: 18.5px;
+}
+.main-site.open-sidebar1 {
+	left: 0;
+	right: auto;
+}
+.contact_info .find-us {
+	text-align: right;
+}
+.contact_info #social_block{
+	padding-right: 40px;
+}
+.contact_info #social_block ul li {
+	margin-left: 28px;
+	margin-right: 0;
+}
+.contact_info {
+	padding-left: 0 !important;
+	padding-right: 15px !important;
+}
+.help_service {
+	padding-right: 0 !important;
+	padding-left: 15px !important;
+}
+.help_service li a::before{
+	margin-left: 6px;
+	margin-right: 0;
+	transform: rotate(180deg);
+}

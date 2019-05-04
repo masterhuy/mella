@@ -1,0 +1,18 @@
+.left-icon-group .addon-box:last-child {
+	margin-right: 46px;
+	margin-left: 0;
+}
+.left-icon-group .addon-box {
+	margin-right: 29px;
+	margin-left: 0;
+}
+.banner-2 {
+	margin-top: 0;
+}
+.banner-4 {
+	margin-top: 0;
+}
+.main-site {
+	left: 0;
+	right: auto;
+}

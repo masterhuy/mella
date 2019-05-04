@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Shipping goods to Germany? Then you’ll need to know about the German Packaging Act</title>
+    <link>https://www.prestashop.com/en/blog/shipping-german-packaging-act</link>
+    <description>On 1 January 2019, a new law came into force in Germany that also directly affects retailers and manufacturers who ship goods to Germany – the new German Packaging </description>
+     <pubDate>Fri, 03 May 2019 11:09:12 +0200</pubDate>
+ <dc:creator>Interseroh EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/shipping-german-packaging-act</guid>
+  </item>
+  <item>
     <title>Building an eCommerce site for your customer base.</title>
     <link>https://www.prestashop.com/en/blog/building-ecommerce-site-for-customer-base</link>
     <description>Depends on the industry and type of selling goods the e-commerce set up will be different each time, the same as different will be customer’s expectations.</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 20 Mar 2019 12:26:25 +0100</pubDate>
  <dc:creator>Antoine Thomas</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/open-source-prestashop-project-company</guid>
-  </item>
-  <item>
-    <title>10 key steps after installing your PrestaShop online store</title>
-    <link>https://www.prestashop.com/en/blog/the-10-recommended-steps-installing-your-online-store</link>
-    <description>If you are reading this article, that means you have installed and created your online store with PrestaShop: congratulations!</description>
-     <pubDate>Mon, 18 Mar 2019 12:01:09 +0100</pubDate>
- <dc:creator>Sarah Dib</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/the-10-recommended-steps-installing-your-online-store</guid>
   </item>
   </channel>
 </rss>

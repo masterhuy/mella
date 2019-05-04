@@ -3581,6 +3581,13 @@ a.wishlist_top {
     margin: 0 14px !important; } }
 
 @media (max-width: 481px) {
+  .newsletter-type-2 #newsletter_block_left {
+    padding: 55px 20px 60px; }
+  .contact_info .addon-box:first-child {
+    padding: 57px 20px 0px; }
+  div.help_service .addon-box {
+    padding-left: 20px;
+    padding-right: 20px; }
   .product-information .countdown-box .countdown-amount {
     font-size: 20px !important; }
   .newsletter-type-2 #newsletter_block_left .form-group {
