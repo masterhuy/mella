@@ -1893,6 +1893,79 @@ div.top_menu_second.v2 .jms-megamenu .item-fullwidth > .dropdown-menu {
 .newsletter-type-3 #newsletter_block_left .textnews_h8 {
   text-align: right;
 }
+.top_menu_second.v3 {
+  right: -370px;
+  left: auto;
+}
+.top_menu_second.v3 .jms-megamenu .nav > li > a{
+  text-align: right;
+}
+.top_menu_second.v3 .jms-megamenu .mega-nav li > a {
+  text-align: right;
+}
+.top_menu_second.v3 .jms-megamenu .nav > li > a > .caret {
+  left: 59px;
+  top: 52px;
+  transform: skewX(13deg) rotate(180deg);
+  right: auto;
+}
+.top_menu_second.v3 .jms-megamenu .dropdown-menu {
+  left: auto !important;
+  right: 100% !important;
+}
+.top_menu_second.v3 .jms-megamenu .item-fullwidth > .dropdown-menu {
+  right: 100% !important;
+  left: auto !important;
+}
+.top_menu_second.v3 .jms-megamenu .mega-nav li > a::after {
+  left: 22px !important;
+  right: auto !important;
+}
+.top_menu_second.v4 {
+  right: 217px;
+  left: auto;
+}
+.main-site.open-sidebar1 .top_menu_second.v4 {
+  right: 217px;
+  left: auto;
+}
+.top_menu_second.v4 .jms-megamenu .nav > li > a {
+  text-align: right;
+}
+.top_menu_second.v4 .jms-megamenu .nav > li > a > .caret {
+  left: 59px;
+  top: 52px;
+  transform: skewX(13deg) rotate(180deg);
+  right: auto;
+}
+.top_menu_second.v4 .jms-megamenu .dropdown-menu {
+  left: auto !important;
+  right: 100% !important;
+}
+.top_menu_second.v4 .jms-megamenu .mega-nav li > a {
+  text-align: right;
+}
+.top_menu_second.v4 .jms-megamenu .nav > li.menu-align-center > .dropdown-menu{
+  right: 100% !important;
+  left: auto;
+}
+.top_menu_second.v4 .jms-megamenu .mega-nav li > a::after {
+  left: 60px !important;
+  right: auto !important;
+}
+.left-group-btn-1 .addon-box {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.left-group-btn-1 img {
+  margin-left: 11px;
+  margin-right: 0;
+}
+.f_payments img{
+  float: left !important;
+}
+
+
 
 @media (min-width: 992px){
   #footer .company {

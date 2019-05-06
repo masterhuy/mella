@@ -1,0 +1,16 @@
+.left-icon-group .addon-box {
+	margin-right: 25px;
+	margin-left: 0;
+}
+.main-site {
+  right: 0;
+  left: auto; 
+}
+.main-site.open-sidebar1 .header.fixed {
+	right: 343px;
+	left: auto;
+}
+.main-site.open-sidebar1 {
+	right: 370px;
+	left: auto;
+}
