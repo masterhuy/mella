@@ -59,11 +59,11 @@
     top: calc(54% + 34px); }
   .feature-box.box-8 .js-circle {
     position: absolute;
-    left: 55%;
-    top: 70%; }
+    left: 35%;
+    top: 35%; }
   .feature-box.box-8 .dropdown-menu {
-    left: calc(55% + 34px);
-    top: calc(50% + 34px); }
+    left: calc(35% + 34px);
+    top: calc(35% + 34px); }
   .feature-box .dropdown-menu {
     width: 200px;
     padding: 0;

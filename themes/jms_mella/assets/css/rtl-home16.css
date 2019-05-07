@@ -1,0 +1,20 @@
+.left_column {
+	float: right;
+	padding-left: 20px;
+	padding-right: 0;
+}
+.right_column {
+	padding-right: 20px;
+	padding-left: 0;
+}
+.main-site {
+	right: 0;
+}
+.main-site.open-sidebar1 {
+	right: 343px;
+	left: auto;
+}
+#cart-cl, #module-group {
+	right: 100%;
+	left: auto;
+}

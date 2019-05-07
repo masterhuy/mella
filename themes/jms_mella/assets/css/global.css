@@ -63,7 +63,7 @@
   padding: 20px 0; }
 
 .mg-20 .container > .row {
-  margin: -10px; }
+  margin: 0 -10px; }
 
 .mg-20 .layout-column {
   padding: 0 10px; }
@@ -336,15 +336,9 @@
 
 .header-type-3.fixed {
   padding: 10px 0; }
-  .header-type-3.fixed .flex-center a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
   .header-type-3.fixed .logo {
-    width: 50%; }
+    width: 50%;
+    margin: auto; }
 
 .left-group-btn-1 .addon-box {
   margin-right: 20px; }
@@ -2315,7 +2309,7 @@ a.wishlist_top {
   color: #fff;
   font-size: 11px;
   height: 17px;
-  line-height: 20px;
+  line-height: 17px;
   position: absolute;
   text-align: center;
   width: 17px;
@@ -2948,7 +2942,7 @@ a.wishlist_top {
   padding-left: 0 !important; }
   .help_service .addon-box {
     background: #f1f1f1;
-    padding: 57px 11px 40px; }
+    padding: 57px 11px 43px; }
   .help_service .addon-title h3 {
     font-size: 18px;
     font-weight: 600;

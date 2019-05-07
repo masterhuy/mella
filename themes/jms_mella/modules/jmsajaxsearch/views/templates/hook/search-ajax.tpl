@@ -30,8 +30,9 @@
 					{if $show_image == 1}
                     <div class="left-img">
                         <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
-                            <img src="{$link->getImageLink($product.id_image, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" class="img-responsive" />
-                        </a>
+				            <img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
+				        </a>
+                        zzzzzzzzzzzzzzz
                     </div>
 					{/if}	
                     <div class="right-info">

@@ -1,12 +1,8 @@
 #authentication .show-pass button {
-	height: 40px;
 	font-size: 0px;
 	border: none;
 	background: none;
-	min-width: 30px;
-	position: relative;
-	right: 10px;
-	color: #111 !important;
+	padding: 0;
 }
 #authentication .breadcrumb{
 	display: none;
@@ -33,9 +29,10 @@
 #authentication .show-pass {
 	position:absolute;
 	top:0;
-	right:2px;
+	right:0;
+	width: 40px;
+	text-align: center;
 	z-index:11;
-	min-width:30px;
 }
 #authentication .forgot-password > a {
 	margin-bottom: 10px;

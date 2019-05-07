@@ -25,7 +25,8 @@ body {
     background: #b20f0f;
     position: absolute;
     top: 0.5vw;
-    margin-left: 1vw; }
+    margin-left: 1vw;
+    left: 100%; }
 
 .jms-slider-wrapper .text-2 {
   font-weight: 700;

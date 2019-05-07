@@ -29,8 +29,9 @@
                 <div class="item clearfix">     
 					{if $show_image == 1}
                     <div class="left-img">
+                        {assign var='defaultImage' value=Product::getCover($product.id_product)}
                         <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
-                            <img src="{$link->getImageLink($product.id_image, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" class="img-responsive" />
+                            <img src="{$link->getImageLink($product.link_rewrite, $defaultImage.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
                         </a>
                     </div>
 					{/if}	

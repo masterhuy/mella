@@ -34,9 +34,12 @@
 	.left-icon-group .addon-box {
 		padding-top: 0px;
 		margin-top: -3px;
+		.mega_menu{
+			margin-bottom: 6px;
+		}
 	}
 }
-.jms-slider-wrapper{
+div.jms-slider-wrapper{
 	.text-1{
 		font-weight: 600;
 		letter-spacing: 0.17vw;
@@ -45,6 +48,7 @@
 	.text-2{
 		letter-spacing: -0.1vw;
 		line-height: 3.7vw;
+		text-align: center;
 	}
 }
 .fs-pager-wrapper {

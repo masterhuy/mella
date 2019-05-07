@@ -70,6 +70,7 @@
 	padding: 8px 17px;
 	border-color: #eee;
 	height: 40px;
+	border: 0;
 }
 .form-control-comment {
 	line-height:40px;

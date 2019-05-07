@@ -24,7 +24,7 @@
  *}
 <section id="content" class="page-content page-not-found">
     <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left">
+        <div class="layout-column col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left">
             <img src="{$urls.base_url}themes/jms_mella/assets/img/error.png">
             <p class="text-1">{l s='This page not be found' d='Shop.Theme'}</p>
             <p class="text-2">
@@ -41,6 +41,6 @@
                 {hook h='displayNotFound'}
             {/block}
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+        <div class="layout-column col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
     </div>
 </section>

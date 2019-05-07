@@ -1,0 +1,35 @@
+.jms-slider-wrapper .text-1::after {
+	left: 100%;
+}
+.fixed-left{
+	right: 0;
+	left: auto;
+}
+.fixed-right{
+	left: 0;
+	right: auto;
+}
+.main-site.open-sidebar1 {
+	left: 0;
+	right: auto;
+}
+.top_menu_second.v4{
+	right: 142px;
+}
+.main-site.open-sidebar1 .top_menu_second.v4 {
+	right: 142px;
+	left: auto;
+}
+.module-group .btn-group .btn-xs i {
+	right: 20px;
+	left: auto;
+}
+@media (min-width: 992px){
+	.fixed-right #cart-cl.collapse, 
+	.fixed-right #cart-cl.collapsing, 
+	.fixed-right #module-group.collapse, 
+	.fixed-right #module-group.collapsing {
+		left: 100%;
+		right: auto;
+	}
+}

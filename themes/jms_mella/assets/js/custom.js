@@ -1077,7 +1077,7 @@ $(document).ready(function() {
 	var headerCenter = $(".jms-row.header-center");
 
 	$(window).scroll(function () {
-    	if ($(window).scrollTop() > 400){
+    	if ($(window).scrollTop() > 30){
 			header1.addClass("fixed");
 			header2.addClass("fixed");
 			header3.addClass("fixed");

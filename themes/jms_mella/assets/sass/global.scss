@@ -63,7 +63,7 @@
 }
 .mg-20{
 	.container > .row{
-		margin: - 10px;
+		margin: 0 -10px;
 	}
 	.layout-column{
 		padding: 0 10px;
@@ -384,12 +384,9 @@
 .header-type-3{
 	&.fixed{
 		padding: 10px 0;
-		.flex-center a{
-			display: flex;
-			justify-content: center;
-		}
 		.logo{
 			width: 50%;
+			margin: auto;
 		}
 	}
 }
@@ -2644,7 +2641,7 @@ a.wishlist_top{
 	color: #fff;
 	font-size: 11px;
 	height: 17px;
-	line-height: 20px;
+	line-height: 17px;
 	position: absolute;
 	text-align: center;
 	width: 17px;
@@ -3408,7 +3405,7 @@ a.wishlist_top{
 	padding-left: 0 !important;
 	.addon-box{
 		background: #f1f1f1;
-		padding: 57px 11px 40px;
+		padding: 57px 11px 43px;
 	}
 	.addon-title h3{
 		font-size: 18px;
