@@ -13,16 +13,28 @@
     .main-site.open-sidebar1 .top_menu_second {
       right: 0; }
 
-.header {
+.page-index .header {
   position: absolute;
   top: 73px;
-  width: 100%;
   padding: 0 77px;
+  width: 100%; }
+  .page-index .header .container-fluid > .row {
+    display: block; }
+
+.header {
+  padding: 20px;
   z-index: 9999; }
   .header .container-fluid {
     max-width: 1880px; }
     .header .container-fluid > .row {
-      display: block; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .header.fixed .logo {
+    width: 70px; }
   .header .left-icon-group .addon-box {
     padding-top: 0px;
     margin-top: -3px; }

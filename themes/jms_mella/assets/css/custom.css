@@ -63,6 +63,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, 
   padding: 0px;
   margin: 0px; }
 
+button:focus {outline:0;}
 button[disabled], html input[disabled] {
   cursor: not-allowed;
 }
@@ -1125,13 +1126,6 @@ fieldset[disabled] .btn-default {
   cursor: pointer;
 }
 
-.btn-shopnow1:hover,
-.btn-shopnow1:active,
-.btn-shopnow1:focus{
-  color: #fff !important;
-  background: #b20f0f !important;
-  transition: .4s all;
-}
 .btn-effect1:hover{
   background: #b20f0f;
 }

@@ -26,6 +26,9 @@
   {block name='product_cover'}
     <div class="product-cover">
       <img class="zoom_01 js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+      <div class="layer hidden-xs" data-toggle="modal" data-target="#product-modal">
+        <i class="material-icons zoom-in">&#xE8FF;</i>
+      </div>
     </div>
   {/block}
 

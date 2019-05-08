@@ -8,11 +8,11 @@
 	padding-left: 0;
 }
 .main-site {
-	right: 0;
+	left: 0;
 }
 .main-site.open-sidebar1 {
-	right: 343px;
-	left: auto;
+	left: 0;
+	right: auto;
 }
 #cart-cl, #module-group {
 	right: 100%;

@@ -3,19 +3,19 @@
 
 
 .main-site{
-	left: 0;
 	&.open-sidebar1{
-		overflow: unset;
-		left: 343px;
-		.header.fixed{
-			left: 343px;
+		.menu_side.v5{
+			.jms-megamenu .nav > li{
+				opacity: 1;
+				visibility: visible;
+			}
 		}
-		#jmstools{
-			display: none;
-		}
-		.top_menu_second{
-			left: 0;
-		}
+	}
+}
+.menu_side.v5{
+	.jms-megamenu .nav > li{
+		opacity: 0;
+		visibility: hidden;
 	}
 }
 .left_column{
@@ -70,9 +70,17 @@
 		padding: 0 15px;
 		margin: 30px auto;
 	}
-	
+	.menu{
+		display: none;
+	}
+
 }
 @media (min-width: 992px){
+	.page-index{
+		.logo-2{
+			display: none;
+		}
+	}
 	#cart-cl, #module-group {
 		left: 100%;
 		text-align: left;

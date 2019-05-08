@@ -19,17 +19,27 @@
 		}
 	}
 }
-.header{
+.page-index .header{
 	position: absolute;
 	top: 73px;
-	width: 100%;
 	padding: 0 77px;
+	width: 100%;
+	.container-fluid > .row{
+		display: block;
+	}
+}
+.header{
+	padding: 20px;
 	z-index: 9999;
 	.container-fluid{
 		max-width: 1880px;
 		> .row{
-			display: block;
+			display: flex;
+			align-items: center;
 		}
+	}
+	&.fixed .logo{
+		width: 70px;
 	}
 	.left-icon-group .addon-box {
 		padding-top: 0px;

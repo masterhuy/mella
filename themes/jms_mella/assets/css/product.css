@@ -211,6 +211,10 @@
 	cursor: pointer;
 	width: 100%;
     background: #fff;
+    border: 1px solid transparent;
+}
+.modal-body .product-images > li.thumb-container > .thumb{
+    margin-bottom: 25px;
 }
 #gal1 {
     margin-bottom: 0;
@@ -249,7 +253,7 @@
     font-weight: 600;
     color: #000;
     margin-top: 9px;
-    display: block;
+    display: inline-block;
 }
 #product .pb-right-column .content_prices .shipping_cost {
 	line-height: 32px; 

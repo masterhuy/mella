@@ -2018,6 +2018,16 @@ div.top_menu_second.v2 .jms-megamenu .item-fullwidth > .dropdown-menu {
 #history .text-xs-right div {
   text-align: left;
 }
+.menu_side.v5 .jms-megamenu .nav > li .dropdown-menu {
+  right: 100%;
+  left: auto !important;
+}
+.menu_side.v5 .jms-megamenu .nav > li.menu-align-center > .dropdown-menu {
+  right: 100% !important;
+  left: auto;
+}
+
+
 
 
 @media (min-width: 992px){

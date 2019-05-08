@@ -1,14 +1,10 @@
-.main-site {
-  left: 0; }
-  .main-site.open-sidebar1 {
-    overflow: unset;
-    left: 343px; }
-    .main-site.open-sidebar1 .header.fixed {
-      left: 343px; }
-    .main-site.open-sidebar1 #jmstools {
-      display: none; }
-    .main-site.open-sidebar1 .top_menu_second {
-      left: 0; }
+.main-site.open-sidebar1 .menu_side.v5 .jms-megamenu .nav > li {
+  opacity: 1;
+  visibility: visible; }
+
+.menu_side.v5 .jms-megamenu .nav > li {
+  opacity: 0;
+  visibility: hidden; }
 
 .left_column {
   width: 17.4%;
@@ -54,7 +50,12 @@
   padding: 0 15px;
   margin: 30px auto; }
 
+.page-index .menu {
+  display: none; }
+
 @media (min-width: 992px) {
+  .page-index .logo-2 {
+    display: none; }
   #cart-cl, #module-group {
     left: 100%;
     text-align: left;

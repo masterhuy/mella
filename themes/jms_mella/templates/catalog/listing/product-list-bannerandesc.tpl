@@ -33,7 +33,7 @@
                           <div class="cat_desc">
 							<div class="flex-box">
 								 {if $category.description}
-									<div id="category-description" class="banner-and-desc">{$category.description nofilter}</div>
+									<div id="category-description" class="banner-and-desc">{$category.description|truncate:200:'...' nofilter}</div>
 								  {/if}
 							</div>
 						</div>						

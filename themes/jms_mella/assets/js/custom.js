@@ -9,14 +9,17 @@
 *  @Website: http://www.joommasters.com
 */
  jQuery(document).ready(function($) {
- 	$('.jms-vermegamenu').jmsMegaMenu({    			
-		event: jmmm_event,
-		duration: jmmm_duration
-	});
 	$('.jms-megamenu').jmsMegaMenu({    			
 		event: jmmm_event,
 		duration: jmmm_duration
 	});
+
+	$('.jms-vermegamenu').jmsMegaMenu({    			
+		event: jmmm_event,
+		duration: jmmm_duration
+	});
+ 	
+	
 
 	$('.menu-item.collection .mega-dropdown-inner').addClass('collection-carousel');
 
