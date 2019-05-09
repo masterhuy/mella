@@ -15,7 +15,7 @@
 							{* [1][/1] is for a HTML tag. *}
 							{l s='You can also [1]download your invoice[/1]' d='Shop.Theme.Checkout'
 								sprintf=[
-								'[1]' => "<a href='{$order.details.invoice_url}'>",
+								'[1]' => "<a class='download-invoice' href='{$order.details.invoice_url}'>",
 								'[/1]' => "</a>"
 							]
 							}

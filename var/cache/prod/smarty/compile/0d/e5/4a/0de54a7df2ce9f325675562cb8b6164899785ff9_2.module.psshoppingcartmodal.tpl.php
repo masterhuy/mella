@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-02 23:10:37
+/* Smarty version 3.1.33, created on 2019-05-08 22:43:29
   from 'module:psshoppingcartmodal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ca4242d327e70_72464815',
+  'unifunc' => 'content_5cd393d109e8c5_37144643',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0de54a7df2ce9f325675562cb8b6164899785ff9' => 
     array (
       0 => 'module:psshoppingcartmodal.tpl',
-      1 => 1552292667,
+      1 => 1557366835,
       2 => 'module',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ca4242d327e70_72464815 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd393d109e8c5_37144643 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="blockcart-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          
         </button>
         <h4 class="modal-title text-xs-center" id="myModalLabel">
 			<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product successfully added to your shopping cart','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>

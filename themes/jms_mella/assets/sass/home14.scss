@@ -10,6 +10,9 @@
 	padding: 0;
 	position: relative;
 	margin-bottom: 20px;
+	.image{
+		display: block;
+	}
 	&.box-1{
 		.js-circle{
 			position: absolute;

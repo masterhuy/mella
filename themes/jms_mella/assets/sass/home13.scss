@@ -90,21 +90,22 @@ div.jms-slider-wrapper{
 	.page-index{
 		padding: 0;
 		background: transparent;
+		.header{
+			position: unset;
+			padding: 0;
+			.container-fluid{
+				max-width: 750px;
+				> .row{
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
 	}
 	#header{
 		padding: 20px 0 10px;
 	}
-	.header{
-		position: unset;
-		padding: 0;
-		.container-fluid{
-			max-width: 750px;
-			> .row{
-				display: flex;
-				justify-content: center;
-			}
-		}
-	}
+	
 	div.menu-wrap{
 		left: auto;
 		right: -300px;

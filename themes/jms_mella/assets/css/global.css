@@ -3431,7 +3431,9 @@ a.wishlist_top {
   .fancybox-margin {
     margin-right: 0 !important; }
   .sub-cate-name {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .menu_side.v5 .jms-megamenu .nav > li > a {
+    line-height: 45px; } }
 
 @media (max-width: 1199px) {
   .jms-row.cates-carousel .banner-content {
@@ -3484,6 +3486,8 @@ a.wishlist_top {
     margin-bottom: 10px; } }
 
 @media (max-width: 767px) {
+  .producttab-carousel, .megatab-carousel, .megatab-carousel2, .product-carousel, .product-carousel1, .categorytab-carousel, .hotdeal-carousel, .customs-carousel-product, .custom_carousel {
+    padding-top: 20px !important; }
   .mega-tab-right .mega_cates_tab .addon-title h3, .mega-tab-right .mega_cates_tab .addon-desc, .mega-tab-right .product_tab .addon-title h3, .mega-tab-right .product_tab .addon-desc {
     text-align: center; }
   .mega-tab-right .mega_cates_tab .jms-tab, .mega-tab-right .product_tab .jms-tab {
@@ -3665,14 +3669,14 @@ a.wishlist_top {
     width: 100%; }
   #module-group {
     width: 290px; }
-  #newsletter_block_left .newsletter-btn {
-    height: 45px; }
   .jms-slider-wrapper .btn-underline::after, .jms-slider-wrapper .btn-underline::before {
     display: none; }
   .lookbook-name {
     font-size: 16px; }
-  #newsletter_block_left .form-group {
+  div#newsletter_block_left .form-group {
     display: block; }
+  div#newsletter_block_left .newsletter-btn {
+    height: 45px; }
   .countdown-box .cd-title {
     font-size: 28px; }
   .countdown-box .cd-price {
@@ -3823,6 +3827,10 @@ a.wishlist_top {
       margin: 5px 0; } }
 
 @media (max-width: 991px) {
+  .left-icon-group #login, .left-icon-group #login-1 {
+    right: 0; }
+  .header-type-1.fixed {
+    padding: 0; }
   .zoomContainer {
     display: none; }
   #newsletter_block_left {

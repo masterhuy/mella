@@ -134,6 +134,11 @@ hr {
 .home_4 .view-all{
   display: block;
 }
+.download-invoice {
+    color: #fff !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
 .wrap {
   width: auto;
   clear: both; }
@@ -1893,11 +1898,11 @@ ul.cart_block_list li:not(:last-child){
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
-  bottom: 0;
+  bottom: 20px;
   z-index: 10;
 }
 
-      .product-preview .color_to_pick_list > .variant-links {
+.product-preview .color_to_pick_list > .variant-links {
     display: -webkit-box;
     display: flex;
     display: -ms-flexbox;
@@ -1911,8 +1916,9 @@ ul.cart_block_list li:not(:last-child){
   width: 15px;
   display: block;
   margin: 0 5px;
-  border-radius: 3px;
+  border-radius: 50%;
   box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  background-size: cover;
 }
 
 .product-preview .action-btn {

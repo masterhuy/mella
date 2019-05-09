@@ -6,9 +6,10 @@ body {
   width: 100%;
   z-index: 9999; }
 
-.jms-row.header.fixed {
-  padding-left: 20px;
-  padding-right: 20px; }
+@media (min-width: 992px) {
+  .jms-row.header.fixed {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 @media (min-width: 1800px) {
   .header-type-1 .mega-menu {
@@ -215,6 +216,19 @@ body {
     display: none !important; } }
 
 @media (max-width: 481px) {
+  div#newsletter_block_left {
+    padding: 0; }
+    div#newsletter_block_left .form-group {
+      display: block;
+      background: transparent;
+      border: 0; }
+      div#newsletter_block_left .form-group input {
+        text-align: center;
+        background: #fff;
+        margin-bottom: 15px;
+        border-radius: 30px; }
+    div#newsletter_block_left .newsletter-btn {
+      width: 100%; }
   .jms-slider-wrapper .text-1, .jms-slider-wrapper .btn-underline {
     font-size: 6px !important; }
   .jms-banner .btn-underline {

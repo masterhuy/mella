@@ -167,6 +167,8 @@ a#open-button {
     padding: 55px 30px 60px; } }
 
 @media (max-width: 991px) {
+  #module-group, div#cart-cl {
+    top: calc(100% + 25px); }
   .slides {
     padding-top: 0; }
   .jms-slider-wrapper {

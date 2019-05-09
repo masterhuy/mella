@@ -140,7 +140,9 @@
 
 @media (max-width: 1199px) {
   .left_column .logo {
-    margin-bottom: 17.7vw; }
+    margin-bottom: 365px; }
+  .left_column #social_block {
+    margin-top: 80px; }
   .jms-banner .banner-content {
     top: 20px;
     left: 20px;
@@ -152,6 +154,15 @@
     padding: 0 20px; } }
 
 @media (max-width: 991px) {
+  #header {
+    position: relative; }
+  .page-index .menu {
+    display: block;
+    position: absolute;
+    bottom: -70px;
+    z-index: 99; }
+  .m-right #module-group {
+    text-align: left; }
   .page-index #content::after {
     content: "";
     display: table;

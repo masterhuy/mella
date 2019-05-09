@@ -202,13 +202,6 @@
 	.product-preview .product_action {
 		padding-bottom: 35px;
 	}
-	.cart-wrap .remove_link{
-		position: relative;
-		top: 5px;
-	}
-	.cart-wrap .description > a{
-		margin-bottom: 5px;
-	}
 	#cart_block #button_order_cart{
 		font-size: 12px;
 	}
