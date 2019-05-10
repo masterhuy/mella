@@ -29,7 +29,7 @@
 {/if}
 <div class="countdown-box{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if} addon-title">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_left">
 			{if $html_content}
 				{$html_content nofilter}
 			{/if}
@@ -40,9 +40,9 @@
 				<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-underline">{$button_text|escape:'htmlall':'UTF-8'}</a>
 			{/if}
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_right">
 			{if $image}	
-				<img class="img-responsive" src="{$root_url|escape:'html':'UTF-8'}{$image|escape:'html':'UTF-8'}" />	
+				<img src="{$root_url|escape:'html':'UTF-8'}{$image|escape:'html':'UTF-8'}" />	
 			{/if}
 		</div>
 	</div>

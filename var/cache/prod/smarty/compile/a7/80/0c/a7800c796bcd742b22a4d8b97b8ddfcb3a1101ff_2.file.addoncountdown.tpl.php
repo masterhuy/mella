@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-15 22:23:20
+/* Smarty version 3.1.33, created on 2019-05-10 05:58:39
   from 'D:\xamppp\htdocs\jms_mella\themes\jms_mella\modules\jmspagebuilder\views\templates\hook\addoncountdown.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cb53c9879b5b2_45120200',
+  'unifunc' => 'content_5cd54b4f4d00a0_69936204',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a7800c796bcd742b22a4d8b97b8ddfcb3a1101ff' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_mella\\themes\\jms_mella\\modules\\jmspagebuilder\\views\\templates\\hook\\addoncountdown.tpl',
-      1 => 1555381395,
+      1 => 1557482313,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cb53c9879b5b2_45120200 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd54b4f4d00a0_69936204 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>	
 <div class="addon-title">
 	<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -30,7 +30,7 @@ if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="countdown-box<?php if ($_smarty_tpl->tpl_vars['box_class']->value) {?> <?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['box_class']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
 }?> addon-title">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_left">
 			<?php if ($_smarty_tpl->tpl_vars['html_content']->value) {?>
 				<?php echo $_smarty_tpl->tpl_vars['html_content']->value;?>
 
@@ -46,9 +46,9 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 </a>
 			<?php }?>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_right">
 			<?php if ($_smarty_tpl->tpl_vars['image']->value) {?>	
-				<img class="img-responsive" src="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['root_url']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');
+				<img src="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['root_url']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['image']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " />	
 			<?php }?>

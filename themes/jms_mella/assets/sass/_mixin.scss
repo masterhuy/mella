@@ -1,31 +1,13 @@
-@mixin icon_dropdown($value){
+@mixin icon_dropdown($value, $fs){
 	a.dropdown-toggle::after{
 		content: "\f107";
 		font-family: "FontAwesome";
 		padding-left: #{$value}px;
-		font-size: 13px;
+		font-size: #{$fs}px;;
 		@content;
 	}
 }
 
-@mixin flex($vCenter, $hCenter) {
-	display: flex;
-	justify-content: #{$vCenter};
-	align-items: #{$hCenter};
-	@content;
-}
-
-@mixin flexVCenter() {
-	display: flex;
-	align-items: center;
-	@content;
-}
-
-@mixin flexHCenter() {
-	display: flex;
-	justify-content: center;
-	@content;
-}
 
 
 
